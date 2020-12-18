@@ -56,7 +56,7 @@ export class Repository implements IRepository {
             const database = client.db(databaseName)
             const collection = database.collection(collectionName)
 
-            return operation(collection)
+            return await operation(collection)
         } finally {
             client.close()
         }

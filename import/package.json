@@ -12,6 +12,7 @@
     "ts-node": "^9.1.1"
   },
   "dependencies": {
-    "mongo-repo": "^1.0.2"
+    "dotenv": "^8.2.0",
+    "ftd-enchiridion-mongo-repo": "^1.0.0-alpha.2"
   }
 }
