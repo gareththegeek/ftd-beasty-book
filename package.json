@@ -1,0 +1,11 @@
+{
+  "name": "ftd-enchiridion",
+  "version": "1.0.0",
+  "description": "Monster builder and reference for Five Torches Deep",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gareth Williams",
+  "license": "MIT"
+}
