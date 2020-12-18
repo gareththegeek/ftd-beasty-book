@@ -2,7 +2,6 @@ require('dotenv').config()
 import { createReadStream } from 'fs'
 import csv from 'csv-parser'
 import { Repository } from 'ftd-enchiridion-mongo-repo'
-import { v4 as uuidv4 } from 'uuid'
 ;(async () => {
     const mongoUrl = process.env.MONGO_URL ?? 'mongodb://localhost'
     const databaseName = process.env.DATABASE_NAME ?? 'ftd-enchiridion'
@@ -25,12 +24,18 @@ import { v4 as uuidv4 } from 'uuid'
         collectionName: process.env.CATEGORIES_COLLECTION_NAME ?? 'categories'
     })
 
+    const getId = (name: string): string =>
+        name
+            .toLowerCase()
+            .replace(/[\s\.]/g, '-')
+            .replace(/[^a-zA-Z0-9\-]/g, '')
+
     createReadStream('data/monsters.csv')
         .pipe(csv())
         .on('data', (row) => {
             const techniques = [row.T1, row.T2, row.T3].filter((x) => x !== '')
             const monster = {
-                id: uuidv4(),
+                id: getId(row.Name),
                 name: row.Name,
                 category: (row.Category as string).toLowerCase(),
                 hitDice: parseFloat(row.HD),
@@ -50,7 +55,7 @@ import { v4 as uuidv4 } from 'uuid'
         .pipe(csv())
         .on('data', (row) => {
             const hitdice = {
-                id: uuidv4(),
+                id: getId(row.HD),
                 hitDice: parseFloat(row.HD),
                 damage: row['Avg. Damage']
             }
@@ -59,27 +64,36 @@ import { v4 as uuidv4 } from 'uuid'
         .on('end', () => {
             console.log('Imported hit dice damage')
         })
-    
-    type StrengthWeaknessModifier = "-1" | "0" | "1"
+
+    type StrengthWeaknessModifier = '-1' | '0' | '1'
     const StrengthWeaknessLookup = {
-        "-1": "weak",
-        "0": "average",
-        "1": "strong"
+        '-1': 'weak',
+        '0': 'average',
+        '1': 'strong'
     }
 
     createReadStream('data/categories.csv')
         .pipe(csv())
         .on('data', (row) => {
             const categories = {
-                id: uuidv4(),
+                id: getId(row.Category),
                 category: row.Category,
-                str: StrengthWeaknessLookup[row.STR as StrengthWeaknessModifier],
-                dex: StrengthWeaknessLookup[row.DEX as StrengthWeaknessModifier],
-                con: StrengthWeaknessLookup[row.CON as StrengthWeaknessModifier],
-                int: StrengthWeaknessLookup[row.INT as StrengthWeaknessModifier],
-                wis: StrengthWeaknessLookup[row.WIS as StrengthWeaknessModifier],
-                cha: StrengthWeaknessLookup[row.CHA as StrengthWeaknessModifier],
-                morale: StrengthWeaknessLookup[row.Morale as StrengthWeaknessModifier],
+                str:
+                    StrengthWeaknessLookup[row.STR as StrengthWeaknessModifier],
+                dex:
+                    StrengthWeaknessLookup[row.DEX as StrengthWeaknessModifier],
+                con:
+                    StrengthWeaknessLookup[row.CON as StrengthWeaknessModifier],
+                int:
+                    StrengthWeaknessLookup[row.INT as StrengthWeaknessModifier],
+                wis:
+                    StrengthWeaknessLookup[row.WIS as StrengthWeaknessModifier],
+                cha:
+                    StrengthWeaknessLookup[row.CHA as StrengthWeaknessModifier],
+                morale:
+                    StrengthWeaknessLookup[
+                        row.Morale as StrengthWeaknessModifier
+                    ],
                 strong: row.Strong,
                 weak: row.Weak
             }
