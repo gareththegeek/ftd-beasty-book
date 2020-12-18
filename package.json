@@ -4,7 +4,7 @@
   "description": "Monster builder and reference for Five Torches Deep",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"cd ftd-enchiridion-api&&yarn start\" \"cd ftd-enchiridion-ui&&yarn start\"",
+    "start": "concurrently \"cd api&&yarn start\" \"cd ui&&yarn start\"",
     "start:dev-db": "docker-compose -f docker/docker-compose.yml up"
   },
   "author": "Gareth Williams",
