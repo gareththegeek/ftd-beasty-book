@@ -1,0 +1,14 @@
+version: "3"
+volumes:
+  mongo-db-data:
+
+services:
+  mongo-db:
+    container_name: mongo-db
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_DATA_DIR=/data/db
+    volumes:
+      - mongo-db-data:/data/db
