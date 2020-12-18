@@ -4,13 +4,15 @@
   "description": "Monster builder and reference for Five Torches Deep",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently \"cd ftd-enchiridion-api&&yarn start\" \"cd ftd-enchiridion-ui&&yarn start\"",
+    "start:dev-db": "docker-compose -f docker/docker-compose.yml up"
   },
   "author": "Gareth Williams",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
+    "concurrently": "^5.3.0",
     "typescript": "^4.0.3"
   }
 }
