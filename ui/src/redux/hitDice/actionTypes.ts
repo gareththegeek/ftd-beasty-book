@@ -1,0 +1,3 @@
+export const REQUEST_HIT_DICE = 'REQUEST_HIT_DICE'
+export const SET_HIT_DICE = 'SET_HIT_DICE'
+export const SET_HIT_DICE_LOOKUP = 'SET_HIT_DICE_LOOKUP'

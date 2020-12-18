@@ -1,28 +1,27 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import Select from 'react-select'
+import { useDispatch } from 'react-redux';
 import './App.css';
-import { requestMonsterList } from './redux/monsters/actions';
-import { selectMonsterList } from './redux/monsters/selectors';
+import MonsterDetail from './MonsterDetail';
+import MonsterSelector from './MonsterSelector';
+import { requestCategories } from './redux/categories/actions';
+import { requestHitDice } from './redux/hitDice/actions';
 
 const App: React.FunctionComponent = () => {
 
     const dispatch = useDispatch()
 
-    const monsters = useSelector(selectMonsterList)
+    useEffect(() => {
+        dispatch(requestHitDice())
+    }, [dispatch])
 
     useEffect(() => {
-        console.log('dispatching')
-        console.log(requestMonsterList())
-        dispatch(requestMonsterList())
+        dispatch(requestCategories())
     }, [dispatch])
 
     return (
         <div className="App">
-            <Select options={monsters.map(monster => ({
-                label: monster.name,
-                value: monster.id
-            }))} />
+            <MonsterSelector />
+            <MonsterDetail />
         </div>
     )
 }
