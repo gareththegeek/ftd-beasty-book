@@ -1,0 +1,19 @@
+{
+  "name": "ftd-enchiridion-mongo-repo",
+  "version": "1.0.0-alpha.1",
+  "description": "Repository pattern implementation for mongodb",
+  "main": "dist/Repository.js",
+  "types": "dist/Repository.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Gareth Williams",
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^3.6.3"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.6.3",
+    "typescript": "^4.1.3"
+  }
+}

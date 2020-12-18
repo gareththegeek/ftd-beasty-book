@@ -10,5 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "ts-node": "^9.1.1"
+  },
+  "dependencies": {
+    "mongo-repo": "^1.0.2"
   }
 }
