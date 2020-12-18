@@ -1,0 +1,25 @@
+Category,STR,DEX,CON,INT,WIS,CHA,Morale,Strong,Weak
+Brute,1,-1,1,-1,0,0,1,"Holding the line
+Resistance","Stealth
+Finesse
+Perception
+Tactics"
+Leader,-1,0,-1,1,0,1,0,"Magic
+Commands
+With minions","Combat
+Being alone
+Resitance"
+Predator,0,0,-1,1,0,0,-1,"Offence
+Stealth
+Patience
+Cunning","Resistance
+Direct combat"
+Shaper,-1,-1,0,1,1,0,0,"Forced movement
+Change the environment","Melee combat
+Being locked down in one place"
+Sniper,-1,1,-1,0,1,0,-1,"Ranged combat
+Perception","Melee combat
+Resistance"
+Soldier,1,1,0,0,0,0,1,"Combat
+Unit discipline","Lack of leadership
+Stealth"

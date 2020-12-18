@@ -9,10 +9,13 @@
   "author": "Gareth Williams",
   "license": "MIT",
   "devDependencies": {
+    "@types/uuid": "^8.3.0",
     "ts-node": "^9.1.1"
   },
   "dependencies": {
+    "csv-parser": "^3.0.0",
     "dotenv": "^8.2.0",
-    "ftd-enchiridion-mongo-repo": "^1.0.0-alpha.2"
+    "ftd-enchiridion-mongo-repo": "^1.0.0-alpha.2",
+    "uuid": "^8.3.2"
   }
 }
