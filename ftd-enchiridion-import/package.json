@@ -1,0 +1,14 @@
+{
+  "name": "ftd-enchiridion-import",
+  "version": "1.0.0",
+  "description": "Utility to import monster data to the FTD Enchiridion database",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "author": "Gareth Williams",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^9.1.1"
+  }
+}
