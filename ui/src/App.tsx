@@ -1,6 +1,6 @@
+import { CssBaseline, Container } from '@material-ui/core';
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import './App.css';
 import MonsterDetail from './MonsterDetail';
 import MonsterSelector from './MonsterSelector';
 import { requestCategories } from './redux/categories/actions';
@@ -19,10 +19,14 @@ const App: React.FunctionComponent = () => {
     }, [dispatch])
 
     return (
-        <div className="App">
-            <MonsterSelector />
-            <MonsterDetail />
-        </div>
+        <React.Fragment>
+            <CssBaseline>
+                <Container maxWidth="lg" disableGutters={true}>
+                    <MonsterSelector />
+                    <MonsterDetail />
+                </Container>
+            </CssBaseline>
+        </React.Fragment>
     )
 }
 

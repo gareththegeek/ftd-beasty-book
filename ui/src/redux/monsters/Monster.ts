@@ -10,5 +10,5 @@ export default interface Monster {
     attack: AttributeType,
     defence: AttributeType,
     description: string,
-    techniques: [string?, string?, string?]
+    techniques: string[]
 }

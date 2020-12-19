@@ -36,6 +36,9 @@ const calculateArmourClass = (monster: Monster, category: Category): number =>
 const calculateHitPoints = (hitDice: number): number =>
     Math.floor(hitDice * 4.5)
 
+const capitalise = (text: string): string =>
+    `${text.substr(0, 1).toUpperCase()}${text.substr(1)}`
+
 export const mapMonster = (
     monster: Monster,
     hitDice: HitDice,
@@ -53,7 +56,7 @@ export const mapMonster = (
         id: monster.id,
         name: monster.name,
         description: monster.description,
-        category: monster.category,
+        category: capitalise(monster.category),
         speed: monster.speed,
         hitDice: `${monster.hitDice}d8`,
         techniques: monster.techniques,

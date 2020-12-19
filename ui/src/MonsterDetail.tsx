@@ -1,9 +1,22 @@
+import { Box, Grid, makeStyles } from '@material-ui/core'
+import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core'
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { selectSelectedMonster } from './redux/monsters/selectors'
 
+const useStyles = makeStyles(theme => ({
+    padded: {
+        padding: theme.spacing(2),
+        height: "100%"
+    }
+}))
+
+const renderParagraphs = (text: string): JSX.Element[] =>
+    text.split('\n').map(paragraph => (<p>{paragraph}</p>))
+
 const MonsterDetail: React.FunctionComponent = () => {
 
+    const classes = useStyles()
     const monster = useSelector(selectSelectedMonster)
 
     if (!monster) {
@@ -12,66 +25,100 @@ const MonsterDetail: React.FunctionComponent = () => {
 
     return (
         <div>
-            <h2>{monster.name}</h2>
-            <div><label>Category</label><span>{monster.category}</span></div>
-            <table>
-                <tr>
-                    <th>Speed</th>
-                    <th>To Hit</th>
-                    <th>Damage</th>
-                    <th>AC</th>
-                    <th>HP</th>
-                    <th>HD</th>
-                    <th>Morale</th>
-                </tr>
-                <tr>
-                    <td>{monster.speed}</td>
-                    <td>{monster.toHit}</td>
-                    <td>{monster.damage}</td>
-                    <td>{monster.armourClass}</td>
-                    <td>{monster.hitPoints}</td>
-                    <td>{monster.hitDice}</td>
-                    <td>{monster.morale}</td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th>STR</th>
-                    <th>DEX</th>
-                    <th>CON</th>
-                    <th>INT</th>
-                    <th>WIS</th>
-                    <th>CHA</th>
-                </tr>
-                <tr>
-                    <td>{monster.str}</td>
-                    <td>{monster.dex}</td>
-                    <td>{monster.con}</td>
-                    <td>{monster.int}</td>
-                    <td>{monster.wis}</td>
-                    <td>{monster.cha}</td>
-                </tr>
-            </table>
-            <div>
-                <label>Description</label>
-                <p>{monster.description}</p>
-            </div>
-            <div>
-                <label>Strong</label>
-                <p>{monster.strong}</p>
-            </div>
-            <div>
-                <label>Weak</label>
-                <p>{monster.weak}</p>
-            </div>
-            <div>
-                <label>Techniques</label>
-                <ul>
+            <Box m={3}>
+                <Paper className={classes.padded}>
+                    <h1>{monster.name}</h1>
+                    <h3>{monster.category}</h3>
+                </Paper>
+            </Box>
+            <Box m={3}>
+                <TableContainer component={Paper}>
+                    <Table size="small">
+                        <TableHead>
+                            <TableRow>
+                                <TableCell align="center">Speed</TableCell>
+                                <TableCell align="center">To Hit</TableCell>
+                                <TableCell align="center">Damage</TableCell>
+                                <TableCell align="center">AC</TableCell>
+                                <TableCell align="center">HP</TableCell>
+                                <TableCell align="center">HD</TableCell>
+                                <TableCell align="center">Morale</TableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableBody>
+                            <TableRow>
+                                <TableCell align="center">{monster.speed}</TableCell>
+                                <TableCell align="center">{monster.toHit}</TableCell>
+                                <TableCell align="center">{monster.damage}</TableCell>
+                                <TableCell align="center">{monster.armourClass}</TableCell>
+                                <TableCell align="center">{monster.hitPoints}</TableCell>
+                                <TableCell align="center">{monster.hitDice}</TableCell>
+                                <TableCell align="center">{monster.morale}</TableCell>
+                            </TableRow>
+                        </TableBody>
+                    </Table>
+                </TableContainer>
+            </Box>
+            <Box m={3}>
+                <TableContainer component={Paper}>
+                    <Table size="small">
+                        <TableHead>
+                            <TableRow>
+                                <TableCell align="center">DEX</TableCell>
+                                <TableCell align="center">STR</TableCell>
+                                <TableCell align="center">CON</TableCell>
+                                <TableCell align="center">INT</TableCell>
+                                <TableCell align="center">WIS</TableCell>
+                                <TableCell align="center">CHA</TableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableBody>
+                            <TableRow>
+                                <TableCell align="center">{monster.str}</TableCell>
+                                <TableCell align="center">{monster.dex}</TableCell>
+                                <TableCell align="center">{monster.con}</TableCell>
+                                <TableCell align="center">{monster.int}</TableCell>
+                                <TableCell align="center">{monster.wis}</TableCell>
+                                <TableCell align="center">{monster.cha}</TableCell>
+                            </TableRow>
+                        </TableBody>
+                    </Table>
+                </TableContainer>
+            </Box>
+            <Box m={3}>
+                <Grid container spacing={3}>
+                    <Grid item md={6} xs={12}>
+                        <Paper className={classes.padded}>
+                            <h3>Description</h3>
+                            {renderParagraphs(monster.description)}
+                        </Paper>
+                    </Grid>
+                    <Grid item md={3} xs={6}>
+                        <Paper className={classes.padded}>
+                            <h3>Strong</h3>
+                            {renderParagraphs(monster.strong)}
+                        </Paper>
+                    </Grid>
+                    <Grid item md={3} xs={6}>
+                        <Paper className={classes.padded}>
+                            <h3>Weak</h3>
+                            {renderParagraphs(monster.weak)}
+                        </Paper>
+                    </Grid>
+                </Grid>
+            </Box>
+            <Box m={3}>
+                <Grid container spacing={3}>
                     {monster.techniques.map((technique, index) => (
-                        <li key={index.toString()}>{technique}</li>
+                        <Grid item key={index.toString()} md={4} xs={12}>
+                            <Paper className={classes.padded}>
+                                <h3>Technique</h3>
+                                {renderParagraphs(technique)}
+                            </Paper>
+                        </Grid>
                     ))}
-                </ul>
-            </div>
+                </Grid>
+            </Box>
         </div>
     )
 }

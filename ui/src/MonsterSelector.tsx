@@ -1,3 +1,4 @@
+import { Box } from '@material-ui/core';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Select from 'react-select'
@@ -15,12 +16,14 @@ const MonsterSelector: React.FunctionComponent = () => {
     }, [dispatch])
 
     return (
-        <Select
-            onChange={(item) => dispatch(selectMonster(item?.value))}
-            options={monsters.map(monster => ({
-                label: monster.name,
-                value: monster.id
-            }))} />
+        <Box m={3}>
+            <Select
+                onChange={(item) => dispatch(selectMonster(item?.value))}
+                options={monsters.map(monster => ({
+                    label: monster.name,
+                    value: monster.id
+                }))} />
+        </Box>
     )
 }
 

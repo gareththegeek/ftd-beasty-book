@@ -1,9 +1,7 @@
-import { CategoryType } from './CategoryType'
-
 export default interface MonsterViewModel {
     id: string
     name: string
-    category: CategoryType
+    category: string
     hitDice: string
     speed: number
     toHit: number
@@ -20,5 +18,5 @@ export default interface MonsterViewModel {
     description: string
     strong: string
     weak: string
-    techniques: [string?, string?, string?]
+    techniques: string[]
 }
