@@ -5,6 +5,7 @@
   "main": "dist/Repository.js",
   "types": "dist/Repository.d.ts",
   "scripts": {
+    "clean": "rimraf ./dist",
     "build": "tsc"
   },
   "author": "Gareth Williams",
@@ -14,6 +15,7 @@
   },
   "devDependencies": {
     "@types/mongodb": "^3.6.3",
+    "rimraf": "^3.0.2",
     "typescript": "^4.1.3"
   }
 }
