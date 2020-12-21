@@ -14,6 +14,12 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use((_, res, next) => {
     res.header('Access-Control-Allow-Origin', origin)
+    res.header('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload')
+    res.header('Content-Security-Policy', 'default-src *')
+    res.header('X-Frame-Options', 'sameorigin')
+    res.header('X-Content-Type-Options', 'nosniff')
+    res.header('Referrer-Policy', 'no-referrer-when-downgrade')
+    res.header('X-XSS-Protection', '1; mode=block')
     next()
 })
 
