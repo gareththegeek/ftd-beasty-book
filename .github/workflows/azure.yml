@@ -41,6 +41,7 @@ jobs:
         npm install yarn --no-package-lock
         yarn
         yarn build --if-present
+        echo "Now to do everything myself *sigh*"
         cp ./api/package.json ./api/dist/package.json
         cp ./api/yarn.lock ./api/dist/yarn.lock
         cd ./api/dist
@@ -48,7 +49,7 @@ jobs:
         cd ../..
         rm ./api/dist/package.json
         rm ./api/dist/yarn.lock
-        cp -r ui/build api/dist
+        cp -r ui/build/* api/dist/public
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with:
