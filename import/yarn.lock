@@ -62,10 +62,10 @@ dotenv@^8.2.0:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
 
-ftd-enchiridion-mongo-repo@^1.0.0-alpha.2:
-  version "1.0.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/ftd-enchiridion-mongo-repo/-/ftd-enchiridion-mongo-repo-1.0.0-alpha.2.tgz#f4f8c53a549667059c59c0776d050fd5efbea4af"
-  integrity sha512-/3Z5wTu8UCDjuw0eW0bOmqk1F/v/GkF63H/Uv/6Qi69g+RYNLrDDmNinFC/7ev1ZpJHVFoSNXsBiwNP2oEq7mw==
+ftd-beasty-book-mongo-repo@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ftd-beasty-book-mongo-repo/-/ftd-beasty-book-mongo-repo-1.0.0.tgz#b4a92165c0bda08fb931ffbdf73a2c484b2cdd4d"
+  integrity sha512-1GChKqGuALkthHt+IsR6qW8q/Cn7j7r/BFvfLwNvN9i3Y+JWt2vVKoSUp6Pik/2fWLQABAhEWVSZkuX3Ys6DDg==
   dependencies:
     mongodb "^3.6.3"
 
