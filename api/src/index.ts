@@ -8,6 +8,11 @@ const origin = process.env.ALLOWED_ORIGIN ?? 'http://localhost:3000'
 
 const app = express()
 app.use(cors())
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('public'))
+}
+
 app.use((_, res, next) => {
     res.header('Access-Control-Allow-Origin', origin)
     next()
