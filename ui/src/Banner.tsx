@@ -5,7 +5,7 @@ const Banner: React.FunctionComponent = () => {
     return (<header>
         <AppBar position="static">
             <Toolbar>
-                <h2>Five Torches Deep Monsters</h2>
+                <h2>FTD Beasty Book</h2>
             </Toolbar>
         </AppBar>
     </header>)

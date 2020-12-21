@@ -1,6 +1,6 @@
 {
-  "name": "ftd-enchiridion-mongo-repo",
-  "version": "1.0.0-alpha.2",
+  "name": "ftd-beasty-book-mongo-repo",
+  "version": "1.0.0",
   "description": "Repository pattern implementation for mongodb",
   "main": "dist/Repository.js",
   "types": "dist/Repository.d.ts",

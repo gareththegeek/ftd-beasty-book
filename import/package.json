@@ -1,7 +1,7 @@
 {
-  "name": "ftd-enchiridion-import",
+  "name": "ftd-beasty-book-import",
   "version": "1.0.0",
-  "description": "Utility to import monster data to the FTD Enchiridion database",
+  "description": "Utility to import monster data to the FTD Beasty Book database",
   "main": "index.ts",
   "scripts": {
     "start": "ts-node src/index.ts"
@@ -15,6 +15,6 @@
   "dependencies": {
     "csv-parser": "^3.0.0",
     "dotenv": "^8.2.0",
-    "ftd-enchiridion-mongo-repo": "^1.0.0-alpha.2"
+    "ftd-beasty-book-mongo-repo": "^1.0.0"
   }
 }

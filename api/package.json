@@ -1,7 +1,7 @@
 {
-  "name": "ftd-enchiridion-api",
+  "name": "ftd-beasty-book-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "REST API of monster reference for Five Torches Deep TTRPG",
   "main": "index.ts",
   "scripts": {
     "start": "ts-node src/index.ts",
@@ -21,6 +21,6 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "ftd-enchiridion-mongo-repo": "^1.0.0-alpha.2"
+    "ftd-beasty-book-mongo-repo": "^1.0.0"
   }
 }

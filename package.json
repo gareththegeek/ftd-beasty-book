@@ -1,7 +1,7 @@
 {
-  "name": "ftd-enchiridion",
+  "name": "ftd-beasty-book",
   "version": "1.0.0",
-  "description": "Monster builder and reference for Five Torches Deep",
+  "description": "Monster reference for Five Torches Deep TTRPG",
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"cd api&&yarn start\" \"cd ui&&yarn start\"",
