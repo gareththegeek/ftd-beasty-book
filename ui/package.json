@@ -30,6 +30,7 @@
   "scripts": {
     "start": "react-scripts start",
     "clean": "rimraf ./build",
+    "prebuild": "yarn clean",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

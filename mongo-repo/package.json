@@ -6,6 +6,7 @@
   "types": "dist/Repository.d.ts",
   "scripts": {
     "clean": "rimraf ./dist",
+    "prebuild": "yarn clean",
     "build": "tsc"
   },
   "author": "Gareth Williams",

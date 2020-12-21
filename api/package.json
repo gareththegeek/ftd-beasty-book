@@ -6,7 +6,8 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "clean": "rimraf ./dist",
-    "build": "yarn clean&&tsc",
+    "prebuild": "yarn clean",
+    "build": "tsc",
     "test": "jest"
   },
   "author": "Gareth Williams",
