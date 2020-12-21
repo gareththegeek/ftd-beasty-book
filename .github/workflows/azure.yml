@@ -24,6 +24,7 @@ env:
   AZURE_WEBAPP_PACKAGE_PATH: './api/dist'      # set this to the path to your web app project, defaults to the repository root
   NODE_VERSION: '12.x'                # set this to the node version to use
   REACT_APP_API_BASE_URL: api/
+  INLINE_RUNTIME_CHUNK: false  
 
 jobs:
   build-and-deploy:
