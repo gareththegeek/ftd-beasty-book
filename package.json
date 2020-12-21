@@ -8,7 +8,7 @@
     "start:dev-db": "docker-compose -f docker/docker-compose.yml up",
     "clean": "cd api&&yarn clean&&cd ../mongo-repo&&yarn clean&&cd ../ui&&yarn clean&&cd ..",
     "build": "cd api&&yarn build&&cd ../ui&&yarn build&&cd ..&&npx copy ui/build/**/* api/dist/public",
-    "postinstall": "cd ui&&yarn&&cd ..\\api&&yarn&&cd ..\\import&&yarn&&cd .."
+    "postinstall": "cd ui&&yarn&&cd ../api&&yarn&&cd ../import&&yarn&&cd .."
   },
   "author": "Gareth Williams",
   "license": "MIT",

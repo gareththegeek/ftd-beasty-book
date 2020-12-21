@@ -28,9 +28,9 @@ yarn build
 
 Configure environment variables (see Environment Variables section).
 
-Deploy contents of `api/\dist` to server and execute:
+Deploy contents of `api/dist` to server and execute:
 ```bash
-node api/dist/index.js
+node index.js
 ```
 
 ## Development
