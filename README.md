@@ -1,5 +1,7 @@
 # Beasty Book for Five Torches Deep
 
+![.github/workflows/azure.yml](https://github.com/gareththegeek/ftd-beasty-book/workflows/.github/workflows/azure.yml/badge.svg)
+
 Search for monster stats to use in your games of FTD!
 
 Reference monster stats for Five Torches Deep.
