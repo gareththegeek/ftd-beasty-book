@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const renderParagraphs = (text: string): JSX.Element[] =>
-    text.split('\n').map(paragraph => (<p>{paragraph}</p>))
+    text.split('\n').map((paragraph, index) => (<p key={`para-${index}`}>{paragraph}</p>))
 
 const MonsterDetail: React.FunctionComponent = () => {
 
