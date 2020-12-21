@@ -10,7 +10,7 @@ const origin = process.env.ALLOWED_ORIGIN ?? 'http://localhost:3000'
 const app = express()
 app.use(cors())
 
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public/ui/build')))
 
 app.use((_, res, next) => {
     res.header('Access-Control-Allow-Origin', origin)
