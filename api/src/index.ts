@@ -10,18 +10,18 @@ const origin = process.env.ALLOWED_ORIGIN ?? 'http://localhost:3000'
 const app = express()
 app.use(cors())
 
-app.use(express.static(path.join(__dirname, 'public')))
-
 app.use((_, res, next) => {
-    res.header('Access-Control-Allow-Origin', origin)
-    res.header('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload')
-    res.header('Content-Security-Policy', 'default-src *')
-    res.header('X-Frame-Options', 'sameorigin')
-    res.header('X-Content-Type-Options', 'nosniff')
-    res.header('Referrer-Policy', 'no-referrer-when-downgrade')
-    res.header('X-XSS-Protection', '1; mode=block')
+    res.setHeader('Access-Control-Allow-Origin', origin)
+    res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload')
+    res.setHeader('Content-Security-Policy', "default-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; frame-src 'self';")
+    res.setHeader('X-Frame-Options', 'sameorigin')
+    res.setHeader('X-Content-Type-Options', 'nosniff')
+    res.setHeader('Referrer-Policy', 'no-referrer-when-downgrade')
+    res.setHeader('X-XSS-Protection', '1; mode=block')
     next()
 })
+
+app.use(express.static(path.join(__dirname, 'public')))
 
 routes(app)
 
