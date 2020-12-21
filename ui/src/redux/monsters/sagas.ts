@@ -3,7 +3,7 @@ import { fetchMonster, fetchMonsters } from '../../services/monsters'
 import { selectCategory } from '../categories/selectors'
 import { selectHitDice } from '../hitDice/selectors'
 import PayloadAction from '../PayloadAction'
-import { setMonsterList, setSelectedMonster } from './actions'
+import { setMonsterError, setMonsterList, setSelectedMonster, setSelectedMonsterLoading } from './actions'
 import { REQUEST_MONSTER_LIST, SELECT_MONSTER } from './actionTypes'
 import { mapMonster } from './mapMonster'
 import Monster from './Monster'
@@ -17,7 +17,7 @@ function* requestMonsterListSaga() {
     }
 }
 
-function* selectMonsterSaga(action: PayloadAction<string | undefined>,) {
+function* selectMonsterSaga(action: PayloadAction<string | undefined>) {
     try {
         const monsterId = action.payload
 
@@ -25,6 +25,8 @@ function* selectMonsterSaga(action: PayloadAction<string | undefined>,) {
             yield put(setSelectedMonster(undefined))
             return
         }
+
+        yield put(setSelectedMonsterLoading())
 
         const monster: Monster = yield call(fetchMonster, monsterId)
 
@@ -35,6 +37,7 @@ function* selectMonsterSaga(action: PayloadAction<string | undefined>,) {
 
         yield put(setSelectedMonster(viewModel))
     } catch (e) {
+        yield put(setMonsterError(e.message))
         console.error(e)
     }
 }

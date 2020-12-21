@@ -1,8 +1,8 @@
-import { Box, Grid, makeStyles } from '@material-ui/core'
+import { Box, CircularProgress, Container, Grid, makeStyles } from '@material-ui/core'
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core'
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { selectSelectedMonster } from './redux/monsters/selectors'
+import { selectMonsterLoading, selectSelectedMonster } from './redux/monsters/selectors'
 
 const useStyles = makeStyles(theme => ({
     padded: {
@@ -17,7 +17,14 @@ const renderParagraphs = (text: string): JSX.Element[] =>
 const MonsterDetail: React.FunctionComponent = () => {
 
     const classes = useStyles()
+    const loading = useSelector(selectMonsterLoading)
     const monster = useSelector(selectSelectedMonster)
+
+    if (loading) {
+        return (<Container style={{width: "100%", textAlign: "center"}}>
+            <CircularProgress />
+        </Container>)
+    }
 
     if (!monster) {
         return (<div />)

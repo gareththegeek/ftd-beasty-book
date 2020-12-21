@@ -3,5 +3,7 @@ import MonsterViewModel from './MonsterViewModel'
 
 export default interface MonstersState {
     all: MonsterInfo[]
-    selectedMonster: MonsterViewModel | undefined
+    selectedMonster: MonsterViewModel | undefined,
+    loading: boolean,
+    error: string | undefined
 }
