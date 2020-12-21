@@ -48,7 +48,7 @@ jobs:
         cd ../..
         rm ./api/dist/package.json
         rm ./api/dist/yarn.lock
-        cp ui/build api/dist
+        cp -r ui/build api/dist
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with:
