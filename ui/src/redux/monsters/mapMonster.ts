@@ -49,6 +49,11 @@ export const mapMonster = (
     const noHitDice = !hitDice
 
     if (noMonster || noCategory || noHitDice) {
+        console.warn(
+            `Something's wrong: ${noMonster ? 'No Monster!' : ''}${
+                noCategory ? 'No Category!' : ''
+            }${noHitDice ? 'No Hit Dice!' : ''}`
+        )
         return undefined
     }
 
