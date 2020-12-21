@@ -1,4 +1,4 @@
-import { ConnectionConfig } from "ftd-enchiridion-mongo-repo"
+import { ConnectionConfig } from "ftd-beasty-book-mongo-repo"
 
 export enum Collections {
     monsters,
@@ -14,6 +14,6 @@ const COLLECTION_LOOKUP = {
 
 export const getDatabaseConfig = (collection: Collections): ConnectionConfig => ({
     mongoUrl: process.env.MONGO_URL ?? 'mongodb://localhost',
-    databaseName: process.env.DATABASE_NAME ?? 'ftd-enchiridion',
+    databaseName: process.env.DATABASE_NAME ?? 'ftd-beasty-book',
     collectionName: COLLECTION_LOOKUP[collection]
 })

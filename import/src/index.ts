@@ -1,10 +1,10 @@
 require('dotenv').config()
 import { createReadStream } from 'fs'
 import csv from 'csv-parser'
-import { Repository } from 'ftd-enchiridion-mongo-repo'
+import { Repository } from 'ftd-beasty-book-mongo-repo'
 ;(async () => {
     const mongoUrl = process.env.MONGO_URL ?? 'mongodb://localhost'
-    const databaseName = process.env.DATABASE_NAME ?? 'ftd-enchiridion'
+    const databaseName = process.env.DATABASE_NAME ?? 'ftd-beasty-book'
 
     const monsterRepo = new Repository({
         mongoUrl,

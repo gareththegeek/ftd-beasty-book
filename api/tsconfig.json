@@ -13,7 +13,7 @@
         "noFallthroughCasesInSwitch": true,
         "module": "commonjs",
         "moduleResolution": "node",
-        "noEmit": true
+        "outDir": "dist"
     },
     "include": [
         "src"

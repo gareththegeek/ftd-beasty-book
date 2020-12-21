@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { Repository } from 'ftd-enchiridion-mongo-repo'
+import { Repository } from 'ftd-beasty-book-mongo-repo'
 import { Collections, getDatabaseConfig } from '../database/config'
 import Monster from '../model/Monster'
 

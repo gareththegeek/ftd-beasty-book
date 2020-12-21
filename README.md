@@ -77,7 +77,7 @@ The following environment variables must be defined in order to configure the Be
 |PORT|Port used by node server (API and in production UI)|8080|
 |ALLOWED_ORIGIN|Origin from which requests can be made for CORS configuration|http://localhost:3000|
 |MONGO_URL|URL used to connect to the database using mongodb driver|mongodb://localhost|
-|DATABASE_NAME|Name of the database to be used within the configured mongodb instance|ftd-enchiridion|
+|DATABASE_NAME|Name of the database to be used within the configured mongodb instance|ftd-beasty-book|
 |MONSTER_COLLECTION_NAME|Collection within database used to store monster statistics|monsters|
 |HITDICE_COLLECTION_NAME|Collection within database used to store hit dice damage|hitdice|
 |CATEGORIES_COLLECTION_NAME|Collection within databse used to store categories|categories|
