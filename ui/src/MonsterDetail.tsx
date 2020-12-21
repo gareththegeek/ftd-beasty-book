@@ -8,6 +8,10 @@ const useStyles = makeStyles(theme => ({
     padded: {
         padding: theme.spacing(2),
         height: "100%"
+    },
+    spinner: {
+        width: "100%",
+        textAlign: "center"
     }
 }))
 
@@ -21,7 +25,7 @@ const MonsterDetail: React.FunctionComponent = () => {
     const monster = useSelector(selectSelectedMonster)
 
     if (loading) {
-        return (<Container style={{width: "100%", textAlign: "center"}}>
+        return (<Container className={classes.spinner}>
             <CircularProgress />
         </Container>)
     }
