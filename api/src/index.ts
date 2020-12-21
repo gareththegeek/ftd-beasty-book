@@ -13,6 +13,7 @@ app.use(cors())
 app.use((_, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', origin)
     res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload')
+    // Can't get CSP to work because it's being a POS
     //res.setHeader('Content-Security-Policy-Report-Only', "default-src 'self'; font-src 'self' https://fonts.gstatic.com; img-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; frame-src 'self';")
     res.setHeader('X-Frame-Options', 'sameorigin')
     res.setHeader('X-Content-Type-Options', 'nosniff')
@@ -21,7 +22,7 @@ app.use((_, res, next) => {
     next()
 })
 
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public/ui/build')))
 
 routes(app)
 
