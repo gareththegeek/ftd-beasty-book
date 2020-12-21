@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"cd api&&yarn start\" \"cd ui&&yarn start\"",
-    "start:dev-db": "docker-compose -f docker/docker-compose.yml up"
+    "start:dev-db": "docker-compose -f docker/docker-compose.yml up",
+    "postinstall": "cd client&&yarn&&cd ..\\api&&yarn&&cd ..\\import&&yarn&&cd .."
   },
   "author": "Gareth Williams",
   "license": "MIT",
