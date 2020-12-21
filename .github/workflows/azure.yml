@@ -41,6 +41,9 @@ jobs:
         npm install yarn --no-package-lock
         yarn
         yarn build --if-present
+        cp api/package.json api/dist/package*.json
+        cd api/dist
+        yarn --production
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with:
