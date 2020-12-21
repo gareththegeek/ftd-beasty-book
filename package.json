@@ -7,7 +7,7 @@
     "start": "concurrently \"cd api&&yarn start\" \"cd ui&&yarn start\"",
     "start:prod": "cd api/dist&&node index.js",
     "start:dev-db": "docker-compose -f docker/docker-compose.yml up",
-    "build": "cd api&&yarn build&&cd ../ui&&yarn build&&cd ..&&npx copy ./ui/build/**/* ./api/dist/public",
+    "build": "cd api&&yarn build&&cd ../ui&&yarn build&&cd ..&&copyfiles ./ui/build/**/* ./api/dist/public",
     "postinstall": "cd ui&&yarn&&cd ../api&&yarn&&cd ../import&&yarn&&cd .."
   },
   "author": "Gareth Williams",
@@ -16,7 +16,7 @@
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
     "concurrently": "^5.3.0",
-    "copy": "^0.3.2",
+    "copyfiles": "^2.4.1",
     "rimraf": "^3.0.2",
     "typescript": "^4.0.3"
   }
