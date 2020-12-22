@@ -75,8 +75,8 @@ const MonsterDetail: React.FunctionComponent = () => {
                     <Table size="small">
                         <TableHead>
                             <TableRow>
-                                <TableCell align="center">DEX</TableCell>
                                 <TableCell align="center">STR</TableCell>
+                                <TableCell align="center">DEX</TableCell>
                                 <TableCell align="center">CON</TableCell>
                                 <TableCell align="center">INT</TableCell>
                                 <TableCell align="center">WIS</TableCell>
