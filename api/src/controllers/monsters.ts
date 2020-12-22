@@ -1,10 +1,10 @@
 import { Request, Response } from 'express'
-import { Repository } from 'ftd-beasty-book-mongo-repo'
+import { get as getDb } from '../database/factory'
 import { Collections, getDatabaseConfig } from '../database/config'
 import Monster from '../model/Monster'
 
 export const get = async (req: Request, res: Response) => {
-    const repo = new Repository(getDatabaseConfig(Collections.monsters))
+    const repo = getDb(Collections.monsters)
 
     const monster = await repo.getById(req.params.id)
 
@@ -15,7 +15,7 @@ export const get = async (req: Request, res: Response) => {
 }
 
 export const getAll = async (_: Request, res: Response): Promise<void> => {
-    const repo = new Repository(getDatabaseConfig(Collections.monsters))
+    const repo = getDb(Collections.monsters)
     
     const monsters = (await repo.getAll<Monster>())
         .map((monster) => ({
@@ -24,6 +24,6 @@ export const getAll = async (_: Request, res: Response): Promise<void> => {
             hitDice: monster.hitDice
         }))
         .sort((a, b) => (a.name > b.name ? 1 : a.name < b.name ? -1 : 0))
-    
+
     res.send(monsters)
 }

@@ -1,9 +1,9 @@
 import { Request, Response } from 'express'
-import { Repository } from 'ftd-beasty-book-mongo-repo'
-import { Collections, getDatabaseConfig } from '../database/config'
+import { get } from '../database/factory'
+import { Collections } from '../database/config'
 
 export const getAll = async (_: Request, res: Response): Promise<void> => {
-    const repo = new Repository(getDatabaseConfig(Collections.categories))
+    const repo = get(Collections.categories)
 
     const categories = (await repo.getAll())
         .map((category) => ({
