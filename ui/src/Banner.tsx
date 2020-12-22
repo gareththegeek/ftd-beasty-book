@@ -18,12 +18,12 @@ const Banner: React.FunctionComponent = () => {
                     <Grid item>
                         <Grid container direction="row" alignItems="center" spacing={1}>
                             <Grid item>
-                                <i title="Contribute and report issues on GitHub!">
-                                    <img src="./android-chrome-192x192.png" alt="Beasty Book" className={classes.icon} />
+                                <i>
+                                    <img src="./android-chrome-192x192.png" alt="Beastie Book" className={classes.icon} />
                                 </i>
                             </Grid>
                             <Grid item>
-                                <h2>FTD Beasty Book</h2>
+                                <h2>FTD Beastie Book</h2>
                             </Grid>
                         </Grid>
                     </Grid>

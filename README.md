@@ -1,4 +1,4 @@
-# Beasty Book for Five Torches Deep
+# Beastie Book for Five Torches Deep
 
 ![.github/workflows/azure.yml](https://github.com/gareththegeek/ftd-beasty-book/workflows/.github/workflows/azure.yml/badge.svg)
 
