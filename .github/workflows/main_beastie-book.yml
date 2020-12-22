@@ -34,7 +34,6 @@ jobs:
         cd api/dist
         yarn --production
         cd ../..
-        mkdir api/dist/public
         cp -r ui/build/* api/dist/public
 
     - name: 'Deploy to Azure Web App'
