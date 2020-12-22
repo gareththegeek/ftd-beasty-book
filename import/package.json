@@ -1,7 +1,7 @@
 {
   "name": "ftd-beasty-book-import",
   "version": "1.0.0",
-  "description": "Utility to import monster data to the FTD Beasty Book database",
+  "description": "Utility to import monster data to the FTD Beastie Book database",
   "main": "index.ts",
   "scripts": {
     "start": "ts-node src/index.ts"

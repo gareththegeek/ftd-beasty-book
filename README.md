@@ -71,7 +71,7 @@ yarn start
 
 # Environment Variables
 
-The following environment variables must be defined in order to configure the Beasty Book.
+The following environment variables must be defined in order to configure the Beastie Book.
 
 |Variable|Purpose|Example|
 |---|---|---|
