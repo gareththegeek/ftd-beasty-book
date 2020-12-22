@@ -53,7 +53,6 @@ jobs:
         rm api/dist/yarn.lock
         mkdir api/dist/public
         cp -r ui/build/* api/dist/public
-        cp web.config api/dist
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with:
