@@ -7,6 +7,7 @@
     "start": "concurrently \"cd api&&yarn start\" \"cd ui&&yarn start\"",
     "start:prod": "cd api/dist&&node index.js",
     "start:dev-db": "docker-compose -f docker/docker-compose.yml up",
+    "test": "cd api&&yarn test&&cd ../ui&&yarn test",
     "build": "cd api&&yarn build&&cd ../ui&&yarn build&&cd ..&&copyfiles ./ui/build/**/* ./api/dist/public",
     "postinstall": "cd ui&&yarn&&cd ../api&&yarn&&cd ../import&&yarn&&cd .."
   },
