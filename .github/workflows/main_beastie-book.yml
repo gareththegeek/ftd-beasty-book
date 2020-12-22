@@ -3,6 +3,9 @@
 
 name: Build and deploy Node.js app to Azure Web App - beastie-book
 
+env:
+  REACT_APP_API_BASE_URL: api/
+
 on:
   push:
     branches:
@@ -22,9 +25,17 @@ jobs:
 
     - name: npm install, build, and test
       run: |
-        npm install
-        npm run build --if-present
-        npm run test --if-present
+        npm install yarn --no-package-lock
+        yarn
+        yarn build --if-present
+        echo "Now to do everything myself *sigh*"
+        cp api/package.json api/dist/package.json
+        cp api/yarn.lock api/dist/yarn.lock
+        cd api/dist
+        yarn --production
+        cd ../..
+        mkdir api/dist/public
+        cp -r ui/build/* api/dist/public
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
@@ -32,4 +43,4 @@ jobs:
         app-name: 'beastie-book'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_c5166eb3531c4c87a3369e0e9a809fe4 }}
-        package: .
+        package: './api/dist'
