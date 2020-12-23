@@ -12,6 +12,7 @@ import {
     setMonsterError,
     setMonsterList,
     setMonsterViewModel,
+    setSelectedMonster,
     setSelectedMonsterLoading
 } from '../monsters/actions'
 import { mapMonster } from './mapMonster'
@@ -95,6 +96,7 @@ describe('monster sagas', () => {
                 .put(setSelectedMonsterLoading())
                 .call(fetchMonster, monsterId)
                 .result(expected.monster)
+                .put(setSelectedMonster(expected.monster))
                 .select(selectHitDice, expected.monster.hitDice.toString())
                 .result(expected.hitDice)
                 .select(selectCategory, expected.monster.category)

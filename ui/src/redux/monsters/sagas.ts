@@ -7,6 +7,7 @@ import {
     setMonsterError,
     setMonsterList,
     setMonsterViewModel,
+    setSelectedMonster,
     setSelectedMonsterLoading
 } from './actions'
 import {
@@ -40,6 +41,8 @@ export function* selectMonsterSaga(action: PayloadAction<string | undefined>) {
         yield put(setSelectedMonsterLoading())
 
         const monster: Monster = yield call(fetchMonster, monsterId)
+
+        yield put(setSelectedMonster(monster))
 
         const hitDice = yield select(selectHitDice, monster.hitDice.toString())
         const category = yield select(selectCategory, monster.category)

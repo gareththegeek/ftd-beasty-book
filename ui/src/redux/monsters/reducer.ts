@@ -34,16 +34,16 @@ const reducer = (state: MonstersState = initialState(), action: Action) => {
         case SET_SELECTED_MONSTER:
             return {
                 ...state,
-                selectedMonster: (action as PayloadAction<MonsterInfo[]>).payload,
-                loading: false,
-                error: undefined
+                selectedMonster: (action as PayloadAction<MonsterInfo[]>).payload
             }
         case SET_MONSTER_VIEW_MODEL:
             return {
                 ...state,
                 viewModel: (action as PayloadAction<
                     MonsterViewModel | undefined
-                >).payload
+                >).payload,
+                loading: false,
+                error: undefined
             }
         case SET_SELECTED_MONSTER_LOADING:
             return {
