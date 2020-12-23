@@ -8,16 +8,17 @@ import { REQUEST_MONSTER_LIST, SELECT_MONSTER } from './actionTypes'
 import { mapMonster } from './mapMonster'
 import Monster from './Monster'
 
-function* requestMonsterListSaga() {
+export function* requestMonsterListSaga() {
     try {
         const monsters = yield call(fetchMonsters)
         yield put(setMonsterList(monsters))
     } catch (e) {
         console.error(e)
+        yield put(setMonsterError(e.message))
     }
 }
 
-function* selectMonsterSaga(action: PayloadAction<string | undefined>) {
+export function* selectMonsterSaga(action: PayloadAction<string | undefined>) {
     try {
         const monsterId = action.payload
 
