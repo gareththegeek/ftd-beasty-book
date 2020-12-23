@@ -2,8 +2,8 @@ import { Box } from '@material-ui/core';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Select from 'react-select'
-import { requestMonsterList, selectMonster } from './redux/monsters/actions';
-import { selectMonsterList } from './redux/monsters/selectors';
+import { requestMonsterList, selectMonster } from '../../redux/monsters/actions';
+import { selectMonsterList } from '../../redux/monsters/selectors';
 
 const MonsterSelector: React.FunctionComponent = () => {
 

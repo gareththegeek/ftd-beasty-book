@@ -2,8 +2,8 @@ import { CssBaseline, Container } from '@material-ui/core';
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import Banner from './Banner';
-import MonsterDetail from './MonsterDetail';
-import MonsterSelector from './MonsterSelector';
+import MonsterDetail from './screens/monsters/MonsterDetail';
+import MonsterSelector from './screens/monsters/MonsterSelector';
 import { requestCategories } from './redux/categories/actions';
 import { requestHitDice } from './redux/hitDice/actions';
 
