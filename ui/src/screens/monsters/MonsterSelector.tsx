@@ -1,4 +1,4 @@
-import { Box, InputLabel } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Select from 'react-select'
@@ -17,7 +17,6 @@ const MonsterSelector: React.FunctionComponent = () => {
 
     return (
         <Box m={3}>
-            <InputLabel>Search for monsters...</InputLabel>
             <Select
                 onChange={(item) => dispatch(selectMonster(item?.value))}
                 options={monsters.map(monster => ({

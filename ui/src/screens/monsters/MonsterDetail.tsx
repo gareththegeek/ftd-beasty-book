@@ -13,6 +13,9 @@ const useStyles = makeStyles(theme => ({
         padding: theme.spacing(2),
         height: "100%"
     },
+    inline: {
+        display: 'inline-block'
+    },
     spinner: {
         width: "100%",
         textAlign: "center"
@@ -34,7 +37,7 @@ const MonsterDetail: React.FunctionComponent = () => {
     const loading = useSelector(selectMonsterLoading)
     const monster = useSelector(selectMonsterViewModel)
     const categories = useSelector(selectCategories)
-    
+
     if (loading) {
         return (<Container className={classes.spinner}>
             <CircularProgress />
@@ -48,14 +51,14 @@ const MonsterDetail: React.FunctionComponent = () => {
     return (
         <div>
             <Box m={3}>
-                <Paper className={classes.padded}>
-                    <h1>{monster.name}</h1>
-                    <Select
+                <Paper>
+                    <Box p={2} className={classes.inline}><h1>{monster.name}</h1></Box>
+                    <Box p={2} className={classes.inline}><Select
                         value={monster.category.toLowerCase()}
                         onChange={(e) => dispatch(selectMonsterCategory(e.target.value as CategoryType))}
                     >
                         {renderCategoryOptions(categories)}
-                    </Select>
+                    </Select></Box>
                 </Paper>
             </Box>
             <Box m={3}>
