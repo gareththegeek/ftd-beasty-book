@@ -37,7 +37,7 @@ describe('Security headers middleware', () => {
             { key: 'referrer-policy', value: 'no-referrer-when-downgrade' },
             { key: 'x-xss-protection', value: '1; mode=block' }
         ].forEach((header) => {
-            it('should include Strict-Transport-Security header', async (done) => {
+            it('includes Strict-Transport-Security header', done => {
                 request(app)
                     .get(endpoint)
                     .expect((res) => {

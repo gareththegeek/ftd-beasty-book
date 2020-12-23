@@ -1,29 +1,47 @@
-import { Request, Response } from 'express'
+import { NextFunction, Request, Response } from 'express'
 import { get as getDb } from '../database/factory'
-import { Collections, getDatabaseConfig } from '../database/config'
+import { Collections } from '../database/config'
 import Monster from '../model/Monster'
+import { nextTick } from 'process'
 
-export const get = async (req: Request, res: Response) => {
-    const repo = getDb(Collections.monsters)
+export const get = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+        const repo = getDb(Collections.monsters)
 
-    const monster = await repo.getById(req.params.id)
+        const monster = await repo.getById(req.params.id)
 
-    res.send({
-        ...monster,
-        _id: undefined
-    })
+        if (!monster) {
+            res.sendStatus(404)
+            return
+        }
+
+        res.send({
+            ...monster,
+            _id: undefined
+        })
+    } catch (e) {
+        next(e)
+    }
 }
 
-export const getAll = async (_: Request, res: Response): Promise<void> => {
-    const repo = getDb(Collections.monsters)
-    
-    const monsters = (await repo.getAll<Monster>())
-        .map((monster) => ({
-            id: monster.id,
-            name: monster.name,
-            hitDice: monster.hitDice
-        }))
-        .sort((a, b) => (a.name > b.name ? 1 : a.name < b.name ? -1 : 0))
+export const getAll = async (
+    _: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        const repo = getDb(Collections.monsters)
 
-    res.send(monsters)
+        const monsters = (await repo.getAll<Monster>())
+            .map((monster) => ({
+                id: monster.id,
+                name: monster.name,
+                hitDice: monster.hitDice
+            }))
+            .sort((a, b) => (a.name > b.name ? 1 : a.name < b.name ? -1 : 0))
+
+        res.send(monsters)
+    } catch (e) {
+        next(e)
+    }
 }

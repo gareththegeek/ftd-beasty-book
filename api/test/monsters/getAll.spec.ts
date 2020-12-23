@@ -9,7 +9,7 @@ describe('/api/monsters', () => {
         repo = mockRepo()
     })
 
-    it('should return id, name and hit dice of all monsters within the database sorted alphabetically by name', async (done) => {
+    it('returns id, name and hit dice of all monsters within the database sorted alphabetically by name', done => {
         const monsters = [
             {
                 id: 'john-the-monster',
@@ -50,9 +50,17 @@ describe('/api/monsters', () => {
         request(app).get('/api/monsters').expect(200, expected).end(done)
     })
 
-    it('should handle case where the database is empty', async (done) => {
+    it('handles case where the database is empty', done => {
         repo.getAll.mockResolvedValue([])
 
         request(app).get('/api/monsters').expect(200, []).end(done)
+    })
+
+    it('returns 500 when an error occurs', done => {
+        repo.getAll.mockImplementation(() => {
+            throw new Error('A bad thing happened')
+        })
+
+        request(app).get(`/api/monsters`).expect(500).end(done)
     })
 })
