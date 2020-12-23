@@ -15,7 +15,7 @@ const publicPath =
         ? 'public'
         : 'public/ui/build' /* because copypaths */
 app.use(express.static(path.join(__dirname, publicPath)))
-
+//edit
 routes(app)
 
 app.use(errorHandler)
