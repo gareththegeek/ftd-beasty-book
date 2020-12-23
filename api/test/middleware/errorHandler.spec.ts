@@ -4,27 +4,28 @@ import app from '../../src/server'
 
 describe('Error handling middleware', () => {
     const original = console.error
+    const expected = new Error('Something bad happened')
 
     beforeAll(() => {
         console.error = jest.fn()
         const repo = mockRepo()
         repo.delete.mockImplementation(() => {
-            throw new Error('Something bad happened')
+            throw expected
         })
         repo.getAll.mockImplementation(() => {
-            throw new Error('Something bad happened')
+            throw expected
         })
         repo.getById.mockImplementation(() => {
-            throw new Error('Something bad happened')
+            throw expected
         })
         repo.getManyBy.mockImplementation(() => {
-            throw new Error('Something bad happened')
+            throw expected
         })
         repo.getOneBy.mockImplementation(() => {
-            throw new Error('Something bad happened')
+            throw expected
         })
         repo.upsert.mockImplementation(() => {
-            throw new Error('Something bad happened')
+            throw expected
         })
     })
 
@@ -37,8 +38,11 @@ describe('Error handling middleware', () => {
         '/api/categories',
         '/api/hitDice'
     ].forEach((url) => {
-        it(`handles error for '${url}'`, (done) => {
-            request(app).get(url).expect(500).end(done)
+        it(`handles error for '${url}'`, async () => {
+            await request(app)
+                .get(url)
+                .expect(500)
+                .then(() => expect(console.error).toBeCalledWith(expected))
         })
     })
 })
