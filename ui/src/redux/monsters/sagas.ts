@@ -68,7 +68,7 @@ export function* selectMonsterSaga(action: PayloadAction<string | undefined>) {
         const monster: Monster = yield call(fetchMonster, monsterId)
 
         yield put(setSelectedMonster(monster))
-
+        
         yield put(buildViewModel())
     } catch (e) {
         yield put(setMonsterError(e.message))

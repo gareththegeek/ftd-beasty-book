@@ -13,7 +13,9 @@ export const getAll = async (
         const categories = (await repo.getAll())
             .map((category) => ({
                 ...category,
-                _id: undefined
+                _id: undefined,
+                category: undefined,
+                name: (category as any).category
             }))
             .sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0))
 

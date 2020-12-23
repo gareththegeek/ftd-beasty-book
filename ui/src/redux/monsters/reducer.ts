@@ -34,7 +34,8 @@ const reducer = (state: MonstersState = initialState(), action: Action) => {
         case SET_SELECTED_MONSTER:
             return {
                 ...state,
-                selectedMonster: (action as PayloadAction<MonsterInfo[]>).payload
+                selectedMonster: (action as PayloadAction<MonsterInfo[]>)
+                    .payload
             }
         case SET_MONSTER_VIEW_MODEL:
             return {
