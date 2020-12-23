@@ -4,6 +4,7 @@ import {
     SET_MONSTER_ERROR,
     SET_MONSTER_LIST,
     SET_SELECTED_MONSTER,
+    SET_SELECTED_MONSTER_CATEGORY,
     SET_SELECTED_MONSTER_LOADING
 } from './actionTypes'
 import MonsterInfo from './MonsterInfo'
@@ -48,6 +49,16 @@ const reducer = (state: MonstersState = initialState(), action: Action) => {
                 ...state,
                 loading: false,
                 error: (action as PayloadAction<string>).payload
+            }
+        case SET_SELECTED_MONSTER_CATEGORY:
+            return {
+                ...state,
+                selectedMonster: !!state.selectedMonster
+                    ? {
+                          ...state.selectedMonster,
+                          category: (action as PayloadAction<string>).payload
+                      }
+                    : undefined
             }
         default:
             return state

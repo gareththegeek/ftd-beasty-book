@@ -2,6 +2,7 @@ import {
     setMonsterError,
     setMonsterList,
     setSelectedMonster,
+    setSelectedMonsterCategory,
     setSelectedMonsterLoading
 } from './actions'
 import Monster from './Monster'
@@ -106,6 +107,44 @@ describe('monster reducer', () => {
 
             expect(actual.error).toBe(expected)
             expect(actual.loading).toBe(false)
+        })
+    })
+
+    describe('SET_SELECTED_MONSTER_CATEGORY', () => {
+        it('sets the category for the selected monster', () => {
+            const expected = 'brute'
+            const previous = {
+                selectedMonster: {
+                    id: 'goblin',
+                    name: 'Goblin',
+                    description: 'This is a goblin',
+                    category: 'sniper'
+                }
+            } as MonstersState
+
+            const actual = reducer(
+                previous,
+                setSelectedMonsterCategory(expected)
+            )
+
+            expect(actual.selectedMonster).toEqual({
+                ...previous.selectedMonster,
+                category: expected
+            })
+        })
+
+        it('handles the situation where there is no selected monster', () => {
+            const expected = 'brute'
+            const previous = {
+                selectedMonster: undefined
+            } as MonstersState
+
+            const actual = reducer(
+                previous,
+                setSelectedMonsterCategory(expected)
+            )
+
+            expect(actual.selectedMonster).toBeUndefined()
         })
     })
 })

@@ -6,8 +6,10 @@ import {
     SET_MONSTER_ERROR,
     SET_MONSTER_LIST,
     SET_SELECTED_MONSTER,
+    SET_SELECTED_MONSTER_CATEGORY,
     SET_SELECTED_MONSTER_LOADING
 } from './actionTypes'
+import { CategoryType } from './CategoryType'
 import MonsterInfo from './MonsterInfo'
 import MonsterViewModel from './MonsterViewModel'
 
@@ -43,4 +45,9 @@ export const setSelectedMonsterLoading = (): Action => ({
 export const setMonsterError = (error: string): PayloadAction<string> => ({
     type: SET_MONSTER_ERROR,
     payload: error
+})
+
+export const setSelectedMonsterCategory = (category: CategoryType) => ({
+    type: SET_SELECTED_MONSTER_CATEGORY,
+    payload: category
 })
