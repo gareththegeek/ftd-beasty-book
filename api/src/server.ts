@@ -10,13 +10,11 @@ app.use(cors())
 
 app.use(securityHeaders)
 
-if (process.env.NODE_ENV !== 'production') {
-    app.use(
-        express.static(
-            path.join(__dirname, 'public/ui/build' /* because copypaths */)
-        )
-    )
-}
+const publicPath =
+    process.env.NODE_ENV === 'production'
+        ? 'public'
+        : 'public/ui/build' /* because copypaths */
+app.use(express.static(path.join(__dirname, publicPath)))
 
 routes(app)
 
