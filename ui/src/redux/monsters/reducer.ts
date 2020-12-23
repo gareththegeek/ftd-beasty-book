@@ -24,7 +24,8 @@ const reducer = (state: MonstersState = initialState(), action: Action) => {
                 ...state,
                 all: (action as PayloadAction<MonsterInfo[]>).payload,
                 loading: false,
-                error: undefined
+                error: undefined,
+                selectedMonster: undefined
             }
         case SET_SELECTED_MONSTER:
             return {
@@ -39,7 +40,8 @@ const reducer = (state: MonstersState = initialState(), action: Action) => {
             return {
                 ...state,
                 loading: true,
-                error: undefined
+                error: undefined,
+                selectedMonster: undefined
             }
         case SET_MONSTER_ERROR:
             return {
