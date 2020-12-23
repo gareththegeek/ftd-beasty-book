@@ -55,12 +55,4 @@ describe('/api/monsters', () => {
 
         request(app).get('/api/monsters').expect(200, []).end(done)
     })
-
-    it('returns 500 when an error occurs', done => {
-        repo.getAll.mockImplementation(() => {
-            throw new Error('A bad thing happened')
-        })
-
-        request(app).get(`/api/monsters`).expect(500).end(done)
-    })
 })
