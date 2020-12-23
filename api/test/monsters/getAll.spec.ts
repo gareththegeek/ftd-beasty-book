@@ -1,27 +1,12 @@
-jest.mock('../../src/database/factory')
-import * as factory from '../../src/database/factory'
+import { mockRepo, MockRepository } from '../stubs/repository'
 import request from 'supertest'
 import app from '../../src/server'
-import { Repository } from 'ftd-beasty-book-mongo-repo'
 
 describe('/api/monsters', () => {
-    let getAll: jest.Mock
-    let getById: jest.Mock
-    let getOneBy: jest.Mock
-    let getManyBy: jest.Mock
+    let repo: MockRepository
 
     beforeEach(() => {
-        getAll = jest.fn().mockResolvedValue([])
-        getById = jest.fn().mockResolvedValue(undefined)
-        getOneBy = jest.fn().mockResolvedValue(undefined)
-        getManyBy = jest.fn().mockResolvedValue(undefined)
-
-        jest.spyOn(factory, 'get').mockReturnValue(({
-            getAll,
-            getById,
-            getOneBy,
-            getManyBy
-        } as unknown) as Repository)
+        repo = mockRepo()
     })
 
     it('should return id, name and hit dice of all monsters within the database sorted alphabetically by name', async (done) => {
@@ -60,13 +45,13 @@ describe('/api/monsters', () => {
             { id: 'john-the-monster', name: 'John the monster', hitDice: 0.5 }
         ]
 
-        getAll.mockResolvedValue(monsters)
+        repo.getAll.mockResolvedValue(monsters)
 
         request(app).get('/api/monsters').expect(200, expected).end(done)
     })
 
     it('should handle case where the database is empty', async (done) => {
-        getAll.mockResolvedValue([])
+        repo.getAll.mockResolvedValue([])
 
         request(app).get('/api/monsters').expect(200, []).end(done)
     })

@@ -1,22 +1,10 @@
-jest.mock('../../src/database/factory')
-import * as factory from '../../src/database/factory'
+import { mockRepo } from '../stubs/repository'
 import request from 'supertest'
 import app from '../../src/server'
-import { Repository } from 'ftd-beasty-book-mongo-repo'
 
 describe('Security headers middleware', () => {
     beforeEach(() => {
-        const getAll = jest.fn().mockResolvedValue([])
-        const getById = jest.fn().mockResolvedValue(undefined)
-        const getOneBy = jest.fn().mockResolvedValue(undefined)
-        const getManyBy = jest.fn().mockResolvedValue(undefined)
-
-        jest.spyOn(factory, 'get').mockReturnValue(({
-            getAll,
-            getById,
-            getOneBy,
-            getManyBy
-        } as unknown) as Repository)
+        mockRepo()
     })
     ;[
         '/api/monsters',
