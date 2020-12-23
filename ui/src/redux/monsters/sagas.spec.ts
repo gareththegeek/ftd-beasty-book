@@ -8,15 +8,20 @@ import { selectHitDice } from '../hitDice/selectors'
 import {
     requestMonsterList,
     selectMonster,
+    selectMonsterCategory,
     setMonsterError,
     setMonsterList,
-    setSelectedMonster,
+    setMonsterViewModel,
     setSelectedMonsterLoading
 } from '../monsters/actions'
 import { mapMonster } from './mapMonster'
 import Monster from './Monster'
 import MonsterViewModel from './MonsterViewModel'
-import { requestMonsterListSaga, selectMonsterSaga } from './sagas'
+import {
+    requestMonsterListSaga,
+    selectMonsterCategorySaga,
+    selectMonsterSaga
+} from './sagas'
 
 const buildMonster = (): Monster => ({
     id: 'id',
@@ -101,7 +106,7 @@ describe('monster sagas', () => {
                     expected.category
                 )
                 .result(expected.viewModel)
-                .put(setSelectedMonster(expected.viewModel))
+                .put(setMonsterViewModel(expected.viewModel))
                 .done()
         })
 
@@ -110,7 +115,7 @@ describe('monster sagas', () => {
                 selectMonsterSaga as (action: Action) => Generator,
                 selectMonster(undefined)
             )
-                .put(setSelectedMonster(undefined))
+                .put(setMonsterViewModel(undefined))
                 .done()
         })
 
@@ -128,6 +133,18 @@ describe('monster sagas', () => {
                 .done()
 
             expect(console.error).toBeCalledWith(expected)
+        })
+    })
+
+    describe('selectMonsterCategorySaga', () => {
+        it('handles happy path', () => {
+            const expected = 'leader'
+
+            testSaga(
+                selectMonsterCategorySaga as (action: Action) => Generator,
+                selectMonsterCategory(expected)
+            )
+            .done()
         })
     })
 })
