@@ -1,13 +1,20 @@
-import { Box, CircularProgress, Container, Grid, makeStyles } from '@material-ui/core'
+import { Box, CircularProgress, Container, Grid, makeStyles, Select, MenuItem } from '@material-ui/core'
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core'
 import React from 'react'
-import { useSelector } from 'react-redux'
-import { selectMonsterLoading, selectSelectedMonster } from '../../redux/monsters/selectors'
+import { useDispatch, useSelector } from 'react-redux'
+import Category from '../../redux/categories/Category'
+import { selectCategories } from '../../redux/categories/selectors'
+import { selectMonsterCategory } from '../../redux/monsters/actions'
+import { CategoryType } from '../../redux/monsters/CategoryType'
+import { selectMonsterLoading, selectMonsterViewModel } from '../../redux/monsters/selectors'
 
 const useStyles = makeStyles(theme => ({
     padded: {
         padding: theme.spacing(2),
         height: "100%"
+    },
+    inline: {
+        display: 'inline-block'
     },
     spinner: {
         width: "100%",
@@ -18,11 +25,18 @@ const useStyles = makeStyles(theme => ({
 const renderParagraphs = (text: string): JSX.Element[] =>
     text.split('\n').map((paragraph, index) => (<p key={`para-${index}`}>{paragraph}</p>))
 
+const renderCategoryOptions = (categories: Category[]) =>
+    categories.map(category =>
+        <MenuItem key={category.id} value={category.id}>{category.name}</MenuItem>
+    )
+
 const MonsterDetail: React.FunctionComponent = () => {
 
+    const dispatch = useDispatch()
     const classes = useStyles()
     const loading = useSelector(selectMonsterLoading)
-    const monster = useSelector(selectSelectedMonster)
+    const monster = useSelector(selectMonsterViewModel)
+    const categories = useSelector(selectCategories)
 
     if (loading) {
         return (<Container className={classes.spinner}>
@@ -37,9 +51,14 @@ const MonsterDetail: React.FunctionComponent = () => {
     return (
         <div>
             <Box m={3}>
-                <Paper className={classes.padded}>
-                    <h1>{monster.name}</h1>
-                    <h3>{monster.category}</h3>
+                <Paper>
+                    <Box p={2} className={classes.inline}><h1>{monster.name}</h1></Box>
+                    <Box p={2} className={classes.inline}><Select
+                        value={monster.category.toLowerCase()}
+                        onChange={(e) => dispatch(selectMonsterCategory(e.target.value as CategoryType))}
+                    >
+                        {renderCategoryOptions(categories)}
+                    </Select></Box>
                 </Paper>
             </Box>
             <Box m={3}>

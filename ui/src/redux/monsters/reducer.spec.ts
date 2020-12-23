@@ -1,7 +1,9 @@
 import {
     setMonsterError,
     setMonsterList,
+    setMonsterViewModel,
     setSelectedMonster,
+    setSelectedMonsterCategory,
     setSelectedMonsterLoading
 } from './actions'
 import Monster from './Monster'
@@ -16,6 +18,7 @@ describe('monster reducer', () => {
         expect(actual).toEqual({
             all: [],
             selectedMonster: undefined,
+            viewModel: undefined,
             loading: false,
             error: undefined
         })
@@ -40,24 +43,26 @@ describe('monster reducer', () => {
                     all: [],
                     loading: true,
                     error: 'this is an error',
-                    selectedMonster: {} as MonsterViewModel
+                    selectedMonster: {} as Monster,
+                    viewModel: {} as MonsterViewModel
                 } as MonstersState,
                 setMonsterList([])
             )
 
             expect(actual.loading).toEqual(false)
             expect(actual.error).toBeUndefined()
+            expect(actual.viewModel).toBeUndefined()
             expect(actual.selectedMonster).toBeUndefined()
         })
     })
 
-    describe('SET_SELECTED_MONSTER', () => {
-        it('sets the selected monster', () => {
+    describe('SET_MONSTER_VIEW_MODEL', () => {
+        it('sets the selected monster view model', () => {
             const expected = { id: 'goblin' } as MonsterViewModel
 
-            const actual = reducer(undefined, setSelectedMonster(expected))
+            const actual = reducer(undefined, setMonsterViewModel(expected))
 
-            expect(actual.selectedMonster).toEqual(expected)
+            expect(actual.viewModel).toEqual(expected)
         })
 
         it('stops loading and clears errors', () => {
@@ -68,13 +73,25 @@ describe('monster reducer', () => {
                     all: [],
                     loading: true,
                     error: 'this is an error',
-                    selectedMonster: {} as MonsterViewModel
+                    selectedMonster: {} as Monster,
+                    viewModel: {} as MonsterViewModel
                 } as MonstersState,
-                setSelectedMonster(expected)
+                setMonsterViewModel(expected)
             )
 
             expect(actual.loading).toBe(false)
             expect(actual.error).toBeUndefined()
+            expect(actual.selectedMonster).not.toBeUndefined()
+        })
+    })
+
+    describe('SET_SELECTED_MONSTER', () => {
+        it('sets the selected monster', () => {
+            const expected = { id: 'goblin' } as Monster
+
+            const actual = reducer(undefined, setSelectedMonster(expected))
+
+            expect(actual.selectedMonster).toEqual(expected)
         })
     })
 
@@ -84,13 +101,15 @@ describe('monster reducer', () => {
                 all: [],
                 loading: false,
                 error: 'this is an error',
-                selectedMonster: {} as MonsterViewModel
+                viewModel: {} as MonsterViewModel,
+                selectedMonster: {} as Monster
             } as MonstersState
 
             const actual = reducer(initial, setSelectedMonsterLoading())
 
             expect(actual.loading).toBe(true)
             expect(actual.error).toBeUndefined()
+            expect(actual.viewModel).toBeUndefined()
             expect(actual.selectedMonster).toBeUndefined()
         })
     })
@@ -106,6 +125,44 @@ describe('monster reducer', () => {
 
             expect(actual.error).toBe(expected)
             expect(actual.loading).toBe(false)
+        })
+    })
+
+    describe('SET_SELECTED_MONSTER_CATEGORY', () => {
+        it('sets the category for the selected monster', () => {
+            const expected = 'brute'
+            const previous = {
+                selectedMonster: {
+                    id: 'goblin',
+                    name: 'Goblin',
+                    description: 'This is a goblin',
+                    category: 'sniper'
+                }
+            } as MonstersState
+
+            const actual = reducer(
+                previous,
+                setSelectedMonsterCategory(expected)
+            )
+
+            expect(actual.selectedMonster).toEqual({
+                ...previous.selectedMonster,
+                category: expected
+            })
+        })
+
+        it('handles the situation where there is no selected monster', () => {
+            const expected = 'brute'
+            const previous = {
+                viewModel: undefined
+            } as MonstersState
+
+            const actual = reducer(
+                previous,
+                setSelectedMonsterCategory(expected)
+            )
+
+            expect(actual.viewModel).toBeUndefined()
         })
     })
 })
