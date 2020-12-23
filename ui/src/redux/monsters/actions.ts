@@ -1,6 +1,7 @@
 import { Action } from 'redux'
 import PayloadAction from '../PayloadAction'
 import {
+    BUILD_VIEW_MODEL,
     REQUEST_MONSTER_LIST,
     SELECT_MONSTER,
     SELECT_MONSTER_CATEGORY,
@@ -63,4 +64,8 @@ export const selectMonsterCategory = (category: CategoryType) => ({
 export const setSelectedMonster = (monster: Monster | undefined) => ({
     type: SET_SELECTED_MONSTER,
     payload: monster
+})
+
+export const buildViewModel = () => ({
+    type: BUILD_VIEW_MODEL
 })

@@ -6,6 +6,7 @@ import { selectCategory } from '../categories/selectors'
 import HitDice from '../hitDice/HitDice'
 import { selectHitDice } from '../hitDice/selectors'
 import {
+    buildViewModel,
     requestMonsterList,
     selectMonster,
     selectMonsterCategory,
@@ -13,16 +14,20 @@ import {
     setMonsterList,
     setMonsterViewModel,
     setSelectedMonster,
+    setSelectedMonsterCategory,
     setSelectedMonsterLoading
 } from '../monsters/actions'
+import { CategoryType } from './CategoryType'
 import { mapMonster } from './mapMonster'
 import Monster from './Monster'
 import MonsterViewModel from './MonsterViewModel'
 import {
+    buildViewModelSaga,
     requestMonsterListSaga,
     selectMonsterCategorySaga,
     selectMonsterSaga
 } from './sagas'
+import { selectSelectedMonster } from './selectors'
 
 const buildMonster = (): Monster => ({
     id: 'id',
@@ -97,18 +102,7 @@ describe('monster sagas', () => {
                 .call(fetchMonster, monsterId)
                 .result(expected.monster)
                 .put(setSelectedMonster(expected.monster))
-                .select(selectHitDice, expected.monster.hitDice.toString())
-                .result(expected.hitDice)
-                .select(selectCategory, expected.monster.category)
-                .result(expected.category)
-                .call(
-                    mapMonster,
-                    expected.monster,
-                    expected.hitDice,
-                    expected.category
-                )
-                .result(expected.viewModel)
-                .put(setMonsterViewModel(expected.viewModel))
+                .put(buildViewModel())
                 .done()
         })
 
@@ -138,15 +132,72 @@ describe('monster sagas', () => {
         })
     })
 
+    describe('buildViewModelSaga', () => {
+        it('handles happy path', () => {
+            const expected = {
+                monster: {
+                    id: 'monster',
+                    hitDice: 0.5,
+                    category: 'brute'
+                } as Monster,
+                hitDice: { id: '0-5' } as HitDice,
+                category: { id: 'brute' } as Category,
+                viewModel: { id: 'monster' } as MonsterViewModel
+            }
+
+            testSaga(
+                buildViewModelSaga as (action: Action) => Generator,
+                buildViewModel()
+            )
+            .select(selectSelectedMonster)
+            .result(expected.monster)
+            .select(selectHitDice, expected.monster.hitDice.toString())
+            .result(expected.hitDice)
+            .select(selectCategory, expected.monster.category)
+            .result(expected.category)
+            .call(mapMonster, expected.monster, expected.hitDice, expected.category)
+            .result(expected.viewModel)
+            .put(setMonsterViewModel(expected.viewModel))
+            .done()
+        })
+
+        it('handles unexected errors', () => {
+            const expected = new Error('Something bad happened')
+
+            testSaga(buildViewModelSaga as (action: Action) => Generator, buildViewModel())
+                .select(selectSelectedMonster)
+                .throw(expected)
+                .put(setMonsterError(expected.message))
+                .done()
+        })
+
+        it('handles situation where no monster is selected', () => {
+            testSaga(buildViewModelSaga as (action: Action) => Generator, buildViewModel())
+                .select(selectSelectedMonster)
+                .result(undefined)
+                .put(setMonsterViewModel(undefined))
+                .done()
+        })
+    })
+
     describe('selectMonsterCategorySaga', () => {
         it('handles happy path', () => {
             const expected = 'leader'
 
-            testSaga(
-                selectMonsterCategorySaga as (action: Action) => Generator,
-                selectMonsterCategory(expected)
-            )
-            .done()
+            testSaga(selectMonsterCategorySaga as (action: Action) => Generator, selectMonsterCategory(expected))
+                .put(setSelectedMonsterCategory(expected))
+                .put(buildViewModel())
+                .done()
+        })
+
+        it('handles unexected errors', () => {
+            const expected = new Error('Something bad happened')
+
+            testSaga(selectMonsterCategorySaga as (action: Action) => Generator, selectMonsterCategory('leader'))
+                .put(setSelectedMonsterCategory('leader'))
+                .throw(expected)
+                .put(setMonsterError(expected.message))
+                .done()
         })
     })
 })
