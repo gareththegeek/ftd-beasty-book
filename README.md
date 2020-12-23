@@ -1,6 +1,7 @@
 # Beastie Book for Five Torches Deep
 
-![.github/workflows/azure.yml](https://github.com/gareththegeek/ftd-beasty-book/workflows/.github/workflows/azure.yml/badge.svg)
+![Azure-Deploy](https://github.com/gareththegeek/ftd-beasty-book/workflows/Azure-Deploy/badge.svg)
+![CI](https://github.com/gareththegeek/ftd-beasty-book/workflows/CI/badge.svg)
 
 Search for monster stats to use in your games of FTD!
 
