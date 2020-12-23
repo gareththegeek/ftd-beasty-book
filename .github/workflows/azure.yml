@@ -19,8 +19,8 @@
 name: Azure-Deploy
 
 on:
-  release:
-    types: [created]
+  push:
+    branches: [ main ]
 
 env:
   AZURE_WEBAPP_NAME: beastie-book    # set this to your application's name
