@@ -1,4 +1,3 @@
-import { Action } from 'redux'
 import { call, put, select, takeEvery } from 'redux-saga/effects'
 import { fetchMonster, fetchMonsters } from '../../services/monsters'
 import { selectCategory } from '../categories/selectors'
