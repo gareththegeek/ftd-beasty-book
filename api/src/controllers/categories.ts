@@ -14,6 +14,7 @@ export const getAll = async (
             .map((category) => ({
                 ...category,
                 _id: undefined,
+                //TODO adjust the database schema so this isn't necessary
                 name: (category as any).category,
                 category: undefined
             }))
