@@ -14,8 +14,8 @@ export const getAll = async (
             .map((category) => ({
                 ...category,
                 _id: undefined,
-                category: undefined,
-                name: (category as any).category
+                name: (category as any).category,
+                category: undefined
             }))
             .sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0))
 

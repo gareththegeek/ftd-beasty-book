@@ -13,7 +13,7 @@ describe('/api/categories', () => {
         const categories = [
             {
                 id: 'sniper',
-                category: 'Sniper',
+                name: 'Sniper',
                 str: 'weak',
                 dex: 'strong',
                 con: 'weak',
@@ -26,7 +26,7 @@ describe('/api/categories', () => {
             },
             {
                 id: 'brute',
-                category: 'Brute',
+                name: 'Brute',
                 str: 'strong',
                 dex: 'weak',
                 con: 'strong',
@@ -40,6 +40,7 @@ describe('/api/categories', () => {
         ]
         const withIds = categories.map((category) => ({
             ...category,
+            category: category.name,
             _id: '11111111-2222-3333-4444-555555555555'
         }))
 
