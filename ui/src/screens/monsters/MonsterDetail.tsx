@@ -3,6 +3,7 @@ import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { selectMonsterLoading, selectMonsterViewModel } from '../../redux/monsters/selectors'
+import ShowMoreText from 'react-show-more-text'
 
 const useStyles = makeStyles(theme => ({
     spinner: {
@@ -40,8 +41,18 @@ const MonsterDetail: React.FunctionComponent = () => {
     }
 
     return (
-        <Box component={Paper}>
-            <Box m={1}>
+        <Grid container spacing={2} component={Paper}>
+            <Grid item md={6} xs={12}>
+                <Box m={2}>
+                    <h2>{monster.name} <span className={classes.light}>HD {monster.hitDice}</span></h2>
+                    <ShowMoreText
+                        lines={1}
+                        more="Show description">
+                        {renderParagraphs(monster.description)}
+                    </ShowMoreText>
+                </Box>
+            </Grid>
+            <Grid item md={6} xs={12}>
                 <TableContainer>
                     <Table size="small">
                         <TableHead>
@@ -64,8 +75,6 @@ const MonsterDetail: React.FunctionComponent = () => {
                         </TableBody>
                     </Table>
                 </TableContainer>
-            </Box>
-            <Box m={1}>
                 <TableContainer>
                     <Table size="small">
                         <TableHead>
@@ -90,34 +99,28 @@ const MonsterDetail: React.FunctionComponent = () => {
                         </TableBody>
                     </Table>
                 </TableContainer>
-            </Box>
-            <Box m={2}>
-                <Grid container spacing={2}>
-                    <Grid item sm={6} xs={12}>
-                        <h2>{monster.name} <span className={classes.light}>HD {monster.hitDice}</span></h2>
-                        {renderParagraphs(monster.description)}
-                    </Grid>
-                    <Grid item sm={3} xs={6}>
-                        <h3>Strong</h3>
-                        {renderParagraphs(monster.strong)}
-                    </Grid>
-                    <Grid item sm={3} xs={6}>
-                        <h3>Weak</h3>
-                        {renderParagraphs(monster.weak)}
-                    </Grid>
+            </Grid>
+            <Grid item sm={2} xs={6}>
+                <Box m={2}>
+                    <h3>Strong</h3>
+                    {renderParagraphs(monster.strong)}
+                </Box>
+            </Grid>
+            <Grid item sm={2} xs={6}>
+                <Box m={2}>
+                    <h3>Weak</h3>
+                    {renderParagraphs(monster.weak)}
+                </Box>
+            </Grid>
+            {monster.techniques.map((technique, index) => (
+                <Grid item key={index.toString()} sm={2} xs={12}>
+                    <Box m={2}>
+                        <h3>Technique</h3>
+                        {renderParagraphs(technique)}
+                    </Box>
                 </Grid>
-            </Box>
-            <Box m={2}>
-                <Grid container spacing={2}>
-                    {monster.techniques.map((technique, index) => (
-                        <Grid item key={index.toString()} sm={4} xs={12}>
-                            <h3>Technique</h3>
-                            {renderParagraphs(technique)}
-                        </Grid>
-                    ))}
-                </Grid>
-            </Box>
-        </Box >
+            ))}
+        </Grid>
     )
 }
 
