@@ -30,6 +30,9 @@ const renderCategoryOptions = (categories: Category[]) =>
         <MenuItem key={category.id} value={category.id}>{category.name}</MenuItem>
     )
 
+const formatModifier = (modifier: number): string =>
+        modifier < 0 ? `${modifier}` : `+${modifier}`
+
 const MonsterDetail: React.FunctionComponent = () => {
 
     const dispatch = useDispatch()
@@ -78,12 +81,12 @@ const MonsterDetail: React.FunctionComponent = () => {
                         <TableBody>
                             <TableRow>
                                 <TableCell align="center">{monster.speed}</TableCell>
-                                <TableCell align="center">{monster.toHit}</TableCell>
+                                <TableCell align="center">{formatModifier(monster.toHit)}</TableCell>
                                 <TableCell align="center">{monster.damage}</TableCell>
                                 <TableCell align="center">{monster.armourClass}</TableCell>
                                 <TableCell align="center">{monster.hitPoints}</TableCell>
                                 <TableCell align="center">{monster.hitDice}</TableCell>
-                                <TableCell align="center">{monster.morale}</TableCell>
+                                <TableCell align="center">{formatModifier(monster.morale)}</TableCell>
                             </TableRow>
                         </TableBody>
                     </Table>
@@ -104,12 +107,12 @@ const MonsterDetail: React.FunctionComponent = () => {
                         </TableHead>
                         <TableBody>
                             <TableRow>
-                                <TableCell align="center">{monster.str}</TableCell>
-                                <TableCell align="center">{monster.dex}</TableCell>
-                                <TableCell align="center">{monster.con}</TableCell>
-                                <TableCell align="center">{monster.int}</TableCell>
-                                <TableCell align="center">{monster.wis}</TableCell>
-                                <TableCell align="center">{monster.cha}</TableCell>
+                                <TableCell align="center">{formatModifier(monster.str)}</TableCell>
+                                <TableCell align="center">{formatModifier(monster.dex)}</TableCell>
+                                <TableCell align="center">{formatModifier(monster.con)}</TableCell>
+                                <TableCell align="center">{formatModifier(monster.int)}</TableCell>
+                                <TableCell align="center">{formatModifier(monster.wis)}</TableCell>
+                                <TableCell align="center">{formatModifier(monster.cha)}</TableCell>
                             </TableRow>
                         </TableBody>
                     </Table>
