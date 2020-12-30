@@ -5,6 +5,17 @@ import { AttributeType } from './AttributeType'
 import Monster from './Monster'
 import MonsterViewModel from './MonsterViewModel'
 
+const formatHitDice = (hitDice: number): string => {
+    switch(hitDice) {
+        case 0.25:
+            return '¼'
+        case 0.5:
+            return '½'
+        default:
+            return hitDice.toString()
+    }
+}
+
 const calculateMod = (
     hitDice: number,
     strength: AttributeStrengthType
@@ -63,7 +74,7 @@ export const mapMonster = (
         description: monster.description,
         category: capitalise(monster.category),
         speed: monster.speed,
-        hitDice: `${monster.hitDice}d8`,
+        hitDice: `${formatHitDice(monster.hitDice)}`,
         techniques: monster.techniques,
         toHit: calculateToHit(monster, category),
         damage: hitDice.damage,

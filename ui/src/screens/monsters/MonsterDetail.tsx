@@ -1,45 +1,33 @@
-import { Box, CircularProgress, Container, Grid, makeStyles, Select, MenuItem } from '@material-ui/core'
+import { Box, CircularProgress, Container, Grid, makeStyles } from '@material-ui/core'
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core'
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import Category from '../../redux/categories/Category'
-import { selectCategories } from '../../redux/categories/selectors'
-import { selectMonsterCategory } from '../../redux/monsters/actions'
-import { CategoryType } from '../../redux/monsters/CategoryType'
+import { useSelector } from 'react-redux'
 import { selectMonsterLoading, selectMonsterViewModel } from '../../redux/monsters/selectors'
 
 const useStyles = makeStyles(theme => ({
-    padded: {
-        padding: theme.spacing(2),
-        height: "100%"
-    },
-    inline: {
-        display: 'inline-block'
-    },
     spinner: {
         width: "100%",
         textAlign: "center"
+    },
+    light: {
+        color: theme.palette.info.light
+    },
+    td: {
+        paddingRight: "16px"
     }
 }))
 
 const renderParagraphs = (text: string): JSX.Element[] =>
     text.split('\n').map((paragraph, index) => (<p key={`para-${index}`}>{paragraph}</p>))
 
-const renderCategoryOptions = (categories: Category[]) =>
-    categories.map(category =>
-        <MenuItem key={category.id} value={category.id}>{category.name}</MenuItem>
-    )
-
 const formatModifier = (modifier: number): string =>
-        modifier < 0 ? `${modifier}` : `+${modifier}`
+    modifier < 0 ? `${modifier}` : `+${modifier}`
 
 const MonsterDetail: React.FunctionComponent = () => {
 
-    const dispatch = useDispatch()
     const classes = useStyles()
     const loading = useSelector(selectMonsterLoading)
     const monster = useSelector(selectMonsterViewModel)
-    const categories = useSelector(selectCategories)
 
     if (loading) {
         return (<Container className={classes.spinner}>
@@ -52,107 +40,84 @@ const MonsterDetail: React.FunctionComponent = () => {
     }
 
     return (
-        <div>
-            <Box m={3}>
-                <Paper>
-                    <Box p={2} className={classes.inline}><h1>{monster.name}</h1></Box>
-                    <Box p={2} className={classes.inline}><Select
-                        value={monster.category.toLowerCase()}
-                        onChange={(e) => dispatch(selectMonsterCategory(e.target.value as CategoryType))}
-                    >
-                        {renderCategoryOptions(categories)}
-                    </Select></Box>
-                </Paper>
-            </Box>
-            <Box m={3}>
-                <TableContainer component={Paper}>
+        <Box component={Paper}>
+            <Box m={1}>
+                <TableContainer>
                     <Table size="small">
                         <TableHead>
                             <TableRow>
-                                <TableCell align="center">Speed</TableCell>
-                                <TableCell align="center">To Hit</TableCell>
-                                <TableCell align="center">Damage</TableCell>
-                                <TableCell align="center">AC</TableCell>
-                                <TableCell align="center">HP</TableCell>
-                                <TableCell align="center">HD</TableCell>
-                                <TableCell align="center">Morale</TableCell>
+                                <TableCell className={classes.td} align="center">Speed</TableCell>
+                                <TableCell className={classes.td} align="center">Damage</TableCell>
+                                <TableCell className={classes.td} align="center">AC</TableCell>
+                                <TableCell className={classes.td} align="center">HP</TableCell>
+                                <TableCell className={classes.td} align="center">Morale</TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
                             <TableRow>
-                                <TableCell align="center">{monster.speed}</TableCell>
-                                <TableCell align="center">{formatModifier(monster.toHit)}</TableCell>
-                                <TableCell align="center">{monster.damage}</TableCell>
-                                <TableCell align="center">{monster.armourClass}</TableCell>
-                                <TableCell align="center">{monster.hitPoints}</TableCell>
-                                <TableCell align="center">{monster.hitDice}</TableCell>
-                                <TableCell align="center">{formatModifier(monster.morale)}</TableCell>
+                                <TableCell className={classes.td} align="center">{monster.speed}</TableCell>
+                                <TableCell className={classes.td} align="center">{monster.damage}</TableCell>
+                                <TableCell className={classes.td} align="center">{monster.armourClass}</TableCell>
+                                <TableCell className={classes.td} align="center">{monster.hitPoints}</TableCell>
+                                <TableCell className={classes.td} align="center">{formatModifier(monster.morale)}</TableCell>
                             </TableRow>
                         </TableBody>
                     </Table>
                 </TableContainer>
             </Box>
-            <Box m={3}>
-                <TableContainer component={Paper}>
+            <Box m={1}>
+                <TableContainer>
                     <Table size="small">
                         <TableHead>
                             <TableRow>
-                                <TableCell align="center">STR</TableCell>
-                                <TableCell align="center">DEX</TableCell>
-                                <TableCell align="center">CON</TableCell>
-                                <TableCell align="center">INT</TableCell>
-                                <TableCell align="center">WIS</TableCell>
-                                <TableCell align="center">CHA</TableCell>
+                                <TableCell className={classes.td} align="center">STR</TableCell>
+                                <TableCell className={classes.td} align="center">DEX</TableCell>
+                                <TableCell className={classes.td} align="center">CON</TableCell>
+                                <TableCell className={classes.td} align="center">INT</TableCell>
+                                <TableCell className={classes.td} align="center">WIS</TableCell>
+                                <TableCell className={classes.td} align="center">CHA</TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
                             <TableRow>
-                                <TableCell align="center">{formatModifier(monster.str)}</TableCell>
-                                <TableCell align="center">{formatModifier(monster.dex)}</TableCell>
-                                <TableCell align="center">{formatModifier(monster.con)}</TableCell>
-                                <TableCell align="center">{formatModifier(monster.int)}</TableCell>
-                                <TableCell align="center">{formatModifier(monster.wis)}</TableCell>
-                                <TableCell align="center">{formatModifier(monster.cha)}</TableCell>
+                                <TableCell className={classes.td} align="center">{formatModifier(monster.str)}</TableCell>
+                                <TableCell className={classes.td} align="center">{formatModifier(monster.dex)}</TableCell>
+                                <TableCell className={classes.td} align="center">{formatModifier(monster.con)}</TableCell>
+                                <TableCell className={classes.td} align="center">{formatModifier(monster.int)}</TableCell>
+                                <TableCell className={classes.td} align="center">{formatModifier(monster.wis)}</TableCell>
+                                <TableCell className={classes.td} align="center">{formatModifier(monster.cha)}</TableCell>
                             </TableRow>
                         </TableBody>
                     </Table>
                 </TableContainer>
             </Box>
-            <Box m={3}>
-                <Grid container spacing={3}>
-                    <Grid item md={6} xs={12}>
-                        <Paper className={classes.padded}>
-                            <h3>Description</h3>
-                            {renderParagraphs(monster.description)}
-                        </Paper>
+            <Box m={2}>
+                <Grid container spacing={2}>
+                    <Grid item sm={6} xs={12}>
+                        <h2>{monster.name} <span className={classes.light}>HD {monster.hitDice}</span></h2>
+                        {renderParagraphs(monster.description)}
                     </Grid>
-                    <Grid item md={3} xs={6}>
-                        <Paper className={classes.padded}>
-                            <h3>Strong</h3>
-                            {renderParagraphs(monster.strong)}
-                        </Paper>
+                    <Grid item sm={3} xs={6}>
+                        <h3>Strong</h3>
+                        {renderParagraphs(monster.strong)}
                     </Grid>
-                    <Grid item md={3} xs={6}>
-                        <Paper className={classes.padded}>
-                            <h3>Weak</h3>
-                            {renderParagraphs(monster.weak)}
-                        </Paper>
+                    <Grid item sm={3} xs={6}>
+                        <h3>Weak</h3>
+                        {renderParagraphs(monster.weak)}
                     </Grid>
                 </Grid>
             </Box>
-            <Box m={3}>
-                <Grid container spacing={3}>
+            <Box m={2}>
+                <Grid container spacing={2}>
                     {monster.techniques.map((technique, index) => (
-                        <Grid item key={index.toString()} md={4} xs={12}>
-                            <Paper className={classes.padded}>
-                                <h3>Technique</h3>
-                                {renderParagraphs(technique)}
-                            </Paper>
+                        <Grid item key={index.toString()} sm={4} xs={12}>
+                            <h3>Technique</h3>
+                            {renderParagraphs(technique)}
                         </Grid>
                     ))}
                 </Grid>
             </Box>
-        </div>
+        </Box >
     )
 }
 
