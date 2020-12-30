@@ -38,6 +38,7 @@ const MonsterSelector: React.FunctionComponent = () => {
                 </Grid>
                 <Grid item xs={4}>
                     <Select
+                        isDisabled={!monster}
                         value={mapCategoryToOption(
                             categories.find(category => category.id === monster?.category?.toLowerCase())
                         )}
