@@ -100,20 +100,20 @@ const MonsterDetail: React.FunctionComponent = () => {
                     </Table>
                 </TableContainer>
             </Grid>
-            <Grid item sm={2} xs={6}>
+            <Grid item md={2} sm={3} xs={6}>
                 <Box m={2}>
                     <h3>Strong</h3>
                     {renderParagraphs(monster.strong)}
                 </Box>
             </Grid>
-            <Grid item sm={2} xs={6}>
+            <Grid item md={2} sm={3} xs={6}>
                 <Box m={2}>
                     <h3>Weak</h3>
                     {renderParagraphs(monster.weak)}
                 </Box>
             </Grid>
             {monster.techniques.map((technique, index) => (
-                <Grid item key={index.toString()} sm={2} xs={12}>
+                <Grid item key={index.toString()} md={2} sm={6} xs={12}>
                     <Box m={2}>
                         <h3>Technique</h3>
                         {renderParagraphs(technique)}
