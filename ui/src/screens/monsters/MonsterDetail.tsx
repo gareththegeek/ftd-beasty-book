@@ -6,6 +6,8 @@ import { selectMonsterLoading, selectMonsterViewModel } from '../../redux/monste
 import ShowMoreText from 'react-show-more-text'
 import domtoimage from 'dom-to-image'
 import { Button } from '@material-ui/core'
+import SaveAlt from '@material-ui/icons/SaveAlt'
+import { IconButton } from '@material-ui/core'
 
 const useStyles = makeStyles(theme => ({
     spinner: {
@@ -34,11 +36,13 @@ const MonsterDetail: React.FunctionComponent = () => {
     const componentRef = useRef<typeof Grid>() as unknown as RefObject<ReactInstance>
 
     const saveImage = async () => {
-        // const blob = await domtoimage.toBlob(componentRef.current as Node)
-        // window.saveAs(blob, 'test.png')
+        if (!monster) {
+            return
+        }
+
         const dataUrl = await domtoimage.toPng(componentRef.current as Node)
         const link = document.createElement('a')
-        link.download = 'test.png'
+        link.download = `${monster.id}.png`
         link.href = dataUrl
         link.click()
     }
@@ -57,8 +61,11 @@ const MonsterDetail: React.FunctionComponent = () => {
         <Grid container spacing={2} component={Paper} ref={componentRef}>
             <Grid item md={6} xs={12}>
                 <Box m={2}>
-                    <h2>{monster.name} <span className={classes.light}>HD {monster.hitDice}</span></h2>
-                    <Button onClick={() => saveImage()}>Click Me</Button>
+                    <h2>{monster.name} <span className={classes.light}>HD {monster.hitDice}</span>
+                        <IconButton disabled={!monster} onClick={() => saveImage()} title="Export to image" href="#">
+                            <SaveAlt></SaveAlt>
+                        </IconButton>
+                    </h2>
                     <ShowMoreText
                         lines={1}
                         more="Show description">
