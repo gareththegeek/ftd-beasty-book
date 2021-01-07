@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux'
 import { selectMonsterLoading, selectMonsterViewModel } from '../../redux/monsters/selectors'
 import ShowMoreText from 'react-show-more-text'
 import domtoimage from 'dom-to-image'
-import { Button } from '@material-ui/core'
 import SaveAlt from '@material-ui/icons/SaveAlt'
 import { IconButton } from '@material-ui/core'
 
