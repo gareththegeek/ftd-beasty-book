@@ -1,9 +1,12 @@
 import { Box, CircularProgress, Container, Grid, makeStyles } from '@material-ui/core'
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core'
-import React from 'react'
+import React, { ReactInstance, RefObject, useRef } from 'react'
 import { useSelector } from 'react-redux'
 import { selectMonsterLoading, selectMonsterViewModel } from '../../redux/monsters/selectors'
 import ShowMoreText from 'react-show-more-text'
+import domtoimage from 'dom-to-image'
+import SaveAlt from '@material-ui/icons/SaveAlt'
+import { IconButton } from '@material-ui/core'
 
 const useStyles = makeStyles(theme => ({
     spinner: {
@@ -29,6 +32,19 @@ const MonsterDetail: React.FunctionComponent = () => {
     const classes = useStyles()
     const loading = useSelector(selectMonsterLoading)
     const monster = useSelector(selectMonsterViewModel)
+    const componentRef = useRef<typeof Grid>() as unknown as RefObject<ReactInstance>
+
+    const saveImage = async () => {
+        if (!monster) {
+            return
+        }
+
+        const dataUrl = await domtoimage.toPng(componentRef.current as Node)
+        const link = document.createElement('a')
+        link.download = `${monster.id}.png`
+        link.href = dataUrl
+        link.click()
+    }
 
     if (loading) {
         return (<Container className={classes.spinner}>
@@ -41,10 +57,14 @@ const MonsterDetail: React.FunctionComponent = () => {
     }
 
     return (
-        <Grid container spacing={2} component={Paper}>
+        <Grid container spacing={2} component={Paper} ref={componentRef}>
             <Grid item md={6} xs={12}>
                 <Box m={2}>
-                    <h2>{monster.name} <span className={classes.light}>HD {monster.hitDice}</span></h2>
+                    <h2>{monster.name} <span className={classes.light}>HD {monster.hitDice}</span>
+                        <IconButton disabled={!monster} onClick={() => saveImage()} title="Export to image" href="#">
+                            <SaveAlt></SaveAlt>
+                        </IconButton>
+                    </h2>
                     <ShowMoreText
                         lines={1}
                         more="Show description">
