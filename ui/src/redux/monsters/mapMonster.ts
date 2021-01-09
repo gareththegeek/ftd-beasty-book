@@ -52,7 +52,7 @@ const formatHitDiceMod = (hitDiceMod: number): string => {
         return ''
     }
 
-    return `${hitDiceMod < 0 ? hitDiceMod : `+${hitDiceMod}`}`
+    return ` ${hitDiceMod < 0 ? hitDiceMod : `+${hitDiceMod}`}`
 }
 
 const formatHitDice = (hitDice: number, hitDiceMod: number): string =>

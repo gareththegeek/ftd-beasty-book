@@ -58,7 +58,7 @@ const MonsterDetail: React.FunctionComponent = () => {
         <Grid container spacing={2} component={Paper} ref={componentRef}>
             <Grid item md={6} xs={12}>
                 <Box m={2}>
-                    <h2>{monster.name} <span className={classes.light}>HD {monster.hitDice}</span>
+                    <h2>{monster.name} <span className={classes.light} title={`${monster.hitPointsFormula} hp`}>HD {monster.hitDice}</span>
                         <IconButton disabled={!monster} onClick={() => saveImage()} title="Export to image" href="#">
                             <SaveAlt></SaveAlt>
                         </IconButton>

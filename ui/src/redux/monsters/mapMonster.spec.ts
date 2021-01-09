@@ -135,10 +135,10 @@ describe('mapMonster', () => {
         { hitDice: 0.5, hitDiceMod: 0, expected: '½' },
         { hitDice: 1, hitDiceMod: 0, expected: '1' },
         { hitDice: 10, hitDiceMod: 0, expected: '10' },
-        { hitDice: 0.5, hitDiceMod: 1, expected: '½+1' },
-        { hitDice: 1, hitDiceMod: 2, expected: '1+2' },
-        { hitDice: 0.5, hitDiceMod: -1, expected: '½-1' },
-        { hitDice: 1, hitDiceMod: -2, expected: '1-2' },
+        { hitDice: 0.5, hitDiceMod: 1, expected: '½ +1' },
+        { hitDice: 1, hitDiceMod: 2, expected: '1 +2' },
+        { hitDice: 0.5, hitDiceMod: -1, expected: '½ -1' },
+        { hitDice: 1, hitDiceMod: -2, expected: '1 -2' },
     ].forEach((example) =>
         it(`correctly formats hit dice ${example.hitDice} with hit dice mod ${example.hitDiceMod} as ${example.expected}`, () => {
             const monster = {
