@@ -14,7 +14,7 @@ Bandit,Sniper,1,,d8,4,30,,DEX,DEX,Bandits are NPC thieves who have joined togeth
 "Beetle, Oil",Soldier,2,,d8,9,30,30,STR,STR,Oil beetles are 3' long giant beetles that sometimes burrow underground.,"When attacked, they will squirt an oily fluid at one of their attackers (a ""to hit"" roll is needed; the range is 5').
 If the oil hits it will raise painful blisters, Disadv. All Checks until a cure spell is used or until 24 hours have passed.",,
 Beserker,Brute,1,1,d6,4,30,,STR,STR,"Berserkers are simply fighters who go mad in battle.
-Their reactions are determined normally, but once a battle starts they will always fight to the death — sometimes attacking their comrades in their blind rage.","They never retreat, surrender, or take prisoners.",,
+Their reactions are determined normally, but once a battle starts they will always fight to the death ï¿½ sometimes attacking their comrades in their blind rage.","They never retreat, surrender, or take prisoners.",,
 "Spider, Blackwidow",Predator,3,,d3,13,30,60,DEX,DEX,"6'  long  andcolored  black  with  a  red  ""hourglass""  mark  on  their  abdomens.They tend to stay  close to their webbed  lairs. They are  carnivorousand  have  been  known  to  attack  humans. ",Bite - Save vs. Poison or die,Movement speed x2 in web,
 Bugbear (Female),Predator,2,1,2d4,9,30,,STR,DEX,"Bugbears are giant hairy goblins. Despite their size and awkward walk, they move very quietly and attack without warning whenever they can.",Advantage to stealth checks,,
 Bugbear (Male),Predator,3,1,2d4,13,30,,STR,DEX,"Bugbears are giant hairy goblins. Despite their size and awkward walk, they move very quietly and attack without warning whenever they can.",Advantage to stealth checks,,
@@ -155,4 +155,3 @@ Once an opponent is paralyzed, the thoul will turn and attack another opponent, 
 Lasts d8 turns.
 Removed by a cure light wounds spell.",Regenerate 1 hit point per round as long as it is alive.,
 Hobgoblin Elite,Soldier,2,,d4,9,30,,STR,STR,"Very large, ugly hobgoblins",,,
-,,,,,0,,,,,,,,
