@@ -13,9 +13,12 @@ describe('mapMonster', () => {
         description: 'description\ndescription',
         category: 'brute',
         speed: 30,
+        altSpeed: undefined,
         attack: 'str',
         defence: 'dex',
         hitDice: 1,
+        hitDiceMod: 0,
+        numberAppearing: 'd6',
         techniques: []
     })
 
@@ -75,7 +78,40 @@ describe('mapMonster', () => {
         )
 
         expect(actual).not.toBeUndefined()
-        expect(actual!.speed).toEqual(expected.speed)
+        expect(actual!.speed).toEqual('50')
+    })
+
+    it('includes alternative speed in brackets if defined', () => {
+        const expected = {
+            ...buildMonster(),
+            speed: 30,
+            altSpeed: 60
+        }
+
+        const actual = mapMonster(
+            { ...expected },
+            buildHitDice(),
+            buildCategory()
+        )
+
+        expect(actual).not.toBeUndefined()
+        expect(actual!.speed).toEqual('30 (60)')
+    })
+
+    it('maps number appearing to view model as is', () => {
+        const expected = {
+            ...buildMonster(),
+            numberAppearing: '5d100'
+        }
+
+        const actual = mapMonster(
+            { ...expected },
+            buildHitDice(),
+            buildCategory()
+        )
+
+        expect(actual).not.toBeUndefined()
+        expect(actual!.numberAppearing).toEqual(expected.numberAppearing)
     })
 
     it('formats category to pascal case', () => {
@@ -114,6 +150,33 @@ describe('mapMonster', () => {
 
             expect(actual).not.toBeUndefined()
             expect(actual!.hitDice).toEqual(example.expected)
+        })
+    )
+
+    ;[
+        { hitDice: 0.25, hitDiceMod: 0, expected: '¼d8' },
+        { hitDice: 0.5, hitDiceMod: 0, expected: '½d8' },
+        { hitDice: 1, hitDiceMod: 0, expected: '1d8' },
+        { hitDice: 10, hitDiceMod: 0, expected: '10d8' },
+        { hitDice: 0.5, hitDiceMod: -1, expected: '½d8-1' },
+        { hitDice: 2, hitDiceMod: 1, expected: '2d8+1' },
+        { hitDice: 1, hitDiceMod: 3, expected: '1d8+3' },
+    ].forEach((example) =>
+        it(`correctly formats hit points formula for ${example.hitDice}hd and hd mod of ${example.hitDiceMod} as ${example.expected}`, () => {
+            const monster = {
+                ...buildMonster(),
+                hitDice: example.hitDice,
+                hitDiceMod: example.hitDiceMod
+            }
+
+            const actual = mapMonster(
+                { ...monster },
+                buildHitDice(),
+                buildCategory()
+            )
+
+            expect(actual).not.toBeUndefined()
+            expect(actual!.hitPointsFormula).toEqual(example.expected)
         })
     )
 
@@ -204,20 +267,25 @@ describe('mapMonster', () => {
         })
     )
     ;[
-        { hitDice: 0.25, expected: 1 /*1*/ },
-        { hitDice: 0.5, expected: 2 /*2*/ },
-        { hitDice: 1, expected: 4 /*5*/ },
-        { hitDice: 2, expected: 9 /*9*/ },
-        { hitDice: 6, expected: 27 /*25*/ },
-        { hitDice: 9, expected: 40 /*37*/ },
-        { hitDice: 13, expected: 58 /*53*/ },
-        { hitDice: 17, expected: 76 /*69*/ },
-        { hitDice: 18, expected: 81 /*73*/ }
+        { hitDice: 0.25, hitDiceMod: 0, expected: 1 },
+        { hitDice: 0.5, hitDiceMod: 0, expected: 2 },
+        { hitDice: 1, hitDiceMod: 0, expected: 4 },
+        { hitDice: 2, hitDiceMod: 0, expected: 9 },
+        { hitDice: 6, hitDiceMod: 0, expected: 27 },
+        { hitDice: 9, hitDiceMod: 0, expected: 40 },
+        { hitDice: 13, hitDiceMod: 0, expected: 58 },
+        { hitDice: 17, hitDiceMod: 0, expected: 76 },
+        { hitDice: 18, hitDiceMod: 0, expected: 81 },
+        { hitDice: 1, hitDiceMod: -1, expected: 3 },
+        { hitDice: 1, hitDiceMod: +1, expected: 5 },
+        { hitDice: 0.25, hitDiceMod: +1, expected: 2 },
+        { hitDice: 7, hitDiceMod: +3, expected: 34 },
     ].forEach((example) =>
-        it(`calculates hit points of ${example.expected} based upon hit dice of ${example.hitDice}`, () => {
+        it(`calculates hit points of ${example.expected} based upon hit dice of ${example.hitDice} and hit dice mod of ${example.hitDiceMod}`, () => {
             const monster = {
                 ...buildMonster(),
-                hitDice: example.hitDice
+                hitDice: example.hitDice,
+                hitDiceMod: example.hitDiceMod
             }
 
             const actual = mapMonster(monster, buildHitDice(), buildCategory())
