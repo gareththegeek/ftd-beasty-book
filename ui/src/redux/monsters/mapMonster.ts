@@ -5,17 +5,6 @@ import { AttributeType } from './AttributeType'
 import Monster from './Monster'
 import MonsterViewModel from './MonsterViewModel'
 
-const formatHitDice = (hitDice: number): string => {
-    switch(hitDice) {
-        case 0.25:
-            return '¼'
-        case 0.5:
-            return '½'
-        default:
-            return hitDice.toString()
-    }
-}
-
 const calculateMod = (
     hitDice: number,
     strength: AttributeStrengthType
@@ -44,8 +33,33 @@ const calculateToHit = (monster: Monster, category: Category): number =>
 const calculateArmourClass = (monster: Monster, category: Category): number =>
     10 + calculateModFromAttribute(monster.hitDice, monster.defence, category)
 
-const calculateHitPoints = (hitDice: number): number =>
-    Math.floor(hitDice * 4.5)
+const calculateHitPoints = (hitDice: number, hitDiceMod: number): number =>
+    Math.floor(hitDice * 4.5 + hitDiceMod)
+
+const formatHitDiceBase = (hitDice: number): string => {
+    switch (hitDice) {
+        case 0.25:
+            return '¼'
+        case 0.5:
+            return '½'
+        default:
+            return hitDice.toString()
+    }
+}
+
+const formatHitDiceMod = (hitDiceMod: number): string => {
+    if (hitDiceMod === 0) {
+        return ''
+    }
+
+    return ` ${hitDiceMod < 0 ? hitDiceMod : `+${hitDiceMod}`}`
+}
+
+const formatHitDice = (hitDice: number, hitDiceMod: number): string =>
+    `${formatHitDiceBase(hitDice)}${formatHitDiceMod(hitDiceMod)}`
+
+const formatHitPointsFormula = (hitDice: number, hitDiceMod: number): string =>
+    `${formatHitDiceBase(hitDice)}d8${formatHitDiceMod(hitDiceMod)}`
 
 const capitalise = (text: string): string =>
     `${text.substr(0, 1).toUpperCase()}${text.substr(1)}`
@@ -73,13 +87,21 @@ export const mapMonster = (
         name: monster.name,
         description: monster.description,
         category: capitalise(monster.category),
-        speed: monster.speed,
-        hitDice: `${formatHitDice(monster.hitDice)}`,
+        speed: `${monster.speed}${
+            !!monster.altSpeed ? ` (${monster.altSpeed})` : ''
+        }`,
+        hitDice: `${formatHitDice(monster.hitDice, monster.hitDiceMod)}`,
+        hitPointsFormula: `${formatHitPointsFormula(
+            monster.hitDice,
+            monster.hitDiceMod
+        )}`,
+        numberAppearing: monster.numberAppearing,
         techniques: monster.techniques,
         toHit: calculateToHit(monster, category),
+        defenceAttribute: monster.defence,
         damage: hitDice.damage,
         armourClass: calculateArmourClass(monster, category),
-        hitPoints: calculateHitPoints(monster.hitDice),
+        hitPoints: calculateHitPoints(monster.hitDice, monster.hitDiceMod),
         morale: calculateMod(monster.hitDice, category.morale),
         str: calculateMod(monster.hitDice, category.str),
         dex: calculateMod(monster.hitDice, category.dex),

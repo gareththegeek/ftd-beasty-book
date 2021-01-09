@@ -2,7 +2,6 @@ import { NextFunction, Request, Response } from 'express'
 import { get as getDb } from '../database/factory'
 import { Collections } from '../database/config'
 import Monster from '../model/Monster'
-import { nextTick } from 'process'
 
 export const get = async (req: Request, res: Response, next: NextFunction) => {
     try {

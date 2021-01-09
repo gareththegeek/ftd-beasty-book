@@ -58,11 +58,12 @@ const MonsterDetail: React.FunctionComponent = () => {
         <Grid container spacing={2} component={Paper} ref={componentRef}>
             <Grid item md={6} xs={12}>
                 <Box m={2}>
-                    <h2>{monster.name} <span className={classes.light}>HD {monster.hitDice}</span>
+                    <h2>{monster.name} <span className={classes.light} title={`${monster.hitPointsFormula} hp`}>HD {monster.hitDice}</span>
                         <IconButton disabled={!monster} onClick={() => saveImage()} title="Export to image" href="#">
                             <SaveAlt></SaveAlt>
                         </IconButton>
                     </h2>
+                    <p>No. Appearing: {monster.numberAppearing}</p>
                     <ShowMoreText
                         lines={1}
                         more="Show description">
@@ -77,8 +78,8 @@ const MonsterDetail: React.FunctionComponent = () => {
                             <TableRow>
                                 <TableCell className={classes.td} align="center">Speed</TableCell>
                                 <TableCell className={classes.td} align="center">Damage</TableCell>
-                                <TableCell className={classes.td} align="center">AC</TableCell>
-                                <TableCell className={classes.td} align="center">HP</TableCell>
+                                <TableCell className={classes.td} align="center" title="Armour Class">AC</TableCell>
+                                <TableCell className={classes.td} align="center" title="Hit Points">HP</TableCell>
                                 <TableCell className={classes.td} align="center">Morale</TableCell>
                             </TableRow>
                         </TableHead>
@@ -86,8 +87,8 @@ const MonsterDetail: React.FunctionComponent = () => {
                             <TableRow>
                                 <TableCell className={classes.td} align="center">{monster.speed}</TableCell>
                                 <TableCell className={classes.td} align="center">{monster.damage}</TableCell>
-                                <TableCell className={classes.td} align="center">{monster.armourClass}</TableCell>
-                                <TableCell className={classes.td} align="center">{monster.hitPoints}</TableCell>
+                                <TableCell className={classes.td} align="center" title={`10 + ${monster.defenceAttribute.toUpperCase()}`}>{monster.armourClass}</TableCell>
+                                <TableCell className={classes.td} align="center" title={`${monster.hitPointsFormula} hp`}>{monster.hitPoints}</TableCell>
                                 <TableCell className={classes.td} align="center">{formatModifier(monster.morale)}</TableCell>
                             </TableRow>
                         </TableBody>
@@ -97,12 +98,12 @@ const MonsterDetail: React.FunctionComponent = () => {
                     <Table size="small">
                         <TableHead>
                             <TableRow>
-                                <TableCell className={classes.td} align="center">STR</TableCell>
-                                <TableCell className={classes.td} align="center">DEX</TableCell>
-                                <TableCell className={classes.td} align="center">CON</TableCell>
-                                <TableCell className={classes.td} align="center">INT</TableCell>
-                                <TableCell className={classes.td} align="center">WIS</TableCell>
-                                <TableCell className={classes.td} align="center">CHA</TableCell>
+                                <TableCell className={classes.td} align="center" title="Strength Modifier">STR</TableCell>
+                                <TableCell className={classes.td} align="center" title="Dexterity Modifier">DEX</TableCell>
+                                <TableCell className={classes.td} align="center" title="Constitution Modifier">CON</TableCell>
+                                <TableCell className={classes.td} align="center" title="Intelligence Modifier">INT</TableCell>
+                                <TableCell className={classes.td} align="center" title="Wisdom Modifier">WIS</TableCell>
+                                <TableCell className={classes.td} align="center" title="Charisma Modifier">CHA</TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>

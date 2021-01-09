@@ -5,11 +5,31 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Debug Import",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/import",
+            "runtimeArgs": [
+                "run-script",
+                "start"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+        {
             "name": "Debug Jest Tests",
             "type": "node",
             "request": "launch",
             "cwd": "${workspaceFolder}/api",
-            "runtimeArgs": ["--inspect-brk", "${workspaceRoot}/api/node_modules/jest/bin/jest.js", "--runInBand", "--coverage", "false"],
+            "runtimeArgs": [
+                "--inspect-brk",
+                "${workspaceRoot}/api/node_modules/jest/bin/jest.js",
+                "--runInBand",
+                "--coverage",
+                "false"
+            ],
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen"
         }
