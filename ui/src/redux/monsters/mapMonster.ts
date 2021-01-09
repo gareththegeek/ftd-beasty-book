@@ -98,6 +98,7 @@ export const mapMonster = (
         numberAppearing: monster.numberAppearing,
         techniques: monster.techniques,
         toHit: calculateToHit(monster, category),
+        defenceAttribute: monster.defence,
         damage: hitDice.damage,
         armourClass: calculateArmourClass(monster, category),
         hitPoints: calculateHitPoints(monster.hitDice, monster.hitDiceMod),

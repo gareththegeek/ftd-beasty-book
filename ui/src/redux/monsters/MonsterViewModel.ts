@@ -11,6 +11,7 @@ export default interface MonsterViewModel {
     armourClass: number
     hitPoints: number
     morale: number
+    defenceAttribute: string,
     str: number
     dex: number
     con: number

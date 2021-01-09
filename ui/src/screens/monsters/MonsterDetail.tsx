@@ -86,8 +86,8 @@ const MonsterDetail: React.FunctionComponent = () => {
                             <TableRow>
                                 <TableCell className={classes.td} align="center">{monster.speed}</TableCell>
                                 <TableCell className={classes.td} align="center">{monster.damage}</TableCell>
-                                <TableCell className={classes.td} align="center">{monster.armourClass}</TableCell>
-                                <TableCell className={classes.td} align="center">{monster.hitPoints}</TableCell>
+                                <TableCell className={classes.td} align="center" title={`10 + ${monster.defenceAttribute.toUpperCase()}`}>{monster.armourClass}</TableCell>
+                                <TableCell className={classes.td} align="center" title={`${monster.hitPointsFormula} hp`}>{monster.hitPoints}</TableCell>
                                 <TableCell className={classes.td} align="center">{formatModifier(monster.morale)}</TableCell>
                             </TableRow>
                         </TableBody>

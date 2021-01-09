@@ -98,6 +98,22 @@ describe('mapMonster', () => {
         expect(actual!.speed).toEqual('30 (60)')
     })
 
+    it('maps defence attribute as is', () => {
+        const expected = {
+            ...buildMonster(),
+            defence: 'dex' as AttributeType
+        }
+
+        const actual = mapMonster(
+            { ...expected },
+            buildHitDice(),
+            buildCategory()
+        )
+
+        expect(actual).not.toBeUndefined()
+        expect(actual!.speed).toEqual(expected.defence)
+    })
+
     it('maps number appearing to view model as is', () => {
         const expected = {
             ...buildMonster(),
