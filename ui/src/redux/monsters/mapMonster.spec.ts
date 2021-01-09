@@ -111,7 +111,7 @@ describe('mapMonster', () => {
         )
 
         expect(actual).not.toBeUndefined()
-        expect(actual!.speed).toEqual(expected.defence)
+        expect(actual!.defenceAttribute).toEqual(expected.defence)
     })
 
     it('maps number appearing to view model as is', () => {
@@ -179,9 +179,9 @@ describe('mapMonster', () => {
         { hitDice: 0.5, hitDiceMod: 0, expected: '½d8' },
         { hitDice: 1, hitDiceMod: 0, expected: '1d8' },
         { hitDice: 10, hitDiceMod: 0, expected: '10d8' },
-        { hitDice: 0.5, hitDiceMod: -1, expected: '½d8-1' },
-        { hitDice: 2, hitDiceMod: 1, expected: '2d8+1' },
-        { hitDice: 1, hitDiceMod: 3, expected: '1d8+3' },
+        { hitDice: 0.5, hitDiceMod: -1, expected: '½d8 -1' },
+        { hitDice: 2, hitDiceMod: 1, expected: '2d8 +1' },
+        { hitDice: 1, hitDiceMod: 3, expected: '1d8 +3' },
     ].forEach((example) =>
         it(`correctly formats hit points formula for ${example.hitDice}hd and hd mod of ${example.hitDiceMod} as ${example.expected}`, () => {
             const monster = {
