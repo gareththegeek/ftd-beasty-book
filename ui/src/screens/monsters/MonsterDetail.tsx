@@ -63,7 +63,7 @@ const MonsterDetail: React.FunctionComponent = () => {
                             <SaveAlt></SaveAlt>
                         </IconButton>
                     </h2>
-                    <h4>Number Appearing: {monster.numberAppearing}</h4>
+                    <p>No. Appearing: {monster.numberAppearing}</p>
                     <ShowMoreText
                         lines={1}
                         more="Show description">
