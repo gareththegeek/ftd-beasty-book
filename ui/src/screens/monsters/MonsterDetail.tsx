@@ -7,6 +7,7 @@ import ShowMoreText from 'react-show-more-text'
 import domtoimage from 'dom-to-image'
 import SaveAlt from '@material-ui/icons/SaveAlt'
 import { IconButton } from '@material-ui/core'
+import { saveAs } from 'file-saver'
 
 const useStyles = makeStyles(theme => ({
     spinner: {
@@ -39,11 +40,8 @@ const MonsterDetail: React.FunctionComponent = () => {
             return
         }
 
-        const dataUrl = await domtoimage.toPng(componentRef.current as Node)
-        const link = document.createElement('a')
-        link.download = `${monster.id}.png`
-        link.href = dataUrl
-        link.click()
+        const blob = await domtoimage.toBlob(componentRef.current as Node)
+        saveAs(blob, `${monster.id}.png`)
     }
 
     if (loading) {
