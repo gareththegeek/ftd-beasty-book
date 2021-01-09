@@ -1,0 +1,146 @@
+Name,Category,HD,Spd,Atk,Def,Description,T1,T2,T3
+Acolyte,Sniper,1,30,STR,DEX,"Dressed in rusty-red robes, with black cowls. Under these robes each wears chain mail and a mace at his belt.",,,
+Adept,Sniper,2,30,WIS,DEX,"Clad in a black robe with a maroon coloured cowl, plate moil beneath their garments","Cause Light Wounds
+Level 1 Spell
+Touch
+1d10 Damage","Cause Fear
+Level 1 Spell
+Touch
+Wisdom save each turn or flee in terror",
+"Ape, White",Brute,4,30,STR,STR,"White apes have lost their color due to many years of living in caves. They are nocturnal, sleeping in the day and looking for fruits and vegetables at night. If creatures approach their lair, the apes will threaten them. If their threats are ignored, they will attack.
+They may throw one stone per round for d6 points.
+White apes are not intelligent and sometimes are kept as pets by Neanderthals.",,,
+Bandit,Sniper,1,30,DEX,DEX,Bandits are NPC thieves who have joined together for the purpose of robbing others. Bandits will act as normal humans in order to surprise their intended victims.,,,
+"Beetle, Oil",Soldier,2,30,STR,STR,Oil beetles are 3' long giant beetles that sometimes burrow underground.,"When attacked, they will squirt an oily fluid at one of their attackers (a ""to hit"" roll is needed; the range is 5').
+If the oil hits it will raise painful blisters, Disadv. All Checks until a cure spell is used or until 24 hours have passed.",,
+Beserker,Brute,1,30,STR,STR,"Berserkers are simply fighters who go mad in battle.
+Their reactions are determined normally, but once a battle starts they will always fight to the death � sometimes attacking their comrades in their blind rage.","They never retreat, surrender, or take prisoners.",,
+"Spider, Blackwidow",Predator,3,30,DEX,DEX,"6'  long  andcolored  black  with  a  red  ""hourglass""  mark  on  their  abdomens.They tend to stay  close to their webbed  lairs. They are  carnivorousand  have  been  known  to  attack  humans. ",Bite - Save vs. Poison or die,Movement speed x2 in web,
+Bugbear (Female),Predator,2,30,STR,DEX,"Bugbears are giant hairy goblins. Despite their size and awkward walk, they move very quietly and attack without warning whenever they can.",Advantage to stealth checks,,
+Bugbear (Male),Predator,3,30,STR,DEX,"Bugbears are giant hairy goblins. Despite their size and awkward walk, they move very quietly and attack without warning whenever they can.",Advantage to stealth checks,,
+Carrion Crawler,Predator,3,40,DEX,DEX,"This scavenger is worm-shaped, 9' long and 3' high with many legs.   Its mouth is surrounded by 8 tentacles, each 2' long.",Can walk on walls and ceiling,"8 tentacles, each 2' long, which can paralyze on a successful hit
+CON Saving Throw
+Lasts d8 turns
+Once paralyzed, a victim will be eaten (unless the carrion crawler is being attacked).
+The paralysis can be removed by a cure light wounds spell, but any spell so used will have no other effect.",
+Doppelganger,Predator,3,30,STR,STR,"In their natural form, doppelgangers are gaunt, grey-skinned, genderless, humanoids with long, gangly limbs, standing around 5-1/5 feet tall and weighing about 150 pounds. Doppelganger bodies are slender and frail-looking, although this appearance belies their hardy constitution and natural agility. Their heads are large in proportion to the rest of their bodies, and their faces are featureless except for two large octopoidlike eys.","Shapechanger: The Doppelganger can use its action to Polymorph into a Small or Medium Humanoid it has seen, or back into its true form.
+Its Statistics, other than its size, are the same in each form.
+Any Equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",Read Thoughts: The Doppelganger magically reads the surface thoughts of one creature within 60 ft. of it.,
+Dwarf,Soldier,1,30,STR,STR,"Dwarves hate goblins, and will usually attack them on sight.",,,
+Elf,Sniper,1,30,DEX,DEX,,One 1st level spell (chosen at random).,,
+"Beetle, Fire",Predator,1,30,STR,STR,"Fire beetles are 2.5' long creatures often found below ground. They are nocturnal, but may be active underground at any time. A fire beetle has two glowing glands above its eyes and one near the back of its abdomen. These glands give off light in a 10' radius, and will continue to glow for 1-6 days after they are removed.",,,
+Gargoyle,Predator,4,30,DEX,DEX,"As pictured in medieval architecture, they are horned, clawed, fanged, winged, hideous-looking beasts. Their skin often looks exactly like stone and are often mistaken to be statues. Gargoyles are very cunning and at least semi-intelligent. They will attack nearly anything that approaches them. ",Flying move 60ft,"They can only be hit with magic or magical weapons
+Gargoyles are not affected by sleep or charm spells.","2 Claws, 1 Bite"
+Gelatinous Cube,Shaper,4,20,CON,CON,"These monsters are made of a clear jelly and are shaped like cubes about 10' on a side.
+They move through the rooms and corridors of dungeons, sweeping the halls clean of all living and dead material. In the process, they may pick up items they can't dissolve (such as gold pieces and gems). Though they usually eat carrion, they will attack any living creature they encounter.",Advantage to stealth checks,"On a hit:
+CON save or become paralysed for d8 turns","A gelatinous cube may be harmed by fire and weapons, but not by cold or lightning"
+Ghoul,Predator,2,30,STR,DEX,"Ghouls are undead creatures. They are hideous, beast-like humans who will attack anything living.","On a hit: paralyze any creature of ogre-size or smaller (except elves) unless CON save.
+Once an opponent is paralyzed, the ghoul will turn and attack another opponent, until either the ghoul or all the opponents are paralyzed or dead.
+Lasts d8 turns.
+Removed by a cure light wounds spell.",,
+Giant Centipedes,Predator,0.5,30,DEX,DEX,"Giant centipedes are insects with 1' long bodies and many legs. They like to live in damp, dark places.","Their bite does no damage, but the victim must save vs. Poison or become violently ill for 10 days. Characters who do not save move at V2 speed and will not be able to perform any other physical action",,
+Giant Rats,Predator,0.5,30,DEX,DEX,"Giant rats are 3' long or more, and have gray or black fur. They are often found in the dark corners of dungeon rooms and in areas where undead monsters lurk.","1-in-20 chance of getting a disease,
+unless a save vs. Poison is made. If the saving throw
+failed, there is a 25% chance the character will die in 1-6 (1d6) days. Otherwise the character will be too sick to adventure for one game month.",,
+Gnoll (Female),Soldier,1,30,STR,STR,"Gnolls are beings of low intelligence that appear to be human-like hyenas. They may use any weapons. They are strong, but dislike work and prefer to bully and steal for a living.",,,
+Gnoll (Male),Soldier,2,30,STR,STR,"Gnolls are beings of low intelligence that appear to be human-like hyenas. They may use any weapons. They are strong, but dislike work and prefer to bully and steal for a living.",,,
+Gnoll Leader,Brute,3,30,STR,STR,"Gnolls are beings of low intelligence that appear to be human-like hyenas. They may use any weapons. They are strong, but dislike work and prefer to bully and steal for a living.",,,
+Gnome,Soldier,1,30,STR,DEX,"Gnomes are a human-like race related to dwarves. They are smaller than dwarves, and have long noses and full beards. Gnomes have well developed infravision (heat-sensing sight), and can ""see"" heat to 90' in the dark. They usually live in burrows in the lowlands. Gnomes are excellent metalsmiths and miners. They love gold and gems and have been known to make bad decisions just to obtain them. They love machinery of all kinds and like to use crossbows as missile weapons and war hammers in hand-tohand combat. Gnomes like most dwarves, but war with goblins and kobolds who steal their precious gold. They will usually attack kobolds on sight.",,,
+Goblin,Sniper,1,30,DEX,DEX,"Goblins are a small incredibly ugly human-like race. Their skin is a pale earthy color, such as chalky tan or livid gray. Their eyes are red, and glow when there is little light, somewhat like rat's eyes. Goblins live underground and have well-developed infravision (heat-sensing sight) to 90'. Goblins hate dwarves and will attack them on sight.",,,
+Goblin Chieftain,Sniper,3,30,DEX,DEX,"Goblins are a small incredibly ugly human-like race. Their skin is a pale earthy color, such as chalky tan or livid gray. Their eyes are red, and glow when there is little light, somewhat like rat's eyes. Goblins live underground and have well-developed infravision (heat-sensing sight) to 90'. Goblins hate dwarves and will attack them on sight.",,,
+Green Slime,Predator,2,5,CON,CON,"Green slime looks like green, oozing slime.
+Green slime often clings to walls and ceilings and will drop down on surprised characters. ",This creature can be harmed by fire or cold but cannot be hurt by any other attacks.,"Once in contact with flesh, it will stick and turn the flesh into green slime. It cannot be scraped off, but must be burnt off (or treated with a cure disease spell).
+Burning does half damage to the green slime and half damage to the victim.
+It dissolves wood and metal (in 6 rounds), but cannot dissolve stone.
+The victim will turn completely into green slime in d4 rounds after the first 6-round (one minute) period.",
+Grey Ooze,Shaper,3,5,CON,CON,This seeping horror looks like wet stone and is difficult to see,"Acid will dissolve and destroy armour in one turn. After the first hit, the ooze will stick to its victim, doing damage each round.","Gray ooze cannot be harmed by cold or fire, but can be harmed by weapons and lightning",
+Halfling,Sniper,1,30,DEX,DEX,,,,
+Harpy,Predator,3,30,STR,DEX,"A harpy has the lower body of a giant eagle and the upper body and head of a hideous-looking woman. By their singing, harpies lure creatures to them, to be killed and devoured.","Flying move 60ft
+2 Claw, 1 Bite","Any creature hearing the harpy's song must WIS save or be charmed.
+Charmed indivuals will move toward the harpies, resisting any attempt to stop them, but not otherwise attacking.
+If a character saves against the songs of a group of harpies, the character will not be affected by any of their songs during the encounter.",Harpies are resistant to magic and have Adv. on all their saves.
+Hobgoblin,Soldier,1,30,STR,DEX,Hobgoblins are bigger and meaner relatives of goblins. They live underground but often hunt above ground and have no penalties for fighting in full daylight,,,
+Hobgoblin Chief,Brute,5,30,STR,STR,Hobgoblins are bigger and meaner relatives of goblins. They live underground but often hunt above ground and have no penalties for fighting in full daylight,,,
+Killer Bee,Soldier,0.5,30,DEX,CON,"Killer Bees are 1' long giant bees with a very vicious temper. Killer bees almost always attack on sight, and will automatically attack anyone within 30' of their underground hive.",Flying move 60ft,"When a killer bee successfully stings (attacks), it dies, but the creature stung must CON save or die.
+The stinger will continue to work its way into the victim, doing an automatic 1 point of damage per round, unless 1 round is spent pulling it out.",
+Kobold,Sniper,0.5,30,DEX,DEX,"These  small,  evil  dog-like  men   usually  live  underground.  Theyhave  scaly  rust-brown  skin  and  no  hair. They  have  well  developedinfravision  (heat-sensing  sight) to a 90' range. They  prefer  to  attackby  ambush",,,
+Kobold Chief,Brute,2,30,STR,STR,This huge kobold is so powerful that he fights with a battle axe,,,
+Kobold Guards,Sniper,1,30,DEX,DEX,Very large kobold guards with chain mail and bows,,,
+"Living Statue, Crystal",Brute,3,30,STR,CON,A living statue is an enchanted animated creature made by a powerful wizard. It appears to be a perfectly normal statue until it begins to move. A living statue may be of any size or material.,Living statues are not affected by sleep spells.,,
+"Lizard, Draco",Predator,4,30,DEX,DEX,"A draco is a 6' long lizard with wide flaps of skin between its legs which it can spread to glide through the air (like a flying squirrel). Dracos are generally found above ground, though they sometimes creep into caves to escape very cold or very hot weather. Dracos are carnivorous and have been known to attack humans. Horned",Flying move 60ft,,
+"Lizard, Gecko",Predator,3,30,DEX,DEX,"A gecko is a 5' long lizard colored pale blue with orangebrown spots. Geckos are carnivorous and nocturnal (sleeping during the day and active at night or in darkness). Geckos hunt by climbing steep walls (or trees) with their specially adapted feet, then dropping on their prey to attack",,,
+Lizardman,Brute,2,30,STR,STR,These water-dwelling creatures look like men  with lizard heads andtails. They  live  in tribes. They  will try to capture humans and  demi-humans  and  take  the  victims  back  to  the  tribal  lair  as  the  maincourse  of a feast.,Swim - movement speed x2,,
+Medium,Shaper,1,30,STR,DEX,Mediums are NPC 1st level magic-users.,One 1st level spell (chosen at random).,,
+Medusa,Predator,4,30,DEX,DEX,A medusa looks like a human female with live snakes growing from her head instead of hair.,"The sight of a medusa will turn a creature to stone unless the victim makes a CON save
+
+A medusa can be looked at without harm by looking at its reflection in a mirror. If a medusa sees its own reflection, it must CON save or it will petrify itself!","Bite:
+CON save vs. poision or die",
+Minotaur,Brute,6,40,STR,STR,"A minotaur is a large man with the head of a bull. It is larger than human size, and eats humans. A minotaur will always attack anything its size or smaller and will pursue as long as its prey is in sight. Minotaurs are semi-intelligent and some use weapons, preferring a spear, club, or axe.",Weapon attack: +2 damage,Gore and bite: 2 attacks,
+Mountain Lion,Predator,3,50,STR,DEX,,Leap upon opponent from tree +2 to hit,On top of person +2 to hit,
+Neanderthal,Brute,2,30,STR,STR,"Neanderthals (also known as cavemen) are a demi-human species related to humans. They have squat bodies with large bones and powerful muscles. Their faces have apelike features, including large brows above the eyes. Neanderthals live in family groups in caves and caverns. Neanderthals usually attack with thrown spears and use stone axes, clubs, or stone hammers in hand-to-hand combat.
+ They are shy and will avoid humans, but are not usually
+hostile unless they are attacked",,,
+Noble,Leader,3,30,STR,STR,"""Noble"" is a general term for the lord of a castle and any of his or her relatives. In the D&D BASIC rules, a noble will always be a 3rd level fighter. However, the DM may choose to make a noble any class and level.
+Always accompanied by a squire (a 2nd level fighter). A noble might also be accompanied by as many as 10 retainers or hirelings (usually 1st level fighters). ",,,
+Ochre Jelly,Predator,5,10,CON,CON,An ochre jelly is an ochre-colored giant amoeba,"Can only be harmed by fire or cold.
+Attacks with weapons or lightning merely make d4+ 1 smaller (2 hit dice) ochre jellies.","An ochre jelly does damage per turn to exposed flesh.
+It can destroy wood, leather, and cloth in 1 round, but cannot eat through metal or stone.",It can seep through small cracks
+Ogre,Brute,4,30,STR,STR,"Ogres are huge fearsome human-like creatures, usually 8 to 10 feet tall. They wear animal skins for clothes, and often live in caves",,,
+Orc,Soldier,1,30,STR,STR,"Orcs are ugly human-like creatures who look like a combination of animal and man. Ores are nocturnal (usually sleeping in the day and active at night or in the dark), and prefer to live underground.","When fighting in daylight, they must subtract 1 from their ""to hit"" rolls",,
+Orc Leader,Brute,3,30,STR,STR,"Orcs are ugly human-like creatures who look like a combination of animal and man. Ores are nocturnal (usually sleeping in the day and active at night or in the dark), and prefer to live underground.","When fighting in daylight, they must subtract 1 from their ""to hit"" rolls","At his belt is a magic hand axe + 1 which he will hurl at on opponent, and he can do so and still attack normally in the same round of combat.",
+Owl Bear,Predator,5,30,STR,CON,"An owl bear is a huge bear-like creature with the head of a giant owl. An owl bear stands 8' tall and weighs 1500 pounds (15,000 coins). Owl bears have nasty tempers and are usually hungry, preferring meat.","1 Bite + 1 attack per claw.
+If both paws of an owl bear hit the same opponent in
+one round, the owl bear will ""hug"" for an additional 2d8 points of
+damage. ",,
+Priest,Leader,3,30,WIS,WIS,"The evil priest. Wears plate mail + 1, has a shield + 1, and wears on amulet of protection from good,","Snake staff: + 1 to hit.
+On command the staff will turn into a snake and coil around the person hit. The person is held helpless for 1d4 turns or until the cleric recalls the staff. The staff then crawls back to the cleric on command.","Cause Light Wounds
+Level 1 Spell
+Touch
+1d10 Damage
+
+Cause Fear
+Level 1 Spell
+Touch
+Wisdom save each turn or flee in terror","Scrolls
+Hold Person
+Silence (15ft. Radius)
+
+Potion
+Gaseous Form (escape)"
+Rock Baboon,Brute,2,30,STR,STR,"Rock baboons are larger versions of normal baboons, and are more intelligent. They will eat anything, but prefer meat. They do not make tools or weapons but will pick up bones or branches to use as clubs. Rock baboons form packs, each led by a dominant male. They are ferocious and have vicious tempers. They do not speak a true language, but use simple screams to communicate warnings and needs.",,,
+Shadow,Predator,2,30,STR,CON,"Shadows are in-corporeal (ghost-like) intelligent creatures.
+They look like real shadows and can alter their shape slightly.","Can only be harmed by magical weapons.
+Shadows are not undead, and cannot be ""Turned"" by clerics.
+They are not affected by sleep and charm spells","On a hit, it will drain 1 point of Strength in addition to doing normal damage.
+Any creature whose Strength is reduced to 0 or less will become a shadow.",
+"Shrew, Giant",Brute,1,60,STR,STR,"Giant shrews look like brown-furred rats with long snouts. They can burrow, climb, or jump (up to 5'). They are insectivorous and hunt insects, their main source of food. The eyes of giant shrews are so weak that the creatures are almost blind. They are not affected by light or the lack of it.
+Giant shrews do not like large open areas, and remain underground most of the time. Giant shrews often choose one area to hunt in, and will fight to defend ""their"" area from other animals (including humans). They are very ferocious and will attack anything. ","They may ""see"" things up to 60' away underground as well as a creature with normal sight.
+A silence 15' radius spell will ""blind"" a giant shrew.
+If it cannot hear, it will have Disadv. to attacks and attackers have Adv. Against it","On an attack, the victim must WIS Save or run away in fear",
+Skeleton,Soldier,1,30,STR,DEX,"Animated skeletons are undead creatures often found near graveyards, dungeons, or other deserted places. They are used as guards by the high level magic-user or cleric who animated them. Since they are undead, they can be ""Turned"" by a cleric, and are not affected by sleep or charm spells, nor any form of mind reading.",Skeletons will always fight until killed.,,
+"Snake, Cobra",Predator,1,30,DEX,DEX,"A spitting cobra is a 3' long grayish-white snake.
+As with most small poisonous snakes, a spitting cobra will not attack human-sized or larger opponents unless startled or threatened.","Can squirt a stream of venom up to a distance of 6 feet.
+It aims for its victim's eyes.
+On a hit, the victim must CON Save or be blinded. (This blindness can normally only be removed by a cure blindness spell ",Bite: on a hit the victim must CON Save or die in dlO turns.,
+"Snake, Viper",Predator,2,30,DEX,DEX,A pit viper is a 5' long greenish-gray poisonous snake with small pits in its head.  These pits act as heat sensors.,Infravision 60',Bite: on a hit the victim must CON Save or die,
+"Spider, Crab",Predator,2,30,DEX,DEX,Crab spiders are 5' long giant spiders. They are meat-eaters and attack their victims by clinging to walls or ceilings and dropping onto them.,"Have chameleon-like powers and can change their color to blend into their surroundings
+Adv. to Stealth rolls",Bite - CON Save vs. Poison (weak roll with Adv.) or die in d4 rounds,
+"Spider, Tarantella",Predator,4,30,DEX,DEX,A tarantella is a huge hairy magical spider which looks like a 7' long tarantula.,"On a hit: CON Save or have painful spasms which resemble a frantic dance for d12 turns.
+This dance has a magical effect on onlookers, and they may be affected. Anyone watching must WIS Save or start to dance in the same way.
+Dancing victims have Disadv. on all checks and attackers have Adv. against the victim.
+Those caught while watching will dance as long as the original victim. ",,
+Sprite,Shaper,0.5,30,DEX,DEX,"Sprites are small winged people about 1 foot tall related to pixies and elves. While shy, they are very curious and have a strange sense of humor.
+Sprites will never cause death on purpose even if they are attacked. ",Flying move 60ft,"Five sprites acting together can cast one curse spell.
+This will take the form of a magical practical joke, such as tripping or having one's nose grow.",
+Stirge,Predator,1,10,DEX,DEX,"A stirge is a birdlike creature with a long nose, looking rather like a very small feathered anteater.",Flying move 60ft,"When a stirge attacks a creature, it tries to thrust its beak into the victim's body to suck out blood for 1- 3 points of damage. A successful hit means that it has attached itself to the victim. If attached, it will automatically suck blood for 1- 3 points of damage per round until either it or its victim is dead then it will leave.","A flying stirge gains a bonus of + 2 on its first ""to hit"" roll against any one opponent due to its speed."
+Trader,Leader,1,30,STR,DEX,"Traders are first level fighters who make their living trading goods. They are similar to merchants, but much braver (and much better fighters). They usually carry swords and hand axes. They wear furs (treat their furs as leather armor) and carry shields. When  ncountered in the wilderness, they will be leading 1-4 pack mules carrying trade goods. ",,,
+Veteran,Soldier,2,30,STR,STR,"Veterans are low-level fighters, usually returning from or going to a war.",,,
+Wight,Shaper,3,30,WIS,CON,A wight is an undead spirit living in the body of a dead human or demi-human. It can only be hit by silvered or magical weapons.,"Energy Drain:
+Each hit drains d8 CON (and corresponding HP)",,
+Wolf,Predator,2,60,STR,STR,"Wolves are meat-eaters and hunt in packs. Though wolves prefer the wilderness, they will occasionally be found in caves. Captured wolf cubs can be trained like dogs",,,
+Zombie,Brute,2,30,STR,CON,"Zombies are undead humans or demi-humans animated by some evil cleric or magic-user. As all undead, they may be ""Turned"" by a cleric but are not affected by sleep or charm spells or any form of mind reading. They are often placed to guard treasures, since they make no noise until they attack. Zombies will always attack on sight, but can be destroyed by normal weapons.",Slow: Always last on initiative,,
+Robber Fly,,,,,,,,,
+Driver Ant,,,,,,,,,
+"Lycanthrope, Were Rat",,,,,,,,,
+Thoul,,,,,,,,,
+Hobgoblin Elite,Soldier,2,30,STR,STR,"Very large, ugly hobgoblins",,,
