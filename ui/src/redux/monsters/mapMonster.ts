@@ -5,17 +5,6 @@ import { AttributeType } from './AttributeType'
 import Monster from './Monster'
 import MonsterViewModel from './MonsterViewModel'
 
-const formatHitDice = (hitDice: number): string => {
-    switch (hitDice) {
-        case 0.25:
-            return '¼'
-        case 0.5:
-            return '½'
-        default:
-            return hitDice.toString()
-    }
-}
-
 const calculateMod = (
     hitDice: number,
     strength: AttributeStrengthType
@@ -47,18 +36,30 @@ const calculateArmourClass = (monster: Monster, category: Category): number =>
 const calculateHitPoints = (hitDice: number, hitDiceMod: number): number =>
     Math.floor(hitDice * 4.5 + hitDiceMod)
 
-const formatHitPointsFormula = (
-    hitDice: number,
-    hitDiceMod: number
-): string => {
-    const result = `${formatHitDice(hitDice)}d8`
+const formatHitDiceBase = (hitDice: number): string => {
+    switch (hitDice) {
+        case 0.25:
+            return '¼'
+        case 0.5:
+            return '½'
+        default:
+            return hitDice.toString()
+    }
+}
 
+const formatHitDiceMod = (hitDiceMod: number): string => {
     if (hitDiceMod === 0) {
-        return result
+        return ''
     }
 
-    return `${result}${hitDiceMod < 0 ? hitDiceMod : `+${hitDiceMod}`}`
+    return `${hitDiceMod < 0 ? hitDiceMod : `+${hitDiceMod}`}`
 }
+
+const formatHitDice = (hitDice: number, hitDiceMod: number): string =>
+    `${formatHitDiceBase(hitDice)}${formatHitDiceMod(hitDiceMod)}`
+
+const formatHitPointsFormula = (hitDice: number, hitDiceMod: number): string =>
+    `${formatHitDiceBase(hitDice)}d8${formatHitDiceMod(hitDiceMod)}`
 
 const capitalise = (text: string): string =>
     `${text.substr(0, 1).toUpperCase()}${text.substr(1)}`
@@ -89,7 +90,7 @@ export const mapMonster = (
         speed: `${monster.speed}${
             !!monster.altSpeed ? ` (${monster.altSpeed})` : ''
         }`,
-        hitDice: `${formatHitDice(monster.hitDice)}`,
+        hitDice: `${formatHitDice(monster.hitDice, monster.hitDiceMod)}`,
         hitPointsFormula: `${formatHitPointsFormula(
             monster.hitDice,
             monster.hitDiceMod
