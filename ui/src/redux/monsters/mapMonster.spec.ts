@@ -205,22 +205,22 @@ describe('mapMonster', () => {
         ability: AttributeType
         strength: AttributeStrengthType
         hitDice: number
-        expected: number
+        expected: string
     }
 
     ;([
-        { ability: 'str', strength: 'strong', hitDice: 0.5, expected: 2 },
-        { ability: 'str', strength: 'average', hitDice: 0.5, expected: 2 },
-        { ability: 'str', strength: 'weak', hitDice: 0.5, expected: -2 },
-        { ability: 'dex', strength: 'strong', hitDice: 3, expected: 5 },
-        { ability: 'dex', strength: 'average', hitDice: 3, expected: 3 },
-        { ability: 'dex', strength: 'weak', hitDice: 3, expected: -1 },
-        { ability: 'str', strength: 'strong', hitDice: 10, expected: 12 },
-        { ability: 'str', strength: 'strong', hitDice: 11, expected: 12 },
-        { ability: 'str', strength: 'average', hitDice: 16, expected: 10 },
-        { ability: 'str', strength: 'average', hitDice: 17, expected: 10 },
-        { ability: 'str', strength: 'weak', hitDice: 20, expected: 8 },
-        { ability: 'str', strength: 'weak', hitDice: 21, expected: 8 }
+        { ability: 'str', strength: 'strong', hitDice: 0.5, expected: '+2' },
+        { ability: 'str', strength: 'average', hitDice: 0.5, expected: '+2' },
+        { ability: 'str', strength: 'weak', hitDice: 0.5, expected: '-2' },
+        { ability: 'dex', strength: 'strong', hitDice: 3, expected: '+5' },
+        { ability: 'dex', strength: 'average', hitDice: 3, expected: '+3' },
+        { ability: 'dex', strength: 'weak', hitDice: 3, expected: '-1' },
+        { ability: 'str', strength: 'strong', hitDice: 10, expected: '+12' },
+        { ability: 'str', strength: 'strong', hitDice: 11, expected: '+12' },
+        { ability: 'str', strength: 'average', hitDice: 16, expected: '+10' },
+        { ability: 'str', strength: 'average', hitDice: 17, expected: '+10' },
+        { ability: 'str', strength: 'weak', hitDice: 20, expected: '+8' },
+        { ability: 'str', strength: 'weak', hitDice: 21, expected: '+8' }
     ] as ToHitExample[]).forEach((example) =>
         it(`calculates to hit of ${example.expected} based upon ${example.strength} ${example.ability} attack ability for ${example.hitDice}HD monster`, () => {
             const monster = {
@@ -256,6 +256,13 @@ describe('mapMonster', () => {
         expect(actual!.damage).toEqual(expected.damage)
     })
 
+    interface ArmourClassExample {
+        ability: AttributeType
+        strength: AttributeStrengthType
+        hitDice: number
+        expected: number
+    }
+
     ;([
         { ability: 'str', strength: 'strong', hitDice: 0.5, expected: 12 },
         { ability: 'str', strength: 'average', hitDice: 0.5, expected: 12 },
@@ -269,7 +276,7 @@ describe('mapMonster', () => {
         { ability: 'str', strength: 'average', hitDice: 17, expected: 20 },
         { ability: 'str', strength: 'weak', hitDice: 20, expected: 18 },
         { ability: 'str', strength: 'weak', hitDice: 21, expected: 18 }
-    ] as ToHitExample[]).forEach((example) =>
+    ] as ArmourClassExample[]).forEach((example) =>
         it(`calculates armour class of ${example.expected} based upon ${example.strength} ${example.ability} defence ability of ${example.hitDice}HD monster`, () => {
             const monster = {
                 ...buildMonster(),
@@ -317,30 +324,30 @@ describe('mapMonster', () => {
     )
 
     ;([
-        { ability: 'str', strength: 'strong', hitDice: 0.5, expected: 2 },
-        { ability: 'str', strength: 'average', hitDice: 0.5, expected: 2 },
-        { ability: 'str', strength: 'weak', hitDice: 0.5, expected: -2 },
-        { ability: 'dex', strength: 'strong', hitDice: 3, expected: 5 },
-        { ability: 'dex', strength: 'average', hitDice: 3, expected: 3 },
-        { ability: 'dex', strength: 'weak', hitDice: 3, expected: -1 },
-        { ability: 'str', strength: 'strong', hitDice: 10, expected: 12 },
-        { ability: 'str', strength: 'strong', hitDice: 11, expected: 12 },
-        { ability: 'str', strength: 'average', hitDice: 16, expected: 10 },
-        { ability: 'str', strength: 'average', hitDice: 17, expected: 10 },
-        { ability: 'str', strength: 'weak', hitDice: 20, expected: 8 },
-        { ability: 'str', strength: 'weak', hitDice: 21, expected: 8 },
-        { ability: 'con', strength: 'strong', hitDice: 5, expected: 7 },
-        { ability: 'con', strength: 'average', hitDice: 5, expected: 4 },
-        { ability: 'con', strength: 'weak', hitDice: 5, expected: 0 },
-        { ability: 'int', strength: 'strong', hitDice: 11, expected: 12 },
-        { ability: 'int', strength: 'average', hitDice: 11, expected: 7 },
-        { ability: 'int', strength: 'weak', hitDice: 11, expected: 3 },
-        { ability: 'wis', strength: 'strong', hitDice: 12, expected: 12 },
-        { ability: 'wis', strength: 'average', hitDice: 12, expected: 8 },
-        { ability: 'wis', strength: 'weak', hitDice: 12, expected: 4 },
-        { ability: 'cha', strength: 'strong', hitDice: 15, expected: 12 },
-        { ability: 'cha', strength: 'average', hitDice: 15, expected: 9 },
-        { ability: 'cha', strength: 'weak', hitDice: 15, expected: 5 },
+        { ability: 'str', strength: 'strong', hitDice: 0.5, expected: '+2' },
+        { ability: 'str', strength: 'average', hitDice: 0.5, expected: '+2' },
+        { ability: 'str', strength: 'weak', hitDice: 0.5, expected: '-2' },
+        { ability: 'dex', strength: 'strong', hitDice: 3, expected: '+5' },
+        { ability: 'dex', strength: 'average', hitDice: 3, expected: '+3' },
+        { ability: 'dex', strength: 'weak', hitDice: 3, expected: '-1' },
+        { ability: 'str', strength: 'strong', hitDice: 10, expected: '+12' },
+        { ability: 'str', strength: 'strong', hitDice: 11, expected: '+12' },
+        { ability: 'str', strength: 'average', hitDice: 16, expected: '+10' },
+        { ability: 'str', strength: 'average', hitDice: 17, expected: '+10' },
+        { ability: 'str', strength: 'weak', hitDice: 20, expected: '+8' },
+        { ability: 'str', strength: 'weak', hitDice: 21, expected: '+8' },
+        { ability: 'con', strength: 'strong', hitDice: 5, expected: '+7' },
+        { ability: 'con', strength: 'average', hitDice: 5, expected: '+4' },
+        { ability: 'con', strength: 'weak', hitDice: 5, expected: '+0' },
+        { ability: 'int', strength: 'strong', hitDice: 11, expected: '+12' },
+        { ability: 'int', strength: 'average', hitDice: 11, expected: '+7' },
+        { ability: 'int', strength: 'weak', hitDice: 11, expected: '+3' },
+        { ability: 'wis', strength: 'strong', hitDice: 12, expected: '+12' },
+        { ability: 'wis', strength: 'average', hitDice: 12, expected: '+8' },
+        { ability: 'wis', strength: 'weak', hitDice: 12, expected: '+4' },
+        { ability: 'cha', strength: 'strong', hitDice: 15, expected: '+12' },
+        { ability: 'cha', strength: 'average', hitDice: 15, expected: '+9' },
+        { ability: 'cha', strength: 'weak', hitDice: 15, expected: '+5' },
     ] as ToHitExample[]).forEach((example) =>
         it(`calculates ${example.ability} mod of ${example.expected} based upon ${example.strength} ability for ${example.hitDice}HD monster`, () => {
             const monster = {
