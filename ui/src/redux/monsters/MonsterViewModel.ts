@@ -6,18 +6,18 @@ export default interface MonsterViewModel {
     hitPointsFormula: string
     numberAppearing: string
     speed: string
-    toHit: number
+    toHit: string
     damage: string
     armourClass: number
     hitPoints: number
-    morale: number
+    morale: string
     defenceAttribute: string,
-    str: number
-    dex: number
-    con: number
-    int: number
-    wis: number
-    cha: number
+    str: string
+    dex: string
+    con: string
+    int: string
+    wis: string
+    cha: string
     description: string
     strong: string
     weak: string

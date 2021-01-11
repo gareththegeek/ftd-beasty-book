@@ -47,13 +47,11 @@ const formatHitDiceBase = (hitDice: number): string => {
     }
 }
 
-const formatHitDiceMod = (hitDiceMod: number): string => {
-    if (hitDiceMod === 0) {
-        return ''
-    }
+const formatModifier = (modifier: number): string =>
+    `${modifier < 0 ? modifier : `+${modifier}`}`
 
-    return ` ${hitDiceMod < 0 ? hitDiceMod : `+${hitDiceMod}`}`
-}
+const formatHitDiceMod = (hitDiceMod: number): string =>
+    hitDiceMod === 0 ? '' : ` ${formatModifier(hitDiceMod)}`
 
 const formatHitDice = (hitDice: number, hitDiceMod: number): string =>
     `${formatHitDiceBase(hitDice)}${formatHitDiceMod(hitDiceMod)}`
@@ -97,18 +95,18 @@ export const mapMonster = (
         )}`,
         numberAppearing: monster.numberAppearing,
         techniques: monster.techniques,
-        toHit: calculateToHit(monster, category),
+        toHit: formatModifier(calculateToHit(monster, category)),
         defenceAttribute: monster.defence,
         damage: hitDice.damage,
         armourClass: calculateArmourClass(monster, category),
         hitPoints: calculateHitPoints(monster.hitDice, monster.hitDiceMod),
-        morale: calculateMod(monster.hitDice, category.morale),
-        str: calculateMod(monster.hitDice, category.str),
-        dex: calculateMod(monster.hitDice, category.dex),
-        con: calculateMod(monster.hitDice, category.con),
-        int: calculateMod(monster.hitDice, category.int),
-        wis: calculateMod(monster.hitDice, category.wis),
-        cha: calculateMod(monster.hitDice, category.cha),
+        morale: formatModifier(calculateMod(monster.hitDice, category.morale)),
+        str: formatModifier(calculateMod(monster.hitDice, category.str)),
+        dex: formatModifier(calculateMod(monster.hitDice, category.dex)),
+        con: formatModifier(calculateMod(monster.hitDice, category.con)),
+        int: formatModifier(calculateMod(monster.hitDice, category.int)),
+        wis: formatModifier(calculateMod(monster.hitDice, category.wis)),
+        cha: formatModifier(calculateMod(monster.hitDice, category.cha)),
         strong: category.strong,
         weak: category.weak
     }
