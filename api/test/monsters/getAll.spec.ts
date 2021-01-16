@@ -9,7 +9,7 @@ describe('/api/monsters', () => {
         repo = mockRepo()
     })
 
-    it('returns id, name and hit dice of all monsters within the database sorted alphabetically by name', done => {
+    it('returns id, name and hit dice of all monsters within the database sorted alphabetically by name', (done) => {
         const monsters = [
             {
                 id: 'john-the-monster',
@@ -50,9 +50,17 @@ describe('/api/monsters', () => {
         request(app).get('/api/monsters').expect(200, expected).end(done)
     })
 
-    it('handles case where the database is empty', done => {
+    it('handles case where the database is empty', (done) => {
         repo.getAll.mockResolvedValue([])
 
         request(app).get('/api/monsters').expect(200, []).end(done)
+    })
+
+    it('does not return blank monsters', (done) => {
+        const expected = [{ id: 'goblin' }]
+        const unexpected = [{ id: undefined }, { id: undefined }]
+        repo.getAll.mockResolvedValue([...unexpected, ...expected])
+
+        request(app).get('/api/monsters').expect(200, expected).end(done)
     })
 })

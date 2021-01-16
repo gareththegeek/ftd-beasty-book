@@ -14,7 +14,7 @@ Bandit,Sniper,1,,d8,30,,DEX,DEX,Bandits are NPC thieves who have joined together
 "Beetle, Oil",Soldier,2,,d8,30,30,STR,STR,Oil beetles are 3' long giant beetles that sometimes burrow underground.,"When attacked, they will squirt an oily fluid at one of their attackers (a ""to hit"" roll is needed; the range is 5').
 If the oil hits it will raise painful blisters, Disadv. All Checks until a cure spell is used or until 24 hours have passed.",,
 Beserker,Brute,1,1,d6,30,,STR,STR,"Berserkers are simply fighters who go mad in battle.
-Their reactions are determined normally, but once a battle starts they will always fight to the death — sometimes attacking their comrades in their blind rage.","They never retreat, surrender, or take prisoners.",,
+Their reactions are determined normally, but once a battle starts they will always fight to the death ï¿½ sometimes attacking their comrades in their blind rage.","They never retreat, surrender, or take prisoners.",,
 "Spider, Blackwidow",Predator,3,,d3,30,60,DEX,DEX,"6'  long  andcolored  black  with  a  red  ""hourglass""  mark  on  their  abdomens.They tend to stay  close to their webbed  lairs. They are  carnivorousand  have  been  known  to  attack  humans. ",Bite - Save vs. Poison or die,Movement speed x2 in web,
 Bugbear (Female),Predator,2,1,2d4,30,,STR,DEX,"Bugbears are giant hairy goblins. Despite their size and awkward walk, they move very quietly and attack without warning whenever they can.",Advantage to stealth checks,,
 Bugbear (Male),Predator,3,1,2d4,30,,STR,DEX,"Bugbears are giant hairy goblins. Despite their size and awkward walk, they move very quietly and attack without warning whenever they can.",Advantage to stealth checks,,
@@ -165,7 +165,7 @@ They have been known to raid camps, seeking food. They are especially fond of su
 Brigand,Soldier,1,,d6,30,,STR,DEX,,,,
 Phantasm,Shaper,1,,d6,30,,DEX,DEX,"Phantasms are the mindless, ghost-like spirits of those who died from catastrophe and are doomed to continue the actions they performed prior to their deaths. Stuck in an endless, repetitive loop, they continue their mundane chores until either destroyed or their bones are put to rest. Phantasms present no great harm to those who encounter them, inflicting only incidental damage (1 point) to those who touch or pass through their deathly cold and insubstantial forms. 
 
-The only way to put a phantasm to rest is by either burying their mortal remains with religious ceremony or by the use of a cleric‘s ability to Turn Undead. A cleric of 6th level or greater can utilize their ability to destroy lesser undead as a result of a successful Turn Undead attempt to permanently eradicate the phantasm from existence.","Immune to damage
+The only way to put a phantasm to rest is by either burying their mortal remains with religious ceremony or by the use of a clericï¿½s ability to Turn Undead. A cleric of 6th level or greater can utilize their ability to destroy lesser undead as a result of a successful Turn Undead attempt to permanently eradicate the phantasm from existence.","Immune to damage
 Attacks and spells have no effect upon a phantasm, nor do any other harmful substances such as poison, fire, or cold. Even holy water is ineffective.",,
 "Racoon, (Rabid)",Predator,0.5,,d6,30,30,DEX,DEX,,Climbing 30ft,,
 Insect Swarm,Soldier,0.5,,1,30,60,DEX,DEX,"Insect swarms are a special type of monster. Swarms are not single creatures, but are whole communities of tiny creatures acting together. A swarm may be attracted to light, or a strange smell, or may be defending their lair. A swarm can be considered to be 10'x30'  but may be larger or smaller. Some types of creatures which swarm are: ants, spiders and centipedes (crawlers), bees and wasps (flyers), and beetles and locusts (both crawlers and flyers).",,,
@@ -187,76 +187,15 @@ Doom Lure,Shaper,1,1,d2,30,,STR,CON,"Doom lures are simulacra of living beings c
 These creatures lure potential meals into situations that invoke intense emotional responses ranging from pleasure to pain.
 Doom lures coax adventurers into traps, ambushes, or other situations that lead to suffering and death. The solid emotions that comprise their forms are claylike in texture and malleability, and are shaped to resemble not only creature that the doom lure mimics, but the accoutrements and clothing of that entity as well.
 When slain, doom lures dissipate into gas, leaving only a greasy slick behind.
-","1 in 6 chance of detecting that ""something's not right""",Cannot speak,"If cornered, they attack with a scream that unleashes a blast of raw emotions in a 20‘ cone.
+","1 in 6 chance of detecting that ""something's not right""",Cannot speak,"If cornered, they attack with a scream that unleashes a blast of raw emotions in a 20ï¿½ cone.
 This scream inflicts 1d6 points of damage to those within the blast and forces the victims to pass a WIS check or become overwhelmed the type of emotion from which the doom lure is created.
 See table."
-"Beetle, Bearer",Brute,2,,d6,30,,STR,STR,"These large (5‘ long) black beetles are used by the kobolds as beasts of burden. Often encountered laden with goods tied to a network of leather straps and saddle bags, bearer beetles can carry 200 lbs without penalty and up to 400 lbs. at ½ speed.
+"Beetle, Bearer",Brute,2,,d6,30,,STR,STR,"These large (5ï¿½ long) black beetles are used by the kobolds as beasts of burden. Often encountered laden with goods tied to a network of leather straps and saddle bags, bearer beetles can carry 200 lbs without penalty and up to 400 lbs. at ï¿½ speed.
 When threatened or commanded by their handlers, bearer beetles attack with their serrated mandibles. ",,,
-Gobber Ooze,Predator,1,,d3,30,,CON,CON,"Gobber oozes are an occasional side-effect of magical experimentation. When left laying out or improperly discarded, the chemicals and other substances used in the creation of magical items sometimes coalesce into a mindless 5‘ puddle of gray-green spotted ooze.
+Gobber Ooze,Predator,1,,d3,30,,CON,CON,"Gobber oozes are an occasional side-effect of magical experimentation. When left laying out or improperly discarded, the chemicals and other substances used in the creation of magical items sometimes coalesce into a mindless 5ï¿½ puddle of gray-green spotted ooze.
 Attacks with a bludgeoning pseudopod.",Acid heals the ooze d6 hp,Can fit into small cracks and under closed doors.,
 Mossy Slime,Predator,2,,1,10,,CON,CON,"Mossy slime resembles a carpet of wet moss with waving tendrils sprouting from its surface.
 These tendrils siphon off nutrients from any flesh they contact.",Resistant to physical damage (50%),,
-"Slug, Great",Brute,1,,d6,10,,CON,CON,"Great slugs resemble common garden slugs except for their 3‘ long size.
-They can bite with their rasp-like gums and can spit a gob of acid slime up to 10‘ away.
+"Slug, Great",Brute,1,,d6,10,,CON,CON,"Great slugs resemble common garden slugs except for their 3ï¿½ long size.
+They can bite with their rasp-like gums and can spit a gob of acid slime up to 10ï¿½ away.
 A significant quantity of salt will do d8 points of damage if applied to a great slug.",Their skin secretes an acidic slime that does 1 point of damage if it comes into contact with skin.,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
