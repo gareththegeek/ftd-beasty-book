@@ -4,7 +4,7 @@ import { Collections, COLLECTION_LOOKUP } from './config'
 import fs from 'fs'
 import path from 'path'
 
-const DATA_DIRECTORY = '../../data'
+const DATA_DIRECTORY = '../data'
 
 export class Fauxpository implements IRepository {
     private data: Id[]
