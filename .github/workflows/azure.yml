@@ -47,6 +47,7 @@ jobs:
         yarn
         yarn build --if-present
         echo "Now to do everything myself *sigh*"
+        cp api/src/data api/dist
         cp api/package.json api/dist/package.json
         cp api/yarn.lock api/dist/yarn.lock
         cd api/dist
