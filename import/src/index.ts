@@ -2,9 +2,16 @@ require('dotenv').config()
 import { createReadStream } from 'fs'
 import csv from 'csv-parser'
 import { Repository } from 'ftd-beasty-book-mongo-repo'
+import path from 'path'
+import fs from 'fs'
 ;(async () => {
+    const DATA_DIRECTORY = '../../api/data'
     const mongoUrl = process.env.MONGO_URL ?? 'mongodb://localhost'
     const databaseName = process.env.DATABASE_NAME ?? 'ftd-beasty-book'
+
+    const monsters: any[] = []
+    const hitdices: any[] = []
+    const categories: any[] = []
 
     const monsterRepo = new Repository({
         mongoUrl,
@@ -48,9 +55,12 @@ import { Repository } from 'ftd-beasty-book-mongo-repo'
                 description: row.Description,
                 techniques
             }
-            monsterRepo.upsert(monster)
+            //monsterRepo.upsert(monster)
+            monsters.push(monster)
         })
         .on('end', () => {
+            const filepath = path.join(__dirname, DATA_DIRECTORY, 'monsters.json')
+            fs.writeFileSync(filepath, JSON.stringify(monsters), 'utf8')
             console.log('Imported monsters')
         })
 
@@ -62,9 +72,12 @@ import { Repository } from 'ftd-beasty-book-mongo-repo'
                 hitDice: parseFloat(row.HD),
                 damage: row['Avg. Damage']
             }
-            hitDiceRepo.upsert(hitdice)
+            //hitDiceRepo.upsert(hitdice)
+            hitdices.push(hitdice)
         })
         .on('end', () => {
+            const filepath = path.join(__dirname, DATA_DIRECTORY, 'hitdice.json')
+            fs.writeFileSync(filepath, JSON.stringify(hitdices), 'utf8')
             console.log('Imported hit dice damage')
         })
 
@@ -78,7 +91,7 @@ import { Repository } from 'ftd-beasty-book-mongo-repo'
     createReadStream('data/categories.csv')
         .pipe(csv())
         .on('data', (row) => {
-            const categories = {
+            const category = {
                 id: getId(row.Category),
                 category: row.Category,
                 str:
@@ -100,9 +113,12 @@ import { Repository } from 'ftd-beasty-book-mongo-repo'
                 strong: row.Strong,
                 weak: row.Weak
             }
-            categoriesRepo.upsert(categories)
+            //categoriesRepo.upsert(category)
+            categories.push(category)
         })
         .on('end', () => {
+            const filepath = path.join(__dirname, DATA_DIRECTORY, 'categories.json')
+            fs.writeFileSync(filepath, JSON.stringify(categories), 'utf8')
             console.log('Imported categories')
         })
 })()

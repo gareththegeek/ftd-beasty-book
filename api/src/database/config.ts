@@ -6,7 +6,7 @@ export enum Collections {
     categories
 }
 
-const COLLECTION_LOOKUP = {
+export const COLLECTION_LOOKUP = {
     [Collections.monsters]: process.env.MONSTERS_COLLECTION ?? 'monsters',
     [Collections.hitdice]: process.env.HITDICE_COLLECTION ?? 'hitdice',
     [Collections.categories]: process.env.CATEGORIES_COLLECTION ?? 'categories'
