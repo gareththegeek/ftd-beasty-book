@@ -5,7 +5,7 @@ import { Repository } from 'ftd-beasty-book-mongo-repo'
 import path from 'path'
 import fs from 'fs'
 ;(async () => {
-    const DATA_DIRECTORY = '../../api/data'
+    const DATA_DIRECTORY = '../../api/src/data'
     const mongoUrl = process.env.MONGO_URL ?? 'mongodb://localhost'
     const databaseName = process.env.DATABASE_NAME ?? 'ftd-beasty-book'
 
