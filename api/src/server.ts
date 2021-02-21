@@ -15,7 +15,7 @@ const publicPath =
         ? 'public'
         : 'public/ui/build' /* because copypaths */
 app.use(express.static(path.join(__dirname, publicPath)))
-app.use(express.static('.well-known/acme-challenge/'))
+app.use('/.well-known', express.static(path.join(__dirname, '.well-known')))
 
 routes(app)
 
