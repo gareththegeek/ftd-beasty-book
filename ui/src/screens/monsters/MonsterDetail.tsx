@@ -12,6 +12,10 @@ const useStyles = makeStyles(() => ({
     spinner: {
         width: '100%',
         textAlign: 'center'
+    },
+    disableFlexBasis: {
+        // HACK fix #42 workaround for dom-to-image layout bug when exporting monster stats
+        flexBasis: 'initial'
     }
 }))
 
@@ -36,10 +40,10 @@ const MonsterDetail: React.FunctionComponent = () => {
         <Grid container component={Paper} ref={componentRef}>
             <Grid item xs={12} md={6}>
                 <Grid container direction="column">
-                    <Grid item xs={12}>
+                    <Grid item xs={12} className={classes.disableFlexBasis}>
                         <MonsterHeading exportRef={componentRef} />
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={12} className={classes.disableFlexBasis}>
                         <MonsterStats />
                         <MonsterModifiers />
                     </Grid>
