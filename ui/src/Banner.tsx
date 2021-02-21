@@ -19,11 +19,11 @@ const Banner: React.FunctionComponent = () => {
                         <Grid container direction="row" alignItems="center" spacing={1}>
                             <Grid item>
                                 <i>
-                                    <img src="./android-chrome-192x192.png" alt="Beastie Book" className={classes.icon} />
+                                    <img src="./android-chrome-192x192.png" alt="Five Monsters Deep" className={classes.icon} />
                                 </i>
                             </Grid>
                             <Grid item>
-                                <h2>FTD Beastie Book</h2>
+                                <h2>Five Monsters Deep</h2>
                             </Grid>
                         </Grid>
                     </Grid>

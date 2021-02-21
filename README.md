@@ -1,4 +1,4 @@
-# Beastie Book for Five Torches Deep
+# Five Monsters Deep - OSR Monster Stats for Five Torches Deep
 
 ![Azure-Deploy](https://github.com/gareththegeek/ftd-beasty-book/workflows/Azure-Deploy/badge.svg)
 ![CI](https://github.com/gareththegeek/ftd-beasty-book/workflows/CI/badge.svg)
@@ -72,7 +72,7 @@ yarn start
 
 # Environment Variables
 
-The following environment variables must be defined in order to configure the Beastie Book.
+The following environment variables must be defined in order to configure Five Monsters Deep.
 
 |Variable|Purpose|Example|
 |---|---|---|
