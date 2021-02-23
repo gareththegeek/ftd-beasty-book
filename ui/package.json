@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
+    "@microsoft/applicationinsights-web": "^2.5.11",
     "connected-react-router": "^6.8.0",
     "dom-to-image": "^2.6.0",
     "file-saver": "^2.0.5",
