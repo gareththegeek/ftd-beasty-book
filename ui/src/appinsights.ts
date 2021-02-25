@@ -1,9 +1,12 @@
 import { ApplicationInsights } from '@microsoft/applicationinsights-web'
 
-if (!!process.env.APPINSIGHTS_INSTRUMENTATIONKEY) {
+const instrumentationKey = process.env.REACT_APP_APPINSIGHTS_INSTRUMENTATIONKEY
+
+if (!!instrumentationKey) {
+    console.info(`Instrumentation key: ${instrumentationKey}`)
     const appInsights = new ApplicationInsights({
         config: {
-            instrumentationKey: process.env.APPINSIGHTS_INSTRUMENTATIONKEY
+            instrumentationKey
             /* ...Other Configuration Options... */
         }
     })
