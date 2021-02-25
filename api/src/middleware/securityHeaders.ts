@@ -14,11 +14,7 @@ export const securityHeaders = (
     )
     res.setHeader(
         'Content-Security-Policy',
-        "default-src 'self'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; frame-src 'self';"
-    )
-    res.setHeader(
-        'Feature-Policy',
-        "ambient-light-sensor 'none'; autoplay 'none'; accelerometer 'none'; camera 'none'; display-capture 'none'; document-domain 'none'; encrypted-media 'none'; fullscreen 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; payment 'none'; picture-in-picture 'none'; speaker 'none'; sync-xhr 'none'; usb 'none'; wake-lock 'none'; vr 'none'; xr-spatial-tracking 'none'"
+        "default-src 'self'; connect-src https://dc.services.visualstudio.com/; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; frame-src 'self';"
     )
     res.setHeader(
         'Permissions-Policy',
