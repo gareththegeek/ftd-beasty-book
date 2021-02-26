@@ -22,7 +22,7 @@ Auroch,Soldier,2,,3d10,90,,DEX,DEX,"Wild herd animal, often skittish and likely 
 "Baboon, Higher",Brute,2,,2d6,30,,STR,STR,,,,
 "Baboon, Rock",Brute,2,,2d6,30,,STR,STR,"Rock baboons are larger versions of normal baboons, and are more intelligent. They will eat anything, but prefer meat. They do not make tools or weapons but will pick up bones or branches to use as clubs. Rock baboons form packs, each led by a dominant male. They are ferocious and have vicious tempers. They do not speak a true language, but use simple screams to communicate warnings and needs.",,,
 Bandit,Sniper,1,,d8,30,,DEX,DEX,Bandits are NPC thieves who have joined together for the purpose of robbing others. Bandits will act as normal humans in order to surprise their intended victims.,,,
-Basilisk,Predator,6,,d6,30,,DEX,DEX,"A basilisk is an eight-legged reptilian monster that petrifies living creatures with a mere gaze.  A basilisk usually has a dull brown body with a yellowish underbelly.   Some specimens sport a short, curved horn atop the nose.  An adult basilisk’s body grows to about 6 feet long, not including its tail, which can reach an additional length of 5 to 7 feet.  The creature weighs about 300 pounds.",WIS save or be petrified by its gaze,,
+Basilisk,Predator,6,,d6,30,,DEX,DEX,"A basilisk is an eight-legged reptilian monster that petrifies living creatures with a mere gaze.  A basilisk usually has a dull brown body with a yellowish underbelly.   Some specimens sport a short, curved horn atop the nose.  An adult basilisk's body grows to about 6 feet long, not including its tail, which can reach an additional length of 5 to 7 feet.  The creature weighs about 300 pounds.",WIS save or be petrified by its gaze,,
 Bat,Shaper,0.25,,d100,30,120,DEX,DEX,"Bats are nocturnal (sleeping during the day, moving about at night) flying mammals. They often live in caves or abandoned buildings. They don't use their eyes to see but find their way about by echolocation (a type of radar using hearing and echos to locate objects)","Since they don't use their eyes, spells or abilities which depend on sight to affect their victims will not work on bats.
 A silence 15' radius spell will effectively blind a bat.","Bats will not attack men but may confuse them by flying around their heads. There must be at least ten bats to confuse one character.
 Confused characters have disadvantage on all checks",Flying 120ft
@@ -39,7 +39,7 @@ They have been known to raid camps, seeking food. They are especially fond of su
 "Bee, Giant",Soldier,0.5,,d6,10,60,DEX,DEX,"Although many times larger, growing to a length of about a foot, giant bees behave generally the same as their smaller cousins. 
 Giant bees are usually not aggressive except when defending themselves or their hive.
 A giant bee that successfully stings another creature pulls away, leaving its stinger in the creature.  The bee then dies.",Flying 60ft.,On a hit: CON save or die; the bee then dies,
-"Beetle, Bearer",Brute,2,,d6,30,,STR,STR,"These large (5‘ long) black beetles are used by the kobolds as beasts of burden. Often encountered laden with goods tied to a network of leather straps and saddle bags, bearer beetles can carry 200 lbs without penalty and up to 400 lbs. at ½ speed.
+"Beetle, Bearer",Brute,2,,d6,30,,STR,STR,"These large (5' long) black beetles are used by the kobolds as beasts of burden. Often encountered laden with goods tied to a network of leather straps and saddle bags, bearer beetles can carry 200 lbs without penalty and up to 400 lbs. at ' speed.
 When threatened or commanded by their handlers, bearer beetles attack with their serrated mandibles. ",,,
 "Beetle, Fire",Predator,1,2,d8,30,30,STR,STR,"Fire beetles are 2.5' long creatures often found below ground. They are nocturnal, but may be active underground at any time. A fire beetle has two glowing glands above its eyes and one near the back of its abdomen. These glands give off light in a 10' radius, and will continue to glow for 1-6 days after they are removed.",,,
 "Beetle, Oil",Soldier,2,,d8,30,30,STR,STR,Oil beetles are 3' long giant beetles that sometimes burrow underground.,"When attacked, they will squirt an oily fluid at one of their attackers (a ""to hit"" roll is needed; the range is 5').
@@ -49,7 +49,7 @@ If the oil hits it will raise painful blisters, Disadv. All Checks until a cure 
 They are fast runners, depending on their speed to rundown prey, and they willingly prey on any creature of mansize or smaller.
 Like most beetles, they have more or less the same visual acuity in all directions.",,,
 Beserker,Brute,1,1,d6,30,,STR,STR,"Berserkers are simply fighters who go mad in battle.
-Their reactions are determined normally, but once a battle starts they will always fight to the death — sometimes attacking their comrades in their blind rage.","They never retreat, surrender, or take prisoners.",,
+Their reactions are determined normally, but once a battle starts they will always fight to the death ' sometimes attacking their comrades in their blind rage.","They never retreat, surrender, or take prisoners.",,
 Bison,Soldier,4,,3d10,90,,DEX,DEX,"Wild herd animal, often skittish and likely to flee if provoked, but males are more aggressive in the presence of females.",,,
 Black Pudding,Predator,10,9,1,20,,CON,CON,"Black puddings are amorphous creatures that live only to eat.   They inhabit underground areas throughout the world, scouring caverns, ruins, and dungeons in search of organic matter, living or dead.  They attack any creatures they encounter, lashing out with pseudopods or simply engulfing opponents with their bodies, which secrete acids that help them catch and digest their prey.
 The typical black pudding measures 10 feet across and 2 feet thick, and weighs about 10,000 pounds.
@@ -61,7 +61,7 @@ They are usually shy, avoiding a fight if possible, but they hate displacers and
 Blood Rose,Predator,2,,d8,1,,DEX,DEX,"Blood roses appear to be normal rose bushes, but are actually animated plants, dimly aware of their surroundings. These plants are always in bloom, bearing beautiful flowers that are normally white (or rarely, yellow) in colour.
 The blood rose has a whiplike cane which is used to drain blood from its victims.","Fragrance 30ft radius WIS save each round or become befuddled.
 Befuddled characters will not resist the plant-creature's attack.","Whiplike cane, range 30ft drains blood",
-Boar,Brute,3,,d6,60,,STR,STR,"Though not carnivores, these wild swine are badtempered and usually charge anyone who disturbs them. Note that “boar” refers specifically to the male of the species, but females are equally large and fierce.
+Boar,Brute,3,,d6,60,,STR,STR,"Though not carnivores, these wild swine are badtempered and usually charge anyone who disturbs them. Note that 'boar' refers specifically to the male of the species, but females are equally large and fierce.
 A boar is covered in coarse, grayish-black fur.
 Adults are about 4 feet long and 3 feet high at the shoulder.",,,
 Bone Thing,Predator,3,,d2,30,,DEX,DEX,"Appearing as an asymmetrical collection of animate bones that have taken a crude human shape, bone things attack with a flurry of splintered bone fists.",3 attacks per round (d6 damage each.),Undead creature - immune to sleep and charm spells.,
@@ -84,10 +84,10 @@ The paralysis can be removed by a cure light wounds spell, but any spell so used
 "Centipede, Giant",Predator,0.5,,2d4,30,30,DEX,DEX,"Giant centipedes are larger versions of the normal sort, being 2 to 3 feet long.
 Centipedes are fast-moving, predatory, venomous arthropods, having long segmented bodies with exoskeletons.
 They prefer to live in underground areas, shadowy forested areas, and  other places out of direct sunlight; however, there are desert dwelling varieties that hide under the sand waiting for prey to wander by.","Their bite does no damage, but the victim must save vs. Poison or become violently ill for 10 days. Characters who do not save move at 1/2 speed and will not be able to perform any other physical action",,
-"Centipede, Giant Red",Predator,1,-1,d8,30,,DEX,DEX,These 2‘ long scarlet centipedes are more vicious and toxic then their smaller cousins.,CON save or double damage,,
+"Centipede, Giant Red",Predator,1,-1,d8,30,,DEX,DEX,These 2' long scarlet centipedes are more vicious and toxic then their smaller cousins.,CON save or double damage,,
 Cheetah,Predator,2,,d3,120,,DEX,DEX,"A Cheetah is one of the fastest land animals - a large (about 100 pounds) cat capable of reaching up to 75 miles per hour when running. It hunts alone or in small groups (usually composed of siblings). It will rarely attack humans unless compelled to do so, but a  female will ferociously defend her young.",,,
 Chimera,Brute,9,8,d2,30,60,STR,STR,"Chimeras are strange creatures having a lion's body with the heads of a lion, a goat, and a dragon, and the wings of a dragon. A chimera is about 5 feet tall at the shoulder, nearly 10 feet long, and weighs about 4,000 pounds.
-A chimera’s dragon head might be black, blue, green, red, or white, and has the same type of breath weapon as that sort of dragon.
+A chimera's dragon head might be black, blue, green, red, or white, and has the same type of breath weapon as that sort of dragon.
 Chimeras are cruel and voracious. They can speak Dragon but seldom bother to do so, except when toadying to more powerful creatures.",Flying 60ft.,The dragon's head breathes a 50' long cone with a 10' wide end,
 Cockatrice,Predator,5,,d4,30,60,DEX,DEX,"A cockatrice is a strange creature, appearing to be a chicken (hen or rooster) with a long serpentine neck and tail; the neck is topped by a more or less normal looking chicken head.
 A male cockatrice has wattles and a comb, just like a rooster. Females, much rarer than males, differ only in that they have no wattles or comb. A cockatrice weighs about 25 pounds. A cockatrice is no more intelligent than any animal, but they are bad-tempered and prone to attack if disturbed.",Flying 60ft.,Touch CON save or be petrified,
@@ -109,9 +109,9 @@ Deer,Soldier,1,,3d10,90,,DEX,DEX,"Wild herd animal, often skittish and likely to
 They are aggressive toward interlopers, attacking anyone who might appear to be a threat. These creatures are about 25 feet long and weigh about 20,000 pounds. A triceratops will usually attempt to trample smaller opponents. ",Charge: may double movement and attack in a single round,,
 "Dinosaur, Tyrannosaurus Rex",Predator,18,,d4,30,,STR,STR,"The tyrannosaurus rex is a bipedal carnivorous dinosaur. Despite its enormous size and 6-ton weight, a tyrannosaurus is a swift runner. Its head is nearly 6 feet long, and its teeth are from 3 to 6 inches in length. It is slightly more than 30 feet long from nose to tail. A
 tyrannosaurus pursues and eats just about anything it sees.
-Its tactics are simple – charge in and bite",,,
+Its tactics are simple ' charge in and bite",,,
 Displacer Beast,Predator,6,,d4,60,,DEX,DEX,"Displacers are blue-black, catlike monsters with strange bladed winglike arms extending from their shoulders. The blades are carried folded back like wings, but the Displacer swings the blades around in front to attack.",Displacement illusion - DisAdv. to hit the displacer,,
-Djinni,Shaper,7,1,1,30,90,DEX,DEX,"The djinn (singular djinni) are humanoid creatures from the Elemental Plane of Air. A djinni in its natural form is about 10½ feet tall and weighs about 1,000 pounds.
+Djinni,Shaper,7,1,1,30,90,DEX,DEX,"The djinn (singular djinni) are humanoid creatures from the Elemental Plane of Air. A djinni in its natural form is about 10' feet tall and weighs about 1,000 pounds.
 Djinn disdain physical combat, preferring to use their magical powers and aerial abilities against foes.","Flying 90ft.
 Immunity to non-magical weapons","Spells: Create food, drink and normal items, Create Illusions, Gaseous Form, Invisibility, Phantasmal Force",Assume whirlwind form at will (become air elemental)
 Dog,Soldier,1,1,3d4,60,,STR,STR,"Normal dogs include most medium and large breeds, including wild dogs.","On a hit: bite and hold on, grappled, damage each round and contested STR check",,
@@ -123,20 +123,20 @@ Doom Lure,Shaper,1,1,d2,30,,STR,CON,"Doom lures are simulacra of living beings c
 These creatures lure potential meals into situations that invoke intense emotional responses ranging from pleasure to pain.
 Doom lures coax adventurers into traps, ambushes, or other situations that lead to suffering and death. The solid emotions that comprise their forms are claylike in texture and malleability, and are shaped to resemble not only creature that the doom lure mimics, but the accoutrements and clothing of that entity as well.
 When slain, doom lures dissipate into gas, leaving only a greasy slick behind.
-","1 in 6 chance of detecting that ""something's not right""",Cannot speak,"If cornered, they attack with a scream that unleashes a blast of raw emotions in a 20‘ cone.
+","1 in 6 chance of detecting that ""something's not right""",Cannot speak,"If cornered, they attack with a scream that unleashes a blast of raw emotions in a 20' cone.
 This scream inflicts 1d6 points of damage to those within the blast and forces the victims to pass a WIS check or become overwhelmed the type of emotion from which the doom lure is created.
 See table."
 Doppelganger,Predator,3,,d6,30,,STR,STR,"Dopplegangers are strange beings that are able to take on the shapes of those they encounter; they can also read minds (as the spell, ESP, but with no limit of duration). In its natural form, the creature looks more or less humanoid, but slender and frail, with gangly limbs and half-formed features. The flesh is pale and hairless. Its large, bulging eyes are yellow with slitted pupils.","Shapechanger: The Doppelganger can use its action to Polymorph into a Small or Medium Humanoid it has seen, or back into its true form.
 Its Statistics, other than its size, are the same in each form.
 Any Equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.",Read Thoughts: The Doppelganger magically reads the surface thoughts of one creature within 60 ft. of it.,
 Dragon Turtle,Predator,30,,1,10,30,STR,STR,"A dragon turtle's rough, deep green shell is much the same color as the deep water the monster favors, and the silver highlights that line the shell resemble light dancing on open water.
-The turtle’s legs, tail, and head are a lighter green, flecked with golden highlights. An adult dragon turtle can measure from 100 to 200 feet from snout to tail. They are occasionally mistaken for rocky outcroppings or even small islands.
+The turtle's legs, tail, and head are a lighter green, flecked with golden highlights. An adult dragon turtle can measure from 100 to 200 feet from snout to tail. They are occasionally mistaken for rocky outcroppings or even small islands.
 Dragon turtles are fierce fighters and generally attack any creature that threatens their territory or looks like a potential meal.",Immunity to poison,3 attacks or Steam breath 100ft cloud,Swimming 30ft
 Dragon Turtle (Ancient),Predator,45,,1,10,30,STR,STR,"A dragon turtle's rough, deep green shell is much the same color as the deep water the monster favors, and the silver highlights that line the shell resemble light dancing on open water.
-The turtle’s legs, tail, and head are a lighter green, flecked with golden highlights. An adult dragon turtle can measure from 100 to 200 feet from snout to tail. They are occasionally mistaken for rocky outcroppings or even small islands.
+The turtle's legs, tail, and head are a lighter green, flecked with golden highlights. An adult dragon turtle can measure from 100 to 200 feet from snout to tail. They are occasionally mistaken for rocky outcroppings or even small islands.
 Dragon turtles are fierce fighters and generally attack any creature that threatens their territory or looks like a potential meal.",Immunity to poison,3 attacks or Steam breath 175ft cloud,Swimming 30ft
 Dragon Turtle (Young),Predator,15,,1,10,30,STR,STR,"A dragon turtle's rough, deep green shell is much the same color as the deep water the monster favors, and the silver highlights that line the shell resemble light dancing on open water.
-The turtle’s legs, tail, and head are a lighter green, flecked with golden highlights. An adult dragon turtle can measure from 100 to 200 feet from snout to tail. They are occasionally mistaken for rocky outcroppings or even small islands.
+The turtle's legs, tail, and head are a lighter green, flecked with golden highlights. An adult dragon turtle can measure from 100 to 200 feet from snout to tail. They are occasionally mistaken for rocky outcroppings or even small islands.
 Dragon turtles are fierce fighters and generally attack any creature that threatens their territory or looks like a potential meal.",Immunity to poison,3 attacks or Steam breath 500ft cloud,Swimming 30ft
 "Dragon, Ancient Black",Predator,10,,1,30,90,STR,STR,"Black dragons prefer to ambush their targets, using their surroundings as cover. When fighting in heavily forested swamps and marshes, they try to stay in the water or on the ground; trees and leafy canopies limit their aerial maneuverability.
 When outmatched, a black dragon attempts to fly out of sight, so as not to leave tracks, and hide in a deep pond or bog.
@@ -148,8 +148,8 @@ They particularly enjoy tricking intelligent prey into entering their lairs or p
 Unlike many other dragons, gold dragons are not cruel and do not seek to kill for pleasure. Many tales are told of gold dragons offering assistance to adventurers.
 They are, however, every bit as avaricious as any dragon; adventurers in need of gold need not bother asking for a loan.",Immunity to poison and fire,3 attacks or Poison breath 110ft line,"Spells: Cloudkill, Sleep, Slow, Take human form"
 "Dragon, Ancient Green",Predator,11,,1,30,90,STR,STR,"Green dragons initiate fights with little or no provocation, picking on creatures of any size. If the target is intriguing or seems formidable, the dragon stalks the creature to determine the best time to strike and the most appropriate tactics to use.
-If the target appears weak, the dragon makes its presence known quickly – it enjoys evoking terror.
-Green dragons especially like to question adventurers to learn more about their society and abilities, what is going on in the countryside, and if there is treasure nearby. Adventurers may be allowed to live so long as they remain interesting… but woe to them when the dragon becomes bored.",Immunity to poison,3 attacks or Poison breath 100ft cloud,Flying 90ft
+If the target appears weak, the dragon makes its presence known quickly ' it enjoys evoking terror.
+Green dragons especially like to question adventurers to learn more about their society and abilities, what is going on in the countryside, and if there is treasure nearby. Adventurers may be allowed to live so long as they remain interesting' but woe to them when the dragon becomes bored.",Immunity to poison,3 attacks or Poison breath 100ft cloud,Flying 90ft
 "Dragon, Ancient Red",Predator,13,,1,30,90,STR,STR,"Because red dragons are so confident, they seldom pause to appraise an adversary. On spotting a target, they make a snap decision whether to attack, using one of many strategies worked out ahead of time.
 A red dragon lands to attack small, weak creatures with its claws and bite rather than obliterating them with its breath weapon, so as not to destroy any treasure they might be carrying.
 Red dragons are cruel monsters, actively seeking to hunt, torment, kill and consume intelligent creatures.",Immunity to fire,3 attacks or Fire breath 110ft cone,Flying 90ft
@@ -169,8 +169,8 @@ They particularly enjoy tricking intelligent prey into entering their lairs or p
 Unlike many other dragons, gold dragons are not cruel and do not seek to kill for pleasure. Many tales are told of gold dragons offering assistance to adventurers.
 They are, however, every bit as avaricious as any dragon; adventurers in need of gold need not bother asking for a loan.",Immunity to poison and fire,3 attacks or Poison breath 70ft line,"Spells: Cloudkill, Sleep, Slow, Take human form"
 "Dragon, Green",Predator,8,,1,30,90,STR,STR,"Green dragons initiate fights with little or no provocation, picking on creatures of any size. If the target is intriguing or seems formidable, the dragon stalks the creature to determine the best time to strike and the most appropriate tactics to use.
-If the target appears weak, the dragon makes its presence known quickly – it enjoys evoking terror.
-Green dragons especially like to question adventurers to learn more about their society and abilities, what is going on in the countryside, and if there is treasure nearby. Adventurers may be allowed to live so long as they remain interesting… but woe to them when the dragon becomes bored.",Immunity to poison,3 attacks or Poison breath 90ft cloud,Flying 90ft
+If the target appears weak, the dragon makes its presence known quickly ' it enjoys evoking terror.
+Green dragons especially like to question adventurers to learn more about their society and abilities, what is going on in the countryside, and if there is treasure nearby. Adventurers may be allowed to live so long as they remain interesting' but woe to them when the dragon becomes bored.",Immunity to poison,3 attacks or Poison breath 90ft cloud,Flying 90ft
 "Dragon, Red",Predator,10,,1,30,90,STR,STR,"Because red dragons are so confident, they seldom pause to appraise an adversary. On spotting a target, they make a snap decision whether to attack, using one of many strategies worked out ahead of time.
 A red dragon lands to attack small, weak creatures with its claws and bite rather than obliterating them with its breath weapon, so as not to destroy any treasure they might be carrying.
 Red dragons are cruel monsters, actively seeking to hunt, torment, kill and consume intelligent creatures.",Immunity to fire,3 attacks or Fire breath 90ft cone,Flying 90ft
@@ -190,8 +190,8 @@ They particularly enjoy tricking intelligent prey into entering their lairs or p
 Unlike many other dragons, gold dragons are not cruel and do not seek to kill for pleasure. Many tales are told of gold dragons offering assistance to adventurers.
 They are, however, every bit as avaricious as any dragon; adventurers in need of gold need not bother asking for a loan.",Immunity to poison and fire,3 attacks or Poison breath 90ft line,"Spells: Cloudkill, Sleep, Slow, Take human form"
 "Dragon, Young Green",Predator,5,,1,30,90,STR,STR,"Green dragons initiate fights with little or no provocation, picking on creatures of any size. If the target is intriguing or seems formidable, the dragon stalks the creature to determine the best time to strike and the most appropriate tactics to use.
-If the target appears weak, the dragon makes its presence known quickly – it enjoys evoking terror.
-Green dragons especially like to question adventurers to learn more about their society and abilities, what is going on in the countryside, and if there is treasure nearby. Adventurers may be allowed to live so long as they remain interesting… but woe to them when the dragon becomes bored.",Immunity to poison,3 attacks or Poison breath 70ft cloud,Flying 90ft
+If the target appears weak, the dragon makes its presence known quickly ' it enjoys evoking terror.
+Green dragons especially like to question adventurers to learn more about their society and abilities, what is going on in the countryside, and if there is treasure nearby. Adventurers may be allowed to live so long as they remain interesting' but woe to them when the dragon becomes bored.",Immunity to poison,3 attacks or Poison breath 70ft cloud,Flying 90ft
 "Dragon, Young Red",Predator,7,,1,30,90,STR,STR,"Because red dragons are so confident, they seldom pause to appraise an adversary. On spotting a target, they make a snap decision whether to attack, using one of many strategies worked out ahead of time.
 A red dragon lands to attack small, weak creatures with its claws and bite rather than obliterating them with its breath weapon, so as not to destroy any treasure they might be carrying.
 Red dragons are cruel monsters, actively seeking to hunt, torment, kill and consume intelligent creatures.",Immunity to fire,3 attacks or Fire breath 70ft cone,Flying 90ft
@@ -211,12 +211,12 @@ Shy, intelligent, and resolute, dryads are as elusive as they are alluring -- th
 Dwarf,Soldier,1,,d6,30,,STR,STR,"Dwarves hate goblins, and will usually attack them on sight.",,,
 "Eagle, Giant",Predator,4,,2d6,10,90,DEX,DEX,"A typical giant eagle stands about 10 feet tall, has a wingspan of up to 20 feet, and resembles its smaller cousins in nearly every way except size. It weighs about 500 pounds.
 Many giant eagles are intelligent creatures and speak Common.
-A giant eagle typically attacks from a great height, diving earthward at tremendous speed. When it cannot dive, it uses its powerful talons and slashing beak to strike at its target’s head and eyes.
+A giant eagle typically attacks from a great height, diving earthward at tremendous speed. When it cannot dive, it uses its powerful talons and slashing beak to strike at its target's head and eyes.
 A solitary giant eagle is typically hunting or patrolling in the vicinity of its nest and generally ignores creatures that do not appear threatening. A mated pair attacks in concert, making repeated diving attacks to drive away intruders, and fights to the death to defend their nest or hatchlings.",Flying 90ft.,,
 Efreeti,Shaper,10,,1,30,90,STR,STR,"The efreet (singular efreeti) are humanoid creatures from the Elemental Plane of Fire. An efreeti in its natural form stands about 12 feet tall and weighs about 2,000 pounds.
 Efreet are malicious by nature. They love to mislead, befuddle, and confuse their foes. They do this for enjoyment as much as for tactical reasons.","Flying 90ft.
 Immunity to non-magical weapons","Spells: Invisibility, Gaseous Form, Create Illusions, Phantasmal Force, Create Flame, Wall of Fire",Assume column of fire form at will (become fire elemental)
-"Elemental, Air",Shaper,16,,0,0,120,STR,STR,"Air elementals resemble “dust devils,” that is, small whirlwinds, but they are much more powerful.",Flying 120ft.,"Immune to non-magical weapons
+"Elemental, Air",Shaper,16,,0,0,120,STR,STR,"Air elementals resemble 'dust devils,' that is, small whirlwinds, but they are much more powerful.",Flying 120ft.,"Immune to non-magical weapons
 Vulnerable to earth based attacks",Knock all nearby opponents to the ground
 "Elemental, Earth",Shaper,16,,0,20,,STR,STR,"Earth elementals resemble crude, headless humanoid statues, with clublike hands and feet.
 They cannot cross a body of water wider than their own height.","Immune to non-magical weapons
@@ -234,10 +234,10 @@ Unfortunately, their tempers are highly unpredictable, and they have been known 
 "Fly, Giant Carnivorous",Predator,2,,d6,30,60,DEX,DEX,"Giant flies look much like ordinary houseflies, but are about 3ft. Long.  Some are banded yellow and black, and are thus mistaken for giant bees.  Giant flies are predators, after killing prey, they will sometimes lay eggs in the remains.",Flying 60ft.,,
 "Fly, Robber",Predator,2,,d6,30,60,DEX,DEX,"Robber flies are 3ft long giant flies colored with black and yellow stripes. At a distance they look like killer bees.
 Robber flies are patient hunters. They often hide in shadows and wait for prey.",Advantage to stealth checks,Leap 30ft,
-"Frog, Giant Venomous",Sniper,2,,d6,30,60,DEX,DEX,"Giant venomous frogs are large (3‘ long), brightlycolored amphibians that feed primarily on gigantic species of vermin.",Swim 60ft.,"Sticky tongue attack at range, grapple",CON save or double damage
+"Frog, Giant Venomous",Sniper,2,,d6,30,60,DEX,DEX,"Giant venomous frogs are large (3' long), brightlycolored amphibians that feed primarily on gigantic species of vermin.",Swim 60ft.,"Sticky tongue attack at range, grapple",CON save or double damage
 Gargoyle,Predator,4,,d6,30,60,DEX,DEX,"Gargoyles are demonic-looking winged humanoid monsters with gray stone-like skin. They are often mistaken for winged stone statues, for they can remain still indefinitely without moving.",Flying move 60ft,"They can only be hit with magic or magical weapons
 Gargoyles are not affected by sleep or charm spells.","2 Claws, 1 Bite"
-Gelatinous Cube,Shaper,4,,1,20,,CON,CON,"The nearly transparent gelatinous cube travels slowly along dungeon corridors and cave floors, absorbing carrion, creatures, and trash. Inorganic material remains trapped and visible inside the cube’s body.
+Gelatinous Cube,Shaper,4,,1,20,,CON,CON,"The nearly transparent gelatinous cube travels slowly along dungeon corridors and cave floors, absorbing carrion, creatures, and trash. Inorganic material remains trapped and visible inside the cube's body.
 A typical gelatinous cube is ten feet on a side and weighs about 15,000 pounds; however, smaller specimens have been reported.
 A gelatinous cube attacks by slamming its body into its prey. It is capable of lashing out with a pseudopod, but usually engulfs foes.",Advantage to stealth checks,"On a hit:
 CON save or become paralysed for 2d4 turns","A gelatinous cube may be harmed by fire and weapons, but not by cold or lightning"
@@ -245,17 +245,17 @@ Ghoul,Predator,2,,d6,30,,STR,DEX,"Ghouls are undead monsters which eat the flesh
 Once an opponent is paralyzed, the ghoul will turn and attack another opponent, until either the ghoul or all the opponents are paralyzed or dead.
 Lasts d8 turns.
 Removed by a cure light wounds spell.",,
-Gnoll (Female),Soldier,1,,d6,30,,STR,STR,"Gnolls are hyena-headed, evil humanoids that wander in loose tribes. Most gnolls have dirty yellow or reddishbrown fur. An adult male gnoll is about 7½ feet tall and weighs 300 pounds.
+Gnoll (Female),Soldier,1,,d6,30,,STR,STR,"Gnolls are hyena-headed, evil humanoids that wander in loose tribes. Most gnolls have dirty yellow or reddishbrown fur. An adult male gnoll is about 7' feet tall and weighs 300 pounds.
 Gnolls are cruel, nocturnal carnivores, preferring intelligent creatures for food because they scream more.
 They show little discipline when fighting unless they have a strong leader.",,,
-Gnoll (Male),Soldier,2,,d6,30,,STR,STR,"Gnolls are hyena-headed, evil humanoids that wander in loose tribes. Most gnolls have dirty yellow or reddishbrown fur. An adult male gnoll is about 7½ feet tall and weighs 300 pounds.
+Gnoll (Male),Soldier,2,,d6,30,,STR,STR,"Gnolls are hyena-headed, evil humanoids that wander in loose tribes. Most gnolls have dirty yellow or reddishbrown fur. An adult male gnoll is about 7' feet tall and weighs 300 pounds.
 Gnolls are cruel, nocturnal carnivores, preferring intelligent creatures for food because they scream more.
 They show little discipline when fighting unless they have a strong leader.",,,
-Gnoll Leader,Brute,3,,1,30,,STR,STR,"Gnolls are hyena-headed, evil humanoids that wander in loose tribes. Most gnolls have dirty yellow or reddishbrown fur. An adult male gnoll is about 7½ feet tall and weighs 300 pounds.
+Gnoll Leader,Brute,3,,1,30,,STR,STR,"Gnolls are hyena-headed, evil humanoids that wander in loose tribes. Most gnolls have dirty yellow or reddishbrown fur. An adult male gnoll is about 7' feet tall and weighs 300 pounds.
 Gnolls are cruel, nocturnal carnivores, preferring intelligent creatures for food because they scream more.
 They show little discipline when fighting unless they have a strong leader.",,,
 Gnome,Soldier,1,,d8,30,,STR,DEX,"Gnomes are a human-like race related to dwarves. They are smaller than dwarves, and have long noses and full beards. Gnomes have well developed infravision (heat-sensing sight), and can ""see"" heat to 90' in the dark. They usually live in burrows in the lowlands. Gnomes are excellent metalsmiths and miners. They love gold and gems and have been known to make bad decisions just to obtain them. They love machinery of all kinds and like to use crossbows as missile weapons and war hammers in hand-tohand combat. Gnomes like most dwarves, but war with goblins and kobolds who steal their precious gold. They will usually attack kobolds on sight.",,,
-Gobber Ooze,Predator,1,,d3,30,,CON,CON,"Gobber oozes are an occasional side-effect of magical experimentation. When left laying out or improperly discarded, the chemicals and other substances used in the creation of magical items sometimes coalesce into a mindless 5‘ puddle of gray-green spotted ooze.
+Gobber Ooze,Predator,1,,d3,30,,CON,CON,"Gobber oozes are an occasional side-effect of magical experimentation. When left laying out or improperly discarded, the chemicals and other substances used in the creation of magical items sometimes coalesce into a mindless 5' puddle of gray-green spotted ooze.
 Attacks with a bludgeoning pseudopod.",Acid heals the ooze d6 hp,Can fit into small cracks and under closed doors.,
 Goblin,Sniper,1,-1,2d4,30,,DEX,DEX,"Goblins are a small incredibly ugly human-like race. Their skin is a pale earthy color, such as chalky tan or livid gray. Their eyes are red, and glow when there is little light, somewhat like rat's eyes. Goblins live underground and have well-developed infravision (heat-sensing sight) to 90'. Goblins hate dwarves and will attack them on sight.",,,
 Goblin Chieftain,Sniper,3,,1,30,,DEX,DEX,"Goblins are a small incredibly ugly human-like race. Their skin is a pale earthy color, such as chalky tan or livid gray. Their eyes are red, and glow when there is little light, somewhat like rat's eyes. Goblins live underground and have well-developed infravision (heat-sensing sight) to 90'. Goblins hate dwarves and will attack them on sight.",,,
@@ -284,7 +284,7 @@ These animals are usually ready for useful work by age two. Riding horses cannot
 A riding horse can carry up to 50 LOAD.",Attack 2 hooves,,
 "Horse, War",Soldier,3,,0,60,,STR,STR,"War  Horses  are  trained  and  bred  for  strength  and aggression. They usually are not ready for warfare beforeage three.
 A warhorse can carry up to 70 LOAD.",Attack 2 hooves,,
-Inmate,Brute,2,,d10,30,,STR,STR,"Dressed in ragged clothes and equipped with cast-off weapons and armor, the inmates are the insane descendents of the Asylum‘s original patients. Their mental disorders range from the catatonic to the bloodthirsty, and they are always unpredictable when encountered. Inmates delight in adorning their homes with disturbing graffiti, wicked traps, and assortments of meaningless objects. They are loosely governed by a lunatic prince who rules until the whims of his subjects‘ madness depose him.",,,
+Inmate,Brute,2,,d10,30,,STR,STR,"Dressed in ragged clothes and equipped with cast-off weapons and armor, the inmates are the insane descendents of the Asylum's original patients. Their mental disorders range from the catatonic to the bloodthirsty, and they are always unpredictable when encountered. Inmates delight in adorning their homes with disturbing graffiti, wicked traps, and assortments of meaningless objects. They are loosely governed by a lunatic prince who rules until the whims of his subjects' madness depose him.",,,
 Insect Swarm,Soldier,0.5,,1,30,60,DEX,DEX,"Insect swarms are a special type of monster. Swarms are not single creatures, but are whole communities of tiny creatures acting together. A swarm may be attracted to light, or a strange smell, or may be defending their lair. A swarm can be considered to be 10'x30'  but may be larger or smaller. Some types of creatures which swarm are: ants, spiders and centipedes (crawlers), bees and wasps (flyers), and beetles and locusts (both crawlers and flyers).",,,
 Killer Bee,Soldier,0.5,,d6,30,60,DEX,CON,"Killer Bees are 1' long giant bees with a very vicious temper. Killer bees almost always attack on sight, and will automatically attack anyone within 30' of their underground hive.",Flying move 60ft,"When a killer bee successfully stings (attacks), it dies, but the creature stung must CON save or die.
 The stinger will continue to work its way into the victim, doing an automatic 1 point of damage per round, unless 1 round is spent pulling it out.",
@@ -341,7 +341,7 @@ Orc Leader,Brute,3,,1,30,,STR,STR,"Orcs are grotesque humanoids bent on war and 
 An adult orc is a little over 6 feet tall and weighs about 210 pounds. Orcs prefer wearing vivid colors that many humans would consider unpleasant, such as blood red, mustard yellow, yellow-green, and deep purple.
 They utilize all manner of weapons and armor scavenged from battlefields.
 They speak their own rough and simple language, but many also speak some common or goblin.","When fighting in daylight, Orcs roll with disadvantage.","At his belt is a magic hand axe + 1 which he will hurl at on opponent, and he can do so and still attack normally in the same round of combat.",
-Owl Bear,Predator,5,,d4,30,,STR,CON,"Owlbears appear to be bears with owlish faces, including a large, sharp beak. An owlbear’s coat ranges in colour from brown-black to yellowish brown; its beak is a dull ivory colour. A full-grown male can stand as tall as 8 feet and weigh up to 1,500 pounds.
+Owl Bear,Predator,5,,d4,30,,STR,CON,"Owlbears appear to be bears with owlish faces, including a large, sharp beak. An owlbear's coat ranges in colour from brown-black to yellowish brown; its beak is a dull ivory colour. A full-grown male can stand as tall as 8 feet and weigh up to 1,500 pounds.
 Adventurers who have survived encounters with the creature often speak of the bestial madness in its red-rimmed eyes.
 Owlbears fight much as do bears, but are more aggressive.","1 Bite + 1 attack per claw.
 If both paws of an owl bear hit the same opponent in
@@ -349,7 +349,7 @@ one round, the owl bear will ""hug"" for an additional 2d8 points of
 damage. ",,
 Phantasm,Shaper,1,,d6,30,,DEX,DEX,"Phantasms are the mindless, ghost-like spirits of those who died from catastrophe and are doomed to continue the actions they performed prior to their deaths. Stuck in an endless, repetitive loop, they continue their mundane chores until either destroyed or their bones are put to rest. Phantasms present no great harm to those who encounter them, inflicting only incidental damage (1 point) to those who touch or pass through their deathly cold and insubstantial forms. 
 
-The only way to put a phantasm to rest is by either burying their mortal remains with religious ceremony or by the use of a cleric‘s ability to Turn Undead. A cleric of 6th level or greater can utilize their ability to destroy lesser undead as a result of a successful Turn Undead attempt to permanently eradicate the phantasm from existence.","Immune to damage
+The only way to put a phantasm to rest is by either burying their mortal remains with religious ceremony or by the use of a cleric's ability to Turn Undead. A cleric of 6th level or greater can utilize their ability to destroy lesser undead as a result of a successful Turn Undead attempt to permanently eradicate the phantasm from existence.","Immune to damage
 Attacks and spells have no effect upon a phantasm, nor do any other harmful substances such as poison, fire, or cold. Even holy water is ineffective.",,
 Poltergeist,Shaper,2,,1,30,,DEX,CON,"These ""noisy ghosts"" are the faint, lingering spirits of those who died in a state of great anger or madness.
 They are invisible to the naked eye, but appear as haggard reflections of their appearance during life to those who can discern the invisible.",Immune to sleep and charm,Resistant to physical damage (50%),Hurl whatever small objects are present
@@ -389,13 +389,13 @@ Giant shrews move so swiftly that they are able to bite twice per round.","They 
 A silence 15' radius spell will ""blind"" a giant shrew.
 If it cannot hear, it will have Disadv. to attacks and attackers have Adv. Against it","On an attack, the victim must WIS Save or run away in fear",2 attacks
 Skeleton,Soldier,1,,3d4,30,,STR,DEX,"Skeletons are mindless undead created by an evil MagicUser or Cleric, generally to guard a tomb or treasure hoard, or to act as guards for their creator.","Immune to sleep, charm and hold magic",Resistant to piercing and slashing weapons including arrows,
-"Slug, Great",Brute,1,,d6,10,,CON,CON,"Great slugs resemble common garden slugs except for their 3‘ long size.
-They can bite with their rasp-like gums and can spit a gob of acid slime up to 10‘ away.
+"Slug, Great",Brute,1,,d6,10,,CON,CON,"Great slugs resemble common garden slugs except for their 3' long size.
+They can bite with their rasp-like gums and can spit a gob of acid slime up to 10' away.
 A significant quantity of salt will do d8 points of damage if applied to a great slug.",Their skin secretes an acidic slime that does 1 point of damage if it comes into contact with skin.,,
-Small Men,Shaper,2,,2d4,30,,WIS,CON,"The Small Men are an enigma. Standing 4‘ high or less, these pale men dress in loose smocks & trousers and move with fluid dexterity, easily avoiding attacks.
+Small Men,Shaper,2,,2d4,30,,WIS,CON,"The Small Men are an enigma. Standing 4' high or less, these pale men dress in loose smocks & trousers and move with fluid dexterity, easily avoiding attacks.
 They never speak and carry out ineffable tasks within the dungeon.
 The Small Men are leftover magical creations of the Plated Mage created from higher baboons subjected to the pool of proto-matter in the Hexperiment, the Small Men seek to preserve the balance between Law and Chaos in Stonehell.
-With the ascent of the nixthisis‘ power and the overwhelming Chaotic forces that accompany that growth, the Small Men engage in seemingly meaningless tasks to even the Balance. These tasks usually consist of them creating ordered patterns of decoration and strange tableaus of construction through the dungeon.",May each cast a different spell up to level 2 once per 3 rounds,,
+With the ascent of the nixthisis' power and the overwhelming Chaotic forces that accompany that growth, the Small Men engage in seemingly meaningless tasks to even the Balance. These tasks usually consist of them creating ordered patterns of decoration and strange tableaus of construction through the dungeon.",May each cast a different spell up to level 2 once per 3 rounds,,
 "Snake, Spitting Cobra",Predator,1,,d6,30,,DEX,DEX,"A spitting cobra is a 3' long grayish-white snake.
 As with most small poisonous snakes, a spitting cobra will not attack human-sized or larger opponents unless startled or threatened.","Can squirt a stream of venom up to a distance of 6 feet.
 It aims for its victim's eyes.
@@ -416,8 +416,8 @@ Those caught while watching will dance as long as the original victim. ",,
 Sprite,Shaper,0.5,,3d6,30,60,DEX,DEX,"Sprites are small winged people about 1 foot tall related to pixies and elves. While shy, they are very curious and have a strange sense of humor.
 Sprites will never cause death on purpose even if they are attacked. ",Flying move 60ft,"Five sprites acting together can cast one curse spell.
 This will take the form of a magical practical joke, such as tripping or having one's nose grow.",
-Stirge,Predator,1,,d10,10,60,DEX,DEX,"A stirge’s coloration ranges from rust-red to reddish-brown, with a dirty yellow underside. The proboscis is pink at the tip, fading to gray at its base.
-A stirge’s body is about 1 foot long, with a wingspan of about 2 feet. It weighs about 1 pound.",Flying move 60ft,"When a stirge attacks a creature, it tries to thrust its beak into the victim's body to suck out blood for 1- 3 points of damage. A successful hit means that it has attached itself to the victim. If attached, it will automatically suck blood for 1- 3 points of damage per round until either it or its victim is dead then it will leave.","A flying stirge gains a bonus of + 2 on its first ""to hit"" roll against any one opponent due to its speed."
+Stirge,Predator,1,,d10,10,60,DEX,DEX,"A stirge's coloration ranges from rust-red to reddish-brown, with a dirty yellow underside. The proboscis is pink at the tip, fading to gray at its base.
+A stirge's body is about 1 foot long, with a wingspan of about 2 feet. It weighs about 1 pound.",Flying move 60ft,"When a stirge attacks a creature, it tries to thrust its beak into the victim's body to suck out blood for 1- 3 points of damage. A successful hit means that it has attached itself to the victim. If attached, it will automatically suck blood for 1- 3 points of damage per round until either it or its victim is dead then it will leave.","A flying stirge gains a bonus of + 2 on its first ""to hit"" roll against any one opponent due to its speed."
 Thoul,Soldier,3,,d6,30,,STR,DEX,"A thoul is a magical combination of a ghoul, a hobgoblin, and a troll.
 Except when very close, thouls look exactly like hobgoblins, and they are sometimes found as part of the bodyguard of a hobgoblin king.","On a hit: paralyze any creature of ogre-size or smaller (except elves) unless CON save.
 Once an opponent is paralyzed, the thoul will turn and attack another opponent, until either the thoul or all the opponents are paralyzed or dead.
@@ -427,7 +427,7 @@ Removed by a cure light wounds spell.",Regenerate 1 hit point per round as long 
 Trader,Leader,1,,d8,30,,STR,DEX,"Traders are first level fighters who make their living trading goods. They are similar to merchants, but much braver (and much better fighters). They usually carry swords and hand axes. They wear furs (treat their furs as leather armor) and carry shields. When  ncountered in the wilderness, they will be leading 1-4 pack mules carrying trade goods. ",,,
 Veteran,Soldier,2,,2d4,30,,STR,STR,"Veterans are low-level fighters, usually returning from or going to a war.",,,
 "Wasp, Giant",Soldier,0.5,,d6,30,60,DEX,DEX,Like regular wasps but much larger,Flying 60ft.,,
-Wight,Shaper,3,,d6,30,,WIS,CON,"A wight’s appearance is a weird and twisted reflection of the form it had in life. A wight is about the height and weight of a human. Wights do not possess any of the abilities they had in life.
+Wight,Shaper,3,,d6,30,,WIS,CON,"A wight's appearance is a weird and twisted reflection of the form it had in life. A wight is about the height and weight of a human. Wights do not possess any of the abilities they had in life.
 Any humanoid slain by a wight becomes a wight by the next sunset (but not less than 12 hours later).
 Wight spawn are under the command of the wight that created them and remain enslaved until its death.",Energy Drain: Each hit drains d8 CON (and corresponding HP),Immune to non-magical weapons,
 Wolf,Predator,2,2,2d6,60,,STR,STR,"Wolves are pack hunters known for their persistence and cunning. They prefer to surround and flank a foe when they can.
@@ -461,7 +461,7 @@ Ghasts try to attack with surprise whenever possible, striking from behind tombs
 Ghost,Shaper,10,,1,30,,STR,STR,"Ghosts are the spectral remnants of intelligent beings who, for one reason or another, cannot rest easily in their graves. A ghost normally resembles the form it had in life, but sometimes the spiritual form is altered. For instance, the ghost of someone who believed he or she was evil might look a bit demonic.",Immune to non-magical weapons,"WIS save on sight or fear
 Hit: lose 1 CON","May possess another living creature (WIS contest)
 May pass through solid objects"
-"Giant, Cloud",Soldier,12,3,d2,30,,STR,STR,"Cloud giants’ skin ranges in colour from milky white to light sky blue. They have hair of silvery white or brass, and their eyes are iridescent blue. Adults are about 18 feet tall and weigh about 5,000 pounds. Cloud giants can live to be 400 years old.
+"Giant, Cloud",Soldier,12,3,d2,30,,STR,STR,"Cloud giants' skin ranges in colour from milky white to light sky blue. They have hair of silvery white or brass, and their eyes are iridescent blue. Adults are about 18 feet tall and weigh about 5,000 pounds. Cloud giants can live to be 400 years old.
 Cloud giants dress in the finest clothing available and wear jewelry. They also appreciate music, and most can play one or more instruments (the harp is a favorite). They are suspicious of the smaller races, but do not usually prey upon them, preferring instead to demand tribute.
 Cloud giants fight in well-organized units, using carefully developed battle plans. They prefer to fight from a position above their opponents, dropping rocks on them.",,,
 "Giant, Cyclops",Brute,13,,1,30,,STR,STR,"A cyclops is a one-eyed giant. Huge and brutish, they most resemble hill giants, and even dress in the same ""style,"" layers of crudely prepared hides with the fur left on, unwashed and unrepaired.
@@ -499,15 +499,15 @@ Its body is frequently stylized to suit its creator. For example, it might look 
 Stone golems are formidable opponents, being physically powerful and difficult to harm.",Spell: Slow,,
 Gorgon,Brute,8,,d4,30,,STR,STR,Gorgons are magical monsters resembling bulls made of iron.,Breath: 60ft cone CON save petrify,,
 Griffon,Predator,7,,2d8,30,120,STR,STR,"Griffons are large carnivorous creatures resembling lions with the head, foreclaws and wings of eagles. From nose to tail, an adult griffon can measure as much as 8 feet.
-A pair of broad, golden wings emerge from the creature’s back and span 25 feet or more. An adult griffon weighs about 500 pounds.
-Griffons nest on high mountaintops, soaring down to feed on horses, the beast’s preferred prey. They hunt and travel in ?ocks. A Griffon will attack a horse over anything else, diving low to swipe with their claws.",Flying 120ft.,,
+A pair of broad, golden wings emerge from the creature's back and span 25 feet or more. An adult griffon weighs about 500 pounds.
+Griffons nest on high mountaintops, soaring down to feed on horses, the beast's preferred prey. They hunt and travel in ?ocks. A Griffon will attack a horse over anything else, diving low to swipe with their claws.",Flying 120ft.,,
 Hangman Tree,Predator,5,,1,0,,DEX,DEX,"Hangman trees are horrible, semi-animate creatures that fertilize themselves with dead bodies.
 A hangman tree has four animated limbs that can wrap around the necks of living creatures that pass beneath.
 The roots of this tree are also animated; they do not attack, but they do pull dead bodies below the surface of the ground for ""digestion.""","Hit: DEX save or grappled and damage each turn.
 STR save to escape",,
 Hawk,Predator,0.5,,d6,5,150,DEX,DEX,"Hawks are similar to eagles but slightly smaller, being 1 to 2 feet long with wingspans of 6 feet or less.",Flying 150ft.,,
 "Hawk, Giant",Predator,4,,d3,5,150,DEX,DEX,"Giant hawks are 4 to 6 feet long, with wingspans of 12 feet or more; they can carry off creatures of Halfling size or smaller.",Flying 150ft.,,
-Hellhound,Soldier,5,,2d4,30,,STR,STR,"Hellhounds are canine creatures sheathed in hellish flame. A typical hell hound stands 4½ feet high at the shoulder and weighs 120 pounds.
+Hellhound,Soldier,5,,2d4,30,,STR,STR,"Hellhounds are canine creatures sheathed in hellish flame. A typical hell hound stands 4' feet high at the shoulder and weighs 120 pounds.
 They are native to another plane where they hunt in packs; sometimes powerful wizards or evil priests summon them for use as watchdogs.",Breath fire 20ft cone,,
 Hippogriff,Brute,3,,2d8,60,120,STR,STR,"Hippogriffs resemble large Flying horses with the forefront of a bird of prey. A typical hippogriff is 9 feet long, has a wingspan of 20 feet, and weighs 1,000 pounds.
 A hippogriff avoids other creatures, dwelling in extreme altitudes. Griffons sometimes prey upon them, and hippogriffs will generally attack griffons on sight if they have a numerical advantage.
@@ -557,10 +557,10 @@ They may be found anywhere humans are found.
 They are ferocious predators, equally willing to eat animal or human flesh.",,,
 Manticore,Predator,6,1,d2,30,60,STR,STR,"Manticores look like an overgrown lion with thick leathery wings and an ugly humanoid face, often like that of a human or bearded dwarf.
 Their tail ends in an assortment of spikes, which the beast may fire as projectiles; a maximum of 24 are available, and the manticore regrows 1d6 per day. A typical manticore is about 10 feet long and weighs about 1,000 pounds.
-Manticores are vicious predators, having a preference for human flesh. They will use their ranged attacks to “soften up” potential prey before closing to melee.",,,
-Mastodon,Brute,15,,2d8,30,,STR,STR,"Mastodons (and mammoths, which can also be represented by the above statistics) are hairy relatives of the elephant found in cold “lost world” areas.
+Manticores are vicious predators, having a preference for human flesh. They will use their ranged attacks to 'soften up' potential prey before closing to melee.",,,
+Mastodon,Brute,15,,2d8,30,,STR,STR,"Mastodons (and mammoths, which can also be represented by the above statistics) are hairy relatives of the elephant found in cold 'lost world' areas.
 A mastodon has no treasure as such, but the tusks of a mastodon are worth 2d4 x 100 sp.",,,
-Mermaid,Shaper,1,,3d6,30,30,DEX,DEX,"Mermaids have the upper bodies of humans and the lower bodies of dolphins. Also called “sirens,” mermaids often attempt to lure sailors to their doom.
+Mermaid,Shaper,1,,3d6,30,30,DEX,DEX,"Mermaids have the upper bodies of humans and the lower bodies of dolphins. Also called 'sirens,' mermaids often attempt to lure sailors to their doom.
 They accomplish this by means of their enchanting songs which will attract any humans within 100ft.
 Mermaids arm themselves with spears or daggers. They hunt fish and harvest kelp for food.",Swimming 30ft.,Spell: Charm person all who hear their song. Adv. if multiple mermaids sing,
 Mummy,Brute,5,,d4,20,,STR,STR,"Mummies are undead monsters, linen-wrapped preserved corpses animated through the auspices of dark desert gods best forgotten. Most mummies are 5 to 6 feet tall and weigh about 120 pounds. ","Immune to sleep, charm and hold magic and non-magical weapons","Hit: CON save or contract mummy rot, cannot heal until cured",
@@ -586,20 +586,20 @@ upside down.",Climbing 60ft,Hit: grappled by sticky leg and bite next turn,
 "Rhinoceros, Black",Brute,8,,d12,30,,STR,STR,"The rhinoceros is infamous for its bad temper and willingness to charge intruders.
 The statistics presented here are based on the African black rhino, which is 6 to 14 feet long, 3 to 6 feet high at the shoulder, and weighs up to 6,000 pounds.
 These statistics can describe any herbivore of similar size and similar natural weapons (antlers, horns, tusks, or the like).",Charge: may double movement and attack in a single round,,
-"Rhinoceros, Woolly",Brute,12,,d8,30,,STR,STR,"The woolly rhinoceros is a prehistoric beast with long fur, found in primitive “lost world” areas in colder territories.
+"Rhinoceros, Woolly",Brute,12,,d8,30,,STR,STR,"The woolly rhinoceros is a prehistoric beast with long fur, found in primitive 'lost world' areas in colder territories.
 They behave much as the black rhino, infamous for its bad temper and willingness to charge intruders.",Charge: may double movement and attack in a single round,,
-"Roc, Normal",Predator,6,,d12,20,150,STR,DEX,"Rocs are birds similar to eagles, but even a “normal” roc is huge, being about 9 feet long and having a wingspan of 24 feet. A roc’s plumage is either dark brown or golden from head to tail.
+"Roc, Normal",Predator,6,,d12,20,150,STR,DEX,"Rocs are birds similar to eagles, but even a 'normal' roc is huge, being about 9 feet long and having a wingspan of 24 feet. A roc's plumage is either dark brown or golden from head to tail.
 A roc attacks from the air, swooping earthward to snatch prey in its powerful talons and carry it off for itself and its young to devour.
 A solitary roc is typically hunting and will attack any human-sized or larger creature that appears edible. A mated pair of rocs attack in concert, fighting to the death.
 to defend their nests or hatchlings.",Flying 150ft.,Hit: grappled with claws and carry away,
-"Roc, Large",Predator,12,,d8,20,150,STR,DEX,"Rocs are birds similar to eagles, large rocs are about 18 feet long and have wingspans of around 48 feet. A roc’s plumage is either dark brown or golden from head to tail.
+"Roc, Large",Predator,12,,d8,20,150,STR,DEX,"Rocs are birds similar to eagles, large rocs are about 18 feet long and have wingspans of around 48 feet. A roc's plumage is either dark brown or golden from head to tail.
 A roc attacks from the air, swooping earthward to snatch prey in its powerful talons and carry it off for itself and its young to devour.
 A solitary roc is typically hunting and will attack any human-sized or larger creature that appears edible. A mated pair of rocs attack in concert, fighting to the death.",Flying 150ft.,Hit: grappled with claws and carry away,
-"Roc, Giant",Predator,32,,1,20,150,STR,DEX,"Rocs are birds similar to eagles, giant rocs average 30 feet long and have massive wingspans of around 80 feet. A roc’s plumage is either dark brown or golden from head to tail.
+"Roc, Giant",Predator,32,,1,20,150,STR,DEX,"Rocs are birds similar to eagles, giant rocs average 30 feet long and have massive wingspans of around 80 feet. A roc's plumage is either dark brown or golden from head to tail.
 A roc attacks from the air, swooping earthward to snatch prey in its powerful talons and carry it off for itself and its young to devour.
 A solitary roc is typically hunting and will attack any human-sized or larger creature that appears edible. A mated pair of rocs attack in concert, fighting to the death.",Flying 150ft.,Hit: grappled with claws and carry away,
 Rust Monster,Predator,5,,d4,30,,DEX,DEX,"The hide of these creatures varies in colour from a yellowish tan underside to a rust-red upper back. The typical rust monster measures 5 feet long and 3 feet high, weighing 200 pounds.
-A rust monster’s prehensile antennae can rust metals on contact.
+A rust monster's prehensile antennae can rust metals on contact.
 The metal oxides created by this monster are its food; a substantial amount of metal dropped in its path may cause it to cease pursuit of metal-armoured characters.","Touch metal: non-magical weapons are ruined, magical weapons -1",,
 Sabre-Tooth Cat,Predator,8,,d4,60,,DEX,DEX,"The sabre-tooth cat, or smilodon, is a prehistoric great cat with very large canine teeth. They behave much as do mountain lions or jaguars.",,,
 "Salamander, Flame",Predator,8,,d4,30,,DEX,DEX,"Flame salamanders come from the Elemental Plane of Fire. They look like giant snakes, more than 12' long, with dragonlike heads and lizard forelimbs. Their scales are all the colors of flame, red and orange and yellow.
@@ -624,7 +624,7 @@ A shrieker has no means of attack. Instead, it lures monsters to its vicinity by
 "Snake, Python",Predator,5,,d3,30,,DEX,DEX,,"Hit: Grappled, wraps around victim and contrict damage each round",,
 "Snake, Sea",Predator,3,,d8,10,30,DEX,DEX,"Sea snakes are relatively small; the largest varieties rarely exceed 6ft. in length. They have relatively small heads, and are very stealthy in the water.
 Fortunately, sea snakes rarely attack; only if molested (grabbed, stepped on, etc.) will they do so. They are very clumsy when out of the water.",Swimming 30ft.,Adv. to Stealth checks,Hit: CON save vs. poison or die
-Spectre,Shaper,6,,d4,30,90,STR,STR,"A spectre looks much as it did in life and can be easily recognized by those who knew the individual or have seen the individual’s face in a painting or a drawing.
+Spectre,Shaper,6,,d4,30,90,STR,STR,"A spectre looks much as it did in life and can be easily recognized by those who knew the individual or have seen the individual's face in a painting or a drawing.
 In many cases, the evidence of a violent death is visible on its body. A spectre is roughly human-sized and is weightless.","Immune to sleep, charm and hold magic and non-magical weapons",Hit: -2 CON,
 "Spider, Giant Tarantula",Predator,4,,d3,30,30,DEX,DEX,"Giant tarantulas are huge, hairy spiders, about the size of a pony. They run down their prey much as wolves do.","On a hit: CON Save or have painful spasms which resemble a frantic dance for d12 turns.
 This dance has a magical effect on onlookers, and they may be affected. Anyone watching must WIS Save or start to dance in the same way.
@@ -651,7 +651,7 @@ Troglodyte,Soldier,2,,d8,30,,STR,STR,"Troglodytes are very intelligent lizardlik
 They can change colour at will.
 Troglodytes secrete a smelly oil that keeps their scaly skin supple. All mammals (including, of course, all the standard character races) find the scent repulsive.
 Troglodytes are very hostile, attacking equal or weaker non-troglodyte groups on sight. They prefer to attack with surprise, depending on their color-changing ability for this.",Advantage to stealth checks,DisAdv. to attack rolls of enemies within 10ft.,
-Troll,Brute,6,,d8,30,,STR,STR,"A typical adult troll stands 9 feet tall and weighs 500 pounds. A troll’s rubbery hide is moss green, mottled green and gray, or putrid gray. The hair is usually greenish black or iron gray.
+Troll,Brute,6,,d8,30,,STR,STR,"A typical adult troll stands 9 feet tall and weighs 500 pounds. A troll's rubbery hide is moss green, mottled green and gray, or putrid gray. The hair is usually greenish black or iron gray.
 Trolls walk upright but hunched forward with sagging shoulders. Their gait is uneven, and when they run, their arms dangle and drag along the ground. For all this seeming awkwardness, trolls are very agile.
 Trolls are hateful creatures, reveling in combat and bloodshed. Though trolls could easily use a variety of weapons, they much prefer the sensation of flesh being rent by their teeth and claws.",Regenerate 1 hp per round,2 attacks,
 Unicorn,Predator,4,,d6,90,,STR,STR,"Unicorns are horselike creatures having a single spirallytwisted horn in the middle of the forehead. A typical adult unicorn grows to 8 feet in length, stands 5 feet high at the shoulder, and weighs 1,200 pounds. A unicorn has deep sea blue, violet, brown, or fiery gold eyes. 
@@ -662,7 +662,7 @@ Alicorns are as evil as unicorns are good, using their razor sharp horns and cla
 Urgoblin,Soldier,2,,0,30,,STR,STR,"These creatures appear to be normal hobgoblins, but urgoblins are actually a mutant subspecies. Urgoblins are able to regenerate much as do trolls.
 Some hobgoblin tribes consider urgoblins an abomination, and kill them whenever they can be identified. Other hobgoblin tribes employ them as bodyguards for the chieftain, and accord them great honor. There are even rumors of a tribe entirely made up of urgoblins.",Regenerate 1 hp per round,,
 Vampire,Leader,8,,d6,30,60,STR,STR,"Vampires appear just as they did in life, although their features are often hardened and feral, with the predatory look of wolves. They often embrace finery and decadence and may assume the guise of nobility. Despite their human appearance, vampires can be easily recognized, for they cast no shadows and throw no reflections in mirrors. They speak any languages they knew in life.
-Slaying a Vampire: Reducing a vampire’s hit points to 0 doesn’t always destroy it. However, certain attacks can slay vampires. Exposing any vampire to direct sunlight or running water destroys it in three rounds. Driving a wooden stake through a vampire’s heart instantly slays the monster. However, it returns to life if the stake is removed, unless the body is destroyed, by water or sunlight as described above, or by burning it completely in a funeral pyre.","Immune to sleep, charm and hold magic and non-magical weapons
+Slaying a Vampire: Reducing a vampire's hit points to 0 doesn't always destroy it. However, certain attacks can slay vampires. Exposing any vampire to direct sunlight or running water destroys it in three rounds. Driving a wooden stake through a vampire's heart instantly slays the monster. However, it returns to life if the stake is removed, unless the body is destroyed, by water or sunlight as described above, or by burning it completely in a funeral pyre.","Immune to sleep, charm and hold magic and non-magical weapons
 Command the lesser creatures of the night and once per day can call forth 10d10 rats, 5d4 giant rats, 10d10 bats, 3d6 giant bats, or a pack of 3d6 wolves.","Hit: bite restore vampire hp equal to damage caused.
 If the victim dies, they will rise as a new vampire","Spells: Charm person, Assume Giant Bat form"
 "Weasel, Giant",Predator,1,1,d8,60,,DEX,DEX,"Giant weasels resemble their more normally sized cousins, having long bodies, short legs, and pointed, toothy snouts. They are predatory animals, hunting those creatures smaller than themselves.",Hit: Bite and hang on,,
@@ -674,13 +674,6 @@ Narwhals are found in cold northern seas. They are not particularly aggressive."
 "Whale, Sperm",Predator,36,,d3,0,60,STR,STR,These creatures can be up to 60 feet long. They prey on giant squid.,Swimming 60ft.,Fire sound beam 50ft. Hit: Stun,
 "Wolf, Dire",Predator,4,,d4,60,,DEX,DEX,"Dire wolves are efficient pack hunters that will kill anything they can catch. Dire wolves are generally mottled grey or black, about 9 feet long and weighing some 800 pounds.",,,
 Wraith,Brute,4,,d4,0,90,STR,STR,"Wraiths are incorporeal creatures born of evil and darkness. In some cases, the grim silhouette of a wraith might appear armored or outfitted with weapons. This appearance does not affect the creature's AC or combat abilities but only reflects the shape it had in life.","Immune to sleep, charm and hold magic and non-magical weapons",Flying 60ft.,
-Wyvern,Predator,7,,d6,30,90,STR,STR,"A distant cousin to the true dragons, the wyvern is a huge flying lizard with a poisonous stinger in its tail. A wyvern’s body is 15 feet long, and dark brown to grey; half that length is tail. Its wingspan is about 20 feet. A wyvern weighs about one ton. They are built more like bats than lizards, having two legs and two wings; contrast this with true dragons, which have four legs and two wings.
+Wyvern,Predator,7,,d6,30,90,STR,STR,"A distant cousin to the true dragons, the wyvern is a huge flying lizard with a poisonous stinger in its tail. A wyvern's body is 15 feet long, and dark brown to grey; half that length is tail. Its wingspan is about 20 feet. A wyvern weighs about one ton. They are built more like bats than lizards, having two legs and two wings; contrast this with true dragons, which have four legs and two wings.
 Wyverns are of animal intelligence, but are excellent predators with good hunting abilities. When attacking they will make a loud hiss, or sometimes a deep-throated growl much like that of a bull alligator.
-Wyverns attack nearly anything that isn’t obviously more powerful than themselves. A wyvern dives from the air, clawing at its opponent with its talons and stinging it to death.",Flying 90ft.,Hit: sting CON save vs. poison or die,Grab prey and carry off - grappled
-,Predator,7,,1,30,90,STR,STR,,,,
-,Predator,7,,1,30,90,STR,STR,,,,
-,Predator,7,,1,30,90,STR,STR,,,,
-,Predator,7,,1,30,90,STR,STR,,,,
-,Predator,7,,1,30,90,STR,STR,,,,
-,Predator,7,,1,30,90,STR,STR,,,,
-,Predator,7,,1,30,90,STR,STR,,,,
+Wyverns attack nearly anything that isn't obviously more powerful than themselves. A wyvern dives from the air, clawing at its opponent with its talons and stinging it to death.",Flying 90ft.,Hit: sting CON save vs. poison or die,Grab prey and carry off - grappled
