@@ -30,6 +30,7 @@ const MonsterSelector: React.FunctionComponent = () => {
             <Grid container spacing={2}>
                 <Grid item xs={8}>
                     <Select
+                        placeholder="Search for monsters…"
                         onChange={(item) => dispatch(selectMonster(item?.value))}
                         options={monsters.map(monster => ({
                             label: `${monster.name} [${monster.hitDice}HD]`,
