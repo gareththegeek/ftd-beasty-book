@@ -32,7 +32,7 @@ const MonsterSelector: React.FunctionComponent = () => {
                     <Select
                         onChange={(item) => dispatch(selectMonster(item?.value))}
                         options={monsters.map(monster => ({
-                            label: `${monster.name} (${monster.hitDice}HD)`,
+                            label: `${monster.name} [${monster.hitDice}HD]`,
                             value: monster.id
                         }))} />
                 </Grid>
