@@ -7,8 +7,7 @@ import Category from '../../redux/categories/Category'
 import { selectCategories } from '../../redux/categories/selectors'
 import { requestMonsterList, selectMonster, selectMonsterCategory } from '../../redux/monsters/actions'
 import { CategoryType } from '../../redux/monsters/CategoryType'
-import MonsterViewModel from '../../redux/monsters/MonsterViewModel'
-import { selectMonsterList, selectMonsterLoading, selectMonsterViewModel } from '../../redux/monsters/selectors'
+import { selectMonsterList, selectMonsterViewModel } from '../../redux/monsters/selectors'
 
 const mapCategoryToOption = (category?: Category) => ({
     value: category?.id,
@@ -49,6 +48,7 @@ const MonsterSelector: React.FunctionComponent = () => {
             <Grid container spacing={2}>
                 <Grid item xs={8}>
                     <Select
+                        placeholder="Search for monsters…"                        
                         value={monster && toSelectItem(monster)}
                         onChange={(item) => history.push(`/${item?.value}`)}
                         options={monsters.map(monster => (toSelectItem(monster)))} />
