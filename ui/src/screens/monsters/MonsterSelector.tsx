@@ -40,12 +40,9 @@ const MonsterSelector: React.FunctionComponent = () => {
         dispatch(requestMonsterList())
     }, [dispatch])
 
-    console.log(id, monster)
-
-    if (id !== monster?.id) {
-        console.log(`selecting ${id}`)
+    useEffect(() => {
         dispatch(selectMonster(id))
-    }
+    }, [dispatch, id])
 
     return (
         <Box m={1}>
