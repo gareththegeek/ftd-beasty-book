@@ -1,7 +1,11 @@
-import { call, put, select, takeEvery } from 'redux-saga/effects'
+import { call, put, select, take, takeEvery } from 'redux-saga/effects'
 import { fetchMonster, fetchMonsters } from '../../services/monsters'
-import { selectCategory } from '../categories/selectors'
-import { selectHitDice } from '../hitDice/selectors'
+import { requestCategories } from '../categories/actions'
+import { SET_CATEGORIES_LOOKUP } from '../categories/actionTypes'
+import { selectCategories, selectCategory } from '../categories/selectors'
+import { requestHitDice } from '../hitDice/actions'
+import { SET_HIT_DICE_LOOKUP } from '../hitDice/actionTypes'
+import { selectAllHitDice, selectHitDice } from '../hitDice/selectors'
 import PayloadAction from '../PayloadAction'
 import {
     buildViewModel,
@@ -16,7 +20,8 @@ import {
     BUILD_VIEW_MODEL,
     REQUEST_MONSTER_LIST,
     SELECT_MONSTER,
-    SELECT_MONSTER_CATEGORY
+    SELECT_MONSTER_CATEGORY,
+    SET_MONSTER_ERROR
 } from './actionTypes'
 import { CategoryType } from './CategoryType'
 import { mapMonster } from './mapMonster'
@@ -57,17 +62,29 @@ export function* selectMonsterSaga(action: PayloadAction<string | undefined>) {
     try {
         const monsterId = action.payload
 
+        const categories = yield select(selectCategories)
+        const hitDice = yield select(selectAllHitDice)
+
+        if (categories.length === 0) {
+            yield put(requestCategories())
+            yield take([SET_CATEGORIES_LOOKUP, SET_MONSTER_ERROR])
+        }
+        if (hitDice.length === 0) {
+            yield put(requestHitDice())
+            yield take([SET_HIT_DICE_LOOKUP, SET_MONSTER_ERROR])
+        }
+
         if (!monsterId) {
             yield put(setMonsterViewModel(undefined))
             return
         }
 
         yield put(setSelectedMonsterLoading())
-
+        
         const monster: Monster = yield call(fetchMonster, monsterId)
 
         yield put(setSelectedMonster(monster))
-        
+
         yield put(buildViewModel())
     } catch (e) {
         yield put(setMonsterError(e.message))

@@ -8,6 +8,7 @@ import Category from './Category'
 export function* requestCategoriesSaga() {
     try {
         const categories: Category[] = yield call(fetchCategories)
+
         yield put(setCategories(categories))
         const lookup = Object.assign(
             {},
