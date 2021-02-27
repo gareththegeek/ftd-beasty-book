@@ -19,6 +19,10 @@ app.use('/.well-known', express.static(path.join(__dirname, '.well-known')))
 
 routes(app)
 
+app.get('*', (_, res) =>
+    res.sendFile(path.join(__dirname, publicPath, 'index.html'))
+)
+
 app.use(errorHandler)
 
 export default app
