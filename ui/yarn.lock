@@ -9770,10 +9770,10 @@ redux-saga@^1.1.3:
   dependencies:
     "@redux-saga/core" "^1.1.3"
 
-redux-test-saga@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/redux-test-saga/-/redux-test-saga-1.1.2.tgz#af7f0c9eb2b802077614bd82cd8b63ac07ef3614"
-  integrity sha512-61Nm5SrSoKL4Mxn4OVogp6VQ8nBHJFUyh8CuNTbm3BUa9CeRWNSbWbECXJwr3/D7VxhBILL/heEuIJ2D2U/SpA==
+redux-test-saga@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/redux-test-saga/-/redux-test-saga-1.1.3.tgz#9443b0eace74c40746607cd3f79eece42c183256"
+  integrity sha512-33dYn6N22DtYGda1Wc9wAqAbR5ywpmjwaZ0XGMjNrJNoKUW+f+6gNL+kpSWHH1zwEK9cNPVh/b0UMw9wUKMFWg==
   dependencies:
     redux "^4.0.5"
     redux-saga "^1.1.3"
