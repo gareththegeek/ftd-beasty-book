@@ -22,7 +22,8 @@ describe('/api/monsters/:id', () => {
             attack: 'dex',
             defence: 'dex',
             description: 'Boblin is a Goblin',
-            techniques: ['Bree-yark!']
+            techniques: ['Bree-yark!'],
+            tags: ['basic-fantasy', 'goblinoid', 'humanoid']
         }
 
         repo.getById.mockImplementation((id: string) =>
