@@ -41,6 +41,7 @@ import fs from 'fs'
         .pipe(csv())
         .on('data', (row) => {
             const techniques = [row.T1, row.T2, row.T3].filter((x) => x !== '')
+            const tags = row.Tags.split(',').trim()
             const monster = {
                 id: getId(row.Name),
                 name: row.Name,
@@ -53,7 +54,8 @@ import fs from 'fs'
                 attack: (row.Atk as string).toLowerCase(),
                 defence: (row.Def as string).toLowerCase(),
                 description: row.Description,
-                techniques
+                techniques,
+                tags
             }
             //monsterRepo.upsert(monster)
             monsters.push(monster)
