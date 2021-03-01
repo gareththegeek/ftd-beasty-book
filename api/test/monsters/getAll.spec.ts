@@ -21,7 +21,8 @@ describe('/api/monsters', () => {
                 defence: 'str',
                 description:
                     'This is the description of the monster\nIt has more than one line',
-                techniques: ['Technique number one\nhas two lines']
+                techniques: ['Technique number one\nhas two lines'],
+                tags: ['humanoid']
             },
             {
                 id: 'deadly-creature-with-brackets',
@@ -32,7 +33,8 @@ describe('/api/monsters', () => {
                 attack: 'dex',
                 defence: 'con',
                 description: 'A different description',
-                techniques: ['Technique 1', 'Technique 2', 'Technique 3']
+                techniques: ['Technique 1', 'Technique 2', 'Technique 3'],
+                tags: ['basic-fantasy', 'humanoid']
             }
         ]
 
