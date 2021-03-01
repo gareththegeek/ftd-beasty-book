@@ -3,7 +3,6 @@ import { ApplicationInsights } from '@microsoft/applicationinsights-web'
 const instrumentationKey = process.env.REACT_APP_APPINSIGHTS_INSTRUMENTATIONKEY
 
 if (!!instrumentationKey) {
-    console.info(`Instrumentation key: ${instrumentationKey}`)
     const appInsights = new ApplicationInsights({
         config: {
             instrumentationKey
