@@ -41,7 +41,9 @@ const MonsterSelector: React.FunctionComponent = () => {
 
     useEffect(() => {
         dispatch(selectMonster(id))
+        console.log(`dispatched ${id}`)
     }, [dispatch, id])
+    console.log(`render selector ${id}`)
 
     return (
         <Box m={1}>
