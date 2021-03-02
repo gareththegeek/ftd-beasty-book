@@ -1,6 +1,6 @@
 import { Action } from 'redux'
 import PayloadAction from '../PayloadAction'
-import { REQUEST_CATEGORIES, SET_CATEGORIES, SET_CATEGORIES_LOOKUP } from './actionTypes'
+import { REQUEST_CATEGORIES, REQUEST_CATEGORIES_COMPLETE, SET_CATEGORIES, SET_CATEGORIES_LOOKUP } from './actionTypes'
 import { CategoriesLookup } from './CategoriesLookup'
 import Category from './Category'
 
@@ -16,4 +16,8 @@ export const setCategories = (categories: Category[]): PayloadAction<Category[]>
 export const setCategoriesLookup = (lookup: CategoriesLookup): PayloadAction<CategoriesLookup> => ({
     type: SET_CATEGORIES_LOOKUP,
     payload: lookup
+})
+
+export const requestCategoriesComplete = (): Action => ({
+    type: REQUEST_CATEGORIES_COMPLETE
 })

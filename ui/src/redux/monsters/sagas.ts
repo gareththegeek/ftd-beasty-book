@@ -1,10 +1,10 @@
 import { call, put, select, take, takeEvery } from 'redux-saga/effects'
 import { fetchMonster, fetchMonsters } from '../../services/monsters'
 import { requestCategories } from '../categories/actions'
-import { SET_CATEGORIES_LOOKUP } from '../categories/actionTypes'
+import { REQUEST_CATEGORIES_COMPLETE } from '../categories/actionTypes'
 import { selectCategories, selectCategory } from '../categories/selectors'
 import { requestHitDice } from '../hitDice/actions'
-import { SET_HIT_DICE_LOOKUP } from '../hitDice/actionTypes'
+import { REQUEST_HIT_DICE_COMPLETE } from '../hitDice/actionTypes'
 import { selectAllHitDice, selectHitDice } from '../hitDice/selectors'
 import PayloadAction from '../PayloadAction'
 import {
@@ -67,11 +67,11 @@ export function* selectMonsterSaga(action: PayloadAction<string | undefined>) {
 
         if (categories.length === 0) {
             yield put(requestCategories())
-            yield take([SET_CATEGORIES_LOOKUP, SET_MONSTER_ERROR])
+            yield take([REQUEST_CATEGORIES_COMPLETE, SET_MONSTER_ERROR])
         }
         if (hitDice.length === 0) {
             yield put(requestHitDice())
-            yield take([SET_HIT_DICE_LOOKUP, SET_MONSTER_ERROR])
+            yield take([REQUEST_HIT_DICE_COMPLETE, SET_MONSTER_ERROR])
         }
 
         if (!monsterId) {
@@ -80,7 +80,7 @@ export function* selectMonsterSaga(action: PayloadAction<string | undefined>) {
         }
 
         yield put(setSelectedMonsterLoading())
-        
+
         const monster: Monster = yield call(fetchMonster, monsterId)
 
         yield put(setSelectedMonster(monster))

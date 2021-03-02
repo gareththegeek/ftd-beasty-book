@@ -1,7 +1,7 @@
 import { testSaga } from 'redux-test-saga'
 import { fetchHitDice } from '../../services/hitDice'
 import { setMonsterError } from '../monsters/actions'
-import { requestHitDice, setHitDice, setHitDiceLookup } from './actions'
+import { requestHitDice, requestHitDiceComplete, setHitDice, setHitDiceLookup } from './actions'
 import HitDice from './HitDice'
 import { requestHitDiceSaga } from './sagas'
 
@@ -41,6 +41,7 @@ describe('requestHitDiceSaga', () => {
             .result(expected.all)
             .put(setHitDice(expected.all))
             .put(setHitDiceLookup(expected.lookup))
+            .put(requestHitDiceComplete())
             .done()
     })
 
