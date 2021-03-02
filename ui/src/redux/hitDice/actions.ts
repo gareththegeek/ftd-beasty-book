@@ -1,6 +1,6 @@
 import { Action } from 'redux'
 import PayloadAction from '../PayloadAction'
-import { REQUEST_HIT_DICE, SET_HIT_DICE, SET_HIT_DICE_LOOKUP } from './actionTypes'
+import { REQUEST_HIT_DICE, REQUEST_HIT_DICE_COMPLETE, SET_HIT_DICE, SET_HIT_DICE_LOOKUP } from './actionTypes'
 import HitDice from './HitDice'
 import { HitDiceLookup } from './HitDiceLookup'
 
@@ -16,4 +16,8 @@ export const setHitDice = (hitDice: HitDice[]): PayloadAction<HitDice[]> => ({
 export const setHitDiceLookup = (lookup: HitDiceLookup): PayloadAction<HitDiceLookup> => ({
     type: SET_HIT_DICE_LOOKUP,
     payload: lookup
+})
+
+export const requestHitDiceComplete = (): Action => ({
+    type: REQUEST_HIT_DICE_COMPLETE
 })

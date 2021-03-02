@@ -4,7 +4,8 @@ import { setMonsterError } from '../monsters/actions'
 import {
     requestCategories,
     setCategories,
-    setCategoriesLookup
+    setCategoriesLookup,
+    requestCategoriesComplete
 } from './actions'
 import Category from './Category'
 import { requestCategoriesSaga } from './sagas'
@@ -53,6 +54,7 @@ describe('requestCategoriesSaga', () => {
             .result(expected.all)
             .put(setCategories(expected.all))
             .put(setCategoriesLookup(expected.lookup))
+            .put(requestCategoriesComplete())
             .done()
     })
 

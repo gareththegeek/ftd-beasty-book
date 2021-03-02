@@ -1,7 +1,7 @@
 import { call, put, takeEvery } from 'redux-saga/effects'
 import { fetchHitDice } from '../../services/hitDice'
 import { setMonsterError } from '../monsters/actions'
-import { setHitDice, setHitDiceLookup } from './actions'
+import { requestHitDiceComplete, setHitDice, setHitDiceLookup } from './actions'
 import { REQUEST_HIT_DICE } from './actionTypes'
 import HitDice from './HitDice'
 
@@ -14,6 +14,7 @@ export function* requestHitDiceSaga() {
             ...hitDice.map((hitDie) => ({ [hitDie.id]: hitDie }))
         )
         yield put(setHitDiceLookup(lookup))
+        yield put(requestHitDiceComplete())
     } catch (e) {
         console.error(e)
         yield put(setMonsterError(e.message))
