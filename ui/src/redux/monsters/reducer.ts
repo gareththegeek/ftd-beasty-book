@@ -28,7 +28,6 @@ const reducer = (state: MonstersState = initialState(), action: Action) => {
                 all: (action as PayloadAction<MonsterInfo[]>).payload,
                 loading: false,
                 error: undefined,
-                viewModel: undefined,
                 selectedMonster: undefined
             }
         case SET_SELECTED_MONSTER:
@@ -51,7 +50,6 @@ const reducer = (state: MonstersState = initialState(), action: Action) => {
                 ...state,
                 loading: true,
                 error: undefined,
-                viewModel: undefined,
                 selectedMonster: undefined
             }
         case SET_MONSTER_ERROR:
