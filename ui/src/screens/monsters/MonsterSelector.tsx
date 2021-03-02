@@ -43,7 +43,7 @@ const MonsterSelector: React.FunctionComponent = () => {
         dispatch(selectMonster(id))
         console.log(`dispatched ${id}`)
     }, [dispatch, id])
-    console.log(`render selector ${id}`)
+    console.log('render selector', id, monster)
 
     return (
         <Box m={1}>
