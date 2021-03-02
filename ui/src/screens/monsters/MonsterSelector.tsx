@@ -41,16 +41,14 @@ const MonsterSelector: React.FunctionComponent = () => {
 
     useEffect(() => {
         dispatch(selectMonster(id))
-        console.log(`dispatched ${id}`)
     }, [dispatch, id])
-    console.log('render selector', id, monster)
 
     return (
         <Box m={1}>
             <Grid container spacing={2}>
                 <Grid item xs={8}>
                     <Select
-                        placeholder="Search for monsters…"                        
+                        placeholder="Search for monsters…"
                         value={monster && toSelectItem(monster)}
                         onChange={(item) => history.push(`/${item?.value}`)}
                         options={monsters.map(monster => (toSelectItem(monster)))} />
