@@ -43,6 +43,7 @@ export function* buildViewModelSaga() {
         const monster = yield select(selectSelectedMonster)
 
         if (!monster) {
+            console.log('buildViewModelSaga -> setMonsterViewModel(undefined)', monster)
             yield put(setMonsterViewModel(undefined))
             return
         }
@@ -52,6 +53,7 @@ export function* buildViewModelSaga() {
 
         const viewModel = yield call(mapMonster, monster, hitDice, category)
 
+        console.log('buildViewModelSaga -> setMonsterViewModel(viewModel)', viewModel)
         yield put(setMonsterViewModel(viewModel))
     } catch (e) {
         yield put(setMonsterError(e.message))
@@ -75,6 +77,7 @@ export function* selectMonsterSaga(action: PayloadAction<string | undefined>) {
         }
 
         if (!monsterId) {
+            console.log('selectMonsterSaga -> setMonsterViewModel(undefined)', monsterId)
             yield put(setMonsterViewModel(undefined))
             return
         }
