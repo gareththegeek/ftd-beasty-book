@@ -1,4 +1,4 @@
-import { Box, IconButton, makeStyles } from '@material-ui/core'
+import { Box, Chip, IconButton, makeStyles } from '@material-ui/core'
 import SaveAlt from '@material-ui/icons/SaveAlt'
 import React, { FunctionComponent, ReactInstance, RefObject } from 'react'
 import { useSelector } from 'react-redux'
@@ -10,7 +10,14 @@ import { saveAs } from 'file-saver'
 
 const useStyles = makeStyles(theme => ({
     light: {
-        color: theme.palette.info.light
+        color: theme.palette.info.main
+    },
+    chip: {
+        margin: '0 4px',
+        backgroundColor: theme.palette.info.light
+    },
+    textLight: {
+        fontWeight: 400
     }
 }))
 
@@ -42,7 +49,8 @@ const MonsterHeading: FunctionComponent<MonsterHeadingProps> = ({ exportRef }) =
                     <SaveAlt></SaveAlt>
                 </IconButton>
             </h2>
-            <p>No. Appearing: {monster.numberAppearing}</p>
+            {monster.tags.map(tag => (<Chip size="small" className={classes.chip} label={tag}></Chip>))}
+            <h4 className={classes.textLight}>No. Appearing: {monster.numberAppearing}</h4>
             <ShowMoreText
                 lines={1}
                 more="Show description">

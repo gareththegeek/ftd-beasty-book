@@ -95,6 +95,7 @@ export const mapMonster = (
         )}`,
         numberAppearing: monster.numberAppearing,
         techniques: monster.techniques,
+        tags: monster.tags,
         toHit: formatModifier(calculateToHit(monster, category)),
         defenceAttribute: monster.defence,
         damage: hitDice.damage,
