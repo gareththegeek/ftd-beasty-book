@@ -1,8 +1,10 @@
 import { useTheme } from '@material-ui/core'
 import { AppBar, Grid, makeStyles, Toolbar, useMediaQuery } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
 import { useLocation } from 'react-router'
 import { NavLink } from 'react-router-dom'
+import { selectMonsterViewModel } from './redux/monsters/selectors'
 
 const useStyles = makeStyles(theme => ({
     icon: {
@@ -35,6 +37,7 @@ const Banner: React.FunctionComponent = () => {
     const [path, setPath] = useState<string>()
     const theme = useTheme()
     const expandMenu = useMediaQuery(theme.breakpoints.up('sm'))
+    const monster = useSelector(selectMonsterViewModel)
 
     useEffect(() => {
         setPath(pathname)
@@ -62,7 +65,7 @@ const Banner: React.FunctionComponent = () => {
                                 <Grid item>
                                     {showMonsters &&
                                         <NavLink
-                                            to="/"
+                                            to={`/${monster !== undefined ? monster.id : ''}`}
                                             className={`${classes.navItem} ${active === 'monsters' && classes.navItemActive}`}
                                             title="Show me the monsters!">
                                             Monsters

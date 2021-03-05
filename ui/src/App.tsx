@@ -9,7 +9,7 @@ const App: React.FunctionComponent = () => (
     <React.Fragment>
         <CssBaseline>
             <Banner />
-            <Container maxWidth="lg" disableGutters={true}>
+            <Container maxWidth="md" disableGutters={true}>
                 <Switch>
                     <Route exact path="/about"><InfoScreen /></Route>
                     <Route path="/:id"><MonsterScreen /></Route>

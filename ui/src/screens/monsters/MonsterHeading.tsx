@@ -49,7 +49,7 @@ const MonsterHeading: FunctionComponent<MonsterHeadingProps> = ({ exportRef }) =
                     <SaveAlt></SaveAlt>
                 </IconButton>
             </h2>
-            {monster.tags.map(tag => (<Chip size="small" className={classes.chip} label={tag}></Chip>))}
+            {monster.tags.map(tag => (<Chip key={tag} size="small" className={classes.chip} label={tag}></Chip>))}
             <h4 className={classes.textLight}>No. Appearing: {monster.numberAppearing}</h4>
             <ShowMoreText
                 lines={1}

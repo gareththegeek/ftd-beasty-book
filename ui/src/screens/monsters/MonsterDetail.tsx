@@ -16,6 +16,11 @@ const useStyles = makeStyles(() => ({
     disableFlexBasis: {
         // HACK fix #42 workaround for dom-to-image layout bug when exporting monster stats
         flexBasis: 'initial'
+    },
+    paper: {
+        backgroundColor: '#fffffe',
+        borderRadius: '8px',
+        border: '1px solid #ddd'
     }
 }))
 
@@ -37,7 +42,7 @@ const MonsterDetail: React.FunctionComponent = () => {
     }
 
     return (
-        <Grid container component={Paper} ref={componentRef}>
+        <Grid container ref={componentRef as React.RefObject<HTMLDivElement>} className={classes.paper}>
             <Grid item xs={12} md={6}>
                 <Grid container direction="column">
                     <Grid item xs={12} className={classes.disableFlexBasis}>
@@ -50,7 +55,7 @@ const MonsterDetail: React.FunctionComponent = () => {
                 </Grid>
             </Grid>
             <Grid item xs={12} md={6}>
-                <Grid container xs={12}>
+                <Grid container>
                     <Grid item xs={6}>
                         <ParagraphBlock title="Strong" text={monster.strong} />
                     </Grid>
