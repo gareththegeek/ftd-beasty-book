@@ -1,4 +1,4 @@
-import { Box, Chip, IconButton, makeStyles } from '@material-ui/core'
+import { Box, Chip, IconButton, makeStyles, Typography } from '@material-ui/core'
 import SaveAlt from '@material-ui/icons/SaveAlt'
 import React, { FunctionComponent, ReactInstance, RefObject } from 'react'
 import { useSelector } from 'react-redux'
@@ -9,15 +9,12 @@ import domtoimage from 'dom-to-image'
 import { saveAs } from 'file-saver'
 
 const useStyles = makeStyles(theme => ({
-    light: {
-        color: theme.palette.info.main
+    primary: {
+        color: theme.palette.primary.dark
     },
     chip: {
-        margin: '0 4px',
+        margin: `0 ${theme.spacing(0.5)}px`,
         backgroundColor: theme.palette.info.light
-    },
-    textLight: {
-        fontWeight: 400
     }
 }))
 
@@ -44,13 +41,13 @@ const MonsterHeading: FunctionComponent<MonsterHeadingProps> = ({ exportRef }) =
 
     return (
         <Box m={2}>
-            <h2>{monster.name} <span className={classes.light} title={`${monster.hitPointsFormula} hp`}>HD {monster.hitDice}</span>
+            <Typography variant="h2">{monster.name} <span className={classes.primary} title={`${monster.hitPointsFormula} hp`}>HD {monster.hitDice}</span>
                 <IconButton disabled={!monster} onClick={() => saveImage()} title="Export to image" href="#">
                     <SaveAlt></SaveAlt>
                 </IconButton>
-            </h2>
+            </Typography>
             {monster.tags.map(tag => (<Chip key={tag} size="small" className={classes.chip} label={tag}></Chip>))}
-            <h4 className={classes.textLight}>No. Appearing: {monster.numberAppearing}</h4>
+            <Typography variant="h4">No. Appearing: {monster.numberAppearing}</Typography>
             <ShowMoreText
                 lines={1}
                 more="Show description">

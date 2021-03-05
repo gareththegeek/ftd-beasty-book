@@ -1,4 +1,4 @@
-import { Box } from '@material-ui/core'
+import { Box, Typography } from '@material-ui/core'
 import React, { FunctionComponent } from 'react'
 import Paragraph from './Paragraph'
 
@@ -9,7 +9,7 @@ export interface ParagraphProps {
 
 export const ParagraphBlock: FunctionComponent<ParagraphProps> = ({ text, title }) => (
     <Box m={2}>
-        <h3>{title}</h3>
+        <Typography variant="h3">{title}</Typography>
         <Paragraph text={text} />
     </Box>
 )

@@ -1,5 +1,4 @@
 import { CircularProgress, Container, Grid, makeStyles } from '@material-ui/core'
-import { Paper } from '@material-ui/core'
 import React, { ReactInstance, RefObject, useRef } from 'react'
 import { useSelector } from 'react-redux'
 import { selectMonsterLoading, selectMonsterViewModel } from '../../redux/monsters/selectors'
@@ -8,7 +7,7 @@ import MonsterModifiers from './MonsterModifiers'
 import ParagraphBlock from './ParagraphBlock'
 import MonsterHeading from './MonsterHeading'
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(theme => ({
     spinner: {
         width: '100%',
         textAlign: 'center'
@@ -19,7 +18,7 @@ const useStyles = makeStyles(() => ({
     },
     paper: {
         backgroundColor: '#fffffe',
-        borderRadius: '8px',
+        borderRadius: theme.spacing(1),
         border: '1px solid #ddd'
     }
 }))

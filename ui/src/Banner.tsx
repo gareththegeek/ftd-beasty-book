@@ -12,22 +12,21 @@ const useStyles = makeStyles(theme => ({
         width: theme.spacing(4)
     },
     nav: {
-        marginLeft: '24px'
+        marginLeft: theme.spacing(3)
     },
     navItem: {
-        color: '#fff',
+        color: theme.palette.primary.contrastText,
         textDecoration: 'none',
-        padding: '12px 4px 8px 4px',
+        padding: `${theme.spacing(1.5)}px ${theme.spacing(0.5)}px ${theme.spacing(1)}px ${theme.spacing(0.5)}px`,
         cursor: 'pointer',
-        fontSize: '16px',
-        lineHeight: '32px',
+        fontSize: theme.spacing(2),
         display: 'inline-block',
         textAlign: 'center',
-        minWidth: '80px'
+        minWidth: theme.spacing(9),
     },
     navItemActive: {
-        padding: '12px 4px 6px 4px',
-        borderBottom: '2px solid #fff'
+        paddingBottom: theme.spacing(0.75),
+        borderBottom: `2px solid ${theme.palette.primary.contrastText}`
     }
 }))
 
