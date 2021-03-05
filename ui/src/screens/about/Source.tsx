@@ -12,7 +12,7 @@ const Source: React.FunctionComponent<{ label: string, text: string, link: strin
     const classes = useStyles()
 
     return (<>
-        <Chip size="small" className={classes.chip} label={label} /> - {text} <a target="_new" href={link}>{link}</a>
+        <Chip size="small" className={classes.chip} label={label} /> - {text} - <a target="_new" href={link}>{link}</a>
     </>)
 }
 
