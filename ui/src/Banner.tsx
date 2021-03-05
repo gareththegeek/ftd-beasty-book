@@ -24,16 +24,8 @@ const useStyles = makeStyles(theme => ({
         minWidth: '80px'
     },
     navItemActive: {
-        color: '#fff',
-        textDecoration: 'none',
         padding: '12px 4px 6px 4px',
-        cursor: 'pointer',
-        fontSize: '16px',
-        lineHeight: '32px',
-        borderBottom: '2px solid #fff',
-        display: 'inline-block',
-        textAlign: 'center',
-        minWidth: '80px'
+        borderBottom: '2px solid #fff'
     }
 }))
 
@@ -71,7 +63,7 @@ const Banner: React.FunctionComponent = () => {
                                     {showMonsters &&
                                         <NavLink
                                             to="/"
-                                            className={active === 'monsters' ? classes.navItemActive : classes.navItem}
+                                            className={`${classes.navItem} ${active === 'monsters' && classes.navItemActive}`}
                                             title="Show me the monsters!">
                                             Monsters
                                     </NavLink>}
@@ -80,7 +72,7 @@ const Banner: React.FunctionComponent = () => {
                                     {showAbout &&
                                         <NavLink
                                             to="/about"
-                                            className={active === 'about' ? classes.navItemActive : classes.navItem}
+                                            className={`${classes.navItem} ${active === 'about' && classes.navItemActive}`}
                                             title="What is Five Monsters Deep?">
                                             About
                                     </NavLink>}
