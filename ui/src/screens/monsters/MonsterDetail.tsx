@@ -18,6 +18,7 @@ const useStyles = makeStyles(theme => ({
     },
     paper: {
         backgroundColor: '#fffffe',
+        paddingBottom: theme.spacing(8),
         borderRadius: theme.spacing(1),
         border: '1px solid #ddd'
     }
@@ -25,13 +26,17 @@ const useStyles = makeStyles(theme => ({
 
 const MonsterDetail: React.FunctionComponent = () => {
 
-    const classes = useStyles()
+    const {
+        spinner,
+        disableFlexBasis,
+        paper
+    } = useStyles()
     const loading = useSelector(selectMonsterLoading)
     const monster = useSelector(selectMonsterViewModel)
     const componentRef = useRef<typeof Grid>() as unknown as RefObject<ReactInstance>
 
     if (loading) {
-        return (<Container className={classes.spinner}>
+        return (<Container className={spinner}>
             <CircularProgress />
         </Container>)
     }
@@ -41,13 +46,13 @@ const MonsterDetail: React.FunctionComponent = () => {
     }
 
     return (
-        <Grid container ref={componentRef as React.RefObject<HTMLDivElement>} className={classes.paper}>
+        <Grid container ref={componentRef as React.RefObject<HTMLDivElement>} className={paper}>
             <Grid item xs={12} md={6}>
                 <Grid container direction="column">
-                    <Grid item xs={12} className={classes.disableFlexBasis}>
+                    <Grid item xs={12} className={disableFlexBasis}>
                         <MonsterHeading exportRef={componentRef} />
                     </Grid>
-                    <Grid item xs={12} className={classes.disableFlexBasis}>
+                    <Grid item xs={12} className={disableFlexBasis}>
                         <MonsterStats />
                         <MonsterModifiers />
                     </Grid>

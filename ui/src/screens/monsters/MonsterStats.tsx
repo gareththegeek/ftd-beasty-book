@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const MonsterStats = () => {
-    const classes = useStyles()
+    const { td } = useStyles()
     const monster = useSelector(selectMonsterViewModel)
 
     if (!monster) {
@@ -21,20 +21,20 @@ const MonsterStats = () => {
         <Table size="small">
             <TableHead>
                 <TableRow>
-                    <TableCell className={classes.td} align="center">Speed</TableCell>
-                    <TableCell className={classes.td} align="center">Damage</TableCell>
-                    <TableCell className={classes.td} align="center" title="Armour Class">AC</TableCell>
-                    <TableCell className={classes.td} align="center" title="Hit Points">HP</TableCell>
-                    <TableCell className={classes.td} align="center">Morale</TableCell>
+                    <TableCell className={td} align="center">Speed</TableCell>
+                    <TableCell className={td} align="center">Damage</TableCell>
+                    <TableCell className={td} align="center" title="Armour Class">AC</TableCell>
+                    <TableCell className={td} align="center" title="Hit Points">HP</TableCell>
+                    <TableCell className={td} align="center">Morale</TableCell>
                 </TableRow>
             </TableHead>
             <TableBody>
                 <TableRow>
-                    <TableCell className={classes.td} align="center">{monster.speed}</TableCell>
-                    <TableCell className={classes.td} align="center">{monster.damage}</TableCell>
-                    <TableCell className={classes.td} align="center" title={`10 + ${monster.defenceAttribute.toUpperCase()}`}>{monster.armourClass}</TableCell>
-                    <TableCell className={classes.td} align="center" title={`${monster.hitPointsFormula} hp`}>{monster.hitPoints}</TableCell>
-                    <TableCell className={classes.td} align="center">{monster.morale}</TableCell>
+                    <TableCell className={td} align="center">{monster.speed}</TableCell>
+                    <TableCell className={td} align="center">{monster.damage}</TableCell>
+                    <TableCell className={td} align="center" title={`10 + ${monster.defenceAttribute.toUpperCase()}`}>{monster.armourClass}</TableCell>
+                    <TableCell className={td} align="center" title={`${monster.hitPointsFormula} hp`}>{monster.hitPoints}</TableCell>
+                    <TableCell className={td} align="center">{monster.morale}</TableCell>
                 </TableRow>
             </TableBody>
         </Table>

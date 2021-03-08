@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
         color: theme.palette.primary.dark
     },
     chip: {
-        margin: `0 ${theme.spacing(0.5)}px`,
+        margin: `-${theme.spacing(2)}px ${theme.spacing(0.5)}px ${theme.spacing(2)}px ${theme.spacing(0.5)}px`,
         backgroundColor: theme.palette.info.light
     },
     less: {
@@ -31,7 +31,11 @@ interface MonsterHeadingProps {
 }
 
 const MonsterHeading: FunctionComponent<MonsterHeadingProps> = ({ exportRef }) => {
-    const classes = useStyles()
+    const {
+        primary,
+        chip,
+        less
+    } = useStyles()
     const monster = useSelector(selectMonsterViewModel)
 
     if (!monster) {
@@ -49,14 +53,14 @@ const MonsterHeading: FunctionComponent<MonsterHeadingProps> = ({ exportRef }) =
 
     return (
         <Box m={2}>
-            <H2>{monster.name} <span className={classes.primary} title={`${monster.hitPointsFormula} hp`}>HD {monster.hitDice}</span>
+            <H2>{monster.name} <span className={primary} title={`${monster.hitPointsFormula} hp`}>HD {monster.hitDice}</span>
                 <IconButton disabled={!monster} onClick={() => saveImage()} title="Export to image" href="#">
                     <SaveAlt></SaveAlt>
                 </IconButton>
             </H2>
-            {monster.tags.map(tag => (<Chip key={tag} size="small" className={classes.chip} label={tag}></Chip>))}
+            {monster.tags.map(tag => (<Chip key={tag} size="small" className={chip} label={tag}></Chip>))}
             <H4>No. Appearing: {monster.numberAppearing}</H4>
-            <div className={classes.less}>
+            <div className={less}>
                 <ShowMoreText
                     lines={1}
                     more="More">
