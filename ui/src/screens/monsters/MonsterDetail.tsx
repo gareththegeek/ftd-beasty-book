@@ -1,5 +1,4 @@
 import { CircularProgress, Container, Grid, makeStyles } from '@material-ui/core'
-import { Paper } from '@material-ui/core'
 import React, { ReactInstance, RefObject, useRef } from 'react'
 import { useSelector } from 'react-redux'
 import { selectMonsterLoading, selectMonsterViewModel } from '../../redux/monsters/selectors'
@@ -8,7 +7,7 @@ import MonsterModifiers from './MonsterModifiers'
 import ParagraphBlock from './ParagraphBlock'
 import MonsterHeading from './MonsterHeading'
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(theme => ({
     spinner: {
         width: '100%',
         textAlign: 'center'
@@ -16,18 +15,28 @@ const useStyles = makeStyles(() => ({
     disableFlexBasis: {
         // HACK fix #42 workaround for dom-to-image layout bug when exporting monster stats
         flexBasis: 'initial'
+    },
+    paper: {
+        backgroundColor: '#fffffe',
+        paddingBottom: theme.spacing(8),
+        borderRadius: theme.spacing(1),
+        border: '1px solid #ddd'
     }
 }))
 
 const MonsterDetail: React.FunctionComponent = () => {
 
-    const classes = useStyles()
+    const {
+        spinner,
+        disableFlexBasis,
+        paper
+    } = useStyles()
     const loading = useSelector(selectMonsterLoading)
     const monster = useSelector(selectMonsterViewModel)
     const componentRef = useRef<typeof Grid>() as unknown as RefObject<ReactInstance>
 
     if (loading) {
-        return (<Container className={classes.spinner}>
+        return (<Container className={spinner}>
             <CircularProgress />
         </Container>)
     }
@@ -37,20 +46,20 @@ const MonsterDetail: React.FunctionComponent = () => {
     }
 
     return (
-        <Grid container component={Paper} ref={componentRef}>
+        <Grid container ref={componentRef as React.RefObject<HTMLDivElement>} className={paper}>
             <Grid item xs={12} md={6}>
                 <Grid container direction="column">
-                    <Grid item xs={12} className={classes.disableFlexBasis}>
+                    <Grid item xs={12} className={disableFlexBasis}>
                         <MonsterHeading exportRef={componentRef} />
                     </Grid>
-                    <Grid item xs={12} className={classes.disableFlexBasis}>
+                    <Grid item xs={12} className={disableFlexBasis}>
                         <MonsterStats />
                         <MonsterModifiers />
                     </Grid>
                 </Grid>
             </Grid>
             <Grid item xs={12} md={6}>
-                <Grid container xs={12}>
+                <Grid container>
                     <Grid item xs={6}>
                         <ParagraphBlock title="Strong" text={monster.strong} />
                     </Grid>

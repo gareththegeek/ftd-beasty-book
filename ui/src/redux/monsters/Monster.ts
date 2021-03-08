@@ -14,4 +14,5 @@ export default interface Monster {
     defence: AttributeType
     description: string
     techniques: string[]
+    tags: string[]
 }

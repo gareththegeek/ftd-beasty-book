@@ -41,7 +41,7 @@ import fs from 'fs'
         .pipe(csv())
         .on('data', (row) => {
             const techniques = [row.T1, row.T2, row.T3].filter((x) => x !== '')
-            const tags = row.Tags.split(',').trim()
+            const tags = row.Tags.split(',').map((tag: string) => tag.trim())
             const monster = {
                 id: getId(row.Name),
                 name: row.Name,
@@ -50,7 +50,9 @@ import fs from 'fs'
                 hitDiceMod: parseFloat(row['+/-'] || '0'),
                 numberAppearing: row.Num,
                 speed: parseInt(row.Spd),
-                altSpeed: !!row['Alt Spd'] ? parseInt(row['Alt Spd']) : undefined,
+                altSpeed: !!row['Alt Spd']
+                    ? parseInt(row['Alt Spd'])
+                    : undefined,
                 attack: (row.Atk as string).toLowerCase(),
                 defence: (row.Def as string).toLowerCase(),
                 description: row.Description,
@@ -61,7 +63,11 @@ import fs from 'fs'
             monsters.push(monster)
         })
         .on('end', () => {
-            const filepath = path.join(__dirname, DATA_DIRECTORY, 'monsters.json')
+            const filepath = path.join(
+                __dirname,
+                DATA_DIRECTORY,
+                'monsters.json'
+            )
             fs.writeFileSync(filepath, JSON.stringify(monsters), 'utf8')
             console.log('Imported monsters')
         })
@@ -78,7 +84,11 @@ import fs from 'fs'
             hitdices.push(hitdice)
         })
         .on('end', () => {
-            const filepath = path.join(__dirname, DATA_DIRECTORY, 'hitdice.json')
+            const filepath = path.join(
+                __dirname,
+                DATA_DIRECTORY,
+                'hitdice.json'
+            )
             fs.writeFileSync(filepath, JSON.stringify(hitdices), 'utf8')
             console.log('Imported hit dice damage')
         })
@@ -119,7 +129,11 @@ import fs from 'fs'
             categories.push(category)
         })
         .on('end', () => {
-            const filepath = path.join(__dirname, DATA_DIRECTORY, 'categories.json')
+            const filepath = path.join(
+                __dirname,
+                DATA_DIRECTORY,
+                'categories.json'
+            )
             fs.writeFileSync(filepath, JSON.stringify(categories), 'utf8')
             console.log('Imported categories')
         })

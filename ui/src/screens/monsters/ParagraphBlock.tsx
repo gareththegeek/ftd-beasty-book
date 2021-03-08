@@ -1,5 +1,6 @@
 import { Box } from '@material-ui/core'
 import React, { FunctionComponent } from 'react'
+import { H3 } from '../../components'
 import Paragraph from './Paragraph'
 
 export interface ParagraphProps {
@@ -9,7 +10,7 @@ export interface ParagraphProps {
 
 export const ParagraphBlock: FunctionComponent<ParagraphProps> = ({ text, title }) => (
     <Box m={2}>
-        <h3>{title}</h3>
+        <H3>{title}</H3>
         <Paragraph text={text} />
     </Box>
 )

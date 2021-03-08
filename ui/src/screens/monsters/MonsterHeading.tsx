@@ -1,4 +1,4 @@
-import { Box, IconButton, makeStyles } from '@material-ui/core'
+import { Box, Chip, IconButton, makeStyles } from '@material-ui/core'
 import SaveAlt from '@material-ui/icons/SaveAlt'
 import React, { FunctionComponent, ReactInstance, RefObject } from 'react'
 import { useSelector } from 'react-redux'
@@ -7,10 +7,22 @@ import { selectMonsterViewModel } from '../../redux/monsters/selectors'
 import Paragraph from './Paragraph'
 import domtoimage from 'dom-to-image'
 import { saveAs } from 'file-saver'
+import { H2, H4 } from '../../components'
 
 const useStyles = makeStyles(theme => ({
-    light: {
-        color: theme.palette.info.light
+    primary: {
+        color: theme.palette.primary.dark
+    },
+    chip: {
+        margin: `-${theme.spacing(2)}px ${theme.spacing(0.5)}px ${theme.spacing(2)}px ${theme.spacing(0.5)}px`,
+        backgroundColor: theme.palette.info.light
+    },
+    less: {
+        fontWeight: theme.typography.body1.fontWeight,
+        fontSize: theme.typography.body1.fontSize,
+        "& a": {
+            color: theme.palette.primary.dark
+        }
     }
 }))
 
@@ -19,7 +31,11 @@ interface MonsterHeadingProps {
 }
 
 const MonsterHeading: FunctionComponent<MonsterHeadingProps> = ({ exportRef }) => {
-    const classes = useStyles()
+    const {
+        primary,
+        chip,
+        less
+    } = useStyles()
     const monster = useSelector(selectMonsterViewModel)
 
     if (!monster) {
@@ -37,17 +53,20 @@ const MonsterHeading: FunctionComponent<MonsterHeadingProps> = ({ exportRef }) =
 
     return (
         <Box m={2}>
-            <h2>{monster.name} <span className={classes.light} title={`${monster.hitPointsFormula} hp`}>HD {monster.hitDice}</span>
+            <H2>{monster.name} <span className={primary} title={`${monster.hitPointsFormula} hp`}>HD {monster.hitDice}</span>
                 <IconButton disabled={!monster} onClick={() => saveImage()} title="Export to image" href="#">
                     <SaveAlt></SaveAlt>
                 </IconButton>
-            </h2>
-            <p>No. Appearing: {monster.numberAppearing}</p>
-            <ShowMoreText
-                lines={1}
-                more="Show description">
-                <Paragraph text={monster.description} />
-            </ShowMoreText>
+            </H2>
+            {monster.tags.map(tag => (<Chip key={tag} size="small" className={chip} label={tag}></Chip>))}
+            <H4>No. Appearing: {monster.numberAppearing}</H4>
+            <div className={less}>
+                <ShowMoreText
+                    lines={1}
+                    more="More">
+                    <Paragraph text={monster.description} />
+                </ShowMoreText>
+            </div>
         </Box>
     )
 }

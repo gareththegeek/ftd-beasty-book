@@ -22,4 +22,5 @@ export default interface MonsterViewModel {
     strong: string
     weak: string
     techniques: string[]
+    tags: string[]
 }
