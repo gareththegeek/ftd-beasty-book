@@ -2,11 +2,11 @@ import { Action } from 'redux'
 import { testSaga } from 'redux-test-saga'
 import { fetchMonster, fetchMonsters } from '../../services/monsters'
 import { requestCategories } from '../categories/actions'
-import { SET_CATEGORIES_LOOKUP } from '../categories/actionTypes'
+import { REQUEST_CATEGORIES_COMPLETE } from '../categories/actionTypes'
 import Category from '../categories/Category'
 import { selectCategories, selectCategory } from '../categories/selectors'
 import { requestHitDice } from '../hitDice/actions'
-import { SET_HIT_DICE_LOOKUP } from '../hitDice/actionTypes'
+import { REQUEST_HIT_DICE_COMPLETE } from '../hitDice/actionTypes'
 import HitDice from '../hitDice/HitDice'
 import { selectHitDice, selectAllHitDice } from '../hitDice/selectors'
 import {
@@ -22,7 +22,6 @@ import {
     setSelectedMonsterLoading
 } from '../monsters/actions'
 import { SET_MONSTER_ERROR } from './actionTypes'
-import { CategoryType } from './CategoryType'
 import { mapMonster } from './mapMonster'
 import Monster from './Monster'
 import MonsterViewModel from './MonsterViewModel'
@@ -136,7 +135,7 @@ describe('monster sagas', () => {
                 .select(selectAllHitDice)
                 .result(nonEmptyArray)
                 .put(requestCategories())
-                .take([SET_CATEGORIES_LOOKUP, SET_MONSTER_ERROR])
+                .take([REQUEST_CATEGORIES_COMPLETE, SET_MONSTER_ERROR])
                 .put(setSelectedMonsterLoading())
                 .call(fetchMonster, monsterId)
                 .result(expected.monster)
@@ -160,7 +159,7 @@ describe('monster sagas', () => {
                 .select(selectAllHitDice)
                 .result([])
                 .put(requestHitDice())
-                .take([SET_HIT_DICE_LOOKUP, SET_MONSTER_ERROR])
+                .take([REQUEST_HIT_DICE_COMPLETE, SET_MONSTER_ERROR])
                 .put(setSelectedMonsterLoading())
                 .call(fetchMonster, monsterId)
                 .result(expected.monster)

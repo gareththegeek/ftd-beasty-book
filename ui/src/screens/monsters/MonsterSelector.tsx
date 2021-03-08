@@ -48,7 +48,7 @@ const MonsterSelector: React.FunctionComponent = () => {
             <Grid container spacing={2}>
                 <Grid item xs={8}>
                     <Select
-                        placeholder="Search for monsters…"                        
+                        placeholder="Search for monsters…"
                         value={monster && toSelectItem(monster)}
                         onChange={(item) => history.push(`/${item?.value}`)}
                         options={monsters.map(monster => (toSelectItem(monster)))} />

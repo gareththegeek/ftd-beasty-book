@@ -1,7 +1,7 @@
 import { call, put, takeEvery } from 'redux-saga/effects'
 import { fetchCategories } from '../../services/categories'
 import { setMonsterError } from '../monsters/actions'
-import { setCategories, setCategoriesLookup } from './actions'
+import { requestCategoriesComplete, setCategories, setCategoriesLookup } from './actions'
 import { REQUEST_CATEGORIES } from './actionTypes'
 import Category from './Category'
 
@@ -15,6 +15,7 @@ export function* requestCategoriesSaga() {
             ...categories.map((category) => ({ [category.id]: category }))
         )
         yield put(setCategoriesLookup(lookup))
+        yield put(requestCategoriesComplete())
     } catch (e) {
         console.error(e)
         yield put(setMonsterError(e.message))

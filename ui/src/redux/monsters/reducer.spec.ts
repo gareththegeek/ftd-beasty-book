@@ -37,7 +37,7 @@ describe('monster reducer', () => {
             expect(actual.all).toEqual(expected)
         })
 
-        it('stops loading and clears errors and selected monster', () => {
+        it('stops loading and clears errors and selected monster but not viewmodel', () => {
             const actual = reducer(
                 {
                     all: [],
@@ -51,7 +51,7 @@ describe('monster reducer', () => {
 
             expect(actual.loading).toEqual(false)
             expect(actual.error).toBeUndefined()
-            expect(actual.viewModel).toBeUndefined()
+            expect(actual.viewModel).not.toBeUndefined()
             expect(actual.selectedMonster).toBeUndefined()
         })
     })
@@ -96,7 +96,7 @@ describe('monster reducer', () => {
     })
 
     describe('SET_SELECTED_MONSTER_LOADING', () => {
-        it('starts loading and clears errors and selected monster', () => {
+        it('starts loading and clears errors and selected monster but not view model', () => {
             const initial = {
                 all: [],
                 loading: false,
@@ -109,7 +109,7 @@ describe('monster reducer', () => {
 
             expect(actual.loading).toBe(true)
             expect(actual.error).toBeUndefined()
-            expect(actual.viewModel).toBeUndefined()
+            expect(actual.viewModel).not.toBeUndefined()
             expect(actual.selectedMonster).toBeUndefined()
         })
     })
