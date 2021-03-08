@@ -1,5 +1,6 @@
 import { Chip, makeStyles, Typography } from '@material-ui/core'
 import React from 'react'
+import Link from '../../components/Link'
 
 const useStyles = makeStyles(theme => ({
     chip: {
@@ -12,7 +13,7 @@ const Source: React.FunctionComponent<{ label: string, text: string, link: strin
     const classes = useStyles()
 
     return (<>
-        <Chip size="small" className={classes.chip} label={label} /> - <Typography variant="body1">{text}</Typography> - <a target="_new" href={link}>{link}</a>
+        <Chip size="small" className={classes.chip} label={label} /> <Typography variant="body1">{text} - <Link target="_new" href={link}>{link}</Link></Typography>
     </>)
 }
 
