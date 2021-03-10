@@ -6,7 +6,7 @@ import Link from '../../components/Link'
 const useStyles = makeStyles(theme => ({
     chip: {
         margin: `0 ${theme.spacing(0.5)}px`,
-        backgroundColor: theme.palette.info.light
+        backgroundColor: theme.palette.secondary.light
     }
 }))
 

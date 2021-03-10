@@ -38,7 +38,7 @@ const theme = createMuiTheme({
         primary: {
             main: cyan[700]
         },
-        info: {
+        secondary: {
             main: yellow[700]
         },
         text: {

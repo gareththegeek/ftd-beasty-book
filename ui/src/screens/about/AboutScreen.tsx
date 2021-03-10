@@ -1,4 +1,4 @@
-import { makeStyles, Typography, useMediaQuery, useTheme } from '@material-ui/core'
+import { makeStyles, Typography } from '@material-ui/core'
 import React from 'react'
 import { Body1, H1, H2, Link } from '../../components'
 import Source from './Source'
@@ -12,7 +12,12 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: '#fffffe',
         padding: `${theme.spacing(4)}px ${theme.spacing(2)}px`,
         borderRadius: theme.spacing(1),
-        border: '1px solid #ddd'
+        border: '1px solid #ddd',
+        [theme.breakpoints.up('sm')]: {
+            margin: `${theme.spacing(4)}px 0`,
+            paddingLeft: theme.spacing(8),
+            paddingRight: theme.spacing(8)
+        }
     },
     sourceli: {
         listStyleType: 'none',
@@ -36,10 +41,8 @@ const AboutScreen: React.FunctionComponent = () => {
         vcentre,
         hcentre
     } = useStyles()
-    const theme = useTheme()
-    const big = useMediaQuery(theme.breakpoints.up('sm'))
 
-    return (<div className={container} style={big ? { margin: '32px 0', paddingLeft: '64px', paddingRight: '64px' } : {}}>
+    return (<div className={container}>
         <H1>What is Five Monsters Deep?</H1>
         <Body1>Five Monsters Deep provides stats of monsters for use with the table top role playing game Five Torches Deep (FTD).</Body1>
         <Body1><Link target="_new" href="https://www.fivetorchesdeep.com/">Five Torches Deep</Link> strips Dungeons &amp; Dragons 5th edition (5e) to its skeleton and fleshes it out with Old School Revival/Rennaisance (OSR) elements. The goal is to provide an old-school experience to those familiar with 5e.</Body1>
