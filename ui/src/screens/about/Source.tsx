@@ -1,4 +1,4 @@
-import { Chip, makeStyles, useMediaQuery, useTheme } from '@material-ui/core'
+import { Chip, makeStyles } from '@material-ui/core'
 import React from 'react'
 import { Body1 } from '../../components'
 import Link from '../../components/Link'
