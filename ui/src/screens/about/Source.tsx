@@ -9,10 +9,10 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.secondary.light
     },
     sourcetext: {
+        textAlign: 'left',
         display: 'inline',
         [theme.breakpoints.down('sm')]: {
-            display: 'inline-block',
-            textAlign: 'left'
+            display: 'inline-block'
         }
     }
 }))
