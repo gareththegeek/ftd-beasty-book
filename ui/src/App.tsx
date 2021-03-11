@@ -36,10 +36,10 @@ const theme = createMuiTheme({
     },
     palette: {
         primary: {
-            main: cyan[700]
+            main: cyan[800]
         },
         secondary: {
-            main: yellow[700]
+            main: yellow[600]
         },
         text: {
             primary: '#233'
