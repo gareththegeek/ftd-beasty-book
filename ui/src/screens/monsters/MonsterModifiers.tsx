@@ -5,7 +5,7 @@ import { selectMonsterViewModel } from '../../redux/monsters/selectors'
 
 const useStyles = makeStyles(theme => ({
     td: {
-        paddingRight: theme.spacing(2)
+        paddingRight: theme.spacing(0)
     }
 }))
 

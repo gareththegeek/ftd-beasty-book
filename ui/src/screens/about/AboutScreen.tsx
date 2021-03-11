@@ -21,7 +21,11 @@ const useStyles = makeStyles(theme => ({
     },
     sourceli: {
         listStyleType: 'none',
-        marginBottom: theme.spacing(2)
+        marginBottom: theme.spacing(2),
+        [theme.breakpoints.up('sm')]: {
+            display: 'flex',
+            alignContent: 'center'
+        }
     },
     vcentre: {
         display: 'flex',
@@ -62,13 +66,13 @@ const AboutScreen: React.FunctionComponent = () => {
         <H2>Sources</H2>
         <Body1>The monster stats on this site have been taken from a number of sources, each monster's primary source is indicated with a tag.</Body1>
         <ul>
-            <li className={`${sourceli} ${vcentre}`}>
+            <li className={sourceli}>
                 🔥 <Source label="basic-fantasy" text="Basic Fantasy 3rd Edition" copyright="Copyright © Chris Gonnerman" link="https://www.basicfantasy.org/" />
             </li>
-            <li className={`${sourceli} ${vcentre}`}>
+            <li className={sourceli}>
                 🔥 <Source label="basic-set" text="Dungeons &amp; Dragons Basic Set" copyright="Copyright © Wizards of the Coast" link="https://dnd.wizards.com/" />
             </li>
-            <li className={`${sourceli} ${vcentre}`}>
+            <li className={sourceli}>
                 🔥 <Source label="stonehell" text="Stonehell Dungeon" copyright="Copyright © Michael Curtis" link="https://poleandrope.blogspot.com/" />
             </li>
         </ul>
