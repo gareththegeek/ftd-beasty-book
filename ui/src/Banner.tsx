@@ -19,6 +19,7 @@ const useStyles = makeStyles(theme => ({
         textDecoration: 'none',
         padding: theme.spacing(0.5),
         cursor: 'pointer',
+        fontWeight: 600,
         fontSize: theme.spacing(2),
         textAlign: 'center',
         [theme.breakpoints.up('sm')]: {
@@ -37,11 +38,15 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down('sm')]: {
             display: 'none'
         }
+    },
+    h1: {
+        fontSize: theme.spacing(2.6)
     }
 }))
 
 const Banner: React.FunctionComponent = () => {
     const {
+        h1,
         icon,
         navItem,
         navItemActive,
@@ -67,7 +72,7 @@ const Banner: React.FunctionComponent = () => {
                         </i>
                     </Grid>
                     <Grid item>
-                        <h2>Five Monsters Deep</h2>
+                        <h1 className={h1}>Five Monsters Deep</h1>
                     </Grid>
                     <Grid item>
                         <nav>
