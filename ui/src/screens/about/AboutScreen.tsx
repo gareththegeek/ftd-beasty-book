@@ -1,4 +1,4 @@
-import { makeStyles, Typography, useMediaQuery, useTheme } from '@material-ui/core'
+import { makeStyles, Typography } from '@material-ui/core'
 import React from 'react'
 import { Body1, H1, H2, Link } from '../../components'
 import Source from './Source'
@@ -12,11 +12,20 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: '#fffffe',
         padding: `${theme.spacing(4)}px ${theme.spacing(2)}px`,
         borderRadius: theme.spacing(1),
-        border: '1px solid #ddd'
+        border: '1px solid #ddd',
+        [theme.breakpoints.up('sm')]: {
+            margin: `${theme.spacing(4)}px 0`,
+            paddingLeft: theme.spacing(8),
+            paddingRight: theme.spacing(8)
+        }
     },
     sourceli: {
         listStyleType: 'none',
-        marginBottom: theme.spacing(2)
+        marginBottom: theme.spacing(2),
+        [theme.breakpoints.up('sm')]: {
+            display: 'flex',
+            alignContent: 'center'
+        }
     },
     vcentre: {
         display: 'flex',
@@ -36,10 +45,8 @@ const AboutScreen: React.FunctionComponent = () => {
         vcentre,
         hcentre
     } = useStyles()
-    const theme = useTheme()
-    const big = useMediaQuery(theme.breakpoints.up('sm'))
 
-    return (<div className={container} style={big ? { margin: '32px 0', paddingLeft: '64px', paddingRight: '64px' } : {}}>
+    return (<div className={container}>
         <H1>What is Five Monsters Deep?</H1>
         <Body1>Five Monsters Deep provides stats of monsters for use with the table top role playing game Five Torches Deep (FTD).</Body1>
         <Body1><Link target="_new" href="https://www.fivetorchesdeep.com/">Five Torches Deep</Link> strips Dungeons &amp; Dragons 5th edition (5e) to its skeleton and fleshes it out with Old School Revival/Rennaisance (OSR) elements. The goal is to provide an old-school experience to those familiar with 5e.</Body1>
@@ -59,13 +66,13 @@ const AboutScreen: React.FunctionComponent = () => {
         <H2>Sources</H2>
         <Body1>The monster stats on this site have been taken from a number of sources, each monster's primary source is indicated with a tag.</Body1>
         <ul>
-            <li className={`${sourceli} ${vcentre}`}>
+            <li className={sourceli}>
                 🔥 <Source label="basic-fantasy" text="Basic Fantasy 3rd Edition" copyright="Copyright © Chris Gonnerman" link="https://www.basicfantasy.org/" />
             </li>
-            <li className={`${sourceli} ${vcentre}`}>
+            <li className={sourceli}>
                 🔥 <Source label="basic-set" text="Dungeons &amp; Dragons Basic Set" copyright="Copyright © Wizards of the Coast" link="https://dnd.wizards.com/" />
             </li>
-            <li className={`${sourceli} ${vcentre}`}>
+            <li className={sourceli}>
                 🔥 <Source label="stonehell" text="Stonehell Dungeon" copyright="Copyright © Michael Curtis" link="https://poleandrope.blogspot.com/" />
             </li>
         </ul>

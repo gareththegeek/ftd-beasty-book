@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     },
     chip: {
         margin: `-${theme.spacing(2)}px ${theme.spacing(0.5)}px ${theme.spacing(2)}px ${theme.spacing(0.5)}px`,
-        backgroundColor: theme.palette.info.light
+        backgroundColor: theme.palette.secondary.light
     },
     less: {
         fontWeight: theme.typography.body1.fontWeight,
