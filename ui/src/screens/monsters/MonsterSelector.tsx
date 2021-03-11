@@ -26,7 +26,6 @@ const toSelectItem = (monster: IdValue) => ({
 })
 
 const MonsterSelector: React.FunctionComponent = () => {
-
     const dispatch = useDispatch()
     const history = useHistory()
     const { id } = useParams<{ id: string }>()
@@ -47,13 +46,16 @@ const MonsterSelector: React.FunctionComponent = () => {
         <Box m={1}>
             <Grid container spacing={2}>
                 <Grid item xs={8}>
+                    <label id="search-label" style={{ display: 'none' }}>Search for monsters</label>
                     <Select
                         placeholder="Search for monsters…"
                         value={monster && toSelectItem(monster)}
                         onChange={(item) => history.push(`/${item?.value}`)}
-                        options={monsters.map(monster => (toSelectItem(monster)))} />
+                        options={monsters.map(monster => (toSelectItem(monster)))}
+                        aria-labelledby="search-label" />
                 </Grid>
                 <Grid item xs={4}>
+                    <label id="category-label" style={{ display: 'none' }}>Monster Category</label>
                     <Select
                         isDisabled={!monster}
                         value={mapCategoryToOption(
@@ -61,6 +63,7 @@ const MonsterSelector: React.FunctionComponent = () => {
                         )}
                         onChange={(item) => dispatch(selectMonsterCategory(item?.value as CategoryType))}
                         options={categories.map(mapCategoryToOption)}
+                        aria-labelledby="category-label"
                     />
                 </Grid>
             </Grid>
