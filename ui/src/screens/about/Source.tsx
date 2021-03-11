@@ -9,7 +9,6 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.secondary.light
     },
     sourcetext: {
-        textAlign: 'left',
         display: 'inline',
         [theme.breakpoints.down('sm')]: {
             display: 'inline-block'
@@ -21,7 +20,7 @@ const Source: React.FunctionComponent<{ label: string, text: string, copyright: 
     const { sourcetext, chip } = useStyles()
 
     return (<>
-        <Chip size="small" className={chip} label={label} /> <Body1><span className={sourcetext}>{text}</span>&nbsp;<span className={sourcetext}>{copyright}</span>&nbsp;<Link target="_new" href={link}>{link}</Link></Body1>
+        <Chip size="small" className={chip} label={label} /> <Body1 style={{ textAlign: 'left' }}><span className={sourcetext}>{text}</span>&nbsp;<span className={sourcetext}>{copyright}</span>&nbsp;<Link target="_new" href={link}>{link}</Link></Body1>
     </>)
 }
 
