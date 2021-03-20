@@ -70,6 +70,9 @@ const AboutScreen: React.FunctionComponent = () => {
                 🔥 <Source label="basic-fantasy" text="Basic Fantasy 3rd Edition" copyright="Copyright © Chris Gonnerman" link="https://www.basicfantasy.org/" />
             </li>
             <li className={sourceli}>
+                🔥 <Source label="labyrinth-lord" text="Labyrinth Lord" copyright="Copyright © Daniel Proctor Goblinoid Games" link="https://goblinoidgames.com/" />
+            </li>
+            <li className={sourceli}>
                 🔥 <Source label="basic-set" text="Dungeons &amp; Dragons Basic Set" copyright="Copyright © Wizards of the Coast" link="https://dnd.wizards.com/" />
             </li>
             <li className={sourceli}>
