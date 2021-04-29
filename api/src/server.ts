@@ -4,10 +4,11 @@ import cors from 'cors'
 import path from 'path'
 import { errorHandler } from './middleware/errorHandler'
 import { securityHeaders } from './middleware/securityHeaders'
+import { nakedHost } from './middleware/nakedHost'
 
 const app = express()
+app.use(nakedHost)
 app.use(cors())
-
 app.use(securityHeaders)
 
 const publicPath =
