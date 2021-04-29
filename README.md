@@ -85,6 +85,7 @@ The following environment variables must be defined in order to configure Five M
 |HITDICE_COLLECTION_NAME|Collection within database used to store hit dice damage|hitdice|
 |CATEGORIES_COLLECTION_NAME|Collection within databse used to store categories|categories|
 |REACT_APP_API_BASE_URL|Specifies the location of the API to be used by the UI to fetch data|http://localhost:8080/api|
+|EXPECTED_HOST|Redirect requests to this hostname if specified|fivemonstersdeep.com|
 
 # mongo-repo
 
