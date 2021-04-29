@@ -7,8 +7,23 @@ Touch
 Level 1 Spell
 Touch
 Wisdom save each turn or flee in terror",,"basic-set, humanoid"
+Agony,Predator,4,,d2,30,60,STR,STR,"Agonies are the undead spirits of those who were judged unworthy of receiving the Lady of Whips' final reward.
+They appear as translucent versions of their living selves with faces wracked in pain. They attack with a chilling touch that robs their victims of both their vitality and personality.",Flying 60ft.,"Hit: In addition to damage, CHA save or lose 1 CHA
+If 0 CHA is reached the target dies and will rise as an Agony in d3 days","Immune to non-magical weapons, sleep, charm and hold magic","stonehell, undead"
 Alicorn,Predator,4,,d8,90,,STR,STR,"An Alicorn resembles a unicorn in all details, save that they always have yellow, orange or red eyes, and (if one gets close enough to see) pronounced, sharp canine teeth.
 Alicorns are as evil as unicorns are good, using their razor sharp horns and clawlike hooves as weapons. They attack any weaker creatures for the sheer pleasure of killing, but will try to avoid stronger parties.",Invisible at will,,,"basic-fantasy, celestial"
+Amber Jelly,Predator,4,,3d6,30,,STR,STR,"Amber  jellies  are  glistening,  transparent  amoebae  of  a  densely gelatinous and vaguely ovoid nature. They are most  notable for their deep sickly yellow colour.
+Often  found  in  small  groups,  amber  jellies  work  together  to  trap their prey.
+In combat, an amber jelly can strike with a pseudopod, but it prefers a ranged attack by spewing a sticky yellow mucilage up to 15 feet.
+By working in groups, amber jellies can be quite deadly. They prefer to stick to ceilings, high walls,  or  alcoves  where  they  can  shoot  their  mucilage  repeatedly from safety.
+Amber jelly mucilage may be dissolved by alcohol.",Hit: STR save or become Slowed by the sticky ichor for three turns (the effects of multiple hits are cumulative).,Immunity for cold and fire damage. Fire causes subdivision into two jellies (each with half hit points and 2 hit dice).,,"barrowmaze, ooze"
+Amber Mold,Predator,0.5,,1,0,,CON,CON,"Amber  mold  appears  much  like  yellow  mold.  A  colony  normally  covers  a  patch  of  floor,  wall,  or  ceiling.
+The  spores of amber mold contain small gas pockets.
+Amber  mold can be destroyed by fire.","Gas: temporary Stinking Cloud, induces nausea for 2d4+1  rounds.
+Choking  and  vomiting  may  provoke  a  random  monster  check  (GM's  discretion).",,,"barrowmaze, plant"
+Amphisbaena,Predator,6,,d2,10,,DEX,DEX,"The amphisbaena is a variety of giant poisonous snake with two heads, often found in caves and dank dungeons.
+Each of the amphisbaena's heads functions independently.",Hit: CON save vs. Poison or die,"If an amphisbaena sustains a melee hit equal to half its original hit points, it is considered 'cut in half.' Both independent halves will grow replacement heads in 1d4+2 rounds.",,"barrowmaze, monstrosity"
+"Ant Exoskeleton, Giant",Soldier,3,,2d4,20,,STR,STR,These undead creatures are the dry animated husks of giant ants.,"Immune to sleep, charm and hold magic.",,,"barrowmaze, undead"
 "Ant, Giant",Soldier,4,,2d4,60,60,STR,DEX,"Giant ants are among the hardiest and most adaptable vermin. Soldiers and workers are about 5 to 6 feet long, while queens can grow to a length of 9 feet.
 Giant ants may be red or black; there is no statistical difference between them.
 Though relatively shy when first encountered, once combat begins they will fight to the death.
@@ -31,6 +46,31 @@ Higher baboons are aggressive, and are easily stimulated to fight.",,,,"labyrint
 "Baboon, Rock",Brute,2,,2d6,30,,STR,STR,"Rock baboons are larger versions of normal baboons, and are more intelligent. They will eat anything, but prefer meat. They do not make tools or weapons but will pick up bones or branches to use as clubs. Rock baboons form packs, each led by a dominant male. They are ferocious and have vicious tempers. They do not speak a true language, but use simple screams to communicate warnings and needs.",,,,"basic-fantasy, beast"
 Bandit,Sniper,1,,d8,30,,DEX,DEX,"These men are criminals who have banded together under the shared interest of stealing and pillaging.
 Half of all bandits encountered are armed with a short sword and short bow, and wear leather armor and a shield. The other half is better equipped with long swords, chain mail, a shield, and will have riding horses.",,,,"labyrinth-lord, humanoid"
+Barrow Abomination,Shaper,8,,1,30,,DEX,INT,"A Barrow Abomination is a physical manifestation of Nergal's chaos energy and the corruptive power of The Tablet of Chaos.
+Upon disturbing its rest, a Barrow Abomination will draw itself up from piles of bones and skulls until it resembles a roughly humanoid shape approximately eight feet tall.
+A Barrow Abomination uses its bulbous ghostly tentacles in melee (a total of four or two per arm). The cold negative energy of these tentacles each attach and drain hit points.
+The Barrow Abomination can see in all directions simultaneously and is never surprised.",Spells: 8th level magic-user.,"Instead of four smaller attacks, the Barrow Abomination can make a single devastating attack by enveloping and biting its victim with its central maw.",The abomination can be turned but this merely reduces it to a pile of ghostly protoplasm and bones. It will reconstitute itself in one turn.,"barrowmaze, undead"
+Barrow Ghast,Predator,7,,d2,50,,STR,STR,"The barrow or greater ghast possesses all the abilities of a normal ghast.
+",Immunity to non-magical and less than +2 magical weapons,"Hit: Immediately infected, die in 1 day and rise as a ghast at midnight","These undead servants cannot be turned in the presence of their barrow ghast leader.
+Some barrow ghasts, who were magic-users, clerics, or fighters in life, retain some of their abilities in death.","barrowmaze, undead"
+Barrow Guardian,Soldier,3,,d4,20,,STR,STR,"The barrow guardian is similar to a caryatid column, but they are specific to Barrowmaze.
+They appear as stone statues, pillars, or columns in the form of stately warriors.
+Barrow guardians are often used to guard crypts and tombs of import. They are inanimate until someone disturbs the tomb they have been assigned to protect.","With each hit on a barrow guardian, roll d20, on 10- the weapon becomes stuck in the statue. Magic weapons roll with adv.",,,"barrowmaze, undead"
+Barrow Guardian (Greater),Brute,6,,d4,20,,STR,STR,"The barrow guardian is similar to a caryatid column, but they are specific to Barrowmaze.
+They appear as stone statues, pillars, or columns in the form of stately warriors.
+Barrow guardians are often used to guard crypts and tombs of import. They are inanimate until someone disturbs the tomb they have been assigned to protect.
+Greater barrow guardians are constructed with stronger enchantments giving them enhanced abilities","With each hit on a barrow guardian, roll d20, on 10- the weapon becomes stuck in the statue. Magic weapons roll with adv.",Resistance to magic (34%),,"barrowmaze, undead"
+Barrow Harpy,Shaper,3,,d6,20,60,STR,STR,"These despicable creatures resemble harpies but are skinnier and more wretched. Unlike common harpies, their appearance and feathers suggest a lineage to vultures.
+Instead of fresh meat, they prefer to feed on carrion and thus frequent grave sites and battlefields.
+They prefer basic weapons and care little for their upkeep. Barrow harpies are often seen attacking with gnarled clubs, or rusty daggers, or chipped swords.
+Although they have relatively low morale and are quick to flee combat, barrow harpies are persistent and may return to battle if they can gather greater numbers.
+They often keep giant vultures as pets and guardians.",Flying (60ft.),"Frightening shriek, CHA Save or become immobilized with fear for 9 turns (as per the spell Hold Person).
+A successful save will not require additional saves during an encounter.",Resistant to magic (50%),"barrowmaze, undead"
+Barrow Mummy,Brute,3,,d2,20,,CON,CON,A barrow mummy is stronger and more powerful than a standard mummy.,"Hit: Instead of mummy rot, barrow mummies possess a freezing touch, in addition to damage, will paralyze a limb for 1d4+1 hours unless a successful CON save is made.","Like all undead, they are unaffected by mind-influencing spells, Barrow mummies can only be harmed by magical weapons, spells, and fire-based attacks.",,"barrowmaze, undead"
+Barrow Wight,Brute,6,,d3,30,,STR,STR,"Barrow wights are fearsome opponents. They are similar to normal wights but stronger and more powerful.
+They are found near barrows, crypts, and gravesites.
+Barrow wights have thin white skin pulled tight over their bones, and often wear funerary shrouds that hang in tatters. The eyes of a barrow wight burn with malevolence for the living.
+Some say barrow wights, similar to mummies, are interred with canopic jars and that destroying their vessels can cause them injury.",Characters that meet the gaze of a barrow wight must WIS save or be struck with insanity.,Touch: drains one level of experience from its victim. A humanoid slain by a barrow wight will rise as a normal wight in 1d6 rounds.,Immune to mind influencing spells,"barrowmaze, undead"
 Basilisk,Predator,6,,d6,30,,DEX,DEX,"A basilisk is an eight-legged reptilian monster that petrifies living creatures with a mere gaze.  A basilisk usually has a dull brown body with a yellowish underbelly.   Some specimens sport a short, curved horn atop the nose.  An adult basilisk's body grows to about 6 feet long, not including its tail, which can reach an additional length of 5 to 7 feet.  The creature weighs about 300 pounds.",WIS save or be petrified by its gaze,,,"basic-fantasy, monstrosity"
 Bat,Shaper,0.25,,d100,30,120,DEX,DEX,"Bats live in sheltered caverns or abandoned buildings, and are nocturnal mammals with leathery wings. Their nocturnal lifestyle has made typical eyesight useless to them, but they are able to navigate with a refined use of sound, or echo location.","No spells or other influence that would normally blind an opponent will affect bats, but the spell silence negates their ability to echolocate.","Bats will not attack men but may confuse them by flying around their heads. There must be at least ten bats to confuse one character.
 Confused characters have disadvantage on all checks",Flying 120ft,"labyrinth-lord, beast"
@@ -64,10 +104,26 @@ When the toxic fluid successfully strikes an opponent, it is extremely painful a
 They are fast runners, depending on their speed to rundown prey, and they willingly prey on any creature of mansize or smaller.
 Like most beetles, they have more or less the same visual acuity in all directions.",,,,"basic-fantasy, beast"
 Beserker,Brute,1,1,d6,30,,STR,STR,These fighters are engulfed in a battle rage whenever they fight any humanoid.,"They never retreat, surrender, or take prisoners.",Adv. To attacks and Disadv. To Defence,,"labyrinth-lord, humanoid"
+"Beserker, Depraved",Brute,4,,d6,30,,STR,STR,"Depraved berserkers are the particularly wicked and vile descendents of Stonehell's prisoner population. Eking out a brutal existence on the lower levels of the dungeon, the depraved berserkers are tougher, more vicious, and even deadlier than the berserkers found above them. They revel in cannibalism, self-mutilation, and the thrill of the hunt.
+When the sounds of their hunting drums begin to echo through the halls of Stonehell, even the dimmest of creatures knows it's time to seek shelter.
+The depraved berserkers of Stonehell typically equip themselves with scavenged armor and weapons that they have modified with serrated edges, wicked spikes, barbed chains, or other painful additions.","They never retreat, surrender, or take prisoners.",Adv. To attacks and Disadv. To Defence,,"stonehell, humanoid"
+"Beserker, Depraved Huntsman",Brute,6,,1,30,,STR,STR,"Depraved berserkers are the particularly wicked and vile descendents of Stonehell's prisoner population. Eking out a brutal existence on the lower levels of the dungeon, the depraved berserkers are tougher, more vicious, and even deadlier than the berserkers found above them. They revel in cannibalism, self-mutilation, and the thrill of the hunt.
+When the sounds of their hunting drums begin to echo through the halls of Stonehell, even the dimmest of creatures knows it's time to seek shelter.
+The depraved berserkers of Stonehell typically equip themselves with scavenged armor and weapons that they have modified with serrated edges, wicked spikes, barbed chains, or other painful additions.","They never retreat, surrender, or take prisoners.",Adv. To attacks and Disadv. To Defence,,"stonehell, humanoid"
+"Beserker, Depraved Leader",Brute,7,,0,30,,STR,STR,"Depraved berserkers are the particularly wicked and vile descendents of Stonehell's prisoner population. Eking out a brutal existence on the lower levels of the dungeon, the depraved berserkers are tougher, more vicious, and even deadlier than the berserkers found above them. They revel in cannibalism, self-mutilation, and the thrill of the hunt.
+When the sounds of their hunting drums begin to echo through the halls of Stonehell, even the dimmest of creatures knows it's time to seek shelter.
+The depraved berserkers of Stonehell typically equip themselves with scavenged armor and weapons that they have modified with serrated edges, wicked spikes, barbed chains, or other painful additions.","They never retreat, surrender, or take prisoners.",Adv. To attacks and Disadv. To Defence,,"stonehell, humanoid"
 Bison,Soldier,4,,3d10,90,,DEX,DEX,"Wild herd animal, often skittish and likely to flee if provoked, but males are more aggressive in the presence of females.",,,,"basic-fantasy, beast"
 Black Pudding,Predator,10,9,1,20,,CON,CON,"Black puddings are amorphous creatures that live only to eat.   They inhabit underground areas throughout the world, scouring caverns, ruins, and dungeons in search of organic matter, living or dead.  They attack any creatures they encounter, lashing out with pseudopods or simply engulfing opponents with their bodies, which secrete acids that help them catch and digest their prey.
 The typical black pudding measures 10 feet across and 2 feet thick, and weighs about 10,000 pounds.
 Black puddings of smaller sizes may be encountered, possibly as a result of the splitting.",Weapons do no damage but split into two smaller puddings dividing HP between them.,,,"basic-fantasy, ooze"
+Black Skeletons,Soldier,2,,d6,30,,STR,STR,,"Immune to sleep, charm and hold magic.",,,"hole-in-the-oak, undead"
+Black Tentacles,Predator,10,,1,20,60,STR,STR,"A fearsome opponent, black tentacles are a mass of ten wiggling, black, octopus-like limbs attached to a main body.
+The body is comprised of a large maw that possesses rows of sharp teeth. Six of the tentacles are used to move and/or attack while the remaining four possess bulging eyestalks at their terminal end.
+The remaining four tentacles possess eyestalks at their tip and allow the black tentacles to see and guide its attacks.
+Black tentacles will normally retreat before their final eyestalk is cut off.
+Black tentacles must stay submerged in water the majority of the time.
+They abhor light and will typically target those with light sources, followed by good-aligned clerics and warriors. It is believed that the black tentacles are a distant cousin of the otyugh, although sages cannot make this claim with certainty.",Swimming (60ft.),Hit: STR save or become restrained and receive damage each round,,"barrowmaze, monstrosity"
 Blink Dog,Soldier,4,,d6,30,120,DEX,DEX,"The blink dog is an intelligent canine that has a limited teleportation ability.
 Blink dogs hunt in packs, teleporting in a seemingly random fashion until they surround their prey.
 Blink dogs are medium-sized dogs, typically light brown in color and short haired, though other varieties are rumoured to exist. They have their own language, a mixture of barks, yaps, whines, and growls that can transmit complex information.
@@ -85,8 +141,19 @@ Demon boars, though powerful, will usually attempt to catch opponents by surpris
 "Boar, Giant",Brute,5,,d6,60,,STR,STR,"These 30ft. long giant cousins to ordinary boars are much more aggressive. They attack with little to no provocation, and crave the meat of humanoids.
 They are sometimes found with demon boars. There are rumors of a shaggy giant boar that is native to cold climates.",,,,"labyrinth-lord, beast"
 Bone Thing,Predator,3,,d2,30,,DEX,DEX,"Appearing as an asymmetrical collection of animate bones that have taken a crude human shape, bone things attack with a flurry of splintered bone fists.",3 attacks per round (d6 damage each.),Undead creature - immune to sleep and charm spells.,,"stonehell, undead"
+Brass Jackal,Soldier,2,,1,50,,STR,STR,"Brass jackals are constructed by high level necromancers of Set, who use them as sentinels and personal protectors.
+Constructed of bronze and black iron, they possess a smooth shell of brassy armour, and their eyes glow like orbs of red.
+In combat, brass jackals bite with sharp metal teeth.",Immunity to non-magical weapons and slashing weapons. Resistant to piercing.,Resistant to magic (50%),,"barrowmaze, construct"
 Brigand,Soldier,1,,d6,30,,STR,DEX,"These men are criminals who have banded together under the shared interest of stealing and pillaging.
 Half of all brigands encountered are armed with a short sword and short bow, and wear leather armor and a shield. The other half is better equipped with long swords, chain mail, a shield, and will have riding horses.",,,,"labyrinth-lord, humanoid"
+Brown Mold,Predator,2,,1,0,,CON,CON,"Brown mold drains the body heat of living creatures that approach within 5 feet. Cold-based creatures are unaffected.
+If fire is used on brown mold, it will bubble and double its size in 1 round.
+Brown mold can only be destroyed through the use of magical cold.",,,,"barrowmaze, plant"
+Brown Pudding,Predator,9,,1,20,,CON,CON,"The brown pudding is a subspecies of black pudding.
+Brown puddings are found most often in moors and swamps, although they can be encountered elsewhere.
+Brown puddings secrete a digestive acid that dissolves organic material but does not affect metal.","Hit: acid damage and opponent's clothing and non-magical, non-metal armour dissolves immediately.
+Non-magical, non-metal weapons that strike the brown pudding dissolve also.","Slashing weapons deal no damage to this creature. Instead, the creature splits into two identical puddings, each with half of the original's current hit points (round down).
+A pudding with 10 hit points or less cannot be split further and dies if reduced to 0 hit points.",,"barrowmaze, ooze"
 Bugbear (Female),Predator,2,1,2d4,30,,STR,DEX,"Bugbears look like huge, hairy goblins, standing about 6 feet tall. Their eyes are usually a darkish brown color and they move very quietly.
 They are wild and relatively fearless, and bully smaller humanoids whenever possible.
 Bugbears prefer to ambush opponents if they can. When hunting, they often send scouts ahead of the main group.
@@ -99,6 +166,11 @@ Bugbear attacks are coordinated, and their tactics are sound if not brilliant.
 They are able to move in nearly complete silence.",Advantage to stealth checks,,,"basic-fantasy, goblinoid, humanoid"
 "Caecilia, Giant",Predator,6,,d3,20,,STR,STR,"Caecilia are carnivorous, legless amphibians; they strongly resemble earthworms, but they have bony skeletons and sharp teeth. Caecilia live entirely underground. The giant variety grows up to 30' long and frequently are found in caverns or dungeons.
 Once a caecilia has swallowed an opponent, it will generally attempt to disengage from combat, going to its lair to rest and digest its meal.",Blindsight 60ft.,"Hit: on a score of 20+ the caecilia swallows its target - restrained, damage per round and can fight from inside with small weapons e.g. dagger",,"basic-fantasy, beast"
+Caged Mutants,Soldier,1,,d6,30,,STR,STR,"Degenerate humanoids (indefinite species).
+Stunted and ape-like (4ft tall).
+Babbling speech (very basic Common).
+Reaction: Lolling, indifferent. Scream if approached.
+If freed: Go on the rampage, attacking all in sight. Placated if fed.",,,,"hole-in-the-oak, monstrosity"
 Camel,Soldier,2,,2d4,60,40,STR,STR,"Camels are known for their ability to travel long distanceswithout food or water.
 The statistics presented here are forthe dromedary, or one-humped camel, which thrives inwarm deserts.  A dromedary stands about 7 feet tall at theshoulder, with its hump rising 1 foot higher.
 The two-humped, or Bactrian, camel is suited to cooler, rockyareas.  It is stockier, slower (speed given in brackets), andtougher than the dromedary.
@@ -117,16 +189,62 @@ CON Saving Throw
 Lasts d8 turns
 Once paralyzed, a victim will be eaten (unless the carrion crawler is being attacked).
 The paralysis can be removed by a cure light wounds spell, but any spell so used will have no other effect.",,"labyrinth-lord, monstrosity"
+Caryatid Column,Brute,5,,d4,20,,STR,STR,"The caryatid column is akin to the stone golem in that it is a magical construct created by a spellcaster. Caryatid columns are always created for a specific defensive function.
+The caryatid column stands 7 feet tall and weighs around 1,500 pounds. Its smooth, chiseled body is shaped as a beautiful woman.
+The column always wields a weapon (usually a longsword) in one of its hands. The weapon itself is constructed of steel, but is melded with the column and made of stone until it animates.
+Caryatid columns are programmed as guardians and activate when certain conditions or stipulations are met or broken (such as a living creature entering a chamber guarded by a caryatid column).
+A caryatid column attacks its opponents with its longsword. It does not move more than 50 feet from an area it is guarding or protecting.",Non-magical weapons that strikes a caryatid column has a 40% chance to shatter into pieces.,"Due to their sturdy construction and magical nature, adv. To all saving throws",,"barrowmaze, construct"
+Cave Moray,Predator,3,,d4+2,5,,STR,STR,"Cave morays are a land-based version of their watery brethren. They grow about 7 feet long.
+They make their lairs underground in the walls of caves and dungeons. They create their burrows in high traffic areas, or near water-holes, where they can surprise their prey.
+Although they live individually, groups of cave morays in the same area will work together to cross-sect their immediate killing ground. They attack by striking, recoiling, and then striking again.",Adv. to stealth checks,,,"barrowmaze, beast"
+"Cave Moray, Large",Predator,5,,d4+2,5,,STR,STR,"Cave morays are a land-based version of their watery brethren. They grow about 7 feet long.
+They make their lairs underground in the walls of caves and dungeons. They create their burrows in high traffic areas, or near water-holes, where they can surprise their prey.
+Although they live individually, groups of cave morays in the same area will work together to cross-sect their immediate killing ground. They attack by striking, recoiling, and then striking again.",Adv. to stealth checks,,,"barrowmaze, beast"
+"Cave Moray, Small",Predator,1,,d4+2,5,,STR,STR,"Cave morays are a land-based version of their watery brethren. They grow about 7 feet long.
+They make their lairs underground in the walls of caves and dungeons. They create their burrows in high traffic areas, or near water-holes, where they can surprise their prey.
+Although they live individually, groups of cave morays in the same area will work together to cross-sect their immediate killing ground. They attack by striking, recoiling, and then striking again.",Adv. to stealth checks,,,"barrowmaze, beast"
 "Centipede, Giant",Predator,0.5,,2d4,30,30,DEX,DEX,"Giant centipedes are larger versions of the normal sort, being 2 to 3 feet long.
 Centipedes are fast-moving, predatory, venomous arthropods, having long segmented bodies with exoskeletons.
 They prefer to live in underground areas, shadowy forested areas, and  other places out of direct sunlight; however, there are desert dwelling varieties that hide under the sand waiting for prey to wander by.","Their bite does no damage, but the victim must save vs. Poison or become violently ill for 10 days. Characters who do not save move at 1/2 speed and will not be able to perform any other physical action",,,"basic-fantasy, beast"
 "Centipede, Giant Red",Predator,1,-1,d8,30,,DEX,DEX,These 2' long scarlet centipedes are more vicious and toxic then their smaller cousins.,CON save or double damage,,,"stonehell, beast"
+Cerepod,Predator,5,,1,0,60,DEX,DEX,"The cerepod, also called a ""floating horror,"" is a solitary underground creature. Although the exact origin of the beast is unknown, sages believe the cerepod is the result of strange magical experimentation.
+A cerepod stands well over eight feet tall. Its central body appears as an exposed organ of pink tissue.
+The creature possesses greenish tentacles that hang below the body. The cerepod has a sharp yellow beak.
+A cerepod moves through a combination of magical levitation and its tentacles. The latter it uses to pull itself through space.
+When hunting, a cerepod can be completely silent.
+The source of the creature's levitation ability is a gland located in the central body, and if lanced, will secrete enough liquid to act as a Potion of Levitation.
+The creature's tentacles lash out at its prey and squeeze them while secreting a paralytic enzyme from small suction cups.",Flying 60ft.,Adv. to Stealth checks,"Range 6ft. Hit: in addition to damage STR save or be restrained and be paralyzed
+The creature will draw its grasped victim into its beak the following round, damage each round","barrowmaze, monstrosity"
+"Chair, Upholstered, Animated",Predator,1,,d6,30,,STR,STR,"Touching the chairs: Causes them to animate and attack, plus a torrent of books to fly out from the shelves (all in the room must DEX save or suffer damage)",,,,"hole-in-the-oak, monstrosity"
 Cheetah,Predator,2,,d3,120,,DEX,DEX,"A Cheetah is one of the fastest land animals - a large (about 100 pounds) cat capable of reaching up to 75 miles per hour when running. It hunts alone or in small groups (usually composed of siblings). It will rarely attack humans unless compelled to do so, but a  female will ferociously defend her young.",,,,"basic-fantasy, beast"
+Child of Gaxx,Predator,3,,d3,20,,STR,STR,"These hideous, rotting undead creatures look like grisly cadavers infested with wiggling Rot Grubs that squirm in and out of their decaying bodies. They attack with their fists.","Immune to sleep, charm and hold magic.
+Turn as 5HD","Hit: 10% chance contract flesh-eating disease (every 2 months permanently lose 2 CON).
+50% change rot grubs burrow into the target's body.
+For first two rounds, can be removed with fire or cutting skin open - 2d6 damage to target but rot grub is killed.
+Otherwise only cure disease magic will be effective and the target will die in a further d3 rounds as grubs devour the target's heart.
+On death rise as a Child of Gaxx in 1-3 days.","Regenerate 2HP per round even at 0 HP.
+Can only be destroyed by holy water, acid, or fire.","barrowmaze, undead"
 Chimera,Brute,9,8,d2,30,60,STR,STR,"Chimeras are strange creatures having a lion's body with the heads of a lion, a goat, and a dragon, and the wings of a dragon. A chimera is about 5 feet tall at the shoulder, nearly 10 feet long, and weighs about 4,000 pounds.
 A chimera's dragon head might be black, blue, green, red, or white, and has the same type of breath weapon as that sort of dragon.
 Chimeras are cruel and voracious. They can speak Dragon but seldom bother to do so, except when toadying to more powerful creatures.",Flying 60ft.,The dragon's head breathes a 50' long cone with a 10' wide end,,"basic-fantasy, monstrosity"
+Cloaker,Predator,5,,d4,20,,DEX,DEX,"A cloaker is a subterranean creature that is almost indistinguishable from a common black cloak. Raised to its full height, an adult male can be as large as eight feet tall.
+Cloakers prefer to lie in wait and ambush their prey.
+A cloaker can choose from multiple modes of attack. It can strike by means of its bite and its flail-like tail or the cloaker can engulf an opponent.
+A cloaker is blinded by Light or Continual Light.",Engulf Any damage directed at a cloaker while it has engulfed an opponent is halved between the creature and the victim.,"Subsonic moan unnerves opponents. DisAdv. to attacks for all who hear it.
+After six consecutive rounds, CON save or become paralysed.",Create two shadow-selves DisAdv. to be hit or hide in shadows  Adv. to steath.,"barrowmaze, monstrosity"
+"Cobra, Clockwork",Predator,1,,1,5,,CON,CON,"Clockwork cobras are metal constructs used in crypts to guard precious treasures. They are animated by magic.
+A clockwork cobra is silent when motionless, but when moving, it emits a repeated Bzzzzzzzzt, click, click, click series of noises.
+","First 2 hits: in addition to damage, injects poison CON save or die.",Resistance to non-magical weapons (50%),,"barrowmaze, construct"
 Cockatrice,Predator,5,,d4,30,60,DEX,DEX,"A cockatrice is a strange creature, appearing to be a chicken (hen or rooster) with a long serpentine neck and tail; the neck is topped by a more or less normal looking chicken head.
 A male cockatrice has wattles and a comb, just like a rooster. Females, much rarer than males, differ only in that they have no wattles or comb. A cockatrice weighs about 25 pounds. A cockatrice is no more intelligent than any animal, but they are bad-tempered and prone to attack if disturbed.",Flying 60ft.,Touch CON save or be petrified,,"basic-fantasy, monstrosity"
+Coffer Corpse,Brute,2,,1,20,,STR,STR,The coffer corpse resembles a zombie.,"Immune to sleep, charm and hold magic.
+Turned as a 7HD monster","After sustaining 4 hit points of damage or more the coffer corpse collapses, and appears defeated. However, normal weapons do no damage to a coffer corpse and one round after collapsing the undead creature will rise and continue to attack.
+All those who watch the coffer corpse rise must WIS save or flee in panic. There is a 50% chance fleeing PCs will drop whatever they are carrying.","Hit: wrap hands around throat and auto hit each turn.
+The grasp of a coffer corpse cannot be broken.","barrowmaze, undead"
+Corpse Candle,Predator,6,,1,20,,STR,STR,"Corpse candles are a vengeful, incorporeal form of undead.
+They remain close to the location of their death and are completely invisible to the naked eye. They create dim twisting patterns of light similar to candles in darkness.
+Corpse candles are devious and will attempt to draw victims into the traps, or toward the den of the monsters, that killed them. If a victim does indeed die in the trap, their final sight will be the ghastly visage of the corpse candle reaching towards them.
+Those with True Seeing will observe the corpse candle hovering near its remains.","Immune to sleep, charm and hold magic.","Those who view the luminescence must INT save or be hypnotised by, and drawn to, the light.",Anyone killed by a corpse candle has a 10% chance of rising as one.,"barrowmaze, undead"
 "Crab, Giant",Predator,3,,d6,20,20,STR,STR,"Giant crabs naturally resemble the ordinary variety, but are much larger, averaging 5' in diameter (not counting their legs). These creatures are often found in water-filled caves, particularly those connected to a river, lake or sea, and are tolerant of both fresh and salt water. Also, they are able to live in stagnant water, though they prefer a better environment.",Swimming 20ft.,"360 vision, adv. to PER check",,"basic-fantasy, beast"
 Crocodile,Predator,2,,d8,30,30,STR,STR,"Crocodiles are aggressive predators 11 to 12 feet long.
 They lie mostly submerged in rivers or marshes, with only their eyes and nostrils showing, waiting for prey to come within reach; when in their natural element.",Swimming 30ft.,Adv. to Stealth checks,,"basic-fantasy, beast"
@@ -134,13 +252,34 @@ They lie mostly submerged in rivers or marshes, with only their eyes and nostril
 They lie mostly submerged in rivers or marshes, with only their eyes and nostrils showing, waiting for prey to come within reach; when in their natural element.",Swimming 30ft.,Adv. to Stealth checks,,"basic-fantasy, beast"
 "Crocodile, Large",Predator,4,10,d4,30,30,STR,STR,"Large crocodiles are aggressive predators 121to 20 feet long.
 They lie mostly submerged in rivers or marshes, with only their eyes and nostrils showing, waiting for prey to come within reach; when in their natural element.",Swimming 30ft.,Adv. to Stealth checks,,"basic-fantasy, beast"
+Crypt Knight,Soldier,7,,d8,30,,STR,STR,"Crypt Knights are all that remain of a secret martial order - the Black Legion - devoted to Nergal, God of the Underworld.
+When The Tablet of Chaos was hidden, the order gathered together and willingly allowed their life energy to be drained by Nergal's undead. They rose in death as crypt knights devoted to the protection of the Dark God's great temples and The Tablet of Chaos.
+Due to the excruciating nature of their death and their skeletal appearance, crypt knights radiate an aura of fear.
+The symbol of the order is a white skull on a black rose. This device often decorates their armour and/or shields. They attack all intruders except followers of Nergal.","Immune to sleep, charm and hold magic.",,,"barrowmaze, undead"
 Crypt Shade,Brute,2,,d2,30,,CON,CON,"This undead creature is a roughly human-shaped collection of shadows, dust, rotted burial linens, bone fragments, and other sepulcher debris. Spawned from chaos and lingering hate, crypt shades feed on the fear and pain of their victims.
 They attack by engulfing victims within the shifting cloud of grave detritus that gives them shape.",Undead creature - immune to sleep and charm spells.,Resistant to physical damage (50%),,"stonehell, undead"
+"Crypt Shade, Greater",Brute,6,,d2,30,,CON,CON,"This undead creature is a roughly human-shaped collection of shadows, dust, rotted burial linens, bone fragments, and other sepulcher debris. Spawned from chaos and lingering hate, crypt shades feed on the fear and pain of their victims.
+They attack by engulfing victims within the shifting cloud of grave detritus that gives them shape.",Undead creature - immune to sleep and charm spells.,Resistant to non-magical damage (50%),,"barrowmaze, undead"
+Crypt Thing,Shaper,6,,1,20,,STR,STR,"Crypt things look much like skeletons shrouded in a black robe.
+Powerful magic-users create crypt things to serve as guardians to their tombs or to protect special treasures. They never leave their designated tomb and never initiate combat.","If the tomb it guards is disturbed in any way, the crypt thing will teleport interlopers in a random direction (d8) away from the tomb they guard (5d20 feet avg 53ft).
+Those teleported may attempt to resist with a INT saving throw. If sufficiently annoyed a crypt thing will teleport tomb-robbers to a destination in mid-air (or sometimes over a pool).",,,"barrowmaze, undead"
 Cyclops,Brute,13,,d4,30,,STR,STR,"Cyclops average 20ft. tall, and are related to giants. They have one large eye centered on their face.
 They employ large clubs as weapons, but also throw rocks up to 200ft.
 Cyclops are loners, and generally live together in small numbers only on occasion.
 They typically keep flocks of sheep, and often cultivate grapes. They live in caves.",,,,"labyrinth-lord, giant"
+Death Knight,Leader,10,,1,20,,STR,STR,"The death knight is a terrible undead creature.
+It is unknown if they achieved their state through a fall from grace or if they were created by the dark gods.
+Death knights carry the equipment they possessed in life. They often wear ancient magical platemail and shield, and carry a magical longsword, mace, or flail.
+It is believed only nine death knights exist, and they are said to ride mighty undead warhorses. Some believe they appear as riders in flowing black shrouds, while others say they look like black knights risen from the grave.","Immunity to non-magical weapons
+Magic resistance
+Immune to sleep, charm and hold magic.
+The death knight cannot be turned and can command undead below its hit dice at will. ","Spells: Dispel Magic, Fire Ball, and use a Symbol. These are cast at 9th level of magic use.",,"barrowmaze, undead"
 Deer,Soldier,1,,3d10,90,,DEX,DEX,"Wild herd animal, often skittish and likely to flee if provoked, but males are more aggressive in the presence of females.",,,,"basic-fantasy, beast"
+Demi-ghoul,Predator,1,,d4,10,,STR,STR,"Half-Devoured Corpse
+Fairly fresh (flesh still intact).
+Partially dismembered (legless).
+Destroyed armour (remnants of rended plate mail).
+Reaction: The legless corpse will crawl to attack PCs. (It is a recently killed adventurer half way to ghoul-hood.)","Immune to sleep, charm and hold magic.",,,"hole-in-the-oak, undead"
 "Dinosaur, Deinonychus",Predator,3,,2d3,60,,DEX,DEX,"The Deinonychus (sometimes mistakenly called a ""Velociraptor"") is a medium-sized feathered dinosaur weighting approximately 150 pounds and reaching about 11 feet of length (tail included). It is an avid predator and a skilled pack-hunter; its warm blood, aerodynamic build and vicious maw allow it to feed on larger but more primitive dinosaurs.",,,,"basic-fantasy, beast"
 "Dinosaur, Pteranodon",Predator,5,,d4,10,60,DEX,DEX,"Pteranodons are essentially giant-sized pterodactyls, having wingspans of 25 feet or more. They are predators, and may attack adventuring parties.",Flying 60ft.,,,"basic-fantasy, beast"
 "Dinosaur, Pterodactyl",Predator,1,,2d4,10,60,DEX,DEX,"Pterodactyls are prehistoric winged reptilian creatures, having a wingspan of around 25 to 30 inches. Though they eat mostly fish, they may attack smaller characters or scavenge unguarded packs.",Flying 60ft.,,,"basic-fantasy, beast"
@@ -277,11 +416,35 @@ An Indian elephant can carry 1,400 LOAD.
 An elephant has no treasure as such, but the tusks of an elephant are worth 1d8 x 100sp.",,,,"basic-fantasy, beast"
 Elf,Sniper,1,1,d4,30,,DEX,DEX,"Elves average 5 feet tall and are slight of build. They prefer colourful clothes, usually with a green-and-grey cloak that blends well with the colours of the forest. ",One 1st level spell (chosen at random).,,,"labyrinth-lord, humanoid"
 Elk,Soldier,2,,3d10,90,,DEX,DEX,"Wild herd animal, often skittish and likely to flee if provoked, but males are more aggressive in the presence of females.",,,,"basic-fantasy, beast"
+Enchanted Sheep Skulls,Soldier,1,,d6,40,,STR,STR,"Rune-carved (magical script of binding).
+Wicked horns (stout spirals with barbs).
+Reaction: Sit inert, unless commanded by Ramius (area 8).",,,,"hole-in-the-oak, undead"
 Ettin,Brute,10,,d2,30,,STR,STR,"Ettins are dirty creatures that wear tattered skins and often use wicked weapons, such as barbed clubs. They share some affinity to orcs, witnessed in their pig-like faces.
 Ettins are large, nocturnal creatures that live below ground.
 They have two heads, each of which controls one arm and are seldom surprised because one head or the other is usually keeping watch.",,,,"labyrinth-lord, monstrosity"
+Eumyfolk,Soldier,3,,d6,30,,STR,STR,"Eumyfolk are a race of 4ft. tall, humanoid mushrooms that have developed a primitive society and a Neolithic level of technology.
+Although comical in appearance to surface races, the eumyfolk are deadly adversaries when their tribal lands are trespassed upon and their taboos are broken.
+Eumyfolk use clubs and spear in battle, and 25% of all eumyfolk encountered also have crude pottery ""bombs"" that are filled with natural concoctions.","Bombs:
+Sleep bomb - CON save or sleep 
+Sap bomb - sticky Restrained
+Others as GM wishes",,,"stonehell, humanoid"
+Evil Tree Babies,Predator,1,,d4,30,,DEX,DEX,"Cute (chubby, happy). Glowing eyes (yellow). Needle fangs (vicious).
+Reaction: Peek down at PCs from the treetops. Defend the chalice.",,,,"hole-in-the-oak, monstrosity"
+Evil Tree Stump,Leader,6,,1,1,,CON,CON,"Rough tree stump (3ft across). Creepy face (like a weeping child). Jumble of roots (swaying and twitching). Laughing evilly (to itself). Caressing the dead dwarf (roots poking into his orifices).
+Reaction: The stump is an over-confident megalomaniac and will demand that PCs fall to their knees in worship. If they resist, it will attack and call out to its gnome servitors. If the PCs outnumber the gnomes, the stump will speak in the Chaotic tongue, offering occult power to any who will swear their souls to it.
+Possessing the stump: One who swears their soul to the stump will benefit from the magical powers it grants. This includes the ability to charm person once per day. (The referee may add further powers that are discovered over time). In return, the stump demands protection, worship, and blood sacrifices.","Sinister charm: gives a command which must be obeyed.
+INT save to resist.
+Typically, the stump will command victims to attack their companions.",,,"hole-in-the-oak, monstrosity"
+"Faun, Sheep Headed",Shaper,2,,d6,40,,STR,STR,"Human-sized (5ft tall).
+Fluffy wool (poking out from their clothing).
+Twinkling eyes (jet black).
+Bleating speech (Common tongue)",,,,"hole-in-the-oak, humanoid"
 "Ferret, Giant",Predator,1,1,d8,60,,DEX,DEX,"Giant ferrets look like 3ft. long weasels. They hunt giant rats underground, and are sometimes trained for this purpose.
 Unfortunately, their tempers are highly unpredictable, and they have been known to attack their trainers and other humans.",,,,"basic-fantasy, beast"
+Fire Crab,Predator,3,,d4+1,20,,DEX,DEX,"A fire crab appears as a giant crab in most respects. However, its reddish color and jagged appearance distinguish it.
+In combat, fire crabs generate intense heat and flames rise from their back.
+They are native to the plane of fire.",Hit: additional fire damage.,"Immunity to fire
+Vulnerable to cold",,"barrowmaze, elemental"
 "Fish, Giant Barracuda",Predator,9,,1,0,60,STR,STR,"Giant barracuda are predatory fish found in salt water and are over 20ft long.
 They have elongated bodies, pointed heads and prominent jaws. Their bodies are covered with smooth scales, typically blue, gray or silver in color.
 They are attracted to shiny objects.",Swimming 60ft.,DisAdv. to stealth checks,,"basic-fantasy, beast"
@@ -290,6 +453,11 @@ Most are greenish-grey, marked with dark lateral stripes, though some are almost
 They are generally found in lakes or rivers, as they are not adapted for salt water.
 After swallowing a creature the Giant Bass will attempt to retreat (having achieved its goal).",Swimming 30ft.,"Hit: on a score of 20+ the bass swallows its target - restrained, damage per round and can fight from inside with small weapons e.g. dagger",,"basic-fantasy, beast"
 "Fish, Giant Catfish",Predator,8,,d2,0,30,STR,STR,Giant catfish are 15 to 20 ft long predatory fish with fins edged with a natural poison that causes a painful burning sensation.,Swimming 30ft.,Touch CON save or DisAdv. to all checks until rest,,"basic-fantasy, beast"
+"Fish, Giant Cave Catfish",Predator,4,1,d2,0,30,STR,STR,"Cave catfish are a rare variety of their surface cousins, specially adapted to subterranean bodies of water.
+They are usually of a grey or brown colouration that helps camouflage them in underground pools, but some albino fish are known to exist.
+They are both scavengers and predators, ambushing prey from their lairs underneath rocky shelves and in narrow crevices.
+Cave catfish are rumoured to grow highly intelligent with age, and stories of ancient specimens who have become too wily to be snared by nets, hooks, and spears are common amongst underground races.
+Cave catfish range from 8 to 10ft. long in size.",Swimming 30ft.,,,"stonehell, beast"
 "Fish, Giant Piranha",Predator,4,,2d4,0,60,STR,STR,"Giant piranha average 5 ft in length at adulthood, and are aggressive carnivores. They are able to sense blood in the water just as sharks do.",Swimming 60ft.,,,"basic-fantasy, beast"
 "Fish, Giant Rockfish",Predator,5,5,1,0,60,STR,STR,"These giant fish are passive but deadly. They closely resemble the rocky sea surface that they call home, and blend in well since there is only a 30% chance that an observer will recognize the fish is present.
 The giant rockfish will attack if threatened.","4 deadly spines are poisonous, CON save or die",Adv. to Stealth checks,,"labyrinth-lord, beast"
@@ -301,12 +469,61 @@ They are attracted to shiny objects.",Swimming 60ft.,DisAdv. to stealth checks,,
 "Fly, Robber",Predator,2,,d6,30,60,DEX,DEX,"Giant flies look much like ordinary houseflies, but are about 3ft. Long.  Some are banded yellow and black, and are thus mistaken for giant bees.  Giant flies are predators, after killing prey, they will sometimes lay eggs in the remains.",Flying 60ft.,,,"basic-fantasy, beast"
 "Frog, Giant Venomous",Sniper,2,,d6,30,60,DEX,DEX,"Giant frogs are enlarged versions of the common frog; most resemble bullfrogs in appearance, but an adult giant frog is 3ft. long and weighs about 250 pounds.
 They are predators, but will normally only attack creatures smaller than themselves. Giant toads are statistically just like giant frogs; however, they are often found in 'drier' areas as they do not have to maintain a wet skin surface.",Swim 60ft.,"Sticky tongue attack at range, grapple",CON save or double damage,"basic-fantasy, beast"
+Frogling,Soldier,1,-1,3d10,20,30,STR,STR,"Froglings, also called boglings or frogmen, are often found in marshes and moors. They have large round eyes, a broad mouth, and are from 3 to 3' feet tall.
+They possess thin arms and legs that belie their strong leaping ability. They have olive green to bright green skin with lighter coloured underbellies and wear drab clothing to reflect their environment.
+Froglings use primitive weapons. They prefer clubs, spears, nets, and shortwords. Their weapons are often in disrepair. The often use wooden shields or shields made from tortoise shells. They rarely wear coats of mail, but instead create armour from scraps and bits wood of they have scavenged or looted.
+Froglings take advantage of their natural ""hit and run"" ability and prefer to ambush unsuspecting prey.",Jumping 30ft.,Leaping charge: Adv. to attack rolls when jumping into combat.,,"barrowmaze, humanoid"
+"Frogling, King",Leader,3,,1,20,30,DEX,DEX,"Froglings, also called boglings or frogmen, are often found in marshes and moors. They have large round eyes, a broad mouth, and are from 3 to 3' feet tall.
+They possess thin arms and legs that belie their strong leaping ability. They have olive green to bright green skin with lighter coloured underbellies and wear drab clothing to reflect their environment.
+Froglings use primitive weapons. They prefer clubs, spears, nets, and shortwords. Their weapons are often in disrepair. The often use wooden shields or shields made from tortoise shells. They rarely wear coats of mail, but instead create armour from scraps and bits wood of they have scavenged or looted.
+Froglings take advantage of their natural ""hit and run"" ability and prefer to ambush unsuspecting prey.",Jumping 30ft.,Leaping charge: Adv. to attack rolls when jumping into combat.,,"barrowmaze, humanoid"
+"Frogling, Shaman",Leader,3,,1,20,30,DEX,DEX,"Froglings, also called boglings or frogmen, are often found in marshes and moors. They have large round eyes, a broad mouth, and are from 3 to 3' feet tall.
+They possess thin arms and legs that belie their strong leaping ability. They have olive green to bright green skin with lighter coloured underbellies and wear drab clothing to reflect their environment.
+Froglings use primitive weapons. They prefer clubs, spears, nets, and shortwords. Their weapons are often in disrepair. The often use wooden shields or shields made from tortoise shells. They rarely wear coats of mail, but instead create armour from scraps and bits wood of they have scavenged or looted.
+Froglings take advantage of their natural ""hit and run"" ability and prefer to ambush unsuspecting prey.",Jumping 30ft.,Leaping charge: Adv. to attack rolls when jumping into combat.,"Spells: Condemn, Holy Scepter, Divine Vigour","barrowmaze, humanoid"
+"Frogling, Sub-leader",Soldier,2,,d8,20,30,DEX,DEX,"Froglings, also called boglings or frogmen, are often found in marshes and moors. They have large round eyes, a broad mouth, and are from 3 to 3' feet tall.
+They possess thin arms and legs that belie their strong leaping ability. They have olive green to bright green skin with lighter coloured underbellies and wear drab clothing to reflect their environment.
+Froglings use primitive weapons. They prefer clubs, spears, nets, and shortwords. Their weapons are often in disrepair. The often use wooden shields or shields made from tortoise shells. They rarely wear coats of mail, but instead create armour from scraps and bits wood of they have scavenged or looted.
+Froglings take advantage of their natural ""hit and run"" ability and prefer to ambush unsuspecting prey.",Jumping 30ft.,Leaping charge: Adv. to attack rolls when jumping into combat.,,"barrowmaze, humanoid"
 Gargoyle,Predator,4,,d6,30,60,DEX,DEX,"Gargoyles are demonic-looking winged humanoid monsters with gray stone-like skin. They are often mistaken for winged stone statues, for they can remain still indefinitely without moving.",Flying move 60ft,"They can only be hit with magic or magical weapons
 Gargoyles are not affected by sleep or charm spells.","2 Claws, 1 Bite","basic-fantasy, elemental"
+"Gargoyle, (Four-Armed)",Brute,4,2,d4,30,60,STR,STR,"Four-armed gargoyles are ferocious creatures and have a fondness for inflicting pain on their foes.
+Not particularly intelligent, they are vicious in combat, possessing four claw attacks, a bite (1d6), and a tail attack.",Flying 60ft.,Immunity to non-magical weapons,,"barrowmaze, monstrosity"
+"Gargoyle, (Maggog)",Leader,4,,d2,30,60,STR,STR,"Maggogs are gargoyles that possess the innate spellcasting ability.
+They are devious and highly intelligent creatures.
+Maggogs will normally cast spells before resorting to melee combat. They attack twice with their claws and once with their tail.",Flying 60ft.,"Immunity to non-magical weapons
+Resistance (50%) to magic","Spells: Charm, Sleep (10HD), Arcane Arrow, Discern Magic, Abjure, Shield Aura, Gust of Force, Amplify Gravity, Furyfire","barrowmaze, monstrosity"
+"Gargoyle, (Margoyle)",Leader,6,1,d6,30,60,STR,STR,"A margoyle is a bigger, stronger, more intelligent version of a standard gargoyle.
+In addition to great size, it possesses a wicked, cunning intelligence. For these reasons, margoyles are often leaders when among their brethren.
+They attack twice with their claws, once with their horns and once with a tail attack each round.",Flying 60ft.,Immunity to non-magical weapons,,"barrowmaze, monstrosity"
+Gaunt Hound,Soldier,3,1,d4,60,,DEX,DEX,"These sleek, hairless hounds are the result of generations of selected inbreeding.
+Despite their pallid colour and gaunt frames, these hounds are formidable opponents in combat. Astonishingly quick, gaunt hounds are trained to tear at the throats of their prey, leaping and dodging under defenses to do so.
+Although regularly fed dinner scraps by the Gentlemen Ghouls, gaunt hounds never gain additional powers from their meals.",Critical hit on 19 or 20,,,"stonehell, beast"
+Gehennian Goat,Predator,4,,d4,40,,STR,STR,"Gehennian goats are demonic creatures created by Orcus.
+They are matted and shaggy in appearance. They have twisted horns and dull black eyes.
+Gehennian goats are summoned by Orcus' followers through an unknown ritual.
+Gehennian goats follow the commands of their summoners until they are slain or 666 days pass, at which time they return to their lair in the underworld.
+They are often used as sentries or in melee support; biting attack.",Detect Invisibility within 60ft.,Breath fire (Cone),,"barrowmaze, monstrosity"
 Gelatinous Cube,Shaper,4,,1,20,,CON,CON,"The nearly transparent gelatinous cube travels slowly along dungeon corridors and cave floors, absorbing carrion, creatures, and trash. Inorganic material remains trapped and visible inside the cube's body.
 A typical gelatinous cube is ten feet on a side and weighs about 15,000 pounds; however, smaller specimens have been reported.
 A gelatinous cube attacks by slamming its body into its prey. It is capable of lashing out with a pseudopod, but usually engulfs foes.",Advantage to stealth checks,"On a hit:
 CON save or become paralysed for 2d4 turns","A gelatinous cube may be harmed by fire and weapons, but not by cold or lightning","basic-fantasy, ooze"
+Gentleman Ghoul,Leader,4,,d6,30,,STR,STR,"Despite their cadaverous appearance, the Gentlemen Ghouls are not undead - merely longer-lived than nature intended.
+Gentlemen Ghouls temporarily gain some of the powers possessed by their meals while alive.
+These powers include spell casting ability, saving throws, attack prowess, regeneration, immunity to normal attacks, increased strength, and infravision.
+Superlative abilities of a physiological nature like gaze attacks, breath weapons, and flight are not gained through ritual consumption of the deceased.
+Although Chaotic, the Gentlemen Ghouls are urbane and erudite, possessing a great appreciation for the finer things in life. They enjoy gourmet cuisine (of a hideous kind), genteel conversation, and the arts.
+The Gentlemen dress in antiquated finery, although greatly distressed by age and their lack of a decent tailor.
+In combat, they wield sabers, rapiers, and epees - weapons befitting a gentleman. Despite their gentlemanly code of honour, they will not hesitate to use the network of secret doors and hidden passage that honeycombs their residence in order to gain tactical advantage over an enemy.","Example meals:
+Minotaur-fed (Mf): Attacks and saves as a 6 HD creature.
+Ogre-fed (Of): Gains 18 STR (+3 to hit and damage rolls)
+Pyske-fed (Pf): Gains invisibility ability of a Pixie.
+Throghrin-fed (Tf): paralyzation ability. Regenerates 1 hp per round.
+Warlock-fed (Wf): Can cast 1 1st-level, 1 2nd-level, and 1 3rd-level arcane spell before ability is lost. Suggested spells are charm person, magic missile, shield, sleep, invisibility, mirror image, web, hold person, and lightning bolt.
+Any other create from Level 4D encounter key",,,"stonehell, humanoid"
+Ghaist,Predator,3,3,d6,60,,STR,STR,"Akin to a ghoul or a ghast, a ghaist is a terrible undead creature.
+They appear as purple-hued, emaciated humanoids with elongated claws and sharp fangs.","Hit: CON save or paralysed, Elves are immune",Adv. to Stealth checks,"Necrotic breath (once). Anyone who inhales the ""Breath of Death"" must save CON save or die.
+Victims who die of Death Breath revive as Ghaists.","barrowmaze, undead"
 Ghast,Predator,2,,d4,30,,STR,STR,"Although these creatures look just like their lesser kin, the ghoul, they are far more deadly and cunning.
 Ghasts try to attack with surprise whenever possible, striking from behind tombstones and bursting from shallow graves; when these methods are employed.","Hit: CON save or paralysed, Elves are immune",Adv. to Stealth checks,10% chance of disease - CON save or die in 1 day and rise as a ghast at midnight,"basic-fantasy, undead"
 Ghost,Shaper,10,,1,30,,STR,STR,"Ghosts are the spectral remnants of intelligent beings who, for one reason or another, cannot rest easily in their graves. A ghost normally resembles the form it had in life, but sometimes the spiritual form is altered. For instance, the ghost of someone who believed he or she was evil might look a bit demonic.",Immune to non-magical weapons,"WIS save on sight or fear
@@ -363,12 +580,37 @@ The interior of a bronze golem is molten metal.","Touch: d10 heat damage
 When damaged DEX save or be hit by molten metal spray",,,"basic-fantasy, construct"
 "Golem, Clay",Brute,11,,1,20,,STR,STR,"This golem has a humanoid body made from clay. A clay golem wears no clothing except for a metal or stiff leather garment around its hips. A clay golem cannot speak or make any vocal noise. It walks and moves with a slow, clumsy gait. It weighs around 600 pounds.
 ",,,,"basic-fantasy, construct"
+"Golem, Flagstone, Greater",Brute,6,,d4,20,,STR,STR,"A flagstone golem is constructed from the stones and mortar used to construct dungeon walls and floors.
+These monsters often serve as special camouflaged guardians to protect crypts and other important locations.
+Flagstone golems are relatively flat and pull themselves away from the wall or floor to surprise tomb-robbers.",Resistance (50%) to non-bludgeoning weapons.,"Resistance (50%) to spells which do not affect stone (acid, fire, cold, and electricity)","Hold, charm, or sleep spells are useless against them.
+They are unaffected by poison or gases.","barrowmaze, construct"
+"Golem, Flagstone, Lesser",Brute,3,,d4,20,,STR,STR,"A flagstone golem is constructed from the stones and mortar used to construct dungeon walls and floors.
+These monsters often serve as special camouflaged guardians to protect crypts and other important locations.
+Flagstone golems are relatively flat and pull themselves away from the wall or floor to surprise tomb-robbers.",Resistance (50%) to non-bludgeoning weapons.,"Resistance (50%) to spells which do not affect stone (acid, fire, cold, and electricity)","Hold, charm, or sleep spells are useless against them.
+They are unaffected by poison or gases.","barrowmaze, construct"
 "Golem, Flesh",Brute,9,,1,30,,STR,STR,"A flesh golem is a ghoulish collection of stolen humanoid body parts, stitched together into a single composite form. The golem wears whatever clothing its creator desires, usually just a ragged pair of trousers.
 It has no possessions and no weapons. It stands 8 feet tall and weighs almost 500 pounds. A flesh golem cannot speak, although it can emit a hoarse roar of sorts.
 It walks and moves with a stiff jointed gait, as if not in complete control of its body.",No natural animal willingly tracks a flesh golem,Healed by lightning damage,Vulnerable to cold or fire damage,"basic-fantasy, construct"
+"Golem, Gemstone",Brute,8,,1,30,,STR,STR,"Gemstone golems are constructed by powerful clerics and magic-users and are bound as tomb guardians. They activate when certain conditions or stipulations are met or broken (such as a living creature entering the crypt they have been assigned to protect).
+Gemstone golems appear as a huge hoard of gemstones of all shapes, sizes, varieties, and cuts. However, when disturbed, the gemstone golem draws itself up quickly into a large, roughly humanoid shape with great fists.
+These golems attack twice per round with their fists.
+When defeated, PCs can collect 4d4+8 gemstones.",Hail of gemstones: Cone (CON save for half damage),"Hold, charm, or sleep spells are useless against them.
+They are unaffected by poison or gases.",,"barrowmaze, construct"
 "Golem, Iron",Brute,17,,1,20,,STR,STR,"This golem has a humanoid body made from iron. Its features are much smoother than those of a stone golem.
 Iron golems sometimes carry a short sword in one hand. An iron golem is 12 feet tall and weighs about 5,000 pounds.
 An iron golem cannot speak or make any vocal noise, nor does it have any distinguishable odor. It moves with a ponderous but smooth gait. Each step causes the floor to tremble unless it is on a thick, solid foundation.",Gas cloud 10ft CON save or die,Healed by fire damage,Vulnerable to lightning damage,"basic-fantasy, construct"
+"Golem, Runic",Brute,7,,1,20,,STR,STR,"A runic golem is roughly humanoid in shape and is comprised of magical runic tablets found in Barrowmaze.
+These golems are used to guard tombs and crypts of import. When a runic golem is first activated - normally by an intrusion into the crypt it guards - its magical energy flickers on and off momentarily as if powering up after a long period of dormancy.
+The golem defends the crypt by bashing opponents with its fists.
+When a runic golem is destroyed, 1d4 runic tablets will remain intact.","When hit: opponents INT save or randomly activate a runic tablet: (roll 1d6) with the following effect cast at 7th level:
+1. Burning Hands
+2. Silence 15ft Radius
+3. Cause Light Wounds
+4. Hold Person
+5. Glyph of Warding
+6. Magic Missile","Immune to non-magical weapons
+Hold, charm, or sleep spells are useless against them.
+They are unaffected by poison or gases.",,"barrowmaze, construct"
 "Golem, Stone",Brute,14,,1,20,,STR,STR,"This golem has a humanoid body made from stone. A stone golem is 9 feet tall and weighs around 2,000 pounds.
 Its body is frequently stylized to suit its creator. For example, it might look like it is wearing armor, with a particular symbol carved on the breastplate, or have designs worked into the stone of its limbs.
 Stone golems are formidable opponents, being physically powerful and difficult to harm.",Spell: Slow,,,"basic-fantasy, construct"
@@ -407,6 +649,9 @@ Hawk,Predator,0.5,,d6,5,150,DEX,DEX,"Hawks are similar to eagles but slightly sm
 Hellhound,Soldier,5,,2d4,30,,STR,STR,"Hellhounds are canine creatures sheathed in hellish flame. A typical hell hound stands 4' feet high at the shoulder and weighs 120 pounds.
 They are native to another plane where they hunt in packs; sometimes powerful wizards or evil priests summon them for use as watchdogs.",Breath fire 20ft cone,,,"basic-fantasy, fiend"
 Herd Animal,Soldier,1,,3d10,90,,DEX,DEX,"Wild herd animal, often skittish and likely to flee if provoked, but males are more aggressive in the presence of females.",,,,"basic-fantasy, beast"
+Heretic Gnomes,Sniper,1,,d20,20,,DEX,DEX,"Short demihumans (3ft. tall). Long noses and beards (braided).
+Earthy flesh and rooty hair (straggly). Pointy red felt hats (keep items beneath).
+Reaction: The gnomes may be friendly to PCs but will try to capture them and sacrifice them to their evil tree stump god (area 60).",,,,"hole-in-the-oak, humanoid"
 Hippogriff,Brute,3,,2d8,60,120,STR,STR,"Hippogriffs resemble large Flying horses with the forefront of a bird of prey. A typical hippogriff is 9 feet long, has a wingspan of 20 feet, and weighs 1,000 pounds.
 A hippogriff avoids other creatures, dwelling in extreme altitudes. Griffons sometimes prey upon them, and hippogriffs will generally attack griffons on sight if they have a numerical advantage.
 Hippogriffs are omnivorous, entering combat only as defense, save for those times a griffon is met. They are prized as flying mounts since, unlike griffons, they are relatively safe around horses; note that it is still necessary to raise one in captivity in order to use it as a mount.
@@ -423,6 +668,33 @@ Hobgoblin Elite,Soldier,2,,d4,30,,STR,STR,"Hobgoblins are larger cousins of gobl
 Their weaponry is kept polished and in good repair. They wear toughened hides and carry wooden shields for armor.
 Hobgoblins are cruel and calculating warriors, always looking to exploit those weaker than themselves. They have a strong grasp of strategy and tactics and are capable of carrying out sophisticated battle plans. Under the leadership of a skilled strategist or tactician, their discipline can prove a deciding factor.
 Hobgoblins hate elves and attack them first in preference over other opponents.",,,,"basic-fantasy, goblinoid, humanoid"
+"Hoomthroom, Large",Brute,5,,d4,20,,STR,STR,"Hoomthrooms are a bizarre form of elemental rock life, appearing as round boulders ranging for 3 to 10 feet in diameter.
+These enigmatic creatures seem to take no sustenance and spend their thousand-year lifespan doing nothing more than humming in deep, melodic bass tones.
+Normally passive creatures, they are known to attack those who create loud noises or other disturbances in their presence, thus disrupting their humming choruses.
+Hoomthrooms attack by rolling over their opponents with their stony bodies - a method of attack which inflicts more damage on lightly armored individuals.
+Creatures who pass by hoomthrooms silently or who hum in harmony with their songs are never attacked.
+Some hoomthrooms contain unfinished gemstones within their stony bodies, but these stones are only worth half normal value due to their raw form.","Attacks do damage based on armour type:
+Unarmoured: 3d8
+Light Armour: 2d8
+Heavy Armour: d8",,,"stonehell, elemental"
+"Hoomthroom, Medium",Brute,4,,d4,20,,STR,STR,"Hoomthrooms are a bizarre form of elemental rock life, appearing as round boulders ranging for 3 to 10 feet in diameter.
+These enigmatic creatures seem to take no sustenance and spend their thousand-year lifespan doing nothing more than humming in deep, melodic bass tones.
+Normally passive creatures, they are known to attack those who create loud noises or other disturbances in their presence, thus disrupting their humming choruses.
+Hoomthrooms attack by rolling over their opponents with their stony bodies - a method of attack which inflicts more damage on lightly armored individuals.
+Creatures who pass by hoomthrooms silently or who hum in harmony with their songs are never attacked.
+Some hoomthrooms contain unfinished gemstones within their stony bodies, but these stones are only worth half normal value due to their raw form.","Attacks do damage based on armour type:
+Unarmoured: 3d6
+Light Armour: 2d6
+Heavy Armour: d6",,,"stonehell, elemental"
+"Hoomthroom, Small",Brute,2,,d4,20,,STR,STR,"Hoomthrooms are a bizarre form of elemental rock life, appearing as round boulders ranging for 3 to 10 feet in diameter.
+These enigmatic creatures seem to take no sustenance and spend their thousand-year lifespan doing nothing more than humming in deep, melodic bass tones.
+Normally passive creatures, they are known to attack those who create loud noises or other disturbances in their presence, thus disrupting their humming choruses.
+Hoomthrooms attack by rolling over their opponents with their stony bodies - a method of attack which inflicts more damage on lightly armored individuals.
+Creatures who pass by hoomthrooms silently or who hum in harmony with their songs are never attacked.
+Some hoomthrooms contain unfinished gemstones within their stony bodies, but these stones are only worth half normal value due to their raw form.","Attacks do damage based on armour type:
+Unarmoured: 3d4
+Light Armour: 2d4
+Heavy Armour: d4",,,"stonehell, elemental"
 "Horse, Draft",Soldier,3,,0,60,,STR,STR,"Draft Horses include large breeds of working horses suchas Clydesdales.  These animals are usually ready for heavywork by age three.
 A a draft horse can carry up to 70 LOAD.",Attack 2 hooves,,,"basic-fantasy, beast"
 "Horse, Riding",Soldier,2,,10d10,90,,STR,STR,"Riding Horses include smaller breeds of working horsessuch as quarter horses and Arabians as well as wild horses.
@@ -430,6 +702,8 @@ These animals are usually ready for useful work by age two. Riding horses cannot
 A riding horse can carry up to 50 LOAD.",Attack 2 hooves,,,"basic-fantasy, beast"
 "Horse, War",Soldier,3,,0,60,,STR,STR,"War  Horses  are  trained  and  bred  for  strength  and aggression. They usually are not ready for warfare beforeage three.
 A warhorse can carry up to 70 LOAD.",Attack 2 hooves,,,"basic-fantasy, beast"
+Huecuva,Brute,2,,d10,20,,STR,STR,"Huecuva are a terrible form of undead and appear as skeletons in tattered robes.
+They are drawn to attack lawful-aligned clerics and paladins over others.",Hit: Touch inflicts damage plus CON save or contract a flesh eating disease that will kill the victim in 1d4 days.,Turned as a 3HD monster.,,"barrowmaze, undead"
 Hydra,Brute,9,,1,30,,STR,STR,"Hydras are reptile-like monsters with multiple heads. They are gray-brown to dark brown, with a light yellow or tan underbelly. The eyes are amber and the teeth are yellow white. Hydras are about 20 feet long and weigh about 4,000 pounds.
 They are bad-tempered and territorial, but not particularly cunning.","9 heads, each can attack
 Lose 1 head per 5 damage",,,"basic-fantasy, monstrosity"
@@ -439,6 +713,9 @@ They will mostly be found in the same savanna-like environments where lions and 
 They are among the favorite pets of gnolls, who may take them into regions where they are not normally found.",,,,"basic-fantasy, beast"
 Hyenodon,Predator,3,1,d6,30,,STR,STR,"These ancient four legged predators are named for their tooth shape, like prehistoric hyenas. A notable feature is that their massively built skull features a long jaw (similar to that of a crocodile) full of teeth, with four great fangs.
 ",,,,"basic-fantasy, beast"
+Icterine Fungi,Sniper,5,,d4,5,,STR,STR,"Sages believe that the icterine fungi is a distant cousin of the violet fungi. Icterine fungi range from 3 to 8 ft. tall and are often found growing among shriekers and large mushrooms. The fungi's strange yellow colour gives it a sickly appearance.
+Similar to a violet fungi, the icterine fungi attacks by flailing tentacles at those within 5 feet. The tentacles possess sharp, serrated edges.","Hit: in addition to damage small yellow mushrooms sprout aggressively from the wound and will soon explode causing further damage.
+Additionally CON save or RES becomes 0",,,"barrowmaze, plant"
 Inmate,Brute,2,,d10,30,,STR,STR,"Dressed in ragged clothes and equipped with cast-off weapons and armor, the inmates are the insane descendents of the Asylum's original patients. Their mental disorders range from the catatonic to the bloodthirsty, and they are always unpredictable when encountered. Inmates delight in adorning their homes with disturbing graffiti, wicked traps, and assortments of meaningless objects. They are loosely governed by a lunatic prince who rules until the whims of his subjects' madness depose him.",,,,"stonehell, humanoid"
 Insect Swarm,Soldier,0.5,,1,30,60,DEX,DEX,"An insect swarm is not a single creature; rather, it is a large group of ordinary flying or crawling insects moving as a unit.
 In general, a swarm fills a volume equal to three 10ft. cubes, though it is possible for a swarm to become more compact in order to move through a small doorway or narrow corridor.
@@ -449,6 +726,7 @@ Invisible stalkers have an amorphous form like a cloud.",Invisible - detectable 
 Jaguar,Predator,4,,d2,60,30,STR,STR,"These great cats are about 8 to 9 feet long (from nose to tail-tip) and weigh about 165 pounds.
 Unlike other great cats, they enjoy swimming and often hunt near rivers or lakes.
 Jaguars kill with their powerful bite, preferring to deliver a fatal wound to the skull of their prey.",Swimming 30ft.,,,"basic-fantasy, beast"
+Killer Sword Fern,Predator,2,,d4,30,,DEX,DEX,"These 5ft. tall, mobile ferns pose two dangers to adventurers: they can attack twice a round with their hard, razor-sharp fronds, and they contain an acidic sap that can potentially harm attackers.",Anyone in melee combat who damages the plant with an edge weapon must DEX save or take 1d4 damage from the splatter of acidic sap.,,,"stonehell, plant"
 Kobold,Sniper,0.5,,4d4,30,,DEX,DEX,"Kobolds are small, dog-faced reptilian humanoids. A kobold is 2 to 2-1/2 feet tall and weighs 35 to 45 pounds.
 They prefer ranged combat, closing only when they can see that their foes have been weakened. Whenever they can, kobolds set up ambushes near trapped areas. Theyaim to drive enemies into the traps, where other kobolds wait to pour flaming oil over them, shoot them, or drop poisonous vermin onto them.
 Kobolds typically wear leather armour in battle.",Infravision 90ft,,,"basic-fantasy, humanoid"
@@ -458,8 +736,18 @@ Kobolds typically wear leather armour in battle.",Infravision 90ft,,,"basic-fant
 Kobold Guard,Sniper,1,,d6,30,,DEX,DEX,"Kobolds are small, dog-faced reptilian humanoids. A kobold is 2 to 2-1/2 feet tall and weighs 35 to 45 pounds.
 They prefer ranged combat, closing only when they can see that their foes have been weakened. Whenever they can, kobolds set up ambushes near trapped areas. Theyaim to drive enemies into the traps, where other kobolds wait to pour flaming oil over them, shoot them, or drop poisonous vermin onto them.
 Kobolds typically wear leather armour in battle.",Infravision 90ft,,,"basic-fantasy, humanoid"
+Lava Weird,Predator,8,,1,0,,STR,STR,"A lava weird appears as a large pseudopod that emerges from a pool of lava. This appendage looks like a snake at first glance but does not possess eyes or a mouth.
+A lava weird attacks by bashing opponents with its appendage and grabbing them.","Immunity to fire damage
+Vulnerable to cold damage",Hit: grappled and take damage each round. Pull an opponent into the lava pool.,,"barrowmaze, monstrosity"
 "Leech, Giant",Predator,6,,d6,30,,CON,CON,"Giant leeches are slimy, segmented wormlike creatures which live in water. Salt or fresh, clean or stagnant, there are giant leech varieties for all wet environments. However, only a true leech expert can tell the various types apart.
 An average giant leech will be 4 to 6 feet long.",Hit: attaches itself to its victim and auto hits each round,,,"basic-fantasy, beast"
+Lich-Dragon,Leader,10,35,1,30,90,STR,STR,"A lich-dragon is the combination of a Lich and a Black Dragon. It appears as a giant skeletal dragon with small red orbs glowing dully in its eye sockets. Small vestiges of membrane may remain on its wings but most of its skin and tissue decayed long ago.
+All creatures of 4 hit dice or under will immediately flee the sight of a lich-dragon with no saving throw.
+A lich-dragon possesses the intelligence and the memories it had in life. They often speak Common, Ancient Common, Dragon, and Black Tongue. They never sleep and thus, unlike living dragons, cannot be caught unaware. Like all dragons, a lich-dragon is susceptible to flattery.","Flying 90ft.
+Immune to non-magical weapons, cold and electricity, resistant to magic.
+Cannot be turned by a cleric and immune to sleep, charm and hold magic.","Breath attack inflicts damage equal to current hit points. Save for half damage.
+Gaze attack CON Save or immobilized for 10 rounds. Successful save confers immunity during for rest of encounter.","Spell casting 5th level
+Detect Invisibility and Animate Dead at will","barrowmaze, undead"
 Lion,Predator,5,,d8,60,,STR,STR,"The statistics presented here describe an African lion, which is 5 to 8 feet long and weighs 330 to 550 pounds.",,,,"basic-fantasy, beast"
 "Living Statue, Crystal",Brute,3,,d6,30,,STR,CON,"Living statues are magically animated. They are true automatons, unlike golems, which are animated by elemental spirits.
 They may not be commanded in any meaningful fashion. They make very effective guards for tombs, treasure rooms, and similar places.
@@ -519,12 +807,36 @@ Medusae are shy and reclusive, owing no doubt to the fact that, once the lair of
 
 A medusa can be looked at without harm by looking at its reflection in a mirror. If a medusa sees its own reflection, it must CON save or it will petrify itself!","Bite:
 CON save vs. poision or die",,"basic-fantasy, monstrosity"
+"Medusa, Greater",Predator,8,,1,30,,DEX,DEX,"A greater medusa appears like a standard medusa but has the lower body of a giant rattlesnake. Greater medusae prefer a solitary existence away from civilization, and often lair in remote locations.
+Their tail sounds like a rattlesnake and posses a showsword and shortbow.
+The Medusa prefers to attach from range with gaze or bow.
+The blood of a medusa is poisonous and, if harvested and used within one week, will force a struck opponent to CON save or die. The following week, the blood will weaken considerably and only provide hp damage before decomposing beyond use.
+The head of a greater medusa can also be harvested and used as a gaze attack for one week. However, each time the head is used in this fashion, there is a 15% chance that one of the snakes will bite the user CON save or die. There is also a 5% chance that PCs will accidently meet the gaze of the head (saving throw allowed) and turn themselves into stone. The head can be used in this fashion for one week.","The sight of a medusa will turn a creature to stone unless the victim makes a CON save
+
+A medusa can be looked at without harm by looking at its reflection in a mirror. If a medusa sees its own reflection, it must CON save or it will petrify itself!",Bite / Arrow: CON save vs. poision or die,Convert sticks to d4 snakes which follow the medusa's commands,"barrowmaze, monstrosity"
 Merfolk (Mermaid),Shaper,1,,3d6,30,30,DEX,DEX,"These legendary beings have fish-like bodies from the waist down, and have human torsos, arms, and heads. They use weapons that are convenient in water, including daggers, spears, and tridents.
 These creatures live exclusively in large bodies of water. They may occasionally trade fish and other sea bounty to human villages, but generally they keep to themselves.",Swimming 30ft.,,,"labyrinth-lord, humanoid"
+Mesmetoad,Predator,3,3,d4,30,,DEX,DEX,"These brightly-colored toads have sharp claws and fangs, and possess wide, swirling eyes that can mesmerize prey.
+Mesmetoads hypnotize one victim and then attempt to affect another until all opponents are entranced. It then eats its helpless prey.","Stare: CON save or be hynotised until shaken awake by another
+Mesmetoads are susceptible to their own gaze.",,,"stonehell, monstrosity"
 Minotaur,Brute,6,,d6,40,,STR,STR,"Minotaurs are huge bull-headed humanoid monsters. A minotaur stands more than 7 feet tall and weighs about 700 pounds.
 Most minotaurs are very aggressive, and fly into a murderous rage if provoked or hungry.
 Although minotaurs are not especially intelligent, they possess innate cunning and logical ability. They never become lost, and can track their enemies.
 Minotaurs often wear toughened hides for armour.",Weapon attack: +2 damage,Gore and bite: 2 attacks,,"basic-fantasy, monstrosity"
+Mongrelman,Predator,2,,2d6,30,,DEX,DEX,"Mongrelmen are abominable creatures that possess the blood and body parts of many different creatures.
+Mongrelmen are shunned by society and often retreat to subterranean caves or dungeons to eke out their existence.
+They are shy by nature (and experience) and often find themselves enslaved to a greater power.
+Mongrelmen live together in small groups where the largest and strongest serves as a chieftain.
+They are adept at mimicry and can imitate any sound they have heard at will. They are also skilled at camouflage and prefer to hide, or lure opponents into traps, instead of engaging in direct combat.
+Their language consists of a mixture of human, goblin, and orc words along with a mixture of animal sounds. Mongrelmen also include ambient environmental sounds in their language to allow them to communicate without giving away their position to others in a dungeon.",,,,"barrowmaze, humanoid"
+"Monkey, Bone",Predator,3,,2d6,30,,DEX,DEX,"Spawned by a mixture of the magical residue in this area and the Chaotic energies of the nixthisis, these creatures are the animated skeletal remains of baboons.
+With eyes glowing a hellish red, bone monkeys attack with ragged claws.
+They often lay in wait amongst the skeletal remains of other primates, attacking when prey draws close.","Immune to sleep, charm and hold magic",Resistant to piercing and slashing weapons including arrows,,"stonehell, undead"
+"Monkey, Plated",Brute,3,,2d6,30,,STR,STR,"Plated monkeys are baboons that have had parts of their bodies replaced with arcanitech, making them more machine than animal.
+What little organic tissue they retain has become necrotic and only remains intact due to the glowing, green liquid that pumps through the clear tubes embedded in their skin. Despite their decaying state, plated monkey are mechanical creations, not undead.
+Because of their ill-treatment at the hands of the Plated Mage and his assistants, plated monkeys hate magic-users and elves, and will attack them before any other class.
+In addition to their metal jaws, plated monkeys have claws or blades attached to their arcanitech bodies.","By combining the eldritch energy that powers them, two plated monkeys can act in concert to generate a 3d6 lightning bolt. This blast requires one uninterrupted round to produce.","Ability to store spell energies for later use (as a ring of spell storing).
+Some 5% can cast 1d2 random arcane spells of 1st-3rd level once.",,"stonehell, construct"
 Moose,Soldier,2,,3d10,90,,DEX,DEX,"Wild herd animal, often skittish and likely to flee if provoked, but males are more aggressive in the presence of females.",,,,"basic-fantasy, beast"
 Morlock,Brute,1,,d12,30,,STR,STR,"Morlocks are a degenerate race of subterranean humans. They are all albinos, and have developed a carnivorous diet that favours the meat of other humanoids.
 They only venture to the surface at night.
@@ -537,8 +849,61 @@ Mountain Lion,Predator,3,2,d4,50,,STR,DEX,These great cats are about 7 feet long
 Mule,Soldier,2,,0,30,,STR,STR,"Mules are sterile crossbreeds of donkeys and horses. Theycan be taken into dungeons or caverns.  A mule is similarto a riding horse, but slightly stronger and more agile.
 A mule can carry up to 60 LOAD.",,,,"basic-fantasy, beast"
 Mummy,Brute,5,,d4,20,,STR,STR,"Mummies are undead monsters, linen-wrapped preserved corpses animated through the auspices of dark desert gods best forgotten. Most mummies are 5 to 6 feet tall and weigh about 120 pounds. ","Immune to sleep, charm and hold magic and non-magical weapons","Hit: CON save or contract mummy rot, cannot heal until cured",,"basic-fantasy, undead"
+Mummy Lord,Shaper,9,,1,20,,CON,CON,"A mummy lord is a unique form of undead. Mummy lords were powerful clerics in life and have survived for centuries in a state of undeath.
+Mummy lords are able to speak, although they rarely choose to do so, and are highly intelligent.
+A mummy lord appears in burial wraps like most mummies. However, they often choose to wear the symbols of their god in the form of religious necklaces or headdresses that distinguished them as high priests in life.
+Mummy lords prefer to use their fists to club opponents. They radiate an aura of Fear.
+They will always have a group of normal mummy attendants and servants subject to their power and level.","Immune to sleep, charm and hold magic and non-magical weapons","Hit: CON save or contract mummy rot, cannot heal until cured and be struck blind","Command undead below their HD at will and Animate Dead
+Spell cast divine magic at 5th level","barrowmaze, undead"
+Mummy of Zuul,Brute,5,1,d4,20,,CON,CON,"A mummy of Zuul is a former priest of the chaos deity of the elements.
+Mummies are undead monsters, linen-wrapped preserved corpses animated through the auspices of dark desert gods best forgotten. Most mummies are 5 to 6 feet tall and weigh about 120 pounds.","Immune to sleep, charm and hold magic and non-magical weapons
+Immune to Fire, Cold, Ice, Wind, Earth, Water, Air magic
+Resistant to non-magical fire","Hit: CON save or contract mummy rot, cannot heal until cured",,"barrowmaze, undead"
+Mutagenic Ogre,Brute,6,1,1,30,,STR,STR,"Deep asleep (snoring like a bull). Diseased flesh (weeping pustules). Bulging
+eyes (one larger than the other). Keys on
+a chain (around his neck, open the door
+to the room plus the cages).
+? Reaction: Enraged at burglary, but
+otherwise not especially interested in
+adventurers. Loves to eat halflings and
+gnomes. He will pay 100gp for a live one.","Mutagenic breath: 10ft area in front of the ogre.
+CON Save or suffer a mutagenic effect (roll 1d8):
+d8 Mutagenic Effect (Permanent)
+1 Weeping skin pustules
+2 Random hand shrivels and dies
+3 Brain damage ('1 INT)
+4 Dense fur sprouts from skin
+5 Extra eye emerges (it is blind)
+6 Nose grows into rubbery tentacle
+7 Red and pink skin blotches
+8 Skin flakes, stinks",,,"hole-in-the-oak, monstrosity"
 Neanderthal (Caveman),Brute,2,,d10,30,,STR,STR,"Neanderthals (or cave people) are a species closely related to humans; they are shorter and stockier, and much more heavily muscled.
 They do not all actually live in caves. Whether they are actually less intelligent than ""normal"" humans or not is a matter of debate, but it is true that they do not have the facility for language as other human, demi-human and humanoid races.",,,,"basic-fantasy, humanoid"
+Neb'Enakhet,Predator,1,1,d6+2,10,,DEX,DEX,"Neb'Enakhet are sacred, mummified cats placed in the tombs of the social elite.
+Neb'Enakhet are highly intelligent, and will often work together using complex tactics to drive off would-be tomb-robbers.
+Despite their undead state, Neb'Enakhet retain a fondness for nepeta cataria. The exact nature of the effect is subject to the Referee's discretion.","Immune to sleep, charm and hold magic and non-magical weapons","Four or more Neb'Enakhet may howl and keen together, creating a hellish, cacophonous wail (spell Fear).",,"barrowmaze, undead"
+Necrolyte of Nergal,Leader,7,,d2,30,,DEX,DEX,"Necrolytes are magic-users devoted the cult of Nergal who, by means of secret rituals and enchantments, have become undying.
+Despite their skin being pulled tightly over their skeletons, necrolytes are not technically a type of undead, at least not as the term is usually understood.
+Clerics have no power over necrolytes and thus cannot turn them.
+In return for the gift of immortality, necrolytes typically guard locations of particular importance to the cult of Nergal. They are often encountered (75%) with 1d4+2 crypt knights to serve as their personal escort.
+While acting as crypt guardians, they are free to continue their research into magic and occult lore, unfettered by the weaknesses to which all flesh is prone. Those who serve Nergal faithfully might one day gain access to more powerful rituals that send them further down the path to apotheosis.","Immune to sleep, charm and hold magic and non-magical weapons","Spell casting: 4th-level divine spells
+Many are also equipped with offensive magic items, such as wands.",,"barrowmaze, humanoid"
+"Necromancer of Set, First Level",Shaper,1,,d6,30,,DEX,DEX,"Necromancers are a faction of magic-users who have occupied a portion of Barrowmaze in the service of Set.
+They wear black hooded robes with skull or half-skull masks over their face.
+For every 3 first level necromancers encountered, there will be a mid-level mage of second, third, or fourth level.
+They are armed with a dagger and wear no armour. They carry 2'20gp and a spellbook.","Spell casting: one of the following: Magic Missile, Shield, Protection from Good. ",,,"barrowmaze, humanoid"
+"Necromancer of Set, Fourth Level",Leader,4,,d6,30,,DEX,DEX,"Necromancers are a faction of magic-users who have occupied a portion of Barrowmaze in the service of Set.
+They wear black hooded robes with skull or half-skull masks over their face. Senior necromancers stitch bones onto their robes and wear jackal headdresses.
+These magic-users carry a staff and wear normal bracers, one of these two items is magical (+1). They carry 5'20pp and a spellbook.
+In addition, a mid-level necromancer is accompanied by their undead entourage.
+They control a runic golem and a charmed mongrelman scout.",Spell casting: level 4 spells,,,"barrowmaze, humanoid"
+"Necromancer of Set, Second Level",Leader,2,,d6,30,,DEX,DEX,"Necromancers are a faction of magic-users who have occupied a portion of Barrowmaze in the service of Set.
+They wear black hooded robes with skull or half-skull masks over their face. Senior necromancers stitch bones onto their robes and wear jackal headdresses.
+These magic-users carry a staff and wear normal bracers. They carry 5'20pp and a spellbook.",Spell casting: level 2 spells,,,"barrowmaze, humanoid"
+"Necromancer of Set, Third Level",Leader,3,,d6,30,,DEX,DEX,"Necromancers are a faction of magic-users who have occupied a portion of Barrowmaze in the service of Set.
+They wear black hooded robes with skull or half-skull masks over their face. Senior necromancers stitch bones onto their robes and wear jackal headdresses.
+These magic-users carry a staff and wear normal bracers, one of these two items is magical (+1). They carry 5'20pp and a spellbook.
+In addition, a mid-level necromancer is accompanied by their undead entourage.",Spell casting: level 3 spells,,,"barrowmaze, humanoid"
 Nixie,Shaper,1,,2d20,30,30,STR,STR,"Nixies are small water fairies. Most nixies are slim and comely, with lightly scaled, pale green skin and dark green hair. They often twine shells and pearl strings in their hair and dress in wraps woven from colorful seaweed.
 Nixies prefer not to leave their lakes. A nixie stands about 4 feet tall and weighs about 45 pounds.
 Nixies are fey creatures, and thus unpredictable. However, they are rarely malicious, attacking only when they feel threatened.
@@ -551,6 +916,9 @@ Nomads can have any kind of armour or hand weapon. All are mounted, and half of 
 Ochre Jelly,Predator,5,,1,10,10,CON,CON,"Ochre jellies are ochre-coloured amorphous monsters, similar to the gray ooze in appearance. An ochre jelly can grow to a diameter of up to 10 feet and a thickness of about 6 inches. A typical specimen weighs about 700 pounds.","Can only be harmed by fire or cold.
 Attacks with weapons or lightning merely make d4+ 1 smaller (2 hit dice) ochre jellies.","An ochre jelly does damage per turn to exposed flesh.
 It can destroy wood, leather, and cloth in 1 round, but cannot eat through metal or stone.",It can seep through small cracks,"basic-fantasy, ooze"
+Octoplant,Predator,3,,0,0,,STR,STR,"Octoplants are a form of leafy vegetation with a large central growth resembling an oversized cabbage. These plants bear yellow, sweet smelling berries that grow in great quantities several times a year.
+Just under the soil surrounding the octoplant is a network of eight thick roots that the plant uses as tentacles. Anyone approaching within 10ft. of the plant is attacked by one or more of these roots.
+Octoplants can also bite victims with a mouth of bark-like teeth that it conceals within its central growth.",Hit: Root restrains opponent dealing damage each round.,,,"stonehell, plant"
 "Octopus, Giant",Predator,7,,d2,0,30,STR,STR,"These creatures are aggressive and territorial hunters, with arms reaching 10 feet or more in length.
 Their tentacles are studded with barbs and sharp-edged suckers. In order to bite a creature, the giant octopus must hit with at least two tentacles first.","Flee: will squirt cloud of ""ink"" 40ft in diameter and jet away at twice normal speed.",Swimming 30ft.,,"basic-fantasy, beast"
 Ogre,Brute,4,1,d6,30,,STR,STR,"Ogres appear as large, very ugly humans. Adult ogres stand 9 to 10 feet tall and weigh 600 to 650 pounds. Their skin color ranges from dull yellow to dull brown. Their clothing consists of poorly cured furs and hides, which add to their naturally repellent odour.
@@ -563,24 +931,42 @@ Orc Leader,Brute,3,,1,30,,STR,STR,"Orcs are grotesque humanoids bent on war and 
 An adult orc is a little over 6 feet tall and weighs about 210 pounds. Orcs prefer wearing vivid colors that many humans would consider unpleasant, such as blood red, mustard yellow, yellow-green, and deep purple.
 They utilize all manner of weapons and armor scavenged from battlefields.
 They speak their own rough and simple language, but many also speak some common or goblin.","When fighting in daylight, Orcs roll with disadvantage.","At his belt is a magic hand axe + 1 which he will hurl at on opponent, and he can do so and still attack normally in the same round of combat.",,"basic-fantasy, humanoid"
+Ore Bones,Soldier,3,,2d6,20,,DEX,DEX,"Ore bones are indistinguishable from normal undead skeletons until observed up close. Only then are the mineral deposits that cake their exposed bones discernable. These mineral deposits, similar to those that form stalagmites and other cave formations, have seeped into the marrow of the ore bones' skeleton and encrust the exposed bones, making it tougher and more resistant to damage.
+Like their less-formidable counterparts, ore bones attack with either weapons or their talon-like claws.
+There is a 10% chance that the mineral deposits of any single ore bones carry a trace amount of precious metal, making the bones worth 1d6x10 gp.",,,,"stonehell, undead"
 Owl Bear,Predator,5,,d4,30,,STR,CON,"Owlbears appear to be bears with owlish faces, including a large, sharp beak. An owlbear's coat ranges in colour from brown-black to yellowish brown; its beak is a dull ivory colour. A full-grown male can stand as tall as 8 feet and weigh up to 1,500 pounds.
 Adventurers who have survived encounters with the creature often speak of the bestial madness in its red-rimmed eyes.
 Owlbears fight much as do bears, but are more aggressive.","1 Bite + 1 attack per claw.
 If both paws of an owl bear hit the same opponent in
 one round, the owl bear will ""hug"" for an additional 2d8 points of
 damage. ",,,"basic-fantasy, monstrosity"
+Pain's Handmaiden (The Iron Ladies),Soldier,5,,d2,30,,STR,STR,"Pain's Handmaidens (also known as Iron Ladies) are magical constructions similar to golems and animated statues. A Handmaiden is an animate suit of plate mail armour which bears faintly feminine features.
+The surface of this armour is adorned with barbed spikes, wicked hooks, and serrated protrusions. A 10ft. long whip with numerous lashes is clenched in one of the Iron Lady's mailed hands.
+The sound of faint moans and wails seems to echo from within the Handmaiden's armour.
+Pain's Handmaidens attack with either their spiked gauntlets or with their whips.",Immunity to non-magical weapons,"Whip Hit: in addition to damage CON save or be wracked with agonizing pain, incapable of any action other than moving at half-speed for 1d6 rounds.",Hit: in addition to damage regain d4 HP,"stonehell, construct"
 Panther,Predator,4,,d2,60,30,STR,STR,"Panthers are black Jaguars. These great cats are about 8 to 9 feet long (from nose to tail-tip) and weigh about 165 pounds.
 Unlike other great cats, they enjoy swimming and often hunt near rivers or lakes.
 Panthers kill with their powerful bite, preferring to deliver a fatal wound to the skull of their prey.",Swimming 30ft.,,,"basic-fantasy, beast"
 Pegasus,Soldier,4,,d12,90,150,STR,STR,"The pegasus is a magnificent winged horse. Though highly prized as aerial steeds, pegasi are wild and shy creatures not easily tamed. A typical pegasus stands 6 feet high at the shoulder, weighs 1,500 pounds, and has a wingspan of 20 feet.
 A pegasus can carry up to 80 LOAD.",,,,"basic-fantasy, monstrosity"
+Petard Palm,Predator,4,,d2,0,,STR,STR,"Petard palms resemble a stunted (7ft. tall) hybrid of palm and spruce trees, with a thin, flexible trunk and numerous fronds bearing pine needles.
+Clusters of hardskinned fruit, each the size of a melon, sprout on the tree where trunk and fronds meet. These fruits are highly volatile and explode in a 5ft. radius when struck
+Petard palms defend themselves by whipping their flexible trunks at threats, sending 1d3 of its fruits sailing in the direction of the threat.
+The palm can also drop fruit on opponents standing adjacent to its trunk, but the tree is only partially immune to the blasts of these fruits.
+Petard fruits harvested from a tree retain their explosive properties for up to six months, but carrying these fruits around poses a potential hazard. A petard fruit in the possession of anyone who engages in combat or falls more than a few feet has a 50% chance of detonating each time damage is taken. If more than one fruit is in the character's possession, an explosion of one fruit will cause a chain reaction that detonates all of the fruit carried.",Exploding fruit DEX save or d6 damage,Resistant to exploding fruit (50% damage),,"stonehell, plant"
 Phantasm,Shaper,1,,d6,30,,DEX,DEX,"Phantasms are the mindless, ghost-like spirits of those who died from catastrophe and are doomed to continue the actions they performed prior to their deaths. Stuck in an endless, repetitive loop, they continue their mundane chores until either destroyed or their bones are put to rest. Phantasms present no great harm to those who encounter them, inflicting only incidental damage (1 point) to those who touch or pass through their deathly cold and insubstantial forms. 
 
 The only way to put a phantasm to rest is by either burying their mortal remains with religious ceremony or by the use of a cleric's ability to Turn Undead. A cleric of 6th level or greater can utilize their ability to destroy lesser undead as a result of a successful Turn Undead attempt to permanently eradicate the phantasm from existence.","Immune to damage
 Attacks and spells have no effect upon a phantasm, nor do any other harmful substances such as poison, fire, or cold. Even holy water is ineffective.",,,"stonehell, undead"
+Phantom,Shaper,1,,d6,30,,DEX,DEX,"Phantasms are the mindless, ghost-like spirits of those who died from catastrophe and are doomed to continue the actions they performed prior to their deaths. Stuck in an endless, repetitive loop, they continue their mundane chores until either destroyed or their bones are put to rest. Phantasms present no great harm to those who encounter them, inflicting only incidental damage (1 point) to those who touch or pass through their deathly cold and insubstantial forms. 
+
+The only way to put a phantasm to rest is by either burying their mortal remains with religious ceremony or by the use of a cleric's ability to Turn Undead. A cleric of 6th level or greater can utilize their ability to destroy lesser undead as a result of a successful Turn Undead attempt to permanently eradicate the phantasm from existence.","Immune to damage
+Attacks and spells have no effect upon a phantasm, nor do any other harmful substances such as poison, fire, or cold. Even holy water is ineffective.",,,"barrowmaze, undead"
 Pirate,Soldier,1,,0,30,,STR,DEX,"Pirates are armed with any sword and leather armour. Some are also armed with crossbows.
 Pirates raid ships and coastal towns. They may dock in lawless cities that trade with pirates. Pirates often hide their treasure in remote locations, and a leader may have a map to such a location.
 Any group of pirates may have hostages who they have ransomed. ",,,,"labyrinth-lord, humanoid"
+Pitman,Soldier,4,,d6,30,,DEX,DEX,"These undead appear as desiccated miners with leathery skin and eyes that glow with a pallid greenish-yellow light.
+They are dressed in the ragged remains of the clothing they wore in life and carry the shovels, picks, and hammers they earned their livings with.",Hit: in addition to damage CON save or slow for d3 turns.,,,"stonehell, undead"
 Pixie,Shaper,1,,2d4,30,60,DEX,DEX,"Pixies are winged fairies often found in forested areas. They wear bright clothing, often including a cap and shoes with curled and pointed toes. A pixie stands about 2-1/2 feet tall and weighs about 30 pounds.
 Pixies are whimsical, enjoying nothing so much as a good joke or prank, especially at the expense of a ""big person"" like a human or demi-human.",Flying 60ft.,Invisible at will,,"basic-fantasy, fey"
 Poltergeist,Shaper,2,,1,30,,DEX,CON,"These ""noisy ghosts"" are the faint, lingering spirits of those who died in a state of great anger or madness.
@@ -603,6 +989,10 @@ Silence (15ft. Radius)
 Potion
 Gaseous Form (escape)","basic-set, humanoid"
 Psyke,Shaper,1,,2d4,30,60,DEX,DEX,"Pyskes appear identical to Pixies, but are Chaotic in nature and serve the Unseelie Court. They are capricious, blood-thirsty, and enjoy in the torment of others. They often lure their victims into complacency by pretending to be their benign kin.",Flying 60ft.,Become invisible at will,,"stonehell, fey"
+Purple Moss,Predator,2,,1,0,,CON,CON,"Purple moss is related to yellow mold.
+Purple moss can be destroyed by fire.","This dark mold emits a sweet smell to a range of 10 feet that has the same effect as the spell Sleep.
+Victims who fall asleep are quickly covered by the moss.
+Creatures covered by purple moss will suffocate in 1d4 rounds and are digested in 1d2 hours by its acidic secretions.",,,"barrowmaze, plant"
 Purple Worm,Predator,15,,d2,20,20,STR,STR,"Purple worms are gigantic subterranean monsters; they are rarely found above ground. The body of a mature purple worm is 5-8 feet in diameter and 60-100 feet long, weighing about 40,000 pounds.","Burrowing 20ft.
 Blindsight 60ft.",Tail string: CON save vs poison or die,"Hit: on a score of 20+ the caecilia swallows its target - restrained, damage per round and can fight from inside with small weapons e.g. dagger","basic-fantasy, monstrosity"
 "Racoon, (Rabid)",Predator,0.5,,d6,30,30,DEX,DEX,,Climbing 30ft,,,beast
@@ -631,11 +1021,17 @@ A solitary roc is typically hunting and will attack any human-sized or larger cr
 A roc attacks from the air, swooping earthward to snatch prey in its powerful talons and carry it off for itself and its young to devour.
 A solitary roc is typically hunting and will attack any human-sized or larger creature that appears edible. A mated pair of rocs attack in concert, fighting to the death.
 to defend their nests or hatchlings.",Flying 150ft.,Hit: grappled with claws and carry away,,"basic-fantasy, monstrosity"
+Rock Render,Predator,4,,d6,30,,STR,STR,"These fierce subterranean beetles have developed a unique form of natural camouflage: their carapaces develop hard chitonous growths that resemble natural rock formations such as stalagmites, flowstone, and piles of fallen stone.
+They are ambush predators, lying in wait until a meal wanders close enough to take by surprise with their serrated mandibles.",Adv. to stealth checks when in rocky caverns,,,"stonehell, beast"
 Rot Grub,Predator,0.25,,5d4,5,,CON,CON,"Rot Grubs are 1inch long vermin found in carrion, dung and other such garbage and organic material. Their skin colour is white or brown.
 ","Will attack if they come within skin contact.
 Injects an anesthetic and burrows into flesh. Target will notice on WIS check.
 For first two rounds, can be removed with fire or cutting skin open - 2d6 damage to target but rot grub is killed.
 Otherwise only cure disease magic will be effective and the target will die in a further d3 rounds as grubs devour the target's heart.",,,"basic-fantasy, beast"
+Rot Pudding,Predator,8,,1,20,,CON,CON,"Rot puddings are dungeon scavengers. They subsist on carrion and thus are incubators for all forms of disease.
+They are a sickly yellow-brownish color and ooze pus from small orifices.",Immune to cold and electricity.,"Transmit disease 3 ways: hits opponent, damaged by slashing weapon, damaged by fire (10ft. cloud)
+CON save or become infected and are wracked by shooting pain and slowed. The victim's body becomes warm and perspires profusely.
+During the victims next rest they will fall into a comatose state. The victim must make a final CON save or die within 24 hours. If successful the they are reduced to 1 hit point and incapacitated.",,"barrowmaze, ooze"
 Rust Monster,Predator,5,,d4,30,,DEX,DEX,"The hide of these creatures varies in colour from a yellowish tan underside to a rust-red upper back. The typical rust monster measures 5 feet long and 3 feet high, weighing 200 pounds.
 A rust monster's prehensile antennae can rust metals on contact.
 The metal oxides created by this monster are its food; a substantial amount of metal dropped in its path may cause it to cease pursuit of metal-armoured characters.","Touch metal: non-magical weapons are ruined, magical weapons -1",,,"basic-fantasy, monstrosity"
@@ -647,12 +1043,26 @@ Flame salamanders are intelligent; they speak the language of the Plane of Fire,
 "Salamander, Frost",Predator,12,,d3,30,,DEX,DEX,"Frost salamanders come from the Elemental Plane of Water. They look like giant lizards with six legs. Their scales are the colors of ice, white, pale gray and pale blue.
 Can arrive through naturally-occurring dimensional rifts, or they may be summoned by high-level Magic-Users often to protect a location, doorway, or treasure hoard.
 They are quite intelligent; all speak the language of the Plane of Water, and many also speak Common, Elvish, and/or Dragon.",Immune to non-magical weapons,Within 20ft. Suffer d8 cold damage,,"basic-fantasy, elemental"
+Sandling,Brute,4,,d2,20,,CON,CON,"A sandling appears as a simple pile of sand.
+However, they are semi-intelligent, territorial, and highly solitary creatures. They are easily provoked and attack by lashing out with tendril-like appendages of sand.
+If sandlings are exposed to a large quantity of water, they will be slowed.",,,,"barrowmaze, ooze"
+Sandman,Shaper,4,,1,10,,CON,CON,A sandman looks like a slender humanoid made of sand.,Immune to non-magical weapons,A sandman can radiate a sleep aura within 20 feet as it chooses casting Sleep spell at 8th level of magic use.,,"barrowmaze, humanoid"
+"Scorpion, Clockwork",Predator,1,,d4,5,,DEX,DEX,"Relics of an age long past, clockwork scorpions are deadly magical constructs used to guard important tombs or precious treasures.
+Clockwork scorpions strike quickly and are resilient to damage due to their bronze carapace.
+Often the first sign of their presence is the death cry of a foolish tombrobber.
+Unlike the clockwork cobra, the clockwork scorpion is completely silent and emits no noise when moving.
+The clockwork scorpion's stinger, located at the tip of its flexible tail, contains a single dose of lethal venom.
+They range from six inches to one foot in length.",Resistant to physical damage (50%),Hit: string CON save or die,,"barrowmaze, construct"
 "Scorpion, Giant",Predator,4,,d6,60,,DEX,DEX,"Giant scorpions are quite large, sometimes as large as a donkey. They are aggressive predators and generally attack on sight.
 Giant scorpions are most commonly found in desert areas or caverns.",Hit: CON save vs poison or die,,,"basic-fantasy, beast"
 Sea Serpent,Brute,6,,2d6,30,90,STR,STR,"Sea serpents are, obviously, serpentine monsters which live in the sea. They range from 20' to 40' long.",Wrap around a ship and constrict,,,"basic-fantasy, monstrosity"
 Shadow,Predator,2,2,d8,30,,STR,CON,"A shadow can be difficult to see in dark or gloomy areas but stands out starkly in brightly illuminated places. They lurk in dark places, waiting for living prey to happen by. A shadow is 5 to 6 feet tall and is weightless.
 Shadows cannot speak intelligibly. Despite their strange nature and appearance, shadows are not undead monsters, and thus cannot be Turned by a Cleric.",Immune to non-magical weapons,"On a hit, it will drain 1 point of Strength in addition to doing normal damage.
 Any creature whose Strength is reduced to 0 or less will become a shadow.",,"basic-fantasy, monstrosity"
+Shadow Gardener,Shaper,2,,2,30,,STR,STR,"Humanoid form (wavering). Tends the plants (sustained in semi-life by them).
+Reaction: Hates warm-blooded creatures and will try to kill any who enter.","Immunity to non-magical weapons
+Immune to sleep, charm and hold magic.",Adv. to Stealth checks,"Strength drain: Victims lose 1 STR per hit.
+If reduced to 0 STR, the victim becomes a shadow.","hole-in-the-oak, undead"
 "Shark, Bull",Predator,2,,3d6,0,60,STR,STR,"Bull sharks are so named because of their stocky, broad build. Bull sharks can grow up to 7ft long and weigh around 200 pounds.
 Bull sharks are able to tolerate fresh water, and often travel up rivers in search of prey.",,,,"basic-fantasy, beast"
 "Shark, Great White",Predator,8,,d4,0,60,STR,STR,"Great white sharks range from 12ft. to 15ft. in length on the average, though specimens ranging up to 30ft. in length have been reported.
@@ -668,7 +1078,37 @@ If it cannot hear, it will have Disadv. to attacks and attackers have Adv. Again
 Shrieker,Shaper,3,,d8,0,,CON,CON,"A shrieker is a large (3ft. to 5ft. tall and about the same size across), semi-mobile fungus that emits a loud noise as a defense mechanism when disturbed. Shriekers live in dark, subterranean places.
 They come in several shades of purple.
 A shrieker has no means of attack. Instead, it lures monsters to its vicinity by emitting a loud noise. Movement or a light source within 10 feet of a shrieker causes the fungus to emit a piercing sound.",Roll on travel turn table each round,,,"basic-fantasy, plant"
+Skeletal Naga,Predator,10,,d2,30,,DEX,DEX,"A skeletal, or barrow, naga is an undead creature.
+Sages say that necromancers and dark priests possess the secrets of animating the skeleton of a guardian naga. Skeletal nagas are often tasked as servants or as protectors over the tombs of their masters.
+These creatures speak Black Tongue or may choose to communicate telepathically at will.
+Skeletal nagas possess a bite attack and the barbed tail of the naga is especially fearsome.","Immune to sleep, charm and hold magic and non-magical weapons
+Immune to cold",Hit: in addition to damage CON save or paralysed for d4+1 rounds with its cold negative energy.,"Inate spell casting: 5th level
+Magic-Missile, Spider Climb, Mirror Image, Web, Lightning Bolt, and Command, Darkness, Protection from Good, Silence 15' Radius, Animate Dead","barrowmaze, undead"
 Skeleton,Soldier,1,,3d4,30,,STR,DEX,"Skeletons are mindless undead created by an evil MagicUser or Cleric, generally to guard a tomb or treasure hoard, or to act as guards for their creator.","Immune to sleep, charm and hold magic",Resistant to piercing and slashing weapons including arrows,,"basic-fantasy, undead"
+"Skeleton Warrior, 10th Level",Soldier,10,,1,20,,DEX,DEX,"Once a proud fighter of great ability, a skeleton warrior appears as a skeleton draped in the tattered clothes they possessed in life.
+A skeletal warrior exists in an undead state because its soul was trapped in a golden circlet. The circlet exerts power over the skeleton warrior, and it is bound to obey the commands of its possessor. A skeleton warrior will unerringly quest to regain its
+circlet. Sages only speculate as to what happens when a skeleton warrior obtains the circlet. Some suggest the skeleton warrior simply crumbles and dies; others suggest it will bring the warrior back to life.
+A skeleton warrior retains the weapon it used in life. These are often magical two-handed blades of repute (with at least a +2 bonus). Their exact detail is subject to the discretion of the Referee.","Immune to sleep, charm and hold magic",Cannot be turned,At 0HP collapse into a bone pile and reconstitute in 1-3 days.,"barrowmaze, undead"
+"Skeleton Warrior, 12th Level",Soldier,12,,1,20,,DEX,DEX,"Once a proud fighter of great ability, a skeleton warrior appears as a skeleton draped in the tattered clothes they possessed in life.
+A skeletal warrior exists in an undead state because its soul was trapped in a golden circlet. The circlet exerts power over the skeleton warrior, and it is bound to obey the commands of its possessor. A skeleton warrior will unerringly quest to regain its
+circlet. Sages only speculate as to what happens when a skeleton warrior obtains the circlet. Some suggest the skeleton warrior simply crumbles and dies; others suggest it will bring the warrior back to life.
+A skeleton warrior retains the weapon it used in life. These are often magical two-handed blades of repute (with at least a +2 bonus). Their exact detail is subject to the discretion of the Referee.","Immune to sleep, charm and hold magic",Cannot be turned,At 0HP collapse into a bone pile and reconstitute in 1-3 days.,"barrowmaze, undead"
+"Skeleton Warrior, 8th Level",Soldier,8,,1,20,,DEX,DEX,"Once a proud fighter of great ability, a skeleton warrior appears as a skeleton draped in the tattered clothes they possessed in life.
+A skeletal warrior exists in an undead state because its soul was trapped in a golden circlet. The circlet exerts power over the skeleton warrior, and it is bound to obey the commands of its possessor. A skeleton warrior will unerringly quest to regain its
+circlet. Sages only speculate as to what happens when a skeleton warrior obtains the circlet. Some suggest the skeleton warrior simply crumbles and dies; others suggest it will bring the warrior back to life.
+A skeleton warrior retains the weapon it used in life. These are often magical two-handed blades of repute (with at least a +2 bonus). Their exact detail is subject to the discretion of the Referee.","Immune to sleep, charm and hold magic",Cannot be turned,At 0HP collapse into a bone pile and reconstitute in 1-3 days.,"barrowmaze, undead"
+"Skeleton, Exploding Bone",Soldier,1,,2d6,10,,DEX,DEX,"Exploding bone skeletons, simply called ""exploding bones,"" are an undead necromantic construct.
+Exploding Bones look like regular skeletons except for a black inverted triangle painted on their forehead. They do not use weapons.","Immune to sleep, charm and hold magic","Explodes at 0HP, anyone within 5 feet takes damage.",,"barrowmaze, undead"
+"Skeleton, Fossil",Soldier,2,,2d4,10,,DEX,DEX,"Fossil skeletons are often found in deep subterranean passages where limestone or mineralized water was in constant contact with bones.
+Fossilized skeletons are effectively made of rock and are harder to destroy than regular skeletons. In some instances the fossilization process has been induced deliberately.","Immune to sleep, charm and hold magic",,,"barrowmaze, undead"
+"Skeleton, Sapphire",Soldier,2,,2d6,20,,DEX,DEX,"Sapphire skeletons are like normal skeletons in most respects. However, each has a large valuable sapphire embedded into its forehead. This jewel glows brightly when in combat.","Immune to sleep, charm and hold magic","At 0 HP, draws back together and restored to full HP in 2 rounds.
+Only the destruction of the jewel embedded in its forehead will destroy sapphire skeletons.
+The jewel will break into valuable shards worth 100gp per skeleton.",Immune to fire,"barrowmaze, undead"
+"Skeleton, Steel",Soldier,8,,d2,20,,DEX,DEX,"At first glance, steel skeletons appears like regular skeletons and are often mistaken as such.
+Despite their outward appearance, they are not undead but rather golem-like constructs made of steel.
+Steel skeletons, therefore, cannot be turned.
+They attack with their fists.","Immune to non-magical weapons
+Resistant to magic (50%)",,,"barrowmaze, undead"
 "Slug, Great",Brute,1,,d6,10,,CON,CON,"Great slugs resemble common garden slugs except for their 3ft. long size.
 They can bite with their rasp-like gums and can spit a gob of acid slime up to 10ft. away.
 A significant quantity of salt will do d8 points of damage if applied to a great slug.",Their skin secretes an acidic slime that does 1 point of damage if it comes into contact with skin.,,,"stonehell, beast"
@@ -687,8 +1127,26 @@ It aims for its victim's eyes.
 On a hit, the victim must CON Save or be blinded. (This blindness can normally only be removed by a cure blindness spell)",Bite: on a hit the victim must CON Save or die in dlO turns.,,"basic-fantasy, beast"
 "Snake, Viper",Predator,2,,d8,30,,DEX,DEX,"Pit vipers are highly venomous snakes. There are many varieties ranging in size from 2ft. to 12ft. at adulthood; the statistics above are for an ""average"" variety which reaches about 9ft. in length.
 Pit vipers are named for the thermally sensitive ""pits"" between their eyes and nostrils. These are used to detect birds, mammals, and lizards, the natural prey of these snakes. Note that, even though lizards are cold-blooded, pit vipers can still sense them because their temperature will often be slightly higher or lower than their surroundings.",Infravision 60',Bite: on a hit the victim must CON Save or die,,"basic-fantasy, beast"
+Spectral Dead,Predator,4,,d12,30,,DEX,DEX,"The spectral dead are the incorporeal spirits of warriors interred in Barrowmaze long ago.
+They have heard the call to rise that emanates from The Tablet of Chaos, but their physical remains have disintegrated to dust. With no bones to occupy, these vengeful spirits wander Barrowmaze aimlessly, particularly in the areas close to
+The Tablet.
+Their sole purpose is to destroy the living.
+The appearance of their weapons varies, but all do additional cold damage.","Immune to sleep, charm and hold magic.
+Immune to non-magical weapons
+Resistant to magic",,,"barrowmaze, undead"
+Spectral Hound,Predator,1,,d4,40,,DEX,DEX,,"Immunity to non-magical weapons
+Immune to sleep, charm and hold magic.",,,"hole-in-the-oak, undead"
+Spectral Hunter,Predator,2,,1,30,,DEX,DEX,"Bow in hand, sword at belt","Immunity to non-magical weapons
+Immune to sleep, charm and hold magic.",,,"hole-in-the-oak, undead"
 Spectre,Shaper,6,,d4,30,90,STR,STR,"A spectre looks much as it did in life and can be easily recognized by those who knew the individual or have seen the individual's face in a painting or a drawing.
 In many cases, the evidence of a violent death is visible on its body. A spectre is roughly human-sized and is weightless.","Immune to sleep, charm and hold magic and non-magical weapons",Hit: -2 CON,,"basic-fantasy, undead"
+Spellspider,Predator,3,,d3,30,,DEX,DEX,"Spellspiders are intelligent, spell-casting, mule-sized arachnids. Their foremost set of legs ends in a pair simple hands that allows them to cast spells and manipulate items.
+Spellspiders are both web-spinners and poisonous.
+Spellspiders have an insatiable appetite for new magics and often lay traps for adventurers in hope of gaining new magical items and spellbooks from their victims.","Spells: as a 3rd level mage.
+charm person, magic missile, shield, sleep, detect invisible, ESP, invisibility, mirror image, phantasmal force, web",,,"stonehell, monstrosity"
+"Spider, Blood-Thirsty",Predator,2,,d4+1,30,,DEX,DEX,"These spiders look similar to a giant black widow spider, with one exception. Instead of a red hourglass design, a white patch - some say resembles a skull - is located on the ventral abdomen.
+These spiders do not have a poisonous bite, however they possess an insatiable hunger for humanoid blood. When one blood-thirsty spider bites into humanoid blood, all others immediately converge on the wounded and will attempt to bite and then gorge themselves until the victim has been drained.
+Their webs are inflammable.",,,,"barrowmaze, beast"
 "Spider, Giant Blackwidow",Predator,3,,d3,30,60,DEX,DEX,"The giant black widow spider is a much enlarged version of the ordinary black widow; a full-grown male has a legspan of 2 feet, while an adult female will be 3 feet or more across. Despite the size difference, both genders are statistically equal.
 Both genders are marked with an orange ""hourglass"" on the abdomen.",Bite - Save vs. Poison or die,Movement speed x2 in web,,"basic-fantasy, beast"
 "Spider, Giant Crab",Predator,2,,d4,30,30,DEX,DEX,"Crab spiders are ambush predators, hiding using various forms of camouflage and leaping out to bite their surprised prey.
@@ -714,6 +1172,12 @@ In order to bite a creature, the giant squid must hit with at least two tentacle
 Hit: Can also bite",,"basic-fantasy, beast"
 Stirge,Predator,1,,d10,10,60,DEX,DEX,"A stirge's colouration ranges from rust-red to reddish-brown, with a dirty yellow underside. The proboscis is pink at the tip, fading to gray at its base.
 A stirge's body is about 1 foot long, with a wingspan of about 2 feet. It weighs about 1 pound.",Flying move 60ft,"When a stirge attacks a creature, it tries to thrust its beak into the victim's body to suck out blood for 1- 3 points of damage. A successful hit means that it has attached itself to the victim. If attached, it will automatically suck blood for 1- 3 points of damage per round until either it or its victim is dead then it will leave.","A flying stirge gains a bonus of + 2 on its first ""to hit"" roll against any one opponent due to its speed.","basic-fantasy, monstrosity"
+Strolling Nettle,Predator,3,,0,30,,DEX,DEX,"These semi-intelligent, ambulatory briar patches are the size of large dogs.
+Highly territorial, strolling nettles attack by leaping on their opponents and worrying their victims with cluster of sharp thorns.","Vulnerable to fire (200% damage)
+Morale check for fire damage",,,"stonehell, plant"
+Sump Thing,Brute,4,,d4,20,,STR,STR,"Sump things are shuffling piles of rotting vegetable matter that have assumed vaguely humanoid forms due to the energies unleashed by the Sect of the Rampant Green's catastrophe.
+They attack with bludgeoning fists, battering their opponents into unconsciousness before draining nourishment from their helpless foes through their feet-like roots.
+Although most sump things are unintelligent, some specimens retain the memories of the victims they have fed upon, giving them normal intelligence and a rudimentary, gestalt personality. These rare sump things are encountered 5% of the time.",Immune to Fire,Resistant to Cold and non-magical weapons (50% damage).,,"stonehell, monstrosity"
 Tentacle Worm,Predator,3,,d3,30,,STR,STR,"Tentacle worms appear to be giant worms of some sort, averaging 6 to 8 feet long. Their heads are pasty white or grey, but their bodies vary from livid pink or purple to deep green in color.
 Their tentacles splay out from around the creature's ""neck."" Some sages believe they are the larval form of some other monster, but this has never been proven.
 Their tentacles paralyse their prey, if all opponents of a tentacle worm are rendered paralyzed, it will begin to feed upon the paralysed victims.",3 attacks. Hit: CON save or paralysed,,,"basic-fantasy, monstrosity"
@@ -727,6 +1191,9 @@ They have an affinity for the company of hobgoblins, and are occasionally employ
 Once an opponent is paralyzed, the thoul will turn and attack another opponent, until either the thoul or all the opponents are paralyzed or dead.
 Lasts d8 turns.
 Removed by a cure light wounds spell.",Regenerate 1 hit point per round as long as it is alive.,,"labyrinth-lord, undead"
+"Tick, Giant",Predator,3,,d4,30,,DEX,DEX,These giant arachnids feast of warm blood.,"Hit: the tick attaches itself and drains 1d4 hit points per round until killed or removed.
+Fire causes it to release its bite.
+25% chance of contracting a disease that is fatal after 1d8+1 days.",,,"stonehell, beast"
 Tiger,Predator,6,,d3,60,,STR,STR,These great cats stand more than 3 feet tall at the shoulder and are about 9 feet long. They weigh from 400 to 600 pounds.,,,,"basic-fantasy, beast"
 Titanothere,Brute,12,,2d6,30,,STR,STR,"A titanothere is a huge prehistoric animal that resembles the rhinoceros; adults average 10' tall and 13' long. They have large, forked horns rather than the pointed horns of rhinos.
 Like rhinos, they are herd animals, and males aggressively defend the herd.",,,,"basic-fantasy, beast"
@@ -745,151 +1212,6 @@ Troglodytes are very hostile, attacking equal or weaker non-troglodyte groups on
 Troll,Brute,6,,d8,30,,STR,STR,"A typical adult troll stands 9 feet tall and weighs 500 pounds. A troll's rubbery hide is moss green, mottled green and gray, or putrid gray. The hair is usually greenish black or iron gray.
 Trolls walk upright but hunched forward with sagging shoulders. Their gait is uneven, and when they run, their arms dangle and drag along the ground. For all this seeming awkwardness, trolls are very agile.
 Trolls are hateful creatures, reveling in combat and bloodshed. Though trolls could easily use a variety of weapons, they much prefer the sensation of flesh being rent by their teeth and claws.",Regenerate 1 hp per round,2 attacks,,"basic-fantasy, giant"
-Unicorn,Predator,4,,d6,90,,STR,STR,"Unicorns are horselike creatures having a single spirallytwisted horn in the middle of the forehead. A typical adult unicorn grows to 8 feet in length, stands 5 feet high at the shoulder, and weighs 1,200 pounds. A unicorn has deep sea blue, violet, brown, or fiery gold eyes. 
-Unicorns normally attack only when defending themselves or their forests. They either charge, impaling foes with their horns like lances, or strike with their hooves.
-A unicorn can carry up to 60 LOAD.","Spells: Cure Light Wounds, Dimension Door",,,"basic-fantasy, celestial"
-Urgoblin,Soldier,2,,0,30,,STR,STR,"These creatures appear to be normal hobgoblins, but urgoblins are actually a mutant subspecies. Urgoblins are able to regenerate much as do trolls.
-Some hobgoblin tribes consider urgoblins an abomination, and kill them whenever they can be identified. Other hobgoblin tribes employ them as bodyguards for the chieftain, and accord them great honor. There are even rumors of a tribe entirely made up of urgoblins.",Regenerate 1 hp per round,,,"basic-fantasy, goblinoid, humanoid"
-Vampire,Leader,8,,d6,30,60,STR,STR,"Vampires appear just as they did in life, although their features are often hardened and feral, with the predatory look of wolves. They often embrace finery and decadence and may assume the guise of nobility. Despite their human appearance, vampires can be easily recognized, for they cast no shadows and throw no reflections in mirrors. They speak any languages they knew in life.
-Slaying a Vampire: Reducing a vampire's hit points to 0 doesn't always destroy it. However, certain attacks can slay vampires. Exposing any vampire to direct sunlight or running water destroys it in three rounds. Driving a wooden stake through a vampire's heart instantly slays the monster. However, it returns to life if the stake is removed, unless the body is destroyed, by water or sunlight as described above, or by burning it completely in a funeral pyre.","Immune to sleep, charm and hold magic and non-magical weapons
-Command the lesser creatures of the night and once per day can call forth 10d10 rats, 5d4 giant rats, 10d10 bats, 3d6 giant bats, or a pack of 3d6 wolves.","Hit: bite restore vampire hp equal to damage caused.
-If the victim dies, they will rise as a new vampire","Spells: Charm person, Assume Giant Bat form","basic-fantasy, undead"
-Veteran,Soldier,2,,2d4,30,,STR,STR,"Veterans are low-level fighters, usually returning from or going to a war.",,,,"basic-set, humanoid"
-"Wasp, Giant",Soldier,0.5,,d6,30,60,DEX,DEX,Like regular wasps but much larger,Flying 60ft.,,,beast
-"Weasel, Giant",Predator,1,1,d8,60,,DEX,DEX,"Giant weasels resemble their more normally sized cousins, having long bodies, short legs, and pointed, toothy snouts. They are predatory animals, hunting those creatures smaller than themselves.",Hit: Bite and hang on,,,"basic-fantasy, beast"
-"Whale, Killer",Predator,6,,d6,0,90,STR,STR,"These ferocious creatures are about 30 feet long. Killer whales, also called ""orca"" (both singular and plural), are strikingly marked in black and white, with prominent white patches that resemble eyes. Their real eyes are much smaller and located away from the fake eye-spots.
-Killer whales eat fish, squid, seals, and other whales, but are not above consuming a meal of human or demihuman fare.",Swimming 90ft.,,,"basic-fantasy, beast"
-"Whale, Narwhal",Brute,12,,d4,0,60,STR,STR,"Narwhals are aquatic mammals resembling large dolphins with a single (or rarely, double) tusk protruding straight forward from the mouth.
-The tusk is helical in shape, and they are sometimes cut short and sold as ""unicorn horns."" However, they have no particular magical value.
-Narwhals are found in cold northern seas. They are not particularly aggressive.",Swimming 60ft.,,,"basic-fantasy, beast"
-"Whale, Sperm",Predator,36,,d3,0,60,STR,STR,These creatures can be up to 60 feet long. They prey on giant squid.,Swimming 60ft.,Fire sound beam 50ft. Hit: Stun,,"basic-fantasy, beast"
-Wight,Shaper,3,,d6,30,,WIS,CON,"A wight's appearance is a weird and twisted reflection of the form it had in life. A wight is about the height and weight of a human. Wights do not possess any of the abilities they had in life.
-Any humanoid slain by a wight becomes a wight by the next sunset (but not less than 12 hours later).
-Wight spawn are under the command of the wight that created them and remain enslaved until its death.",Energy Drain: Each hit drains d8 CON (and corresponding HP),Immune to non-magical weapons,,"basic-fantasy, undead"
-Wolf,Predator,2,2,2d6,60,,STR,STR,"Wolves are pack hunters known for their persistence and cunning. They prefer to surround and flank a foe when they can.
-Captured wolves can be trained like dogs.",,,,"basic-fantasy, beast"
-"Wolf, Dire",Predator,4,,d4,60,,DEX,DEX,"Dire wolves are efficient pack hunters that will kill anything they can catch. Dire wolves are generally mottled grey or black, about 9 feet long and weighing some 800 pounds.",,,,"basic-fantasy, beast"
-Wraith,Brute,4,,d4,0,90,STR,STR,"Wraiths are incorporeal creatures born of evil and darkness. In some cases, the grim silhouette of a wraith might appear armored or outfitted with weapons. This appearance does not affect the creature's AC or combat abilities but only reflects the shape it had in life.","Immune to sleep, charm and hold magic and non-magical weapons",Flying 60ft.,,"basic-fantasy, undead"
-Wyvern,Predator,7,,d6,30,90,STR,STR,"A distant cousin to the true dragons, the wyvern is a huge flying lizard with a poisonous stinger in its tail. A wyvern's body is 15 feet long, and dark brown to grey; half that length is tail. Its wingspan is about 20 feet. A wyvern weighs about one ton. They are built more like bats than lizards, having two legs and two wings; contrast this with true dragons, which have four legs and two wings.
-Wyverns are of animal intelligence, but are excellent predators with good hunting abilities. When attacking they will make a loud hiss, or sometimes a deep-throated growl much like that of a bull alligator.
-Wyverns attack nearly anything that isn't obviously more powerful than themselves. A wyvern dives from the air, clawing at its opponent with its talons and stinging it to death.",Flying 90ft.,Hit: sting CON save vs. poison or die,Grab prey and carry off - grappled,"basic-fantasy, monstrosity"
-Yellow Mold,Predator,2,,d8,0,,CON,CON,"Yellow mold typically covers an area of 10 square feet. It does not move or attack, but if it is touched it is acidic and destroys leather and wood.","Releases a 10ft cube of spores if touched
-CON Save or die in d6 rounds",Vulnerable to fire (200%),,"labyrinth-lord, plant"
-Zombie,Brute,2,,2d4,20,,STR,CON,"Zombies are undead humans or demi-humans animated by some evil cleric or magic-user. As all undead, they may be ""Turned"" by a cleric but are not affected by sleep or charm spells or any form of mind reading. They are often placed to guard treasures, since they make no noise until they attack. Zombies will always attack on sight, but can be destroyed by normal weapons.",Slow: Always last on initiative,Resistant to bludgeoning and arrows,"Immune to sleep, charm and hold magic.","basic-fantasy, undead"
-"Tick, Giant",Predator,3,,d4,30,,DEX,DEX,These giant arachnids feast of warm blood.,"Hit: the tick attaches itself and drains 1d4 hit points per round until killed or removed.
-Fire causes it to release its bite.
-25% chance of contracting a disease that is fatal after 1d8+1 days.",,,"stonehell, beast"
-"Monkey, Bone",Predator,3,,2d6,30,,DEX,DEX,"Spawned by a mixture of the magical residue in this area and the Chaotic energies of the nixthisis, these creatures are the animated skeletal remains of baboons.
-With eyes glowing a hellish red, bone monkeys attack with ragged claws.
-They often lay in wait amongst the skeletal remains of other primates, attacking when prey draws close.","Immune to sleep, charm and hold magic",Resistant to piercing and slashing weapons including arrows,,"stonehell, undead"
-"Monkey, Plated",Brute,3,,2d6,30,,STR,STR,"Plated monkeys are baboons that have had parts of their bodies replaced with arcanitech, making them more machine than animal.
-What little organic tissue they retain has become necrotic and only remains intact due to the glowing, green liquid that pumps through the clear tubes embedded in their skin. Despite their decaying state, plated monkey are mechanical creations, not undead.
-Because of their ill-treatment at the hands of the Plated Mage and his assistants, plated monkeys hate magic-users and elves, and will attack them before any other class.
-In addition to their metal jaws, plated monkeys have claws or blades attached to their arcanitech bodies.","By combining the eldritch energy that powers them, two plated monkeys can act in concert to generate a 3d6 lightning bolt. This blast requires one uninterrupted round to produce.","Ability to store spell energies for later use (as a ring of spell storing).
-Some 5% can cast 1d2 random arcane spells of 1st-3rd level once.",,"stonehell, construct"
-Eumyfolk,Soldier,3,,d6,30,,STR,STR,"Eumyfolk are a race of 4ft. tall, humanoid mushrooms that have developed a primitive society and a Neolithic level of technology.
-Although comical in appearance to surface races, the eumyfolk are deadly adversaries when their tribal lands are trespassed upon and their taboos are broken.
-Eumyfolk use clubs and spear in battle, and 25% of all eumyfolk encountered also have crude pottery ""bombs"" that are filled with natural concoctions.","Bombs:
-Sleep bomb - CON save or sleep 
-Sap bomb - sticky Restrained
-Others as GM wishes",,,"stonehell, humanoid"
-Killer Sword Fern,Predator,2,,d4,30,,DEX,DEX,"These 5ft. tall, mobile ferns pose two dangers to adventurers: they can attack twice a round with their hard, razor-sharp fronds, and they contain an acidic sap that can potentially harm attackers.",Anyone in melee combat who damages the plant with an edge weapon must DEX save or take 1d4 damage from the splatter of acidic sap.,,,"stonehell, plant"
-Mesmetoad,Predator,3,3,d4,30,,DEX,DEX,"These brightly-colored toads have sharp claws and fangs, and possess wide, swirling eyes that can mesmerize prey.
-Mesmetoads hypnotize one victim and then attempt to affect another until all opponents are entranced. It then eats its helpless prey.","Stare: CON save or be hynotised until shaken awake by another
-Mesmetoads are susceptible to their own gaze.",,,"stonehell, monstrosity"
-Octoplant,Predator,3,,0,0,,STR,STR,"Octoplants are a form of leafy vegetation with a large central growth resembling an oversized cabbage. These plants bear yellow, sweet smelling berries that grow in great quantities several times a year.
-Just under the soil surrounding the octoplant is a network of eight thick roots that the plant uses as tentacles. Anyone approaching within 10ft. of the plant is attacked by one or more of these roots.
-Octoplants can also bite victims with a mouth of bark-like teeth that it conceals within its central growth.",Hit: Root restrains opponent dealing damage each round.,,,"stonehell, plant"
-Petard Palm,Predator,4,,d2,0,,STR,STR,"Petard palms resemble a stunted (7ft. tall) hybrid of palm and spruce trees, with a thin, flexible trunk and numerous fronds bearing pine needles.
-Clusters of hardskinned fruit, each the size of a melon, sprout on the tree where trunk and fronds meet. These fruits are highly volatile and explode in a 5ft. radius when struck
-Petard palms defend themselves by whipping their flexible trunks at threats, sending 1d3 of its fruits sailing in the direction of the threat.
-The palm can also drop fruit on opponents standing adjacent to its trunk, but the tree is only partially immune to the blasts of these fruits.
-Petard fruits harvested from a tree retain their explosive properties for up to six months, but carrying these fruits around poses a potential hazard. A petard fruit in the possession of anyone who engages in combat or falls more than a few feet has a 50% chance of detonating each time damage is taken. If more than one fruit is in the character's possession, an explosion of one fruit will cause a chain reaction that detonates all of the fruit carried.",Exploding fruit DEX save or d6 damage,Resistant to exploding fruit (50% damage),,"stonehell, plant"
-Spellspider,Predator,3,,d3,30,,DEX,DEX,"Spellspiders are intelligent, spell-casting, mule-sized arachnids. Their foremost set of legs ends in a pair simple hands that allows them to cast spells and manipulate items.
-Spellspiders are both web-spinners and poisonous.
-Spellspiders have an insatiable appetite for new magics and often lay traps for adventurers in hope of gaining new magical items and spellbooks from their victims.","Spells: as a 3rd level mage.
-charm person, magic missile, shield, sleep, detect invisible, ESP, invisibility, mirror image, phantasmal force, web",,,"stonehell, monstrosity"
-Strolling Nettle,Predator,3,,0,30,,DEX,DEX,"These semi-intelligent, ambulatory briar patches are the size of large dogs.
-Highly territorial, strolling nettles attack by leaping on their opponents and worrying their victims with cluster of sharp thorns.","Vulnerable to fire (200% damage)
-Morale check for fire damage",,,"stonehell, plant"
-Sump Thing,Brute,4,,d4,20,,STR,STR,"Sump things are shuffling piles of rotting vegetable matter that have assumed vaguely humanoid forms due to the energies unleashed by the Sect of the Rampant Green's catastrophe.
-They attack with bludgeoning fists, battering their opponents into unconsciousness before draining nourishment from their helpless foes through their feet-like roots.
-Although most sump things are unintelligent, some specimens retain the memories of the victims they have fed upon, giving them normal intelligence and a rudimentary, gestalt personality. These rare sump things are encountered 5% of the time.",Immune to Fire,Resistant to Cold and non-magical weapons (50% damage).,,"stonehell, monstrosity"
-Vampiric Achene,Predator,2,2,d10,0,20,CON,CON,"These harmless-seeming seeds resemble 2ft. diameter bits of dandelion fluff drifting aimlessly on the breeze.
-When they detect the presence of warm-blooded creatures, however, they home in on these beings and attack by attaching themselves and draining blood with their numerous fine hairs until sated.
-Several days afterwards, the achene sprouts into an oversized, blood-red dandelion. In this stage, the plant is harmless until it matures and forms the next batch of vampiric achenes to be dispersed on the winds.",Flying 20ft.,Vulnerable to fire (200%),"Hit and attach dealing damage each round.
-Sated after 15 HP is drained.","stonehell, plant"
-"Beserker, Depraved",Brute,4,,d6,30,,STR,STR,"Depraved berserkers are the particularly wicked and vile descendents of Stonehell's prisoner population. Eking out a brutal existence on the lower levels of the dungeon, the depraved berserkers are tougher, more vicious, and even deadlier than the berserkers found above them. They revel in cannibalism, self-mutilation, and the thrill of the hunt.
-When the sounds of their hunting drums begin to echo through the halls of Stonehell, even the dimmest of creatures knows it's time to seek shelter.
-The depraved berserkers of Stonehell typically equip themselves with scavenged armor and weapons that they have modified with serrated edges, wicked spikes, barbed chains, or other painful additions.","They never retreat, surrender, or take prisoners.",Adv. To attacks and Disadv. To Defence,,"stonehell, humanoid"
-"Beserker, Depraved Huntsman",Brute,6,,1,30,,STR,STR,"Depraved berserkers are the particularly wicked and vile descendents of Stonehell's prisoner population. Eking out a brutal existence on the lower levels of the dungeon, the depraved berserkers are tougher, more vicious, and even deadlier than the berserkers found above them. They revel in cannibalism, self-mutilation, and the thrill of the hunt.
-When the sounds of their hunting drums begin to echo through the halls of Stonehell, even the dimmest of creatures knows it's time to seek shelter.
-The depraved berserkers of Stonehell typically equip themselves with scavenged armor and weapons that they have modified with serrated edges, wicked spikes, barbed chains, or other painful additions.","They never retreat, surrender, or take prisoners.",Adv. To attacks and Disadv. To Defence,,"stonehell, humanoid"
-"Beserker, Depraved Leader",Brute,7,,0,30,,STR,STR,"Depraved berserkers are the particularly wicked and vile descendents of Stonehell's prisoner population. Eking out a brutal existence on the lower levels of the dungeon, the depraved berserkers are tougher, more vicious, and even deadlier than the berserkers found above them. They revel in cannibalism, self-mutilation, and the thrill of the hunt.
-When the sounds of their hunting drums begin to echo through the halls of Stonehell, even the dimmest of creatures knows it's time to seek shelter.
-The depraved berserkers of Stonehell typically equip themselves with scavenged armor and weapons that they have modified with serrated edges, wicked spikes, barbed chains, or other painful additions.","They never retreat, surrender, or take prisoners.",Adv. To attacks and Disadv. To Defence,,"stonehell, humanoid"
-Rock Render,Predator,4,,d6,30,,STR,STR,"These fierce subterranean beetles have developed a unique form of natural camouflage: their carapaces develop hard chitonous growths that resemble natural rock formations such as stalagmites, flowstone, and piles of fallen stone.
-They are ambush predators, lying in wait until a meal wanders close enough to take by surprise with their serrated mandibles.",Adv. to stealth checks when in rocky caverns,,,"stonehell, beast"
-"Fish, Giant Cave Catfish",Predator,4,1,d2,0,30,STR,STR,"Cave catfish are a rare variety of their surface cousins, specially adapted to subterranean bodies of water.
-They are usually of a grey or brown colouration that helps camouflage them in underground pools, but some albino fish are known to exist.
-They are both scavengers and predators, ambushing prey from their lairs underneath rocky shelves and in narrow crevices.
-Cave catfish are rumoured to grow highly intelligent with age, and stories of ancient specimens who have become too wily to be snared by nets, hooks, and spears are common amongst underground races.
-Cave catfish range from 8 to 10ft. long in size.",Swimming 30ft.,,,"stonehell, beast"
-"Hoomthroom, Small",Brute,2,,d4,20,,STR,STR,"Hoomthrooms are a bizarre form of elemental rock life, appearing as round boulders ranging for 3 to 10 feet in diameter.
-These enigmatic creatures seem to take no sustenance and spend their thousand-year lifespan doing nothing more than humming in deep, melodic bass tones.
-Normally passive creatures, they are known to attack those who create loud noises or other disturbances in their presence, thus disrupting their humming choruses.
-Hoomthrooms attack by rolling over their opponents with their stony bodies - a method of attack which inflicts more damage on lightly armored individuals.
-Creatures who pass by hoomthrooms silently or who hum in harmony with their songs are never attacked.
-Some hoomthrooms contain unfinished gemstones within their stony bodies, but these stones are only worth half normal value due to their raw form.","Attacks do damage based on armour type:
-Unarmoured: 3d4
-Light Armour: 2d4
-Heavy Armour: d4",,,"stonehell, elemental"
-"Hoomthroom, Medium",Brute,4,,d4,20,,STR,STR,"Hoomthrooms are a bizarre form of elemental rock life, appearing as round boulders ranging for 3 to 10 feet in diameter.
-These enigmatic creatures seem to take no sustenance and spend their thousand-year lifespan doing nothing more than humming in deep, melodic bass tones.
-Normally passive creatures, they are known to attack those who create loud noises or other disturbances in their presence, thus disrupting their humming choruses.
-Hoomthrooms attack by rolling over their opponents with their stony bodies - a method of attack which inflicts more damage on lightly armored individuals.
-Creatures who pass by hoomthrooms silently or who hum in harmony with their songs are never attacked.
-Some hoomthrooms contain unfinished gemstones within their stony bodies, but these stones are only worth half normal value due to their raw form.","Attacks do damage based on armour type:
-Unarmoured: 3d6
-Light Armour: 2d6
-Heavy Armour: d6",,,"stonehell, elemental"
-"Hoomthroom, Large",Brute,5,,d4,20,,STR,STR,"Hoomthrooms are a bizarre form of elemental rock life, appearing as round boulders ranging for 3 to 10 feet in diameter.
-These enigmatic creatures seem to take no sustenance and spend their thousand-year lifespan doing nothing more than humming in deep, melodic bass tones.
-Normally passive creatures, they are known to attack those who create loud noises or other disturbances in their presence, thus disrupting their humming choruses.
-Hoomthrooms attack by rolling over their opponents with their stony bodies - a method of attack which inflicts more damage on lightly armored individuals.
-Creatures who pass by hoomthrooms silently or who hum in harmony with their songs are never attacked.
-Some hoomthrooms contain unfinished gemstones within their stony bodies, but these stones are only worth half normal value due to their raw form.","Attacks do damage based on armour type:
-Unarmoured: 3d8
-Light Armour: 2d8
-Heavy Armour: d8",,,"stonehell, elemental"
-Agony,Predator,4,,d2,30,60,STR,STR,"Agonies are the undead spirits of those who were judged unworthy of receiving the Lady of Whips' final reward.
-They appear as translucent versions of their living selves with faces wracked in pain. They attack with a chilling touch that robs their victims of both their vitality and personality.",Flying 60ft.,"Hit: In addition to damage, CHA save or lose 1 CHA
-If 0 CHA is reached the target dies and will rise as an Agony in d3 days","Immune to non-magical weapons, sleep, charm and hold magic","stonehell, undead"
-Pain's Handmaiden (The Iron Ladies),Soldier,5,,d2,30,,STR,STR,"Pain's Handmaidens (also known as Iron Ladies) are magical constructions similar to golems and animated statues. A Handmaiden is an animate suit of plate mail armour which bears faintly feminine features.
-The surface of this armour is adorned with barbed spikes, wicked hooks, and serrated protrusions. A 10ft. long whip with numerous lashes is clenched in one of the Iron Lady's mailed hands.
-The sound of faint moans and wails seems to echo from within the Handmaiden's armour.
-Pain's Handmaidens attack with either their spiked gauntlets or with their whips.",Immunity to non-magical weapons,"Whip Hit: in addition to damage CON save or be wracked with agonizing pain, incapable of any action other than moving at half-speed for 1d6 rounds.",Hit: in addition to damage regain d4 HP,"stonehell, construct"
-Gaunt Hound,Soldier,3,1,d4,60,,DEX,DEX,"These sleek, hairless hounds are the result of generations of selected inbreeding.
-Despite their pallid colour and gaunt frames, these hounds are formidable opponents in combat. Astonishingly quick, gaunt hounds are trained to tear at the throats of their prey, leaping and dodging under defenses to do so.
-Although regularly fed dinner scraps by the Gentlemen Ghouls, gaunt hounds never gain additional powers from their meals.",Critical hit on 19 or 20,,,"stonehell, beast"
-Gentleman Ghoul,Leader,4,,d6,30,,STR,STR,"Despite their cadaverous appearance, the Gentlemen Ghouls are not undead - merely longer-lived than nature intended.
-Gentlemen Ghouls temporarily gain some of the powers possessed by their meals while alive.
-These powers include spell casting ability, saving throws, attack prowess, regeneration, immunity to normal attacks, increased strength, and infravision.
-Superlative abilities of a physiological nature like gaze attacks, breath weapons, and flight are not gained through ritual consumption of the deceased.
-Although Chaotic, the Gentlemen Ghouls are urbane and erudite, possessing a great appreciation for the finer things in life. They enjoy gourmet cuisine (of a hideous kind), genteel conversation, and the arts.
-The Gentlemen dress in antiquated finery, although greatly distressed by age and their lack of a decent tailor.
-In combat, they wield sabers, rapiers, and epees - weapons befitting a gentleman. Despite their gentlemanly code of honour, they will not hesitate to use the network of secret doors and hidden passage that honeycombs their residence in order to gain tactical advantage over an enemy.","Example meals:
-Minotaur-fed (Mf): Attacks and saves as a 6 HD creature.
-Ogre-fed (Of): Gains 18 STR (+3 to hit and damage rolls)
-Pyske-fed (Pf): Gains invisibility ability of a Pixie.
-Throghrin-fed (Tf): paralyzation ability. Regenerates 1 hp per round.
-Warlock-fed (Wf): Can cast 1 1st-level, 1 2nd-level, and 1 3rd-level arcane spell before ability is lost. Suggested spells are charm person, magic missile, shield, sleep, invisibility, mirror image, web, hold person, and lightning bolt.
-Any other create from Level 4D encounter key",,,"stonehell, humanoid"
-Pitman,Soldier,4,,d6,30,,DEX,DEX,"These undead appear as desiccated miners with leathery skin and eyes that glow with a pallid greenish-yellow light.
-They are dressed in the ragged remains of the clothing they wore in life and carry the shovels, picks, and hammers they earned their livings with.",Hit: in addition to damage CON save or slow for d3 turns.,,,"stonehell, undead"
-Ore Bones,Soldier,3,,2d6,20,,DEX,DEX,"Ore bones are indistinguishable from normal undead skeletons until observed up close. Only then are the mineral deposits that cake their exposed bones discernable. These mineral deposits, similar to those that form stalagmites and other cave formations, have seeped into the marrow of the ore bones' skeleton and encrust the exposed bones, making it tougher and more resistant to damage.
-Like their less-formidable counterparts, ore bones attack with either weapons or their talon-like claws.
-There is a 10% chance that the mineral deposits of any single ore bones carry a trace amount of precious metal, making the bones worth 1d6x10 gp.",,,,"stonehell, undead"
 "Troll, Mountain",Brute,6,,d6,30,,STR,STR,"Mountain trolls are 9ft. tall, lumbering brutes with bulbous noses and scraggly tufts of hair. They are easily discernable from ogres by their thick, gnarled hides; the clouds of flies and moths that circle their heads, and their tails, which resemble either the tails of cows, pigs, or bears.
 Mountain trolls claim to be the descendents of frost giants (who deny this allegation) who chose to live under the mountains of the world.
 They are dim-witted and subject to trickery and guile, but are gifted craftsman.
@@ -904,6 +1226,14 @@ They are dim-witted and subject to trickery and guile, but are gifted craftsman.
 They covet gold and silver in all forms and their halls are often located near veins of these metals, which they mine with slaves captured from the surface.
 They dislike their rubbery, green cousins (the common troll), but will tolerate them if they feel they can benefit from the relationship in some manner.
 They also are extremely afflicted by the sound of ringing bells, which either drives them away in fear for 1d6 rounds or causes them to ferociously attack the bells and/or their ringer (50/50 chance of flight or fight) if they fail a WIS save.
+Mountain trolls live in halls carved at the hearts and roots of mountain peaks.",Rersistance to non-magical weapons (50%),Spells: polymorph other or flesh to stone once per day,"In sunlight must CON save or be turned to stone, which then crumbles into rubble. This save is required each round they remain in the sun.","stonehell, giant"
+"Troll, Mountain, 12 Headed",Brute,10,,d6,30,,STR,STR,"On rare occasions, a mountain troll is born with more than one head. These trolls always possess multiple heads in increments of threes.
+12 headed mountain trolls are 13ft. tall, lumbering brutes with bulbous noses and scraggly tufts of hair. They are easily discernable from ogres by their thick, gnarled hides; the clouds of flies and moths that circle their heads, and their tails, which resemble either the tails of cows, pigs, or bears.
+Mountain trolls claim to be the descendents of frost giants (who deny this allegation) who chose to live under the mountains of the world.
+They are dim-witted and subject to trickery and guile, but are gifted craftsman.
+They covet gold and silver in all forms and their halls are often located near veins of these metals, which they mine with slaves captured from the surface.
+They dislike their rubbery, green cousins (the common troll), but will tolerate them if they feel they can benefit from the relationship in some manner.
+They also are extremely afflicted by the sound of ringing bells, which either drives them away in fear for 1d6 rounds or causes them to ferociously attack the bells and/or their ringer (50/50 chance of flight or fight) if they fail a WIS save (with disadvantage).
 Mountain trolls live in halls carved at the hearts and roots of mountain peaks.",Rersistance to non-magical weapons (50%),Spells: polymorph other or flesh to stone once per day,"In sunlight must CON save or be turned to stone, which then crumbles into rubble. This save is required each round they remain in the sun.","stonehell, giant"
 "Troll, Mountain, 3 Headed",Brute,7,,d6,30,,STR,STR,"On rare occasions, a mountain troll is born with more than one head. These trolls always possess multiple heads in increments of threes.
 3 headed mountain trolls are 10ft. tall, lumbering brutes with bulbous noses and scraggly tufts of hair. They are easily discernable from ogres by their thick, gnarled hides; the clouds of flies and moths that circle their heads, and their tails, which resemble either the tails of cows, pigs, or bears.
@@ -929,14 +1259,23 @@ They covet gold and silver in all forms and their halls are often located near v
 They dislike their rubbery, green cousins (the common troll), but will tolerate them if they feel they can benefit from the relationship in some manner.
 They also are extremely afflicted by the sound of ringing bells, which either drives them away in fear for 1d6 rounds or causes them to ferociously attack the bells and/or their ringer (50/50 chance of flight or fight) if they fail a WIS save (with disadvantage).
 Mountain trolls live in halls carved at the hearts and roots of mountain peaks.",Rersistance to non-magical weapons (50%),Spells: polymorph other or flesh to stone once per day,"In sunlight must CON save or be turned to stone, which then crumbles into rubble. This save is required each round they remain in the sun.","stonehell, giant"
-"Troll, Mountain, 12 Headed",Brute,10,,d6,30,,STR,STR,"On rare occasions, a mountain troll is born with more than one head. These trolls always possess multiple heads in increments of threes.
-12 headed mountain trolls are 13ft. tall, lumbering brutes with bulbous noses and scraggly tufts of hair. They are easily discernable from ogres by their thick, gnarled hides; the clouds of flies and moths that circle their heads, and their tails, which resemble either the tails of cows, pigs, or bears.
-Mountain trolls claim to be the descendents of frost giants (who deny this allegation) who chose to live under the mountains of the world.
-They are dim-witted and subject to trickery and guile, but are gifted craftsman.
-They covet gold and silver in all forms and their halls are often located near veins of these metals, which they mine with slaves captured from the surface.
-They dislike their rubbery, green cousins (the common troll), but will tolerate them if they feel they can benefit from the relationship in some manner.
-They also are extremely afflicted by the sound of ringing bells, which either drives them away in fear for 1d6 rounds or causes them to ferociously attack the bells and/or their ringer (50/50 chance of flight or fight) if they fail a WIS save (with disadvantage).
-Mountain trolls live in halls carved at the hearts and roots of mountain peaks.",Rersistance to non-magical weapons (50%),Spells: polymorph other or flesh to stone once per day,"In sunlight must CON save or be turned to stone, which then crumbles into rubble. This save is required each round they remain in the sun.","stonehell, giant"
+Unicorn,Predator,4,,d6,90,,STR,STR,"Unicorns are horselike creatures having a single spirallytwisted horn in the middle of the forehead. A typical adult unicorn grows to 8 feet in length, stands 5 feet high at the shoulder, and weighs 1,200 pounds. A unicorn has deep sea blue, violet, brown, or fiery gold eyes. 
+Unicorns normally attack only when defending themselves or their forests. They either charge, impaling foes with their horns like lances, or strike with their hooves.
+A unicorn can carry up to 60 LOAD.","Spells: Cure Light Wounds, Dimension Door",,,"basic-fantasy, celestial"
+Urgoblin,Soldier,2,,0,30,,STR,STR,"These creatures appear to be normal hobgoblins, but urgoblins are actually a mutant subspecies. Urgoblins are able to regenerate much as do trolls.
+Some hobgoblin tribes consider urgoblins an abomination, and kill them whenever they can be identified. Other hobgoblin tribes employ them as bodyguards for the chieftain, and accord them great honor. There are even rumors of a tribe entirely made up of urgoblins.",Regenerate 1 hp per round,,,"basic-fantasy, goblinoid, humanoid"
+Vampire,Leader,8,,d6,30,60,STR,STR,"Vampires appear just as they did in life, although their features are often hardened and feral, with the predatory look of wolves. They often embrace finery and decadence and may assume the guise of nobility. Despite their human appearance, vampires can be easily recognized, for they cast no shadows and throw no reflections in mirrors. They speak any languages they knew in life.
+Slaying a Vampire: Reducing a vampire's hit points to 0 doesn't always destroy it. However, certain attacks can slay vampires. Exposing any vampire to direct sunlight or running water destroys it in three rounds. Driving a wooden stake through a vampire's heart instantly slays the monster. However, it returns to life if the stake is removed, unless the body is destroyed, by water or sunlight as described above, or by burning it completely in a funeral pyre.","Immune to sleep, charm and hold magic and non-magical weapons
+Command the lesser creatures of the night and once per day can call forth 10d10 rats, 5d4 giant rats, 10d10 bats, 3d6 giant bats, or a pack of 3d6 wolves.","Hit: bite restore vampire hp equal to damage caused.
+If the victim dies, they will rise as a new vampire","Spells: Charm person, Assume Giant Bat form","basic-fantasy, undead"
+Vampiric Achene,Predator,2,2,d10,0,20,CON,CON,"These harmless-seeming seeds resemble 2ft. diameter bits of dandelion fluff drifting aimlessly on the breeze.
+When they detect the presence of warm-blooded creatures, however, they home in on these beings and attack by attaching themselves and draining blood with their numerous fine hairs until sated.
+Several days afterwards, the achene sprouts into an oversized, blood-red dandelion. In this stage, the plant is harmless until it matures and forms the next batch of vampiric achenes to be dispersed on the winds.",Flying 20ft.,Vulnerable to fire (200%),"Hit and attach dealing damage each round.
+Sated after 15 HP is drained.","stonehell, plant"
+Veteran,Soldier,2,,2d4,30,,STR,STR,"Veterans are low-level fighters, usually returning from or going to a war.",,,,"basic-set, humanoid"
+"Vrilya, Chyvak Uul Caste (Adept)",Shaper,5,,d3,30,,INT,DEX,"The lowest of the magic-using Vrilya castes, the Chyvak Uul are not magic-users in the traditional sense. Instead they possess the innate ability to detect and alter natural magical fields to produce spell-like effects.
+The number and level of spells available to a Chyvak Uul (also known as adepts) per day is based on his or her Hit Dice according to the table (pg. 118 Stonehell Dungeon 1).","Vrilya racial abilities: infravision to 90ft., immunity to gaze attacks and petrification, and stone awareness as possessed by dwarves.","Possible Spells:
+charm person, hold portal, magic missile, read languages, read magic, ESP, invisibility, knock, mirror image, hold person, fly, lightning, bolt, invisibility 10' rad., charm monster, dimension door, polymorph self, polymorph other, wall of fire, passwall, transmute rock to mud, wall of stone, anti-magic shell, move earth, and stone to flesh. ",Innate ability to see magical auras and fields allows them to detect magic (as the spell) at will.,"stonehell, humanoid"
 "Vrilya, Sahnyam Ana Caste",Soldier,4,,d10,30,,STR,STR,"Vrilya of the Sahnyam Ana caste serve as muscle and general foot soldiers. Although lacking the magical talents of the higher castes, the Sahnyam Ana are nevertheless staunch opponents and skilled warriors.
 Sahnyam Ana Vrilya are larger than the rest of their race, having been bred for battle from dedicated warrior bloodlines.
 They resemble brawny humans and most bear scars earned through their constant battles and training.
@@ -950,6 +1289,45 @@ They equip themselves for war in banded mail made from lagh and basilisk hide, w
 They prefer long swords, crossbows, and maces as weapons, many of which are of ancient or exotic construction.
 For every five Sahnyam Ana encounter, there will be one Vrilya of the Chyvak Uul caste present to act as magical support.
 Each rhil also has a 10% chance of possessing one magical item, either determined at random or chosen from the list of unusual Vrilyan artifacts (see Appendix B p. 130).","Vrilya racial abilities: infravision to 90ft., immunity to gaze attacks and petrification, and stone awareness as possessed by dwarves.",,,"stonehell, humanoid"
-"Vrilya, Chyvak Uul Caste (Adept)",Shaper,5,,d3,30,,INT,DEX,"The lowest of the magic-using Vrilya castes, the Chyvak Uul are not magic-users in the traditional sense. Instead they possess the innate ability to detect and alter natural magical fields to produce spell-like effects.
-The number and level of spells available to a Chyvak Uul (also known as adepts) per day is based on his or her Hit Dice according to the table (pg. 118 Stonehell Dungeon 1).","Vrilya racial abilities: infravision to 90ft., immunity to gaze attacks and petrification, and stone awareness as possessed by dwarves.","Possible Spells:
-charm person, hold portal, magic missile, read languages, read magic, ESP, invisibility, knock, mirror image, hold person, fly, lightning, bolt, invisibility 10' rad., charm monster, dimension door, polymorph self, polymorph other, wall of fire, passwall, transmute rock to mud, wall of stone, anti-magic shell, move earth, and stone to flesh. ",Innate ability to see magical auras and fields allows them to detect magic (as the spell) at will.,"stonehell, humanoid"
+"Vulture, Giant",Predator,2,2,2d6,10,60,DEX,DEX,"Giant vultures are scavengers. They search for carrion and prefer to avoid direct combat.
+They have pink bald heads and greasy black feathers.
+As a result of their diet, giant vultures are immune to disease.
+Giant vultures are often found with barrow harpies who train them as pets or for protection.
+They attack with sharp powerful beaks.
+Giant vulture hatchlings, or intact eggs, are worth 20'50gp each.",Flying 60ft.,,,"barrowmaze, beast"
+"Wasp, Giant",Soldier,0.5,,d6,30,60,DEX,DEX,Like regular wasps but much larger,Flying 60ft.,,,beast
+Water Weird,Predator,4,4,1,0,,DEX,DEX,"A water weird is an elemental creature that has been bound by a magic-user to a deep fountain, pool, or cistern for the purpose of protection or defense.
+When provoked, these elementals form a watery snakelike appendage and attempt to drown passersby by striking out at their opponents.",Hit: Grapple and try to drown the target,"Resistant to fire damage
+Slowed by cold damage",,"barrowmaze, elemental"
+"Weasel, Giant",Predator,1,1,d8,60,,DEX,DEX,"Giant weasels resemble their more normally sized cousins, having long bodies, short legs, and pointed, toothy snouts. They are predatory animals, hunting those creatures smaller than themselves.",Hit: Bite and hang on,,,"basic-fantasy, beast"
+"Whale, Killer",Predator,6,,d6,0,90,STR,STR,"These ferocious creatures are about 30 feet long. Killer whales, also called ""orca"" (both singular and plural), are strikingly marked in black and white, with prominent white patches that resemble eyes. Their real eyes are much smaller and located away from the fake eye-spots.
+Killer whales eat fish, squid, seals, and other whales, but are not above consuming a meal of human or demihuman fare.",Swimming 90ft.,,,"basic-fantasy, beast"
+"Whale, Narwhal",Brute,12,,d4,0,60,STR,STR,"Narwhals are aquatic mammals resembling large dolphins with a single (or rarely, double) tusk protruding straight forward from the mouth.
+The tusk is helical in shape, and they are sometimes cut short and sold as ""unicorn horns."" However, they have no particular magical value.
+Narwhals are found in cold northern seas. They are not particularly aggressive.",Swimming 60ft.,,,"basic-fantasy, beast"
+"Whale, Sperm",Predator,36,,d3,0,60,STR,STR,These creatures can be up to 60 feet long. They prey on giant squid.,Swimming 60ft.,Fire sound beam 50ft. Hit: Stun,,"basic-fantasy, beast"
+Wight,Shaper,3,,d6,30,,WIS,CON,"A wight's appearance is a weird and twisted reflection of the form it had in life. A wight is about the height and weight of a human. Wights do not possess any of the abilities they had in life.
+Any humanoid slain by a wight becomes a wight by the next sunset (but not less than 12 hours later).
+Wight spawn are under the command of the wight that created them and remain enslaved until its death.",Energy Drain: Each hit drains d8 CON (and corresponding HP),Immune to non-magical weapons,,"basic-fantasy, undead"
+Wolf,Predator,2,2,2d6,60,,STR,STR,"Wolves are pack hunters known for their persistence and cunning. They prefer to surround and flank a foe when they can.
+Captured wolves can be trained like dogs.",,,,"basic-fantasy, beast"
+"Wolf, Dire",Predator,4,,d4,60,,DEX,DEX,"Dire wolves are efficient pack hunters that will kill anything they can catch. Dire wolves are generally mottled grey or black, about 9 feet long and weighing some 800 pounds.",,,,"basic-fantasy, beast"
+Wraith,Brute,4,,d4,0,90,STR,STR,"Wraiths are incorporeal creatures born of evil and darkness. In some cases, the grim silhouette of a wraith might appear armored or outfitted with weapons. This appearance does not affect the creature's AC or combat abilities but only reflects the shape it had in life.","Immune to sleep, charm and hold magic and non-magical weapons",Flying 60ft.,,"basic-fantasy, undead"
+Wyvern,Predator,7,,d6,30,90,STR,STR,"A distant cousin to the true dragons, the wyvern is a huge flying lizard with a poisonous stinger in its tail. A wyvern's body is 15 feet long, and dark brown to grey; half that length is tail. Its wingspan is about 20 feet. A wyvern weighs about one ton. They are built more like bats than lizards, having two legs and two wings; contrast this with true dragons, which have four legs and two wings.
+Wyverns are of animal intelligence, but are excellent predators with good hunting abilities. When attacking they will make a loud hiss, or sometimes a deep-throated growl much like that of a bull alligator.
+Wyverns attack nearly anything that isn't obviously more powerful than themselves. A wyvern dives from the air, clawing at its opponent with its talons and stinging it to death.",Flying 90ft.,Hit: sting CON save vs. poison or die,Grab prey and carry off - grappled,"basic-fantasy, monstrosity"
+Yellow Mold,Predator,2,,d8,0,,CON,CON,"Yellow mold typically covers an area of 10 square feet. It does not move or attack, but if it is touched it is acidic and destroys leather and wood.","Releases a 10ft cube of spores if touched
+CON Save or die in d6 rounds",Vulnerable to fire (200%),,"labyrinth-lord, plant"
+Zombie,Brute,2,,2d4,20,,STR,CON,"Zombies are undead humans or demi-humans animated by some evil cleric or magic-user. As all undead, they may be ""Turned"" by a cleric but are not affected by sleep or charm spells or any form of mind reading. They are often placed to guard treasures, since they make no noise until they attack. Zombies will always attack on sight, but can be destroyed by normal weapons.",Slow: Always last on initiative,Resistant to bludgeoning and arrows,"Immune to sleep, charm and hold magic.","basic-fantasy, undead"
+"Zombie, Funeral Pyre",Brute,2,,d6,30,,STR,STR,"Funeral pyre zombies, sometimes referred to as ""Bombies"" by veteran adventurers, are a strange necromantic construct.
+They appear as normal zombies except for black runes written on their decaying flesh.","Immune to sleep, charm and hold magic.
+Immune to fire. ","When first hit: Take no damage, burst into flames burning off flesh, become 2 hit dice skeletons.
+Anything within 5 feet when lit will take fire damage. This fire may set off other funeral pyre zombies.",,"barrowmaze, undead"
+"Zombie, Juju",Sniper,4,4,d4,60,,DEX,DEX,"Juju zombies are fearsome undead opponents. They are distinguished from other zombies by their dark ambercoloured skin.
+Juju zombies are stronger, faster, and possess greater capacity for action than standard zombies.
+They can use missile weapons and climb like thieves.","Immune to sleep, charm and hold magic.
+Immune to non-magical weapons
+Immune to electricity, magic projectiles, and cold.
+Resistant to fire.",Turned as 6HD monster,,"barrowmaze, undead"
+"Zombie, Ravenous",Brute,3,,2d8,30,,STR,STR,"Ravenous dead appear as regular zombies but have an insatiable desire to feed on the living. These undead abominations possess such an appetite that, upon wounding a humanoid opponent, the remaining zombies will converge in a pack to feed immediately on
+the victim. If PCs engage in combat with previous wounds, the ravenous dead will seek to target injured characters first.","Immune to sleep, charm and hold magic.",,,"barrowmaze, undead"
