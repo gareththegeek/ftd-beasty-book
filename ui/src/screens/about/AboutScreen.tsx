@@ -84,6 +84,9 @@ const AboutScreen: React.FunctionComponent = () => {
             <li className={sourceli}>
                 🔥 <Source label="hole-in-the-oak" text="The Hole in the Oak" copyright="Copyright © Gavin Norman" link="https://necroticgnome.com/" />
             </li>
+            <li className={sourceli}>
+                🔥 <Source label="pod-caverns" text="The Pod-Caverns of the Sinister Shroom" copyright="Copyright © Matthew Finch" link="https://www.drivethrurpg.com/product/13709/Advanced-Adventures-1-The-PodCaverns-of-the-Sinister-Shroom" />
+            </li>
         </ul>
         <Body1 className={hcentre}>Crafted with ❤ by <Link target="_new" href="https://github.com/gareththegeek">@gareththegeek</Link></Body1>
     </div>)
