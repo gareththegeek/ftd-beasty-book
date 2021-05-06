@@ -1331,3 +1331,34 @@ Immune to electricity, magic projectiles, and cold.
 Resistant to fire.",Turned as 6HD monster,,"barrowmaze, undead"
 "Zombie, Ravenous",Brute,3,,2d8,30,,STR,STR,"Ravenous dead appear as regular zombies but have an insatiable desire to feed on the living. These undead abominations possess such an appetite that, upon wounding a humanoid opponent, the remaining zombies will converge in a pack to feed immediately on
 the victim. If PCs engage in combat with previous wounds, the ravenous dead will seek to target injured characters first.","Immune to sleep, charm and hold magic.",,,"barrowmaze, undead"
+Hanging Snagwort,Brute,3,2,d10,5,,DEX,DEX,"Hanging snagworts are a strange variety of dungeon plant, a cluster of slime-covered tendrils hanging at the end of a thick, rope-like strand.
+Within a range of ten feet or so, a snagwort can lash out by swinging its ropy strand.
+If a snagwort is being attacked with missile weapons and has no enemies within range, it will flatten itself against a ceiling or behind cover. A lone snagwort can be easily killed with missile weapons, provided that the party keeps a safe distance.","Hit: Attach with secreted glue and damage bashing and flailing
+Glue lasts 1d6 hours and snagwort weighs 4 LOAD",,,"pod-caverns, plant"
+Pod Man,Brute,3,,2d10,60,,STR,STR,"Pod-men are commonly found as servants of a Shroom, for the Shrooms cultivate them in far greater numbers than they appear in the wild.
+They are shambling, human-like plants with strange gaps in their bodies and knobby growths of fungus sprouting from their outer surface.
+Pod men grow in large pods that resemble enormous pea-pods hanging from a ceiling or growing on vines. Cultivated pod men are usually grown hanging from the ceiling, for vine-grown pod men (seen in the wild) are subtly inferior to the cultivated ones.","Multi attack: 1 grab, one pummel.
+Each grab imposes disadvantage on all checks. ",,,"pod-caverns, humanoid"
+Mad Tree,Brute,3,7,1,10,,STR,STR,"Warped and insane offspring of a treant. They cannot speak, and have only a chaotic and rudimentary intelligence, suffused with hatred for all warm-blooded creatures. ",,,,"pod-caverns, plant"
+"Shambling Mound, Young",Brute,6,,1,10,,STR,STR,,Extra suffocating/crushing damage when a PC is hit by both attacks. Suffocates in 2d4+4 rounds,"Resistant to Cold and Fire
+Immune to Lightning",,"pod-caverns, plant"
+Giant Leech,Predator,1,,d6,10,,DEX,DEX,,Hit: drain 2HP per round,,,"pod-caverns, beast"
+"Giant Leech, Big",Predator,2,,d4,10,,DEX,DEX,,Hit: drain 3HP per round,,,"pod-caverns, beast"
+Vampiric Moss,Predator,3,,1,20,,STR,STR,"Vampire moss is a dangerous subterranean hazard, a mass of vegetable substance that feeds upon red blood. Vampire moss usually drops upon unwary explorers, but it is capable of slow normal movement when necessary.","Hit: drain damage HP per round.
+When hit by opponent: CON check or become  confused/enraged",,,"pod-caverns, plant"
+Shroom,Leader,6,1,d6,30,,INT,INT,"Shrooms are evil geniuses, toadstool creatures with considerable magical powers.
+They lurk in the deep places of the earth and in dank forests, plotting ruin against surface dwellers and scheming to gain power for themselves by any means possible.
+They are highly adept with magic that influences plants, and most of them are knowledgeable enough to create lairs where they can manufacture pod-men as servants.
+Shrooms are highly individualistic, and the GM should feel free to invent all kinds of these sinister malefactors.
+Most will have the spell-casting abilities of at least a fourth level magic user, and all have strange powers to create and shape the plants of their environments. Although these powers take time to employ and will not be relevant in combat, they can be used to create a considerably hazardous lair.","The flesh of a shroom is delectable, but deadly.
+Eating: CON save or be affected as if by a Feeblemind spell.
+There is a 5% chance that a Feebleminded character will permanently gain 1 INT.",,,"pod-caverns, plant"
+Funghemoth,Brute,8,,1,30,,WIS,WIS,"Funghemoths are a fairly rare occurrence, but when wizards mix alchemy, magic, and fungi, an error of judgment or an ill-supervised experiment can result in the creation of one of these beasts.
+Funghemoths are enormous masses of fungoid tissue, capable of movement and hungry for whatever food they can find or kill.
+A funghemoth has one yawning opening in the front, with which it ingests food and attacks prey, along with two subsidiary mouths mounted on short stalks.","In addition to attack, random effect each round:
+1. breathes fire in a cone shape
+2. shoots a ball of lightning in a randomly direction
+3. become electrically charged for one round, causing damage to anyone hitting it with a metal weapon
+4. changes colour
+5. emits spores when hit. Anyone within ten feet CON save or become Confused
+6. hack up a disgusting ball of fungoid tissue",,,"pod-caverns, plant"
