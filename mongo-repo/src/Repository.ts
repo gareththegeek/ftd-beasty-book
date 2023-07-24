@@ -41,7 +41,7 @@ export class Repository implements IRepository {
 
                     resolve(client)
                 })
-            } catch (e) {
+            } catch (e: any) {
                 reject(e)
             }
         })

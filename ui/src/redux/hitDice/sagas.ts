@@ -5,7 +5,7 @@ import { requestHitDiceComplete, setHitDice, setHitDiceLookup } from './actions'
 import { REQUEST_HIT_DICE } from './actionTypes'
 import HitDice from './HitDice'
 
-export function* requestHitDiceSaga() {
+export function* requestHitDiceSaga(): any {
     try {
         const hitDice: HitDice[] = yield call(fetchHitDice)
         yield put(setHitDice(hitDice))
@@ -15,7 +15,7 @@ export function* requestHitDiceSaga() {
         )
         yield put(setHitDiceLookup(lookup))
         yield put(requestHitDiceComplete())
-    } catch (e) {
+    } catch (e: any) {
         console.error(e)
         yield put(setMonsterError(e.message))
     }

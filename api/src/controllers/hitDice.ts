@@ -18,7 +18,7 @@ export const getAll = async (
             .sort((a, b) => (a.id > b.id ? 1 : a.id < b.id ? -1 : 0))
 
         res.send(hitDice)
-    } catch (e) {
+    } catch (e: any) {
         next(e)
     }
 }

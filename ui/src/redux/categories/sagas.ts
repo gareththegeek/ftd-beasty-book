@@ -1,11 +1,15 @@
 import { call, put, takeEvery } from 'redux-saga/effects'
 import { fetchCategories } from '../../services/categories'
 import { setMonsterError } from '../monsters/actions'
-import { requestCategoriesComplete, setCategories, setCategoriesLookup } from './actions'
+import {
+    requestCategoriesComplete,
+    setCategories,
+    setCategoriesLookup
+} from './actions'
 import { REQUEST_CATEGORIES } from './actionTypes'
 import Category from './Category'
 
-export function* requestCategoriesSaga() {
+export function* requestCategoriesSaga(): any {
     try {
         const categories: Category[] = yield call(fetchCategories)
 
@@ -16,7 +20,7 @@ export function* requestCategoriesSaga() {
         )
         yield put(setCategoriesLookup(lookup))
         yield put(requestCategoriesComplete())
-    } catch (e) {
+    } catch (e: any) {
         console.error(e)
         yield put(setMonsterError(e.message))
     }

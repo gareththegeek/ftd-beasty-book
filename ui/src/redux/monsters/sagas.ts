@@ -28,17 +28,17 @@ import { mapMonster } from './mapMonster'
 import Monster from './Monster'
 import { selectSelectedMonster } from './selectors'
 
-export function* requestMonsterListSaga() {
+export function* requestMonsterListSaga(): any {
     try {
         const monsters = yield call(fetchMonsters)
         yield put(setMonsterList(monsters))
-    } catch (e) {
+    } catch (e: any) {
         console.error(e)
         yield put(setMonsterError(e.message))
     }
 }
 
-export function* buildViewModelSaga() {
+export function* buildViewModelSaga(): any {
     try {
         const monster = yield select(selectSelectedMonster)
 
@@ -53,12 +53,14 @@ export function* buildViewModelSaga() {
         const viewModel = yield call(mapMonster, monster, hitDice, category)
 
         yield put(setMonsterViewModel(viewModel))
-    } catch (e) {
+    } catch (e: any) {
         yield put(setMonsterError(e.message))
     }
 }
 
-export function* selectMonsterSaga(action: PayloadAction<string | undefined>) {
+export function* selectMonsterSaga(
+    action: PayloadAction<string | undefined>
+): any {
     try {
         const monsterId = action.payload
 
@@ -86,7 +88,7 @@ export function* selectMonsterSaga(action: PayloadAction<string | undefined>) {
         yield put(setSelectedMonster(monster))
 
         yield put(buildViewModel())
-    } catch (e) {
+    } catch (e: any) {
         yield put(setMonsterError(e.message))
         console.error(e)
     }
@@ -94,11 +96,11 @@ export function* selectMonsterSaga(action: PayloadAction<string | undefined>) {
 
 export function* selectMonsterCategorySaga(
     action: PayloadAction<CategoryType>
-) {
+): any {
     try {
         yield put(setSelectedMonsterCategory(action.payload))
         yield put(buildViewModel())
-    } catch (e) {
+    } catch (e: any) {
         yield put(setMonsterError(e.message))
     }
 }

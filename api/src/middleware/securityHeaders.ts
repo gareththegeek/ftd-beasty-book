@@ -14,7 +14,7 @@ export const securityHeaders = (
     )
     res.setHeader(
         'Content-Security-Policy',
-        "default-src 'self'; connect-src 'self' https://dc.services.visualstudio.com/; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; frame-src 'self';"
+        "default-src 'self'; connect-src 'self' https://dc.services.visualstudio.com/; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; frame-src 'self';"
     )
     res.setHeader(
         'Permissions-Policy',

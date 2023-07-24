@@ -18,7 +18,7 @@ export const get = async (req: Request, res: Response, next: NextFunction) => {
             ...monster,
             _id: undefined
         })
-    } catch (e) {
+    } catch (e: any) {
         next(e)
     }
 }
@@ -41,7 +41,7 @@ export const getAll = async (
             .sort((a, b) => (a.name > b.name ? 1 : a.name < b.name ? -1 : 0))
 
         res.send(monsters)
-    } catch (e) {
+    } catch (e: any) {
         next(e)
     }
 }
