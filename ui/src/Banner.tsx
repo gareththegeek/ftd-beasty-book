@@ -98,6 +98,11 @@ const Banner: React.FunctionComponent = () => {
                             </Grid>
                         </nav>
                     </Grid>
+                    <Grid item style={{marginLeft: "auto"}}>
+                        <a href="https://www.buymeacoffee.com/gareththegeek" target="_blank" rel="noreferrer">
+                            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style={{height: "46px"}} />
+                        </a>
+                    </Grid>
                 </Grid>
             </Toolbar>
         </AppBar>

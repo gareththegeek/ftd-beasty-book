@@ -1,8 +1,5 @@
 # Five Monsters Deep - OSR Monster Stats for Five Torches Deep
 
-![Azure-Deploy](https://github.com/gareththegeek/ftd-beasty-book/workflows/Azure-Deploy/badge.svg)
-![CI](https://github.com/gareththegeek/ftd-beasty-book/workflows/CI/badge.svg)
-
 Search for monster stats to use in your games of FTD!
 
 Reference monster stats for Five Torches Deep.

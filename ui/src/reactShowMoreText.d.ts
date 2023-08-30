@@ -3,6 +3,7 @@ declare module 'react-show-more-text' {
         lines?: number
         more?: string
         less?: string
+        children: any
     }> {
         constructor(props)
     }
