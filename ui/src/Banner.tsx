@@ -41,6 +41,17 @@ const useStyles = makeStyles(theme => ({
     },
     h1: {
         fontSize: theme.spacing(2.6)
+    },
+    coffeeSmall: {
+        marginTop: '5px',
+        [theme.breakpoints.up('sm')]: {
+            display: 'none'
+        }
+    },
+    coffeeBig: {
+        [theme.breakpoints.down('sm')]: {
+            display: 'none'
+        }
     }
 }))
 
@@ -50,7 +61,9 @@ const Banner: React.FunctionComponent = () => {
         icon,
         navItem,
         navItemActive,
-        linkText
+        linkText,
+        coffeeSmall,
+        coffeeBig
     } = useStyles()
     const { pathname } = useLocation()
     const [path, setPath] = useState<string>()
@@ -65,7 +78,7 @@ const Banner: React.FunctionComponent = () => {
     return (<header>
         <AppBar position="static">
             <Toolbar>
-                <Grid container direction="row" alignItems="center" spacing={2}>
+                <Grid container direction="row" alignItems="center" spacing={1}>
                     <Grid item>
                         <i>
                             <img src="./android-chrome-192x192.png" alt="Five Monsters Deep" className={icon} />
@@ -100,7 +113,8 @@ const Banner: React.FunctionComponent = () => {
                     </Grid>
                     <Grid item style={{marginLeft: "auto"}}>
                         <a href="https://www.buymeacoffee.com/gareththegeek" target="_blank" rel="noreferrer">
-                            <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style={{height: "46px"}} />
+                        <img className={coffeeBig} src="/coffee.png" alt="Buy Me A Coffee" style={{height: "46px"}} />
+                        <img className={coffeeSmall} src="/coffee-small.png" alt="Buy Me A Coffee" style={{height: "24px"}} />
                         </a>
                     </Grid>
                 </Grid>
